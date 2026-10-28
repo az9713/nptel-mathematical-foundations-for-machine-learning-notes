@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "base_url": "https://az9713.github.io/nptel-mathematical-foundations-for-machine-learning-notes/",
-  "verified_source_commit": "055bf56b4eb0adb9f9cb8abf72ced8828c8371d6",
+  "verified_source_commit": "7b1aee648099ad505f2a97fc87a5f3fca0510da3",
   "served_files": [
     {
       "file": "README.md",
@@ -339,6 +339,11 @@
       "sha256_matches": true
     },
     {
+      "file": "editorial-review-round-1.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
       "file": "editorial-review-summary.json",
       "status": "PASS",
       "sha256_matches": true
@@ -440,7 +445,7 @@
       "errors": []
     },
     {
-      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
       "viewport": [
         1440,
         1000
@@ -449,7 +454,43 @@
       "errors": []
     },
     {
-      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
       "viewport": [
         1440,
         1000
@@ -459,6 +500,15 @@
     },
     {
       "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-25-data-patterns-classification-and-clustering.html",
       "viewport": [
         1440,
         1000
@@ -485,7 +535,7 @@
       "errors": []
     },
     {
-      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
       "viewport": [
         390,
         844
@@ -494,7 +544,43 @@
       "errors": []
     },
     {
-      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
       "viewport": [
         390,
         844
@@ -512,6 +598,15 @@
       "errors": []
     },
     {
+      "file": "chapter-25-data-patterns-classification-and-clustering.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
       "file": "numerical-lab.html",
       "viewport": [
         390,
@@ -521,10 +616,12 @@
       "errors": []
     }
   ],
-  "scope": "SHA256 comparison of every public tracked non-dot file except this evolving record, plus representative desktop/mobile live controls.",
+  "scope": "SHA256 comparison of every public tracked non-dot file except this evolving record, plus desktop/mobile live controls on the index, every repaired chapter, and the laboratory.",
   "limits": "Not a human accessibility audit or a new scientific review; full-page offline checks are recorded separately.",
-  "github_rendered_readme_preview": {
+  "github_readme_preview": {
     "status": "PASS",
-    "target_url": "https://az9713.github.io/nptel-mathematical-foundations-for-machine-learning-notes/"
+    "url": "https://az9713.github.io/nptel-mathematical-foundations-for-machine-learning-notes/",
+    "scope": "GitHub API rendered HTML contains the site preview image and a link to the live book.",
+    "checked_source_commit": "7b1aee648099ad505f2a97fc87a5f3fca0510da3"
   }
 }

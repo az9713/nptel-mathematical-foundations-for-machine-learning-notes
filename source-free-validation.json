@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "source_commit": "ffe53b84dd2d137609e7fe51c49360688abf788f",
+  "source_commit": "710cfec3d46004b64429e880a707571cee6b7899",
   "html_file_count": 31,
   "html_rebuilt_byte_for_byte": true,
   "raw_source_directory_absent_at_start": true,
@@ -22,7 +22,5 @@
       "status": "PASS"
     }
   ],
-  "limitations": "Reproducibility and reader/implementation checks on one machine; not an independent new scientific review.",
-  "offline_page_viewport_checks": 62,
-  "executed_chapter_listings": 26
+  "limitations": "Reproducibility and reader/implementation checks on one machine; not an independent new scientific review."
 }

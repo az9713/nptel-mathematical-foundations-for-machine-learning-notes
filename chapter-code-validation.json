@@ -186,7 +186,7 @@
     {
       "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
       "listing_count": 1,
-      "checked_file_sha256": "402536edebbc39f38e2dca58f780ff3f590f4998cd0998bae653442ac67ed486",
+      "checked_file_sha256": "435219b988f0d8ad1aed6e5017c31f71c29e0b79c80ddb6063d3595c38b5aacd",
       "listing_sha256": "13e1d46b70ce6de8562a6409d3fdbb8ca01f39f7a0c95934ec1cffce1976adaa",
       "pep8": "PASS",
       "status": "PASS",
@@ -236,7 +236,7 @@
     {
       "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
       "listing_count": 1,
-      "checked_file_sha256": "26a394d6d99a6d89969fad1981e859085c79518908cb3a93edf31956a11da26e",
+      "checked_file_sha256": "cc250d1feedfd6797457f0fd6f12185ae93d4a1f26b08508bf2c635524e0e320",
       "listing_sha256": "4bbbf9b358ebecb853a7f84fa379a132c7a26d27449baf04b64c7dd4c5f345e2",
       "pep8": "PASS",
       "status": "PASS",
@@ -246,7 +246,7 @@
     {
       "file": "chapter-25-data-patterns-classification-and-clustering.html",
       "listing_count": 1,
-      "checked_file_sha256": "0c83de660d48dcdaf7e02d33fb4f1ee886aa8eb9503c5813a80bc62340209da9",
+      "checked_file_sha256": "59153f44d9c267fa82c3283c04f6f35343554c216f03caf9636ab462c47fe1a8",
       "listing_sha256": "6172f0d5ea0a460b7029026f244f0d5ade2372cb4c3b5500f9c8a7cb36a7888c",
       "pep8": "PASS",
       "status": "PASS",

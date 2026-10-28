@@ -1,0 +1,63 @@
+{
+  "chapter": 1,
+  "title": "Why mathematics determines what a learner can identify",
+  "status": "independent scientific review passed; one production fix and reader validation pending",
+  "recordings": [
+    {
+      "lecture_number": 0,
+      "video_id": "6QfLOGfqOas",
+      "duration_seconds": 438,
+      "caption_automatic": true,
+      "caption_label": "English (Original)",
+      "transcript_first_start_seconds": 0.719,
+      "transcript_last_end_seconds": 439.61,
+      "source_limit": "Automatic captions; final caption extends 1.61 seconds beyond reported duration. No audiovisual verification performed."
+    },
+    {
+      "lecture_number": 1,
+      "video_id": "DtH4p331VhU",
+      "duration_seconds": 2196,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 2195.12,
+      "source_limit": "Publisher label and non-automatic metadata do not establish human authorship. No audiovisual verification performed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "Motivation and topic sequence grounded in the complete assigned captions.",
+    "teaching_constructions": "Document-assistant case, numerical examples, proofs, Python diagnostic, and exercises are original constructions.",
+    "reference_orientation": "Official syllabus and Mathematics for Machine Learning Chapter 1.",
+    "empirical_claims": "No empirical model-performance result asserted."
+  },
+  "editorial_reviews": [
+    {
+      "round": 1,
+      "reviewer": "independent science-editor agent",
+      "verdict": "ACCEPT scientifically; required production fix pending",
+      "scientific_blocking_findings": 0,
+      "production_blocking_findings": 1,
+      "reviewed_body_sha256": "f859c8ba517d527d5c8f2b160362eff5ddf5aa7755bb2f40b804c0164d23974e",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before reader wrapping.",
+      "required_fix": "Add PEP8 spacing around top-level iterate function in the Python listing.",
+      "code_execution": "Passed with exact displayed stdout.",
+      "source_reading": "Full sequential caption reading for introduction and Lecture 1.",
+      "visual_review": "not performed",
+      "reader_validation": "pending"
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "references_checked": [
+    {
+      "url": "https://archive.nptel.ac.in/content/syllabus_pdf/106108702.pdf",
+      "pdf_pages": [1],
+      "claims": ["instructor attribution", "mathematical strands", "weekly course plan"]
+    },
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "pdf_pages": [17, 19, 20, 21, 22],
+      "claims": ["reference orientation and four-task organization"]
+    }
+  ]
+}

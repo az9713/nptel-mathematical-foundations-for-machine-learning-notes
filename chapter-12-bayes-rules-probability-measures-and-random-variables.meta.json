@@ -144,20 +144,43 @@
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "calculus_editor",
+    "reviewer": "round2_probability",
     "author": "probability_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read full manuscript, all Bayes/measure/measurability derivations, finite examples, code and six worked solutions; full coverage ledger and exact rational execution record inspected.",
-      "Independently verified detector posterior/odds, partition qualifications, generated finite sigma algebras, continuity from below, random-variable preimages, same-law/dependent counterexample and finite-total normalization.",
-      "Inspected MML PDF181–183 for mapping and induced-law reference; no claim that this reference alone supplies full measure theory.",
-      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+      "Fresh complete authored-body reading: every prose paragraph, displayed equation, example, executable listing and six worked solutions.",
+      "Checked partition/Bayes normalization, detector evidence67/1000 and posterior18/67, likelihood-ratio odds and revised-prior posterior2/3.",
+      "Checked sigma-algebra closures, generated finite events, measure normalization/continuity, measurable-block counterexample, count pushforward and all six solutions.",
+      "Complete chapter-specific coverage ledger read and compared with targeted original-caption passages spanning the assigned topic sequence.",
+      "Parity comparison against complete Stanford lectures01 and02 and complete NPTEL Fluid Mechanics chapter17; NPTEL chapter01 also inspected for model/source/depth structure. Narrower mathematical chapter scope permits fewer words than a broad Stanford lecture while retaining derivations, checks, limits and solved problems."
     ],
     "limits": [
-      "No audiovisual or slide review performed.",
-      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
-      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      "Independent AI scientific review, not human expert certification or formal verification.",
+      "Lecture coverage was checked through the detailed existing full-source ledger plus targeted actual-caption passages at recorded landmarks; this round did not redundantly reread every caption word or inspect audiovisual frames.",
+      "Executable listings were read mathematically; existing actual execution records were not repeated without a changed listing or defect. Root owns final code-binding, rendering, privacy, export and publication checks."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "calculus_editor",
+      "author": "probability_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, all Bayes/measure/measurability derivations, finite examples, code and six worked solutions; full coverage ledger and exact rational execution record inspected.",
+        "Independently verified detector posterior/odds, partition qualifications, generated finite sigma algebras, continuity from below, random-variable preimages, same-law/dependent counterexample and finite-total normalization.",
+        "Inspected MML PDF181–183 for mapping and induced-law reference; no claim that this reference alone supplies full measure theory.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "accepted_body_sha256": "0e3b90726f5786deb52899db94893d691505378130968da59a902ff14efe5c5b",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

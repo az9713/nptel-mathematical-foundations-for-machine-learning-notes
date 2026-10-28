@@ -199,23 +199,46 @@
   "accepted_body_sha256": "5e0dea387a74d4eff53483cf0737133332de296dcb7ad8ab6593f6401ad06dd4",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "probability_editor",
+    "reviewer": "round2_calculus",
     "author": "calculus_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
-      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
-      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
-      "Checked residual perturbation and normal-equation sufficiency; all running-example coefficients/predictions/residuals/objective; PCA Rayleigh argument; quadratic spectral step interval and null-space persistence; Lipschitz decrease scope; stochastic gradient scaling/conditional sampling and batch covariance; Newton normalization and quasi-Newton boundaries; every worked solution.",
-      "Targeted reference check: MML PDF298–301 least-squares assumptions and feature interpretation; Boyd PDF498–500 Newton local quadratic step; official SciPy BFGS curvature safeguards and L-BFGS-B limited-memory descriptions.",
-      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      "Complete chapter prose, every displayed equation, embedded program and all six worked solutions read independently.",
+      "Checked exact residuals and1/36 average objective, PCA Rayleigh-quotient global proof, step-size endpoints/null-space persistence, sampled-gradient normalization and covariance, Newton normalization and all six solutions.",
+      "Inspected MML printed pages292–295,320–322 and Boyd printed page484; checked L59–61 source ledgers and targeted beginning/central/closing caption samples.",
+      "Compared explanatory development with complete Stanford lecture01/02 and NPTEL Chapter07 prose/derivations/six solutions; checked running model, first-use notation, concrete checks, limitations and integrated sources."
     ],
     "limits": [
-      "No audiovisual or slide/whiteboard review by this independent reviewer.",
-      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
-      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
-      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      "Coverage verification used complete author ledger and targeted fresh caption sampling, not a second full sequential transcription or comprehensive audiovisual review.",
+      "Existing code is unchanged; no redundant code execution in this editorial pass. Package execution/rendering handled separately by root.",
+      "Reference inspection focused on consequential mathematics; hardware/product links were not independently revalidated in this pass.",
+      "AI scientific editing, not human expert certification or formal verification."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "probability_editor",
+      "author": "calculus_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked residual perturbation and normal-equation sufficiency; all running-example coefficients/predictions/residuals/objective; PCA Rayleigh argument; quadratic spectral step interval and null-space persistence; Lipschitz decrease scope; stochastic gradient scaling/conditional sampling and batch covariance; Newton normalization and quasi-Newton boundaries; every worked solution.",
+        "Targeted reference check: MML PDF298–301 least-squares assumptions and feature interpretation; Boyd PDF498–500 Newton local quadratic step; official SciPy BFGS curvature safeguards and L-BFGS-B limited-memory descriptions.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "accepted_body_sha256": "5e0dea387a74d4eff53483cf0737133332de296dcb7ad8ab6593f6401ad06dd4",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

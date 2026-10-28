@@ -143,21 +143,44 @@
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "calculus_editor",
+    "reviewer": "round2_probability",
     "author": "probability_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read full manuscript, all six solutions, coverage ledger and isolated-code execution record.",
-      "Independently checked hyperplane projection, normalization and perturbation radius, nonlinear scalar lift global optimum, polynomial-kernel Gram PSD, rank-nullity and PCA label-erasure example.",
-      "Personally inspected MML PDF378–383 for margin/hard-constraint derivation; kernel PSD is independently proved in manuscript, with no need to infer it from those margin pages.",
-      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
-      "Rechecked added assumption that both labels occur: w=0 cannot satisfy opposite-class constraints, so nonzero-normal reciprocal-margin interpretation applies. No other scientific change."
+      "Fresh complete authored-body reading: every prose paragraph, displayed equation, example, executable listing and six worked solutions.",
+      "Re-derived hyperplane projection, scale-invariant margin and the exact lifted optimum (a,c,b)=(0,1/4,-5/4); one-sided margin four.",
+      "Checked rank-nullity basis proof, equal row/column ranks, nonlinear-kernel Gram positivity and all six preservation/counterexample solutions.",
+      "Complete chapter-specific coverage ledger read and compared with targeted original-caption passages spanning the assigned topic sequence.",
+      "Parity comparison against complete Stanford lectures01 and02 and complete NPTEL Fluid Mechanics chapter17; NPTEL chapter01 also inspected for model/source/depth structure. Narrower mathematical chapter scope permits fewer words than a broad Stanford lecture while retaining derivations, checks, limits and solved problems."
     ],
     "limits": [
-      "No audiovisual or slide review performed.",
-      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
-      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      "Independent AI scientific review, not human expert certification or formal verification.",
+      "Lecture coverage was checked through the detailed existing full-source ledger plus targeted actual-caption passages at recorded landmarks; this round did not redundantly reread every caption word or inspect audiovisual frames.",
+      "Executable listings were read mathematically; existing actual execution records were not repeated without a changed listing or defect. Root owns final code-binding, rendering, privacy, export and publication checks."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "calculus_editor",
+      "author": "probability_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, all six solutions, coverage ledger and isolated-code execution record.",
+        "Independently checked hyperplane projection, normalization and perturbation radius, nonlinear scalar lift global optimum, polynomial-kernel Gram PSD, rank-nullity and PCA label-erasure example.",
+        "Personally inspected MML PDF378–383 for margin/hard-constraint derivation; kernel PSD is independently proved in manuscript, with no need to infer it from those margin pages.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Rechecked added assumption that both labels occur: w=0 cannot satisfy opposite-class constraints, so nonzero-normal reciprocal-margin interpretation applies. No other scientific change."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "accepted_body_sha256": "0360ab8be9b1c743e72d132d4f6b2945c3e3181bfaafd4bccfb39187e7d2966a",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

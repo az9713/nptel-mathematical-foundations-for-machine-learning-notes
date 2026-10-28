@@ -150,21 +150,44 @@
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "calculus_editor",
+    "reviewer": "round2_probability",
     "author": "probability_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read all prose, inequalities/proof sketch, numerical interpretation, listing and six worked solutions, plus complete coverage ledger and existing deterministic execution evidence.",
-      "Independently checked threshold endpoints, Markov/Chebyshev sharpness and vacuity, exact iid mean variance, weak law/sample-size guarantee, characteristic-function expansion and CLT normalization, finite-population correction and optimized Cantelli bound.",
-      "Opened the cited official MIT18.175 Lecture15 PDF and personally inspected slides10–11 supporting Levy continuity and finite-positive-variance iid CLT.",
-      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
-      "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      "Fresh complete authored-body reading: every prose paragraph, displayed equation, example, executable listing and six worked solutions.",
+      "Checked Markov/Chebyshev inequalities, equality constructions and atom boundary conventions; weak-law sufficient sample size4500 and shared-noise variance floor.",
+      "Checked CLT normalization and characteristic-function sketch, finite-population correction, optimized one-sided bound, exact-binomial comparison method and all six solutions.",
+      "Complete chapter-specific coverage ledger read and compared with targeted original-caption passages spanning the assigned topic sequence.",
+      "Parity comparison against complete Stanford lectures01 and02 and complete NPTEL Fluid Mechanics chapter17; NPTEL chapter01 also inspected for model/source/depth structure. Narrower mathematical chapter scope permits fewer words than a broad Stanford lecture while retaining derivations, checks, limits and solved problems."
     ],
     "limits": [
-      "No audiovisual or slide review performed.",
-      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
-      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      "Independent AI scientific review, not human expert certification or formal verification.",
+      "Lecture coverage was checked through the detailed existing full-source ledger plus targeted actual-caption passages at recorded landmarks; this round did not redundantly reread every caption word or inspect audiovisual frames.",
+      "Executable listings were read mathematically; existing actual execution records were not repeated without a changed listing or defect. Root owns final code-binding, rendering, privacy, export and publication checks."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "calculus_editor",
+      "author": "probability_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read all prose, inequalities/proof sketch, numerical interpretation, listing and six worked solutions, plus complete coverage ledger and existing deterministic execution evidence.",
+        "Independently checked threshold endpoints, Markov/Chebyshev sharpness and vacuity, exact iid mean variance, weak law/sample-size guarantee, characteristic-function expansion and CLT normalization, finite-population correction and optimized Cantelli bound.",
+        "Opened the cited official MIT18.175 Lecture15 PDF and personally inspected slides10–11 supporting Levy continuity and finite-positive-variance iid CLT.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "accepted_body_sha256": "e34f5a9e3376fd6b3b60efa9950049429c16abe845140d6c784340282013d6d5",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

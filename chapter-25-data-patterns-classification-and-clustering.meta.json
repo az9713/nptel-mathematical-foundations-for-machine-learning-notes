@@ -186,29 +186,52 @@
     "listing_count": 1
   },
   "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
-  "body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a",
-  "authored_body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a",
+  "body_sha256": "b882768832f76f939d9c0c27cce64c4668b3886f0c2430df46ea6392feb05e52",
+  "authored_body_sha256": "b882768832f76f939d9c0c27cce64c4668b3886f0c2430df46ea6392feb05e52",
   "authoring_handoff_body_sha256": "2a6bb071f2e2378a45a8564f8a9b2da75aff4c60af2b705ca11f5dde576607a7",
-  "accepted_body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a",
+  "accepted_body_sha256": "b882768832f76f939d9c0c27cce64c4668b3886f0c2430df46ea6392feb05e52",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "probability_editor",
+    "reviewer": "round2_calculus",
     "author": "calculus_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
-      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
-      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
-      "Checked label/feature/risk distinctions, biased-sensor mean-squared errors, feature information loss, every threshold count/confusion proportion/cost formula, cross-validation information roles, independent-vote formula, metric/cosine cautions, scale reversal, centroid proof/Lloyd iterates, scatter decomposition and mixture normalization, every worked solution.",
-      "Targeted reference check: MML PDF269–270 cross-validation construction and355–356 mixture normalization; official scikit-learn K-means objective, Lloyd updates and initialization sensitivity.",
-      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      "Complete manuscript, equations, code listing and all six worked solutions independently read.",
+      "Coverage ledger and fresh caption introduction, central and closing samples inspected.",
+      "Mathematical calculations and assumptions checked against prior chapters and inspected primary textbook passages.",
+      "Compared developed derivations, running examples, failure cases and exercises with two complete Stanford exemplars and NPTEL Chapter07.",
+      "Root repair independently rechecked on exact current body; reversal of the sole paragraph replacement reproduces the initially reviewed body digest."
     ],
     "limits": [
-      "No audiovisual or slide/whiteboard review by this independent reviewer.",
-      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
-      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
-      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      "Targeted caption sampling and source-ledger comparison; no complete audiovisual review.",
+      "Unchanged code not re-executed by this reviewer; root handles package validation.",
+      "AI scientific editing, not formal verification or human certification."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "probability_editor",
+      "author": "calculus_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked label/feature/risk distinctions, biased-sensor mean-squared errors, feature information loss, every threshold count/confusion proportion/cost formula, cross-validation information roles, independent-vote formula, metric/cosine cautions, scale reversal, centroid proof/Lloyd iterates, scatter decomposition and mixture normalization, every worked solution.",
+        "Targeted reference check: MML PDF269–270 cross-validation construction and355–356 mixture normalization; official scikit-learn K-means objective, Lloyd updates and initialization sensitivity.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "accepted_body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

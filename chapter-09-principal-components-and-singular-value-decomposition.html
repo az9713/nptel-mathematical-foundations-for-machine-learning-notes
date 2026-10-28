@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="8d057111c36f52ac7360323e9000d722a327d6adaff9d3e9dc4106b06c261631">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="6937f3baea832071dbcacbecca22cd3e84f854dd8c998195ba612ec25e110abf">
 <title>9. Principal components and singular value decomposition · Mathematical Foundations for Machine Learning</title><link rel="stylesheet" href="assets/book.css">
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
 <script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
@@ -95,7 +95,7 @@ $$A=\sum_{i=1}^r\sigma_i u_iv_i^\top.$$
 <p>Each outer product is an $m\times n$ rank-one matrix: its columns are multiples of the nonzero $u_i$, with at least one nonzero multiplier from $v_i$. Under the Frobenius product $\langle M,N\rangle_F=\operatorname{tr}(M^\top N)$,</p>
 $$\langle u_iv_i^\top,u_jv_j^\top\rangle_F
 =(u_i^\top u_j)(v_i^\top v_j)=\delta_{ij}.$$
-<p>Thus the paired terms are orthonormal as matrices, and $\|A\|_F^2=\sum_i\sigma_i^2$. They form a basis of their $r$-dimensional span. They do not form a basis of all $m\times n$ matrices, whose dimension is $mn$. Using all cross products $u_av_b^\top$, for $1\leq a\leq m$ and $1\leq b\leq n$, produces such a complete orthonormal matrix basis. SVD chooses input and output bases for which this particular matrix has nonzero coefficients only in paired diagonal positions.</p>
+<p>Thus the paired terms are orthonormal as matrices, and $\|A\|_F^2=\sum_i\sigma_i^2$. They form a basis of their $r$-dimensional span. They do not form a basis of all $m\times n$ matrices, whose dimension is $mn$. Using all outer products $u_av_b^\top$, for $1\leq a\leq m$ and $1\leq b\leq n$, produces such a complete orthonormal matrix basis. SVD chooses input and output bases for which this particular matrix has nonzero coefficients only in paired diagonal positions.</p>
 <p>Flipping both $u_i$ and $v_i$ leaves their outer product unchanged. Equal positive singular values allow matching rotations of both corresponding vector blocks. Independent choices of signs or bases on the two sides, without preserving their coupling through $Av_i=\sigma_i u_i$, need not reconstruct the original matrix.</p>
 
 <h2 id="low-rank">9.8 Truncation is optimal under squared Frobenius error</h2>

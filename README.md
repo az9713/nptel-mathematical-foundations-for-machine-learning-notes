@@ -86,6 +86,16 @@ study guide, references page, and laboratory received a separate independent
 review. These are AI-assisted editorial checks, not human expert certification
 or formal verification of every statement.
 
+A second independent round reread all 26 manuscripts and all 156 worked
+solutions, checked lecture-topic ledgers against targeted caption passages,
+and compared explanatory development with the Stanford and NPTEL exemplars.
+It resolved ten localized findings across eight chapters, including operation
+terminology, theorem hypotheses, and degenerate prediction cases. Every repair
+was independently rechecked against its exact new body digest. This round did
+not repeat the original complete transcript reading or add audiovisual review.
+The [first review record](editorial-review-round-1.json) is retained alongside
+the current review summary.
+
 All 26 chapter programs executed successfully and matched their displayed
 output. The laboratory also ran successfully. Those checks reproduce teaching
 constructions; they do not establish real-world predictive performance.

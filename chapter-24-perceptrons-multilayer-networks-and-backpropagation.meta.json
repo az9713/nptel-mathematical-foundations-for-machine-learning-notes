@@ -186,29 +186,52 @@
     "listing_count": 1
   },
   "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
-  "body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462",
-  "authored_body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462",
+  "body_sha256": "62c8eb4ece801c79a306280d2a5a16f64d6802dd2f2593294ec0ca12abc1c502",
+  "authored_body_sha256": "62c8eb4ece801c79a306280d2a5a16f64d6802dd2f2593294ec0ca12abc1c502",
   "authoring_handoff_body_sha256": "d5629cf8a07f3d6ba3a95f48ab1ed538d6e8b5ffa7370188aaf2fc3b1cc69697",
-  "accepted_body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462",
+  "accepted_body_sha256": "62c8eb4ece801c79a306280d2a5a16f64d6802dd2f2593294ec0ca12abc1c502",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "probability_editor",
+    "reviewer": "round2_calculus",
     "author": "calculus_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
-      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
-      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
-      "Checked threshold gates, XOR impossibility and ReLU construction, full perceptron mistake-bound proof and rescaling, activation/state/causality distinctions, parameter shapes/counts, scalar loss update arithmetic, all backpropagation adjoints/outer products/branch sums, nonconvexity and smoothness cautions, every worked solution.",
-      "Targeted current primary-document check: Google TPU introduction and NVIDIA matrix-multiplication guide support the limited hardware descriptions.",
-      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      "Complete manuscript, equations, code listing and all six worked solutions independently read.",
+      "Coverage ledger and fresh caption introduction, central and closing samples inspected.",
+      "Mathematical calculations and assumptions checked against prior chapters and inspected primary textbook passages.",
+      "Compared developed derivations, running examples, failure cases and exercises with two complete Stanford exemplars and NPTEL Chapter07.",
+      "Root repair independently rechecked on exact current body; reversal of the sole paragraph replacement reproduces the initially reviewed body digest."
     ],
     "limits": [
-      "No audiovisual or slide/whiteboard review by this independent reviewer.",
-      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
-      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
-      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      "Targeted caption sampling and source-ledger comparison; no complete audiovisual review.",
+      "Unchanged code not re-executed by this reviewer; root handles package validation.",
+      "AI scientific editing, not formal verification or human certification."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "probability_editor",
+      "author": "calculus_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked threshold gates, XOR impossibility and ReLU construction, full perceptron mistake-bound proof and rescaling, activation/state/causality distinctions, parameter shapes/counts, scalar loss update arithmetic, all backpropagation adjoints/outer products/branch sums, nonconvexity and smoothness cautions, every worked solution.",
+        "Targeted current primary-document check: Google TPU introduction and NVIDIA matrix-multiplication guide support the limited hardware descriptions.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "accepted_body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

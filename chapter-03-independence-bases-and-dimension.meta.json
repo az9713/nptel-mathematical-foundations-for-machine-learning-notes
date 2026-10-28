@@ -130,19 +130,42 @@
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "calculus_editor",
+    "reviewer": "round2_linear",
     "author": "scientific_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Full original manuscript and six solutions reviewed in round1, with precise reference and execution evidence listed in archived final-ch03-round1.json.",
-      "Rechecked exact replacement Problem6 paragraph: transformed-score difference is w3(x3-x1-x2), universal feature reduction requires identity over deployment domain; fixed predictor w3=0 exception correctly distinguished.",
-      "No code changed; no code rerun needed. New exact body digest binds this acceptance."
+      "Fresh end-to-end reading of every current paragraph, equation, Python listing and all six worked solutions.",
+      "Independent algebraic checking of consequential derivations, numerical examples, assumptions, boundary cases and first-use notation.",
+      "Lecture coverage ledger audited against the chapter structure, with two 45-second caption windows at 15% and 85% of every assigned recording checked directly; Lecture23 170–1150s also inspected for the line-fit example.",
+      "Style/depth comparison with both complete Stanford lecture01/02 exemplars and the opening model/derivation sections of NPTEL Fluid Mechanics chapter1.",
+      "Relevant primary MML passages inspected directly; source inspection locations are detailed in the range report."
     ],
     "limits": [
-      "No audiovisual or slide review performed.",
-      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
-      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      "This round uses a fresh full manuscript review, existing complete-transcript coverage ledgers, and direct caption spot checks; it does not claim a second complete caption rereading.",
+      "No new audiovisual review, formal verification, or human expert certification.",
+      "Existing executable-output checks inspected by reading the listings and displayed results; no redundant execution in this review. Package validation is performed separately by root."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "calculus_editor",
+      "author": "scientific_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Full original manuscript and six solutions reviewed in round1, with precise reference and execution evidence listed in archived final-ch03-round1.json.",
+        "Rechecked exact replacement Problem6 paragraph: transformed-score difference is w3(x3-x1-x2), universal feature reduction requires identity over deployment domain; fixed predictor w3=0 exception correctly distinguished.",
+        "No code changed; no code rerun needed. New exact body digest binds this acceptance."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "accepted_body_sha256": "88a774177c19a111ba7c7ca5164445a126d0a47a4cdf6d13e57397d534f567af",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

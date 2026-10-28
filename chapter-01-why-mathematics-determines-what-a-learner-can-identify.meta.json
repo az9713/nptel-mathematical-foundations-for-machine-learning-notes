@@ -80,20 +80,43 @@
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "calculus_editor",
+    "reviewer": "round2_linear",
     "author": "root",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read every paragraph, equation, numerical example, and all six worked solutions of the full manuscript.",
-      "Independently verified null-direction scores, full coefficient family/minimum norm, similarity scaling, decision cost threshold, gradient recurrence and constrained boundary example.",
-      "Personally inspected MML PDF19–22 and official syllabus text; source claims and original-example boundaries supported.",
-      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+      "Fresh end-to-end reading of every current paragraph, equation, Python listing and all six worked solutions.",
+      "Independent algebraic checking of consequential derivations, numerical examples, assumptions, boundary cases and first-use notation.",
+      "Lecture coverage ledger audited against the chapter structure, with two 45-second caption windows at 15% and 85% of every assigned recording checked directly; Lecture23 170–1150s also inspected for the line-fit example.",
+      "Style/depth comparison with both complete Stanford lecture01/02 exemplars and the opening model/derivation sections of NPTEL Fluid Mechanics chapter1.",
+      "Relevant primary MML passages inspected directly; source inspection locations are detailed in the range report."
     ],
     "limits": [
-      "No audiovisual or slide review performed.",
-      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
-      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      "This round uses a fresh full manuscript review, existing complete-transcript coverage ledgers, and direct caption spot checks; it does not claim a second complete caption rereading.",
+      "No new audiovisual review, formal verification, or human expert certification.",
+      "Existing executable-output checks inspected by reading the listings and displayed results; no redundant execution in this review. Package validation is performed separately by root."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "calculus_editor",
+      "author": "root",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read every paragraph, equation, numerical example, and all six worked solutions of the full manuscript.",
+        "Independently verified null-direction scores, full coefficient family/minimum norm, similarity scaling, decision cost threshold, gradient recurrence and constrained boundary example.",
+        "Personally inspected MML PDF19–22 and official syllabus text; source claims and original-example boundaries supported.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "accepted_body_sha256": "58b211a05d0ea4d71fa1f146b924db285e4eda8c0f88bf81050c1545c7b73814",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

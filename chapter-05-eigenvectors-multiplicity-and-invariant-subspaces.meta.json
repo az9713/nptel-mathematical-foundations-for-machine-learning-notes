@@ -2,7 +2,7 @@
   "chapter": 5,
   "title": "Eigenvectors, multiplicity, and invariant subspaces",
   "status": "reviewed and locally validated",
-  "authored_body_sha256": "e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909",
+  "authored_body_sha256": "d0547a2f72ba084c19acab477c2c1d5ffde336fe5ab396506a58488c959621d8",
   "recordings": [
     {
       "lecture_number": 11,
@@ -138,23 +138,47 @@
     }
   ],
   "authoring_handoff_body_sha256": "ed2ec7bd21efe2e09c81d451c55b6226dc8fd0dc78db008f12e1c378eaaf3832",
-  "accepted_body_sha256": "e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909",
+  "accepted_body_sha256": "d0547a2f72ba084c19acab477c2c1d5ffde336fe5ab396506a58488c959621d8",
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "calculus_editor",
+    "reviewer": "round2_linear",
     "author": "scientific_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Full manuscript, six solutions and exact mathematical/reference checks documented in archived final-ch05-round1.json.",
-      "Rechecked new C∞(R) paragraph: differentiation is an endomorphism because smooth functions have smooth derivatives, and exponentials are nonzero eigenfunctions; finite/infinite-dimensional boundary explicit.",
-      "No code or other argument changed; acceptance binds new exact body digest."
+      "Fresh end-to-end reading of every current paragraph, equation, Python listing and all six worked solutions.",
+      "Independent algebraic checking of consequential derivations, numerical examples, assumptions, boundary cases and first-use notation.",
+      "Lecture coverage ledger audited against the chapter structure, with two 45-second caption windows at 15% and 85% of every assigned recording checked directly; Lecture23 170–1150s also inspected for the line-fit example.",
+      "Style/depth comparison with both complete Stanford lecture01/02 exemplars and the opening model/derivation sections of NPTEL Fluid Mechanics chapter1.",
+      "Relevant primary MML passages inspected directly; source inspection locations are detailed in the range report.",
+      "Post-repair recheck: full changed sections and neighboring prose reread; exact body equals prior reviewed body with only the supplied full replacements. No code changed."
     ],
     "limits": [
-      "No audiovisual or slide review performed.",
-      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
-      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      "This round uses a fresh full manuscript review, existing complete-transcript coverage ledgers, and direct caption spot checks; it does not claim a second complete caption rereading.",
+      "No new audiovisual review, formal verification, or human expert certification.",
+      "Existing executable-output checks inspected by reading the listings and displayed results; no redundant execution in this review. Package validation is performed separately by root."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "calculus_editor",
+      "author": "scientific_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Full manuscript, six solutions and exact mathematical/reference checks documented in archived final-ch05-round1.json.",
+        "Rechecked new C∞(R) paragraph: differentiation is an endomorphism because smooth functions have smooth derivatives, and exponentials are nonzero eigenfunctions; finite/infinite-dimensional boundary explicit.",
+        "No code or other argument changed; acceptance binds new exact body digest."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "accepted_body_sha256": "e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

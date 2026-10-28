@@ -144,21 +144,44 @@
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "calculus_editor",
+    "reviewer": "round2_probability",
     "author": "probability_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read full manuscript, every matrix identity and numerical example, all six worked solutions, coverage ledger and existing execution record.",
-      "Independently verified running centered table and covariance entries, all-ones projection geometry, n−1 unbiasedness proof and sample rank bound, PSD/null-affine-constraint equivalence, row-oriented covariance congruence and eigen/SVD/whitening formulas.",
-      "Checked invalid-correlation eigenvector, transformed sample covariance, isotropic-covariance nonrotational law and ridge-vs-subspace whitening examples.",
-      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
-      "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      "Fresh complete authored-body reading: every prose paragraph, displayed equation, example, executable listing and six worked solutions.",
+      "Checked row/column dimensions, centering projection and coordinate/length distinction, sample covariance matrix and correlation2/sqrt10.",
+      "Checked n−1 unbiasedness derivation, PSD/null/rank conclusions, covariance congruence, decorrelation/whitening and ridge distinction. All six solutions checked, including impossible correlation eigenvalue−0.8 and repeated-eigenvalue counterexample.",
+      "Complete chapter-specific coverage ledger read and compared with targeted original-caption passages spanning the assigned topic sequence.",
+      "Parity comparison against complete Stanford lectures01 and02 and complete NPTEL Fluid Mechanics chapter17; NPTEL chapter01 also inspected for model/source/depth structure. Narrower mathematical chapter scope permits fewer words than a broad Stanford lecture while retaining derivations, checks, limits and solved problems."
     ],
     "limits": [
-      "No audiovisual or slide review performed.",
-      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
-      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      "Independent AI scientific review, not human expert certification or formal verification.",
+      "Lecture coverage was checked through the detailed existing full-source ledger plus targeted actual-caption passages at recorded landmarks; this round did not redundantly reread every caption word or inspect audiovisual frames.",
+      "Executable listings were read mathematically; existing actual execution records were not repeated without a changed listing or defect. Root owns final code-binding, rendering, privacy, export and publication checks."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "calculus_editor",
+      "author": "probability_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, every matrix identity and numerical example, all six worked solutions, coverage ledger and existing execution record.",
+        "Independently verified running centered table and covariance entries, all-ones projection geometry, n−1 unbiasedness proof and sample rank bound, PSD/null-affine-constraint equivalence, row-oriented covariance congruence and eigen/SVD/whitening formulas.",
+        "Checked invalid-correlation eigenvector, transformed sample covariance, isotropic-covariance nonrotational law and ridge-vs-subspace whitening examples.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "accepted_body_sha256": "6f62b2884219ebb129354e7aa473d4d053ac2990e73b8f017218397c01b30547",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

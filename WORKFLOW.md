@@ -67,3 +67,15 @@ Complete transcript acquisition and endpoint timing do not prove every spoken
 word was captured. Comprehensive audiovisual review and human accessibility
 certification are not claimed. Chapter sidecars and curated verification records
 state the actual checks and their boundaries.
+
+## Independent review after publication
+
+A fresh set of reviewers reread all 26 complete manuscripts and 156 solutions.
+They checked mathematical steps, hypotheses, notation, source-topic ledgers and
+targeted caption passages, and calibrated development against complete Stanford
+exemplars and the established NPTEL notes. The original full-transcript reading
+remains a distinct production step. Root applied the findings; the reviewers
+then rechecked the repaired arguments and accepted their exact body digests.
+The current editorial summary records the second round and retains a link to
+the first-round record. Code, rendering, clean-export and live checks are rerun
+separately before the updated edition is considered published.

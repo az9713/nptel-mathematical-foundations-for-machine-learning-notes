@@ -46,7 +46,7 @@
     {
       "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
       "listing_count": 1,
-      "checked_file_sha256": "bc1b560954bdc5d8442a455327a6cdf72547a0406aa46b1a4f8a5a78b7f00b92",
+      "checked_file_sha256": "496a69f1c692b5524982b78027dc0d0bc69d9a45ddf0e052293a369745277b09",
       "listing_sha256": "c472ba2008fd80c4f246e582665968862c05a23c8a5c7541604e54abd24d04c1",
       "pep8": "PASS",
       "status": "PASS",
@@ -66,7 +66,7 @@
     {
       "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
       "listing_count": 1,
-      "checked_file_sha256": "5eb5c3b75c02004533a69022282103718a0b0b6103856c34036fad5140cf34b1",
+      "checked_file_sha256": "9c421e28ff93a8d7b83a78457aed905cab13817284c0249cb6a87bccaea3e779",
       "listing_sha256": "827e9757757cbad9516306c67eabf80b08b80c47a09c0f934b8057b35838d9d7",
       "pep8": "PASS",
       "status": "PASS",
@@ -86,7 +86,7 @@
     {
       "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
       "listing_count": 1,
-      "checked_file_sha256": "ca6312d50d27eb7c5ba3fed710c6803d07bae1930b508105d3dd6398807eb876",
+      "checked_file_sha256": "9711458deccd887121a98aae61f61089213b26f2ab5233016efa499aea685460",
       "listing_sha256": "ed673a94c8771be29c0e31ead1110713cd855ea5c49d0e16d54bfa19ba7c9596",
       "pep8": "PASS",
       "status": "PASS",
@@ -156,7 +156,7 @@
     {
       "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
       "listing_count": 1,
-      "checked_file_sha256": "06d7c13163168fb01743427bc2a638cc4874b75069883c7f8d2d6c19ca2bd834",
+      "checked_file_sha256": "2d0c334ddb37f8a8adf806cf50e8dec5b98bde921ee90318f4fdc40b600a8fce",
       "listing_sha256": "5a2680f172c56b73db6ae11284a9d205a8db87b8139e61daae0f4d3121be08cf",
       "pep8": "PASS",
       "status": "PASS",
@@ -196,7 +196,7 @@
     {
       "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
       "listing_count": 1,
-      "checked_file_sha256": "97ac05183cf908dac042e09301cfe9b283a793be382f08288208a903d1be5960",
+      "checked_file_sha256": "488ab0cc5267ee741a504a1f5895b092bb17cff5a917c55de7b5c0e4a2aacb52",
       "listing_sha256": "635f59e811cef43e8eee60a03c5f5b2165287362e8f368625016c9c3bb8aa031",
       "pep8": "PASS",
       "status": "PASS",

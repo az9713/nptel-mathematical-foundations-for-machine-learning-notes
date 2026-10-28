@@ -148,29 +148,53 @@
     "listing_count": 1
   },
   "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
-  "body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a",
-  "authored_body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a",
+  "body_sha256": "9357ab8f8121f6c411b6438e00f780e10e675918787c9fc743fa4e1f076befdf",
+  "authored_body_sha256": "9357ab8f8121f6c411b6438e00f780e10e675918787c9fc743fa4e1f076befdf",
   "authoring_handoff_body_sha256": "bf0152404a67717ff10d87019b5099c1bbd59eceef547dbfcd99c29f04d940cc",
-  "accepted_body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a",
+  "accepted_body_sha256": "9357ab8f8121f6c411b6438e00f780e10e675918787c9fc743fa4e1f076befdf",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "probability_editor",
+    "reviewer": "round2_calculus",
     "author": "calculus_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
-      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
-      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
-      "Checked scalar derivative as local linear model, constrained stationarity example, Taylor remainder arithmetic, convergence domains, smooth nonanalytic counterexample, complex exponential decomposition, product/quotient/chain derivations, finite-difference error bounds, and every worked solution.",
-      "Targeted reference check: MML PDF147–153, including printed141–147 derivative, series, differentiation and layout conventions.",
-      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      "Complete chapter prose, every displayed equation, embedded program and all six worked solutions read independently.",
+      "Re-derived local quadratic loss change, Taylor coefficient/remainder distinction, exponential/geometric convergence, smooth nonanalytic counterexample, composition order and finite-difference error-scale solution.",
+      "Inspected MML printed pages142–143; checked L50–51 coverage ledger and fresh introduction/central/closing caption samples.",
+      "Compared explanatory development with complete Stanford lecture01/02 and NPTEL Chapter07 prose/derivations/six solutions; checked running model, first-use notation, concrete checks, limitations and integrated sources.",
+      "Final exercise-domain check complete; independently rechecked the repaired positive-error finite-difference optimum and zero-error limiting boundary."
     ],
     "limits": [
-      "No audiovisual or slide/whiteboard review by this independent reviewer.",
-      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
-      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
-      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      "Coverage verification used complete author ledger and targeted fresh caption sampling, not a second full sequential transcription or comprehensive audiovisual review.",
+      "Existing code is unchanged; no redundant code execution in this editorial pass. Package execution/rendering handled separately by root.",
+      "Reference inspection focused on consequential mathematics; hardware/product links were not independently revalidated in this pass.",
+      "AI scientific editing, not human expert certification or formal verification."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "probability_editor",
+      "author": "calculus_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked scalar derivative as local linear model, constrained stationarity example, Taylor remainder arithmetic, convergence domains, smooth nonanalytic counterexample, complex exponential decomposition, product/quotient/chain derivations, finite-difference error bounds, and every worked solution.",
+        "Targeted reference check: MML PDF147–153, including printed141–147 derivative, series, differentiation and layout conventions.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "accepted_body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

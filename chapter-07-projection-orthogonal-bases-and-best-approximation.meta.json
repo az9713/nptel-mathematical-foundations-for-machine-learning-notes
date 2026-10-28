@@ -2,7 +2,7 @@
   "chapter": 7,
   "title": "Projection, orthogonal bases, and best approximation",
   "status": "reviewed and locally validated",
-  "authored_body_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c",
+  "authored_body_sha256": "ffc529195a1ca5d85f55ea9968b4ca80dd87717530a30f3a498b63459d82c71c",
   "recordings": [
     {
       "lecture_number": 18,
@@ -118,26 +118,51 @@
       "pdf_pages": "86–94"
     }
   ],
-  "accepted_body_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c",
+  "accepted_body_sha256": "ffc529195a1ca5d85f55ea9968b4ca80dd87717530a30f3a498b63459d82c71c",
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "probability_editor",
+    "reviewer": "round2_linear",
     "author": "scientific_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
-      "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
-      "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
-      "Checked line projection coordinates versus lengths, normalized outer product and eigenvalues, unique subspace decomposition, Pythagorean best-approximation proof, complete Gram–Schmidt span/nonzero-residual argument, QR off-diagonal normalizations and running reconstruction, Gram and weighted/affine projection formulas, orthogonal/oblique/isometry distinctions, and all six worked solutions.",
-      "Targeted reference inspection: MML PDF86–88 and91–94, printed80–82 and85–88, for orthogonal complements and projection/Gram formulas."
+      "Fresh end-to-end reading of every current paragraph, equation, Python listing and all six worked solutions.",
+      "Independent algebraic checking of consequential derivations, numerical examples, assumptions, boundary cases and first-use notation.",
+      "Lecture coverage ledger audited against the chapter structure, with two 45-second caption windows at 15% and 85% of every assigned recording checked directly; Lecture23 170–1150s also inspected for the line-fit example.",
+      "Style/depth comparison with both complete Stanford lecture01/02 exemplars and the opening model/derivation sections of NPTEL Fluid Mechanics chapter1.",
+      "Relevant primary MML passages inspected directly; source inspection locations are detailed in the range report.",
+      "Post-repair recheck: full changed sections and neighboring prose reread; exact body equals prior reviewed body with only the supplied full replacements. No code changed."
     ],
     "limits": [
-      "No audiovisual or whiteboard/slide inspection by this reviewer.",
-      "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
-      "No browser/MathJax/offline-publication validation performed by this reviewer.",
-      "Acceptance is bound to the exact recorded authored-body hash."
+      "This round uses a fresh full manuscript review, existing complete-transcript coverage ledgers, and direct caption spot checks; it does not claim a second complete caption rereading.",
+      "No new audiovisual review, formal verification, or human expert certification.",
+      "Existing executable-output checks inspected by reading the listings and displayed results; no redundant execution in this review. Package validation is performed separately by root."
     ]
-  }
+  },
+  "authoring_handoff_body_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c",
+  "independent_review_history": [
+    {
+      "reviewer": "probability_editor",
+      "author": "scientific_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
+        "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
+        "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
+        "Checked line projection coordinates versus lengths, normalized outer product and eigenvalues, unique subspace decomposition, Pythagorean best-approximation proof, complete Gram–Schmidt span/nonzero-residual argument, QR off-diagonal normalizations and running reconstruction, Gram and weighted/affine projection formulas, orthogonal/oblique/isometry distinctions, and all six worked solutions.",
+        "Targeted reference inspection: MML PDF86–88 and91–94, printed80–82 and85–88, for orthogonal complements and projection/Gram formulas."
+      ],
+      "limits": [
+        "No audiovisual or whiteboard/slide inspection by this reviewer.",
+        "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
+        "No browser/MathJax/offline-publication validation performed by this reviewer.",
+        "Acceptance is bound to the exact recorded authored-body hash."
+      ],
+      "accepted_body_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

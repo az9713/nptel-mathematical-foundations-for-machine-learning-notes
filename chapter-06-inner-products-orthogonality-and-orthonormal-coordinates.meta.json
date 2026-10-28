@@ -123,20 +123,43 @@
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "calculus_editor",
+    "reviewer": "round2_linear",
     "author": "scientific_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Full manuscript, six solutions and mathematical/reference verification recorded in archived final-ch06-round1.json.",
-      "Rechecked corrected weighted form requires all diagonal entries nonnegative and at least one zero for a degenerate seminorm.",
-      "Rechecked Problem4 correctly calls the vanishing operation a dot product; coefficients and Pythagorean reconstruction unchanged and correct.",
-      "No code changed; acceptance binds new exact digest."
+      "Fresh end-to-end reading of every current paragraph, equation, Python listing and all six worked solutions.",
+      "Independent algebraic checking of consequential derivations, numerical examples, assumptions, boundary cases and first-use notation.",
+      "Lecture coverage ledger audited against the chapter structure, with two 45-second caption windows at 15% and 85% of every assigned recording checked directly; Lecture23 170–1150s also inspected for the line-fit example.",
+      "Style/depth comparison with both complete Stanford lecture01/02 exemplars and the opening model/derivation sections of NPTEL Fluid Mechanics chapter1.",
+      "Relevant primary MML passages inspected directly; source inspection locations are detailed in the range report."
     ],
     "limits": [
-      "No audiovisual or slide review performed.",
-      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
-      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      "This round uses a fresh full manuscript review, existing complete-transcript coverage ledgers, and direct caption spot checks; it does not claim a second complete caption rereading.",
+      "No new audiovisual review, formal verification, or human expert certification.",
+      "Existing executable-output checks inspected by reading the listings and displayed results; no redundant execution in this review. Package validation is performed separately by root."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "calculus_editor",
+      "author": "scientific_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Full manuscript, six solutions and mathematical/reference verification recorded in archived final-ch06-round1.json.",
+        "Rechecked corrected weighted form requires all diagonal entries nonnegative and at least one zero for a degenerate seminorm.",
+        "Rechecked Problem4 correctly calls the vanishing operation a dot product; coefficients and Pythagorean reconstruction unchanged and correct.",
+        "No code changed; acceptance binds new exact digest."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "accepted_body_sha256": "47b38fadb40d948ef9f70c7aa35973d31232749ecc0b265e3309b9ef5ac801b6",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

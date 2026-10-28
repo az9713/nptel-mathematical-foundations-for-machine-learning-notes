@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="9ed6a89a09f2467f88726c06688e500e8c396a575cf12c248a187063a0f75f86">
 <title>20. Multivariable functions, gradients, Jacobians, and Hessians · Mathematical Foundations for Machine Learning</title><link rel="stylesheet" href="assets/book.css">
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
 <script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
@@ -31,7 +31,7 @@ $$f(x+h)=f(x)+\nabla f(x)^\top h+r(h),\qquad
 <p>Suppose a differentiable path $x(t)$ stays on a level set, so $f(x(t))=c$. Differentiating gives $\nabla f(x(t))^\top x'(t)=0$. The gradient is perpendicular to the tangent wherever it is nonzero. The directional derivative along the tangent is zero; the gradient itself need not be zero. For $f(u,v)=u+2v$, its constant gradient $(1,2)^\top$ is perpendicular to each level line despite never vanishing.</p>
 <p>The word steepest also depends on how step length is measured. If permitted unit steps satisfy $s^\top Ms=1$ for a positive-definite matrix $M$, the optimizing direction is proportional to $M^{-1}\nabla f$, not generally to $\nabla f$. To see this, set $z=M^{1/2}s$ and apply Cauchy–Schwarz to $(M^{-1/2}\nabla f)^\top z$. Feature scaling changes geometry, so raw Euclidean steepest descent is not coordinate-invariant.</p>
 <h2 id="chain">20.5 A chain rule composes local maps <a class="timestamp" href="https://www.youtube.com/watch?v=4YK0LLL6C8c&amp;t=301s">L54 · 05:01</a></h2>
-<p>If $u(t)$ and $v(t)$ are differentiable scalar paths, then</p>
+<p>Let $u(t)$ and $v(t)$ be differentiable scalar paths. Assume that $f$ is differentiable at their current point $(u(t),v(t))$, in the sense of the single linear approximation defined above. Then the composite derivative is</p>
 $$\frac{d}{dt}f(u(t),v(t))=
 \partial_uf\,u'(t)+\partial_vf\,v'(t).$$
 <p>Both partial derivatives are evaluated at the current point $(u(t),v(t))$. The formula sums contributions from every route by which the input affects the output. It is not the product of all partial derivatives.</p>

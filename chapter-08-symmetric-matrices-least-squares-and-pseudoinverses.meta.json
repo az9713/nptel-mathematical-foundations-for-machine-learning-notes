@@ -127,22 +127,45 @@
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "probability_editor",
+    "reviewer": "round2_linear",
     "author": "scientific_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
-      "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
-      "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
-      "Checked self-adjoint metric identity and complex-conjugate real-spectrum proof; compact-Rayleigh/induction spectral theorem; fixed spectral projectors versus full symmetric matrix space; Gram PSD/rank equivalence; necessity and sufficiency of normal equations; every fit/residual/norm; geometric Moore–Penrose construction and four identities; full-row/full-column formulas; conditioning and ridge limits; all six worked solutions.",
-      "Targeted reference inspection: MML PDF114–117 for spectrum/Gram/spectral theorem, and319–320 for least-squares projection interpretation."
+      "Fresh end-to-end reading of every current paragraph, equation, Python listing and all six worked solutions.",
+      "Independent algebraic checking of consequential derivations, numerical examples, assumptions, boundary cases and first-use notation.",
+      "Lecture coverage ledger audited against the chapter structure, with two 45-second caption windows at 15% and 85% of every assigned recording checked directly; Lecture23 170–1150s also inspected for the line-fit example.",
+      "Style/depth comparison with both complete Stanford lecture01/02 exemplars and the opening model/derivation sections of NPTEL Fluid Mechanics chapter1.",
+      "Relevant primary MML passages inspected directly; source inspection locations are detailed in the range report."
     ],
     "limits": [
-      "No audiovisual or whiteboard/slide inspection by this reviewer.",
-      "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
-      "No browser/MathJax/offline-publication validation performed by this reviewer.",
-      "Acceptance is bound to the exact recorded authored-body hash."
+      "This round uses a fresh full manuscript review, existing complete-transcript coverage ledgers, and direct caption spot checks; it does not claim a second complete caption rereading.",
+      "No new audiovisual review, formal verification, or human expert certification.",
+      "Existing executable-output checks inspected by reading the listings and displayed results; no redundant execution in this review. Package validation is performed separately by root."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "probability_editor",
+      "author": "scientific_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
+        "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
+        "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
+        "Checked self-adjoint metric identity and complex-conjugate real-spectrum proof; compact-Rayleigh/induction spectral theorem; fixed spectral projectors versus full symmetric matrix space; Gram PSD/rank equivalence; necessity and sufficiency of normal equations; every fit/residual/norm; geometric Moore–Penrose construction and four identities; full-row/full-column formulas; conditioning and ridge limits; all six worked solutions.",
+        "Targeted reference inspection: MML PDF114–117 for spectrum/Gram/spectral theorem, and319–320 for least-squares projection interpretation."
+      ],
+      "limits": [
+        "No audiovisual or whiteboard/slide inspection by this reviewer.",
+        "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
+        "No browser/MathJax/offline-publication validation performed by this reviewer.",
+        "Acceptance is bound to the exact recorded authored-body hash."
+      ],
+      "accepted_body_sha256": "2f864686cffd80379d8857ad03be7b0557cc162e852ab18607d8d278fd0e03a0",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

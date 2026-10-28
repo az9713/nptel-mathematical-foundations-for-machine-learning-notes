@@ -117,23 +117,46 @@
   "accepted_body_sha256": "35b5fc787c05d9144af2f8954e08097efb6df53d206ed118939bd6d1b8d76924",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "probability_editor",
+    "reviewer": "round2_calculus",
     "author": "calculus_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
-      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
-      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
-      "Checked exact perturbations of linear/bilinear/quadratic forms, nonsymmetric quadratic example, Frobenius trace contractions and dimensions, tensor derivative distinction, multioutput and weighted least-squares gradients, ridge uniqueness, broadcasting diagnosis, and every worked solution.",
-      "Targeted reference check: MML PDF161–164 for matrix-valued derivative indices and general quadratic identity.",
-      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      "Complete chapter prose, every displayed equation, embedded program and all six worked solutions read independently.",
+      "Re-derived rectangular linear Jacobian, two-variable bilinear differential, nonsymmetric quadratic gradient, Frobenius multioutput least squares and weighted-residual solution; checked all six exercises including tensor-valued differential.",
+      "Inspected MML printed pages155,158–159 and L55 local-transcription coverage ledger with fresh beginning/central/closing samples.",
+      "Compared explanatory development with complete Stanford lecture01/02 and NPTEL Chapter07 prose/derivations/six solutions; checked running model, first-use notation, concrete checks, limitations and integrated sources."
     ],
     "limits": [
-      "No audiovisual or slide/whiteboard review by this independent reviewer.",
-      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
-      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
-      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      "Coverage verification used complete author ledger and targeted fresh caption sampling, not a second full sequential transcription or comprehensive audiovisual review.",
+      "Existing code is unchanged; no redundant code execution in this editorial pass. Package execution/rendering handled separately by root.",
+      "Reference inspection focused on consequential mathematics; hardware/product links were not independently revalidated in this pass.",
+      "AI scientific editing, not human expert certification or formal verification."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "probability_editor",
+      "author": "calculus_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked exact perturbations of linear/bilinear/quadratic forms, nonsymmetric quadratic example, Frobenius trace contractions and dimensions, tensor derivative distinction, multioutput and weighted least-squares gradients, ridge uniqueness, broadcasting diagnosis, and every worked solution.",
+        "Targeted reference check: MML PDF161–164 for matrix-valued derivative indices and general quadratic identity.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "accepted_body_sha256": "35b5fc787c05d9144af2f8954e08097efb6df53d206ed118939bd6d1b8d76924",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

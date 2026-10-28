@@ -1420,7 +1420,7 @@
         14
       ],
       "chapter_status": "reviewed and locally validated",
-      "accepted_body_sha256": "e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909"
+      "accepted_body_sha256": "d0547a2f72ba084c19acab477c2c1d5ffde336fe5ab396506a58488c959621d8"
     },
     {
       "order": 6,
@@ -1444,7 +1444,7 @@
         20
       ],
       "chapter_status": "reviewed and locally validated",
-      "accepted_body_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c"
+      "accepted_body_sha256": "ffc529195a1ca5d85f55ea9968b4ca80dd87717530a30f3a498b63459d82c71c"
     },
     {
       "order": 8,
@@ -1468,7 +1468,7 @@
         26
       ],
       "chapter_status": "reviewed and locally validated",
-      "accepted_body_sha256": "8d057111c36f52ac7360323e9000d722a327d6adaff9d3e9dc4106b06c261631"
+      "accepted_body_sha256": "6937f3baea832071dbcacbecca22cd3e84f854dd8c998195ba612ec25e110abf"
     },
     {
       "order": 10,
@@ -1549,7 +1549,7 @@
         44
       ],
       "chapter_status": "reviewed and locally validated",
-      "accepted_body_sha256": "8615438dbda338ac6b9444fb03bb06174382519b4daa34197ef7c92c2a397b21"
+      "accepted_body_sha256": "8fc39a4d0c2f31ce9fb78f5c003da7727f04119e2d99b82d1b4c9214355bec5f"
     },
     {
       "order": 17,
@@ -1583,7 +1583,7 @@
         51
       ],
       "chapter_status": "reviewed and locally validated",
-      "accepted_body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a"
+      "accepted_body_sha256": "9357ab8f8121f6c411b6438e00f780e10e675918787c9fc743fa4e1f076befdf"
     },
     {
       "order": 20,
@@ -1595,7 +1595,7 @@
         54
       ],
       "chapter_status": "reviewed and locally validated",
-      "accepted_body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d"
+      "accepted_body_sha256": "9ed6a89a09f2467f88726c06688e500e8c396a575cf12c248a187063a0f75f86"
     },
     {
       "order": 21,
@@ -1641,7 +1641,7 @@
         64
       ],
       "chapter_status": "reviewed and locally validated",
-      "accepted_body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462"
+      "accepted_body_sha256": "62c8eb4ece801c79a306280d2a5a16f64d6802dd2f2593294ec0ca12abc1c502"
     },
     {
       "order": 25,
@@ -1653,7 +1653,7 @@
         67
       ],
       "chapter_status": "reviewed and locally validated",
-      "accepted_body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a"
+      "accepted_body_sha256": "b882768832f76f939d9c0c27cce64c4668b3886f0c2430df46ea6392feb05e52"
     },
     {
       "order": 26,

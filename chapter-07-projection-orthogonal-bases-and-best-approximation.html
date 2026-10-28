@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="ffc529195a1ca5d85f55ea9968b4ca80dd87717530a30f3a498b63459d82c71c">
 <title>7. Projection, orthogonal bases, and best approximation · Mathematical Foundations for Machine Learning</title><link rel="stylesheet" href="assets/book.css">
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
 <script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
@@ -43,7 +43,7 @@ $$\widehat y=QQ^\top y,\qquad e=(I_n-QQ^\top)y.$$
 <h2 id="best">7.4 The orthogonal residual proves best approximation <a class="timestamp" href="https://www.youtube.com/watch?v=7oRh2SdmsL0&amp;t=1964s">[lecture]</a></h2>
 <p>For any candidate $w\in W$, split the error as</p>
 $$y-w=(y-\widehat y)+(\widehat y-w).$$
-<p>The two terms lie in $W^\perp$ and $W$, so their cross product vanishes. Therefore</p>
+<p>The two terms lie in $W^\perp$ and $W$, so their inner product is zero. Expanding the squared norm therefore gives</p>
 $$\boxed{\|y-w\|^2=\|y-\widehat y\|^2+\|\widehat y-w\|^2.}$$
 <p>The first term is unavoidable for the chosen subspace. The second is nonnegative and vanishes exactly when $w=\widehat y$. Hence the orthogonal projection is the unique closest vector in $W$. The minimum squared error need not be zero: only the excess error above that minimum vanishes at the optimum. Exact reconstruction occurs precisely when $y\in W$.</p>
 <p>In orthonormal coordinates $w=Qc$, the same identity becomes</p>
@@ -68,7 +68,7 @@ $$v_2=(0,1,1)-\frac12(1,1,0)
 <p>Their norms are $\sqrt2$ and $\sqrt{3/2}$, giving</p>
 $$q_1=\frac{(1,1,0)}{\sqrt2},\qquad
 q_2=\frac{(-1,1,2)}{\sqrt6}.$$
-<p>The cross product is zero and both squared lengths are one. For $y=(1,2,4)$, the orthonormal coordinates are $3/\sqrt2$ and $9/\sqrt6$. Hence</p>
+<p>The dot product $q_1^\top q_2$ is zero and both squared lengths are one. For $y=(1,2,4)$, the orthonormal coordinates are $3/\sqrt2$ and $9/\sqrt6$. Hence</p>
 $$\widehat y=\frac32(1,1,0)+\frac32(-1,1,2)
 =(0,3,3),\qquad e=(1,-1,1).$$
 <p>Checking $e^\top b_1=e^\top b_2=0$ proves this is the desired projection. The squared error is $3$, and the energy decomposition reads $21=18+3$.</p>
@@ -97,7 +97,7 @@ P_W=B(B^\top B)^{-1}B^\top.$$
 
 <h2 id="isometry">7.8 Orthogonal transformations preserve all Euclidean inner products <a class="timestamp" href="https://www.youtube.com/watch?v=joUxO822okk&amp;t=2160s">[lecture]</a></h2>
 <p>A square real matrix $U$ is <em>orthogonal</em> when $U^\top U=I$. Its columns form an orthonormal basis, so it is invertible and $U^{-1}=U^\top$, which also gives $UU^\top=I$. For all $x,z$ we obtain $(Ux)^\top(Uz)=x^\top z$. Thus lengths, distances, and nonzero-vector angles are preserved. Such a linear transformation is an <em>isometry</em>.</p>
-<p>The usual counterclockwise rotation $\left[\begin{smallmatrix}\cos\theta&amp;-\sin\theta\\\sin\theta&amp;\cos\theta\end{smallmatrix}\right]$ has orthonormal columns by $\cos^2\theta+\sin^2\theta=1$ and cancellation of the cross product. Reflections also preserve lengths, although they reverse orientation. Taking determinants in $U^\top U=I$ gives $(\det U)^2=1$, allowing either sign.</p>
+<p>The usual counterclockwise rotation $\left[\begin{smallmatrix}\cos\theta&amp;-\sin\theta\\\sin\theta&amp;\cos\theta\end{smallmatrix}\right]$ has orthonormal columns. Each squared column length is $\cos^2\theta+\sin^2\theta=1$, and their dot product is $-\cos\theta\sin\theta+\sin\theta\cos\theta=0$. Reflections also preserve lengths, although they reverse orientation. Taking determinants in $U^\top U=I$ gives $(\det U)^2=1$, allowing either sign.</p>
 <p>A reduced QR factor $Q$ with fewer columns is an isometric embedding from $\mathbb R^r$ into $\mathbb R^n$, since $\|Qc\|^2=c^\top Q^\top Qc=\|c\|^2$. It has no square inverse when $r&lt;n$. Its transpose compresses an arbitrary ambient vector and loses the orthogonal component. A general change of basis also need not be orthogonal: it preserves the underlying vector, but Euclidean lengths of its raw coordinate arrays change unless the corresponding Gram matrix is carried along.</p>
 <p>Finally, idempotence alone describes a possibly oblique projection. For $K=\left[\begin{smallmatrix}1&amp;1\\0&amp;0\end{smallmatrix}\right]$, $K^2=K$, but $K$ is not symmetric. It sends $(0,1)$ to $(1,0)$ rather than the closest point $(0,0)$ on its range. Conversely, if $P^2=P=P^\top$, then for $w=Pa$ in its range and $z$ in its kernel, $w^\top z=a^\top P^\top z=0$. Hence its kernel is the orthogonal complement of its range, proving that symmetry plus idempotence characterizes Euclidean orthogonal projection.</p>
 

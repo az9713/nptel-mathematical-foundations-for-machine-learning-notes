@@ -175,29 +175,52 @@
     "listing_count": 1
   },
   "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
-  "body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d",
-  "authored_body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d",
+  "body_sha256": "9ed6a89a09f2467f88726c06688e500e8c396a575cf12c248a187063a0f75f86",
+  "authored_body_sha256": "9ed6a89a09f2467f88726c06688e500e8c396a575cf12c248a187063a0f75f86",
   "authoring_handoff_body_sha256": "5dea4b01cf28b6d299ba9f1e4df605cc3acbd35261b4a2b599b34df9c023bdb8",
-  "accepted_body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d",
+  "accepted_body_sha256": "9ed6a89a09f2467f88726c06688e500e8c396a575cf12c248a187063a0f75f86",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "probability_editor",
+    "reviewer": "round2_calculus",
     "author": "calculus_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
-      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
-      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
-      "Checked coupled quadratic gradient/Hessian/eigenvalues/minimizer; all-direction differentiability counterexample; gradient as Euclidean differential representative; tangent orthogonality and metric-dependent steepest direction; rectangular Jacobian chain rule; C² symmetry and second-order sufficiency boundaries; every worked solution.",
-      "Targeted reference check: MML PDF152–153 and171–173 for layout conventions, C² Hessian symmetry and quadratic Taylor form.",
-      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      "Complete chapter body, all equations, code listing and six worked solutions read independently.",
+      "Checked scalar/column-gradient versus output-row Jacobian conventions and local Taylor hypotheses.",
+      "Author coverage ledger read and fresh introduction/central/closing samples checked in Lectures52–54.",
+      "MML printed pages146–151,158,165–166 inspected; Stanford exemplars read for pedagogy calibration.",
+      "Root repair independently rechecked on exact current body; reversal of the sole paragraph replacement reproduces the initially reviewed body digest."
     ],
     "limits": [
-      "No audiovisual or slide/whiteboard review by this independent reviewer.",
-      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
-      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
-      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      "Targeted caption sampling and coverage-ledger comparison, not a second complete audiovisual or caption transcription.",
+      "Existing execution records inspected in prior publication; this review did not rerun unchanged code.",
+      "AI scientific review, not formal verification or human expert certification."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "probability_editor",
+      "author": "calculus_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked coupled quadratic gradient/Hessian/eigenvalues/minimizer; all-direction differentiability counterexample; gradient as Euclidean differential representative; tangent orthogonality and metric-dependent steepest direction; rectangular Jacobian chain rule; C² symmetry and second-order sufficiency boundaries; every worked solution.",
+        "Targeted reference check: MML PDF152–153 and171–173 for layout conventions, C² Hessian symmetry and quadratic Taylor form.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "accepted_body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

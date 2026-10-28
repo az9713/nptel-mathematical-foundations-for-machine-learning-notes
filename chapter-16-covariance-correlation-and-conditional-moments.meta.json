@@ -157,28 +157,52 @@
   ],
   "worked_problem_count": 6,
   "python_listing_count": 1,
-  "authored_body_sha256": "8615438dbda338ac6b9444fb03bb06174382519b4daa34197ef7c92c2a397b21",
+  "authored_body_sha256": "8fc39a4d0c2f31ce9fb78f5c003da7727f04119e2d99b82d1b4c9214355bec5f",
   "authoring_handoff_body_sha256": "11346ec2719bdbfce5d9dd1b811843d0b569b1e0895c1600b7cd503e738daaeb",
   "independent_acceptance": true,
-  "accepted_body_sha256": "8615438dbda338ac6b9444fb03bb06174382519b4daa34197ef7c92c2a397b21",
+  "accepted_body_sha256": "8fc39a4d0c2f31ce9fb78f5c003da7727f04119e2d99b82d1b4c9214355bec5f",
   "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
   "final_code_validation": "chapter-code-validation.json",
   "independent_review": {
-    "reviewer": "calculus_editor",
+    "reviewer": "round2_probability",
     "author": "probability_editor",
     "verdict": "ACCEPT",
     "blocking_count": 0,
     "scope": [
-      "Read full manuscript, every correlation/affine-prediction/conditional-law derivation, six worked solutions, coverage ledger and exact mixture execution record.",
-      "Independently verified correlation equality cases, nonlinear prediction residual4/45, marginal-normal nonjoint-Gaussian counterexample, Gaussian conditional27/4, device posterior27/32 and mixture variance9/8, triangular total variance.",
-      "Personally inspected MML PDF201–202,204–205,209 for inner-product quotient, Gaussian joint/conditional formulas and total-variance claim.",
-      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
-      "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      "Fresh complete authored-body reading: every prose paragraph, displayed equation, example, executable listing and six worked solutions.",
+      "Checked normalized correlation range/equality and almost-sure quotient, affine-prediction residual4/45, Gaussian density and marginal-normal/nonjoint-Gaussian counterexample.",
+      "Verified mixture tails5/32 and27/32, posterior27/32, variance9/8, covariance1/16, triangle total variance and Gaussian conditional variance27/4.",
+      "After root repair, independently re-read complete affine-prediction section and neighboring nonlinear case; verified positive predictor/response-variance domains and both zero-variance cases. Rechecked Problem5 null-conditioning qualification.",
+      "Complete chapter-specific coverage ledger read and compared with targeted original-caption passages spanning the assigned topic sequence.",
+      "Parity comparison against complete Stanford lectures01 and02 and complete NPTEL Fluid Mechanics chapter17; NPTEL chapter01 also inspected for model/source/depth structure. Narrower mathematical chapter scope permits fewer words than a broad Stanford lecture while retaining derivations, checks, limits and solved problems."
     ],
     "limits": [
-      "No audiovisual or slide review performed.",
-      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
-      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      "Independent AI scientific review, not human expert certification or formal verification.",
+      "Lecture coverage was checked through the detailed existing full-source ledger plus targeted actual-caption passages at recorded landmarks; this round did not redundantly reread every caption word or inspect audiovisual frames.",
+      "Executable listings were read mathematically; existing actual execution records were not repeated without a changed listing or defect. Root owns final code-binding, rendering, privacy, export and publication checks."
     ]
-  }
+  },
+  "independent_review_history": [
+    {
+      "reviewer": "calculus_editor",
+      "author": "probability_editor",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, every correlation/affine-prediction/conditional-law derivation, six worked solutions, coverage ledger and exact mixture execution record.",
+        "Independently verified correlation equality cases, nonlinear prediction residual4/45, marginal-normal nonjoint-Gaussian counterexample, Gaussian conditional27/4, device posterior27/32 and mixture variance9/8, triangular total variance.",
+        "Personally inspected MML PDF201–202,204–205,209 for inner-product quotient, Gaussian joint/conditional formulas and total-variance claim.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "accepted_body_sha256": "8615438dbda338ac6b9444fb03bb06174382519b4daa34197ef7c92c2a397b21",
+      "review_round": 1
+    }
+  ],
+  "review_round": 2
 }

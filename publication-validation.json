@@ -1,0 +1,530 @@
+{
+  "status": "PASS",
+  "base_url": "https://az9713.github.io/nptel-mathematical-foundations-for-machine-learning-notes/",
+  "verified_source_commit": "055bf56b4eb0adb9f9cb8abf72ced8828c8371d6",
+  "served_files": [
+    {
+      "file": "README.md",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "WORKFLOW.md",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "assets/book.css",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "assets/book.js",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "assets/input/tex/extensions/boldsymbol.js",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "assets/input/tex/extensions/cancel.js",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "assets/input/tex/extensions/mathtools.js",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "assets/mathjax-LICENSE",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "assets/mathjax-tex-svg.js",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "assets/preview-mobile.png",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "assets/site-preview.png",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "book-overview.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-01-why-mathematics-determines-what-a-learner-can-identify.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-01-why-mathematics-determines-what-a-learner-can-identify.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-03-independence-bases-and-dimension.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-03-independence-bases-and-dimension.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-04-linear-transformations-and-coordinate-representations.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-04-linear-transformations-and-coordinate-representations.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-09-principal-components-and-singular-value-decomposition.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-10-margins-support-vectors-and-the-linear-algebra-synthesis.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-10-margins-support-vectors-and-the-linear-algebra-synthesis.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-11-probability-models-events-and-conditioning.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-11-probability-models-events-and-conditioning.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-12-bayes-rules-probability-measures-and-random-variables.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-12-bayes-rules-probability-measures-and-random-variables.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-13-discrete-and-continuous-probability-distributions.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-13-discrete-and-continuous-probability-distributions.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-14-expectation-moments-and-variance.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-14-expectation-moments-and-variance.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-15-joint-distributions-marginals-and-independence.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-15-joint-distributions-marginals-and-independence.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-16-covariance-correlation-and-conditional-moments.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-18-sample-geometry-and-covariance-matrices.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-18-sample-geometry-and-covariance-matrices.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-19-functions-series-and-one-variable-differentiation.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-21-matrix-derivatives-and-the-geometry-of-differentials.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-21-matrix-derivatives-and-the-geometry-of-differentials.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-22-optimization-constraints-and-lagrange-multipliers.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-22-optimization-constraints-and-lagrange-multipliers.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-23-least-squares-pca-and-gradient-algorithms.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-23-least-squares-pca-and-gradient-algorithms.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-25-data-patterns-classification-and-clustering.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-25-data-patterns-classification-and-clustering.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-26-linear-and-logistic-regression-a-mathematical-synthesis.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-26-linear-and-logistic-regression-a-mathematical-synthesis.meta.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "chapter-code-validation.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "completion.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "course-review.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "editorial-review-summary.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "index.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "numerical-lab.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "numerical_lab.py",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "package-validation.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "reader-validation.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "references.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "requirements.txt",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "source-free-validation.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "source-manifest.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "source-map.html",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "source-map.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "source-validation-summary.json",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "tools/build_book.py",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "tools/check_chapter_code.py",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "tools/checklt.py",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "tools/checktex.py",
+      "status": "PASS",
+      "sha256_matches": true
+    },
+    {
+      "file": "tools/validate_books.py",
+      "status": "PASS",
+      "sha256_matches": true
+    }
+  ],
+  "live_reader_checks": [
+    {
+      "file": "index.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "numerical-lab.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "index.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "numerical-lab.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "scope": "SHA256 comparison of every public tracked non-dot file except this evolving record, plus representative desktop/mobile live controls.",
+  "limits": "Not a human accessibility audit or a new scientific review; full-page offline checks are recorded separately.",
+  "github_rendered_readme_preview": {
+    "status": "PASS",
+    "target_url": "https://az9713.github.io/nptel-mathematical-foundations-for-machine-learning-notes/"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "chapter": 1,
   "title": "Why mathematics determines what a learner can identify",
-  "status": "independent scientific review passed; one production fix and reader validation pending",
+  "status": "reviewed and locally validated",
   "recordings": [
     {
       "lecture_number": 0,
@@ -51,13 +51,49 @@
   "references_checked": [
     {
       "url": "https://archive.nptel.ac.in/content/syllabus_pdf/106108702.pdf",
-      "pdf_pages": [1],
-      "claims": ["instructor attribution", "mathematical strands", "weekly course plan"]
+      "pdf_pages": [
+        1
+      ],
+      "claims": [
+        "instructor attribution",
+        "mathematical strands",
+        "weekly course plan"
+      ]
     },
     {
       "url": "https://mml-book.github.io/book/mml-book.pdf",
-      "pdf_pages": [17, 19, 20, 21, 22],
-      "claims": ["reference orientation and four-task organization"]
+      "pdf_pages": [
+        17,
+        19,
+        20,
+        21,
+        22
+      ],
+      "claims": [
+        "reference orientation and four-task organization"
+      ]
     }
-  ]
+  ],
+  "authored_body_sha256": "58b211a05d0ea4d71fa1f146b924db285e4eda8c0f88bf81050c1545c7b73814",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "58b211a05d0ea4d71fa1f146b924db285e4eda8c0f88bf81050c1545c7b73814",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "root",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read every paragraph, equation, numerical example, and all six worked solutions of the full manuscript.",
+      "Independently verified null-direction scores, full coefficient family/minimum norm, similarity scaling, decision cost threshold, gradient recurrence and constrained boundary example.",
+      "Personally inspected MML PDF19–22 and official syllabus text; source claims and original-example boundaries supported.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
 }

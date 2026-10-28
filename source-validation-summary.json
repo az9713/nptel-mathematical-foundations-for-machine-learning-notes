@@ -4,7 +4,7 @@
   "recording_count": 71,
   "numbered_lecture_count": 70,
   "total_duration_seconds": 171014,
-  "limitations": "All 71 full available English transcript tracks acquired. Lecture 55 has no YouTube English captions and uses local Whisper small.en. Publisher-provided caption labels do not establish human authorship. Endpoint timing is an acquisition check, not a proof of every spoken word. Sequential reading and reference inspection are recorded per chapter. Comprehensive audiovisual review is not claimed.",
+  "limitations": "Source text is retained for all 71 recordings: 70 English caption tracks and one full-audio local transcription. Lecture 55 has no YouTube English captions and uses local Whisper small.en. Publisher-provided caption labels do not establish human authorship. Endpoint timing is an acquisition check, not a proof of every spoken word. Sequential reading and reference inspection are recorded per chapter. Comprehensive audiovisual review is not claimed.",
   "records": [
     {
       "lecture_number": 0,
@@ -18,7 +18,7 @@
       "first_segment_seconds": 0.719,
       "last_segment_end_seconds": 439.61,
       "largest_intersegment_gap_seconds": 0,
-      "endpoint_fraction_of_duration": 1.0
+      "endpoint_fraction_of_duration": 1
     },
     {
       "lecture_number": 1,
@@ -72,7 +72,7 @@
       "transcript_sha256": "a9951add8a39dc1f93ac015bae15dd1610a62d7cf9ba571f8084a0a007a36d8b",
       "segment_count": 250,
       "first_segment_seconds": 0.08,
-      "last_segment_end_seconds": 1876.0,
+      "last_segment_end_seconds": 1876,
       "largest_intersegment_gap_seconds": 9.279999999999973,
       "endpoint_fraction_of_duration": 0.9994672349493873
     },
@@ -99,7 +99,7 @@
       "caption_automatic": false,
       "transcript_sha256": "2ff46855454ea60e5fd6dbf2786fb778b0a81a1e39295fc08c6e3ad9df7f1656",
       "segment_count": 325,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2522.4,
       "largest_intersegment_gap_seconds": 11.279999999999973,
       "endpoint_fraction_of_duration": 0.9997621878715814
@@ -155,7 +155,7 @@
       "caption_automatic": false,
       "transcript_sha256": "aaeda660cd7db974d77c341310a30168877c01172c58183a67f8a9edaac29272",
       "segment_count": 465,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 3816.88,
       "largest_intersegment_gap_seconds": 18.400000000000006,
       "endpoint_fraction_of_duration": 0.9999685616976683
@@ -239,7 +239,7 @@
       "caption_automatic": false,
       "transcript_sha256": "add9e7e08c3ef2398d6b9f19a5a73defc24e9509d2e597810153138080a662f1",
       "segment_count": 326,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2552.08,
       "largest_intersegment_gap_seconds": 24.799999999999955,
       "endpoint_fraction_of_duration": 0.9996396396396396
@@ -298,7 +298,7 @@
       "first_segment_seconds": 0.16,
       "last_segment_end_seconds": 2955.12,
       "largest_intersegment_gap_seconds": 17.120000000000005,
-      "endpoint_fraction_of_duration": 1.0
+      "endpoint_fraction_of_duration": 1
     },
     {
       "lecture_number": 21,
@@ -408,7 +408,7 @@
       "transcript_sha256": "91c6d425aa0771ac2cea5e18052d99692768ef42cc51a4dcb9f103d375c3197c",
       "segment_count": 394,
       "first_segment_seconds": 0.32,
-      "last_segment_end_seconds": 2856.0,
+      "last_segment_end_seconds": 2856,
       "largest_intersegment_gap_seconds": 7.679999999999836,
       "endpoint_fraction_of_duration": 0.999649982499125
     },
@@ -505,7 +505,7 @@
       "caption_automatic": false,
       "transcript_sha256": "44f42d1f95be8e7e92e35b3756c8a166e7bd8cd0145d0d4bdce322fa50a99e84",
       "segment_count": 265,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2005.44,
       "largest_intersegment_gap_seconds": 11.759999999999991,
       "endpoint_fraction_of_duration": 0.9997208374875374
@@ -547,7 +547,7 @@
       "caption_automatic": false,
       "transcript_sha256": "1f596a99d391aa259ec4dadfb581bd3b095a22b95ce6c76d7d1adb60c672e623",
       "segment_count": 371,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2767.84,
       "largest_intersegment_gap_seconds": 12.480000000000018,
       "endpoint_fraction_of_duration": 0.999942196531792
@@ -591,7 +591,7 @@
       "segment_count": 334,
       "first_segment_seconds": 0.08,
       "last_segment_end_seconds": 2634.56,
-      "largest_intersegment_gap_seconds": 10.0,
+      "largest_intersegment_gap_seconds": 10,
       "endpoint_fraction_of_duration": 0.999453717754173
     },
     {
@@ -676,7 +676,7 @@
       "first_segment_seconds": 0.08,
       "last_segment_end_seconds": 1994.24,
       "largest_intersegment_gap_seconds": 10.560000000000173,
-      "endpoint_fraction_of_duration": 1.0
+      "endpoint_fraction_of_duration": 1
     },
     {
       "lecture_number": 48,
@@ -744,9 +744,9 @@
       "transcript_sha256": "017de9bb9363174fca552d2dffbe8bc132d4c6ab6f018f9b1c84c13b6fca72cd",
       "segment_count": 251,
       "first_segment_seconds": 0.08,
-      "last_segment_end_seconds": 1950.0,
+      "last_segment_end_seconds": 1950,
       "largest_intersegment_gap_seconds": 16.079999999999927,
-      "endpoint_fraction_of_duration": 1.0
+      "endpoint_fraction_of_duration": 1
     },
     {
       "lecture_number": 53,
@@ -785,7 +785,7 @@
       "caption_automatic": true,
       "transcript_sha256": "fbf92da3b2a02a91fca43a3b89433ab3a7dddc095a98a55ac6e724d13b97c8ec",
       "segment_count": 250,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2375.54,
       "largest_intersegment_gap_seconds": 6.8799999999999955,
       "endpoint_fraction_of_duration": 0.9993857803954564
@@ -829,7 +829,7 @@
       "segment_count": 266,
       "first_segment_seconds": 0.24,
       "last_segment_end_seconds": 2299.2,
-      "largest_intersegment_gap_seconds": 8.0,
+      "largest_intersegment_gap_seconds": 8,
       "endpoint_fraction_of_duration": 0.9992177314211211
     },
     {
@@ -899,7 +899,7 @@
       "segment_count": 158,
       "first_segment_seconds": 0.16,
       "last_segment_end_seconds": 1491.68,
-      "largest_intersegment_gap_seconds": 12.0,
+      "largest_intersegment_gap_seconds": 12,
       "endpoint_fraction_of_duration": 0.9984471218206158
     },
     {
@@ -939,7 +939,7 @@
       "caption_automatic": false,
       "transcript_sha256": "e896ccf720ffe5decdc8dd00a31e92c972e3ed2279c6a7da26c79056d57428e1",
       "segment_count": 166,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 1927.76,
       "largest_intersegment_gap_seconds": 13.680000000000064,
       "endpoint_fraction_of_duration": 0.9998755186721991
@@ -983,7 +983,7 @@
       "segment_count": 361,
       "first_segment_seconds": 0.16,
       "last_segment_end_seconds": 2807.6,
-      "largest_intersegment_gap_seconds": 8.0,
+      "largest_intersegment_gap_seconds": 8,
       "endpoint_fraction_of_duration": 0.9998575498575498
     },
     {
@@ -999,6 +999,32 @@
       "last_segment_end_seconds": 2352.72,
       "largest_intersegment_gap_seconds": 0.959999999999809,
       "endpoint_fraction_of_duration": 0.9998810029749255
+    }
+  ],
+  "targeted_caption_gap_checks": [
+    {
+      "lecture_number": 62,
+      "interval_seconds": [
+        473.2,
+        508.96
+      ],
+      "gap_rms": 0.0024930499494075775,
+      "surrounding_rms": 0.11039646714925766,
+      "method": "Bounded audio excerpt, local Whisper small.en recognition, and amplitude comparison.",
+      "outcome": "Low audio energy is consistent with a transition pause; no additional substantive topic recovered.",
+      "limits": "Automatic recognition has coarse segment timing; comprehensive human listening and visual review were not performed."
+    },
+    {
+      "lecture_number": 65,
+      "interval_seconds": [
+        1022.96,
+        1062.24
+      ],
+      "gap_rms": 0.002755892463028431,
+      "surrounding_rms": 0.12292923033237457,
+      "method": "Bounded audio excerpt, local Whisper small.en recognition, and amplitude comparison.",
+      "outcome": "Low audio energy is consistent with a transition pause; no additional substantive topic recovered.",
+      "limits": "Automatic recognition has coarse segment timing; comprehensive human listening and visual review were not performed."
     }
   ]
 }

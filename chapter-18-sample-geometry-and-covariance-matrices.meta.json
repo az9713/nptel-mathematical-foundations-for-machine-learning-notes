@@ -1,0 +1,164 @@
+{
+  "chapter": 18,
+  "title": "Sample geometry and covariance matrices",
+  "status": "reviewed and locally validated",
+  "author": "probability_editor",
+  "recordings": [
+    {
+      "lecture_number": 48,
+      "video_id": "7bQCiH5ZH20",
+      "duration_seconds": 3017,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 3016.96,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "1cf9a2f9b6d14849c1b38bd7d28aad531b47e8af8a9c8815d02081583e400ced",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 49,
+      "video_id": "HjSBsvMcD14",
+      "duration_seconds": 2590,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified\n",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 2589.92,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "5c0ab5e810fd2c9582fc07c322ce64d304b7b2ce2d3bb7c77a86b34975ed4161",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "All assigned caption text read sequentially; section-by-section private coverage ledger records topic correspondence.",
+    "teaching_constructions": "Four-observation dependent-feature table, centering and unbiasedness proofs, rank diagnosis, singular-subspace whitening and six worked problems.",
+    "reference_orientation": "Only inspected primary-author references cited; proofs and examples independently developed.",
+    "empirical_claims": "No empirical deployment or prediction-performance result asserted."
+  },
+  "section_map": [
+    {
+      "id": "two-geometries",
+      "title": "Rows are observations; columns are feature profiles"
+    },
+    {
+      "id": "centering",
+      "title": "Centering is an orthogonal projection in observation space"
+    },
+    {
+      "id": "sample-covariance",
+      "title": "Sample variance and covariance are scaled inner products"
+    },
+    {
+      "id": "population-covariance",
+      "title": "A covariance matrix is the variance of every linear combination at once"
+    },
+    {
+      "id": "transformation",
+      "title": "Covariance transforms by congruence"
+    },
+    {
+      "id": "spectral",
+      "title": "Orthogonal diagonalization decorrelates coordinates"
+    },
+    {
+      "id": "check",
+      "title": "Executable check: singular covariance can be the correct answer"
+    },
+    {
+      "id": "problems",
+      "title": "Six worked problems"
+    },
+    {
+      "id": "scope",
+      "title": "Sources and limits"
+    }
+  ],
+  "timestamp_links": [
+    {
+      "video_id": "7bQCiH5ZH20",
+      "seconds": 328
+    },
+    {
+      "video_id": "7bQCiH5ZH20",
+      "seconds": 1156
+    },
+    {
+      "video_id": "7bQCiH5ZH20",
+      "seconds": 1787
+    },
+    {
+      "video_id": "HjSBsvMcD14",
+      "seconds": 117
+    },
+    {
+      "video_id": "HjSBsvMcD14",
+      "seconds": 1120
+    },
+    {
+      "video_id": "HjSBsvMcD14",
+      "seconds": 1716
+    },
+    {
+      "video_id": "HjSBsvMcD14",
+      "seconds": 1959
+    }
+  ],
+  "original_construction_statement": "Four-observation dependent-feature table, centering and unbiasedness proofs, rank diagnosis, singular-subspace whitening and six worked problems.",
+  "references_checked": [
+    {
+      "url": "https://mml-book.com/book/mml-book.pdf",
+      "sections": "6.4.1–6.4.4",
+      "printed_pages": "190–194",
+      "pdf_pages": [
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "claims": [
+        "covariance matrix",
+        "empirical denominator convention",
+        "affine covariance transformation"
+      ]
+    }
+  ],
+  "editorial_reviews": [
+    {
+      "role": "science-editor FULL REWRITE",
+      "editor": "probability_editor",
+      "status": "rewritten and author-checked; independent review pending",
+      "reviewed_body_sha256": "bd69acad6b2d5576683a09f42f603ac8fe593024da62e1d7dd48dfbb3eec192b",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before wrapping.",
+      "code_execution": "Passed; displayed stdout matches actual captured execution output after line-ending normalization.",
+      "visual_review": "not performed",
+      "independent_acceptance": false
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "authored_body_sha256": "6f62b2884219ebb129354e7aa473d4d053ac2990e73b8f017218397c01b30547",
+  "authoring_handoff_body_sha256": "bd69acad6b2d5576683a09f42f603ac8fe593024da62e1d7dd48dfbb3eec192b",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "6f62b2884219ebb129354e7aa473d4d053ac2990e73b8f017218397c01b30547",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "probability_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read full manuscript, every matrix identity and numerical example, all six worked solutions, coverage ledger and existing execution record.",
+      "Independently verified running centered table and covariance entries, all-ones projection geometry, n−1 unbiasedness proof and sample rank bound, PSD/null-affine-constraint equivalence, row-oriented covariance congruence and eigen/SVD/whitening formulas.",
+      "Checked invalid-correlation eigenvector, transformed sample covariance, isotropic-covariance nonrotational law and ridge-vs-subspace whitening examples.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+      "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

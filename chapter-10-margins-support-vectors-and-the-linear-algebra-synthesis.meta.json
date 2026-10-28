@@ -1,0 +1,163 @@
+{
+  "chapter": 10,
+  "title": "Margins, support vectors, and the linear algebra synthesis",
+  "status": "reviewed and locally validated",
+  "author": "probability_editor",
+  "recordings": [
+    {
+      "lecture_number": 27,
+      "video_id": "MkISGYz2x3A",
+      "duration_seconds": 1242,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified ",
+      "transcript_first_start_seconds": 1.36,
+      "transcript_last_end_seconds": 1241.2,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "6a385b1320ebe91ee344eeca69bf17c237a765fae9ecbd0c2c4de231cde78725",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 28,
+      "video_id": "GYqPPEQYUkA",
+      "duration_seconds": 2857,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.32,
+      "transcript_last_end_seconds": 2856,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "525fa84007869d9b8705448299661b90d539470ebfed3758e8b32ab64fc7f977",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "All assigned caption text read sequentially; section-by-section private coverage ledger records topic correspondence.",
+    "teaching_constructions": "Monitoring classifier, nonlinear scalar lift and optimality proof, kernel Gram check, constructive rank-nullity argument, preservation counterexamples and six worked problems.",
+    "reference_orientation": "Only inspected primary-author references cited; proofs and examples independently developed.",
+    "empirical_claims": "No empirical deployment or prediction-performance result asserted."
+  },
+  "section_map": [
+    {
+      "id": "hyperplanes",
+      "title": "10.1 A separating score is not yet a distance Lecture 27 · 01:17"
+    },
+    {
+      "id": "hard-margin",
+      "title": "10.2 Maximize the smallest gap Lecture 27 · 04:24"
+    },
+    {
+      "id": "lift",
+      "title": "10.3 A higher-dimensional representation can change separability Lecture 27 · 07:52"
+    },
+    {
+      "id": "kernels",
+      "title": "10.4 Kernels compute feature inner products indirectly Lecture 27 · 18:55"
+    },
+    {
+      "id": "rank",
+      "title": "10.5 Rank and nullity separate retained and lost directions Lecture 28 · 08:34"
+    },
+    {
+      "id": "synthesis",
+      "title": "10.6 Which transformations preserve which quantities? Lecture 28 · 31:47"
+    },
+    {
+      "id": "implementation",
+      "title": "10.7 An executable geometry check"
+    },
+    {
+      "id": "exercises",
+      "title": "10.8 Exercises and worked solutions"
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits"
+    }
+  ],
+  "timestamp_links": [
+    {
+      "video_id": "MkISGYz2x3A",
+      "seconds": 77
+    },
+    {
+      "video_id": "MkISGYz2x3A",
+      "seconds": 264
+    },
+    {
+      "video_id": "MkISGYz2x3A",
+      "seconds": 472
+    },
+    {
+      "video_id": "MkISGYz2x3A",
+      "seconds": 1135
+    },
+    {
+      "video_id": "GYqPPEQYUkA",
+      "seconds": 514
+    },
+    {
+      "video_id": "GYqPPEQYUkA",
+      "seconds": 1907
+    }
+  ],
+  "original_construction_statement": "Monitoring classifier, nonlinear scalar lift and optimality proof, kernel Gram check, constructive rank-nullity argument, preservation counterexamples and six worked problems.",
+  "references_checked": [
+    {
+      "url": "https://mml-book.com/book/mml-book.pdf",
+      "sections": "12.1–12.2",
+      "printed_pages": "370–377",
+      "pdf_pages": [
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383
+      ],
+      "claims": [
+        "hard-margin optimization",
+        "support vectors",
+        "feature inner products and kernels"
+      ]
+    }
+  ],
+  "editorial_reviews": [
+    {
+      "role": "science-editor FULL REWRITE",
+      "editor": "probability_editor",
+      "status": "rewritten and author-checked; independent review pending",
+      "reviewed_body_sha256": "6899b557b8603dd652219bcfaef1dbf94ebe7cb25eb51637484c9223e4110f14",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before wrapping.",
+      "code_execution": "Passed; displayed stdout matches actual captured execution output after line-ending normalization.",
+      "visual_review": "not performed",
+      "independent_acceptance": false
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "authored_body_sha256": "0360ab8be9b1c743e72d132d4f6b2945c3e3181bfaafd4bccfb39187e7d2966a",
+  "authoring_handoff_body_sha256": "6899b557b8603dd652219bcfaef1dbf94ebe7cb25eb51637484c9223e4110f14",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "0360ab8be9b1c743e72d132d4f6b2945c3e3181bfaafd4bccfb39187e7d2966a",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "probability_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read full manuscript, all six solutions, coverage ledger and isolated-code execution record.",
+      "Independently checked hyperplane projection, normalization and perturbation radius, nonlinear scalar lift global optimum, polynomial-kernel Gram PSD, rank-nullity and PCA label-erasure example.",
+      "Personally inspected MML PDF378–383 for margin/hard-constraint derivation; kernel PSD is independently proved in manuscript, with no need to infer it from those margin pages.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+      "Rechecked added assumption that both labels occur: w=0 cannot satisfy opposite-class constraints, so nonzero-normal reciprocal-margin interpretation applies. No other scientific change."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

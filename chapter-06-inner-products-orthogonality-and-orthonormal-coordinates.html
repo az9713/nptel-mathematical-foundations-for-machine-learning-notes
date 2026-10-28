@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="47b38fadb40d948ef9f70c7aa35973d31232749ecc0b265e3309b9ef5ac801b6">
+<title>6. Inner products, orthogonality, and orthonormal coordinates · Mathematical Foundations for Machine Learning</title><link rel="stylesheet" href="assets/book.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Mathematical Foundations for Machine Learning · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>6. Inner products, orthogonality, and orthonormal coordinates</h1>
+<p>Vector addition and scalar multiplication determine which representations can be combined. They do not specify how long a representation is or whether two directions are perpendicular. That geometry requires an additional choice. A model that compares a temperature change with an energy change, or two coordinates with different units, makes such a choice whenever it computes a distance.</p>
+<p>Keep a simple running example in mind: two measured features form $x=(x_1,x_2)\in\mathbb R^2$. Ordinary Euclidean geometry treats one unit of either coordinate equally. The weighted geometry</p>
+$$\langle x,y\rangle_G=x^\top Gy,\qquad
+G=\begin{bmatrix}4&amp;0\\0&amp;1\end{bmatrix}$$
+<p>treats a displacement in the first coordinate as twice as long as the same numerical displacement in the second. This is a modeling choice about scale, not a consequence of vector-space axioms. Lectures 15–17 introduce inner products, orthogonal complements, and orthonormal expansions; <a href="https://mml-book.github.io/book/mml-book.pdf">Mathematics for Machine Learning, §§3.2–3.6</a> provides a reference for the geometric definitions.</p>
+
+<h2 id="inner">6.1 An inner product is a scalar-valued operation <a class="timestamp" href="https://www.youtube.com/watch?v=O-Mvuf_p2b4&amp;t=219s">[lecture]</a></h2>
+<p>On $\mathbb R^n$, the usual dot product is $x^\top y=\sum_{i=1}^n x_iy_i$. It takes two vectors and returns one real scalar. It is not a vector multiplication closed inside $\mathbb R^n$. Its self-product $x^\top x=\sum_i x_i^2$ is the squared Euclidean length, so the length is $\sqrt{x^\top x}$. Confusing a norm with its square changes both units and formulas.</p>
+<p>More generally, an <em>inner product</em> on a real vector space $V$ is a map $\langle\cdot,\cdot\rangle:V\times V\to\mathbb R$ satisfying, for every $u,v,w\in V$ and $\alpha,\beta\in\mathbb R$:</p>
+<ul>
+<li>Linearity in one argument: $\langle u,\alpha v+\beta w\rangle=\alpha\langle u,v\rangle+\beta\langle u,w\rangle$.</li>
+<li>Symmetry: $\langle u,v\rangle=\langle v,u\rangle$.</li>
+<li>Positive definiteness: $\langle v,v\rangle\geq0$, with equality exactly when $v=0$.</li>
+</ul>
+<p>Symmetry and the first axiom imply linearity in the other argument. Thus a real inner product is bilinear. In particular, $\langle0,v\rangle=0$, as follows by writing $\langle0,v\rangle=\langle0+0,v\rangle=2\langle0,v\rangle$. The pair consisting of $V$ and the specified product is an <em>inner product space</em>.</p>
+<p>These axioms apply to abstract vectors as well as coordinate columns. For real matrices of a fixed shape, the Frobenius product $\langle A,B\rangle_F=\sum_{i,j}a_{ij}b_{ij}=\operatorname{tr}(A^\top B)$ is an inner product. On real continuous functions over $[-1,1]$, the rule $\langle f,g\rangle=\int_{-1}^1f(t)g(t)\,dt$ is another. Bilinearity and symmetry follow from integration. If a continuous $f$ is nonzero somewhere, continuity gives a nontrivial interval on which $f^2$ is bounded below by a positive number, so its integral is positive. Continuity makes the definiteness argument precise.</p>
+
+<h2 id="weighted">6.2 A coordinate basis carries a Gram matrix</h2>
+<p>Let $b_1,\ldots,b_n$ be any basis of a real inner product space. Write $u=\sum_i c_ib_i$ and $v=\sum_j d_jb_j$. Bilinearity gives</p>
+$$\langle u,v\rangle=\sum_{i,j}c_id_j\langle b_i,b_j\rangle=c^\top Gd,
+\qquad G_{ij}=\langle b_i,b_j\rangle.$$
+<p>The <em>Gram matrix</em> $G$ is symmetric. Moreover, $c^\top Gc=\|\sum_i c_ib_i\|^2&gt;0$ for every nonzero coordinate vector $c$, because a basis cannot represent zero with nonzero coefficients. Thus $G$ is positive definite. Conversely, any real symmetric matrix with $c^\top Gc&gt;0$ for every $c\ne0$ defines an inner product by $c^\top Gd$: symmetry, bilinearity, and positive definiteness follow directly.</p>
+<p>For an arbitrary proposed matrix, positive quadratic values alone do not establish symmetry of the bilinear form; the skew-symmetric part disappears from $x^\top Gx$ but affects $x^\top Gy$. Both symmetry and positive definiteness are required. A diagonal matrix with positive entries works. A diagonal matrix with nonnegative entries and at least one zero entry yields a zero “length” for a nonzero coordinate direction and therefore only a seminorm, not an inner-product norm on the whole space.</p>
+<p>The running product is ordinary Euclidean geometry after rescaling: with $L=\operatorname{diag}(2,1)$, $G=L^\top L$, so $\langle x,y\rangle_G=(Lx)^\top(Ly)$. The first coordinate has effectively been multiplied by two. For $u=(1,1)$ and $v=(1,-1)$, the ordinary dot product is zero, but $\langle u,v\rangle_G=3$, while $\|u\|_G=\|v\|_G=\sqrt5$. Their weighted cosine is $3/5$, rather than zero. Orthogonality depends on the stated geometry.</p>
+<p>A change of coordinates should not accidentally change that geometry. If physical vectors have standard coordinates $x=Pc$, then $x^\top y=c^\top(P^\top P)d$. In an oblique basis, the coordinate product is therefore governed by $P^\top P$, not generally by $I$. Replacing it with $c^\top d$ changes the metric rather than merely renaming the same vectors.</p>
+
+<h2 id="cauchy">6.3 Cauchy–Schwarz makes angle definitions possible <a class="timestamp" href="https://www.youtube.com/watch?v=32Zd4ciUfmw&amp;t=449s">[lecture]</a></h2>
+<p>Define $\|u\|=\sqrt{\langle u,u\rangle}$. Positivity and absolute homogeneity follow immediately: $\|u\|\geq0$, only zero has zero norm, and $\|\alpha u\|=|\alpha|\|u\|$. The remaining norm axiom, the triangle inequality, requires a bound on cross terms.</p>
+<p>For $v\ne0$, every real $t$ satisfies</p>
+$$0\leq\|u-tv\|^2=\|u\|^2-2t\langle u,v\rangle+t^2\|v\|^2.$$
+<p>Complete the square, or substitute the minimizing value $t_*=\langle u,v\rangle/\|v\|^2$. The resulting nonnegative remainder is</p>
+$$0\leq\|u\|^2-\frac{\langle u,v\rangle^2}{\|v\|^2},
+\qquad
+|\langle u,v\rangle|\leq\|u\|\|v\|.$$
+<p>This is the <em>Cauchy–Schwarz inequality</em>. If $v=0$ both sides are zero. Otherwise equality occurs exactly when $\|u-t_*v\|=0$, hence when $u$ is a scalar multiple of $v$. This includes opposite directions and zero vectors, not just vectors pointing the same way. For example, $u=-2v$ attains equality in the absolute-value inequality.</p>
+<p>Expanding the squared norm of a sum now gives</p>
+$$\|u+v\|^2=\|u\|^2+2\langle u,v\rangle+\|v\|^2
+\leq(\|u\|+\|v\|)^2.$$
+<p>Taking nonnegative square roots proves $\|u+v\|\leq\|u\|+\|v\|$. The associated distance $d(u,v)=\|u-v\|$ is nonnegative, symmetric, zero exactly at equal points, and satisfies the triangle inequality by applying the norm inequality to $(u-w)+(w-v)$.</p>
+<p>For nonzero real vectors, Cauchy–Schwarz puts $\langle u,v\rangle/(\|u\|\|v\|)$ in $[-1,1]$. We may therefore define the angle $\theta\in[0,\pi]$ through</p>
+$$\cos\theta=\frac{\langle u,v\rangle}{\|u\|\|v\|}.$$
+<p>In the Euclidean plane this agrees with trigonometry: substituting $u=\|u\|(\cos\alpha,\sin\alpha)$ and $v=\|v\|(\cos\beta,\sin\beta)$ gives $u^\top v=\|u\|\|v\|\cos(\alpha-\beta)$. In an abstract real space, the inner product supplies the angle. Zero has no angle with another vector, because the denominator would vanish.</p>
+
+<h2 id="orthogonal">6.4 Orthogonality separates contributions <a class="timestamp" href="https://www.youtube.com/watch?v=32Zd4ciUfmw&amp;t=60s">[lecture]</a></h2>
+<p>Vectors $u$ and $v$ are <em>orthogonal</em>, written $u\perp v$, when $\langle u,v\rangle=0$. For nonzero vectors this means an angle of $\pi/2$. The algebraic definition also makes zero orthogonal to every vector, although its angle is undefined. If $u$ is orthogonal to every vector in $V$, choose $v=u$; then $\|u\|^2=0$, so $u=0$. This last conclusion relies on positive definiteness.</p>
+<p>Orthogonality removes the cross term in a squared sum:</p>
+$$u\perp v\quad\Longrightarrow\quad
+\|u+v\|^2=\|u\|^2+\|v\|^2.$$
+<p>This is Pythagoras in an inner product space. For any finite pairwise orthogonal family, the same expansion gives $\|\sum_i u_i\|^2=\sum_i\|u_i\|^2$. It works for orthogonal matrices or functions just as it does for arrows.</p>
+<p>A finite pairwise orthogonal family of <em>nonzero</em> vectors is independent. Indeed, if $\sum_i a_iu_i=0$, take the inner product with $u_j$ to obtain $a_j\|u_j\|^2=0$. Since $\|u_j\|^2&gt;0$, every coefficient is zero. The nonzero condition cannot be dropped: a family containing zero is dependent even though zero is orthogonal to everything. Conversely, independent vectors can be oblique, such as $(1,0)$ and $(1,1)$ in the usual plane.</p>
+
+<h2 id="complement">6.5 An orthogonal complement uses every vector in a subspace <a class="timestamp" href="https://www.youtube.com/watch?v=32Zd4ciUfmw&amp;t=963s">[lecture]</a></h2>
+<p>For a subspace $W\subseteq V$, its <em>orthogonal complement</em> is</p>
+$$W^\perp=\{v\in V:\langle v,w\rangle=0\ \text{for every }w\in W\}.$$
+<p>Orthogonality to one selected vector generally is insufficient; orthogonality to a basis of $W$ is sufficient by linearity. The set contains zero. If $u,v\in W^\perp$, then for every $w\in W$, $\langle\alpha u+\beta v,w\rangle=0$, so it is a subspace. Moreover, $W\cap W^\perp=\{0\}$: a vector in the intersection is orthogonal to itself.</p>
+<p>Suppose $V$ is finite dimensional and $W$ has a basis $w_1,\ldots,w_r$. Define a linear map $F:V\to\mathbb R^r$ by $F(v)=(\langle w_1,v\rangle,\ldots,\langle w_r,v\rangle)$. Its kernel is exactly $W^\perp$. Its restriction to $W$ has the Gram matrix of the $w_i$, which is positive definite and invertible; hence $F$ has rank $r$. Rank–nullity gives</p>
+$$\dim W^\perp=\dim V-\dim W.$$
+<p>The dimensions and zero intersection show $V=W\oplus W^\perp$. Every vector has a unique decomposition $v=w+z$, where $w\in W$ and $z\in W^\perp$. Uniqueness can also be checked directly: two decompositions would have $w-w'=z'-z$ in the intersection. The next chapter constructs $w$ as the best approximation to $v$ inside $W$.</p>
+<p>These statements include the boundary cases $\{0\}^\perp=V$ and $V^\perp=\{0\}$. Applying the dimension formula twice also gives $(W^\perp)^\perp=W$ in finite dimensions. Infinite-dimensional spaces need additional closure and completeness hypotheses for the corresponding decomposition theorem; the finite-dimensional proof must not be transferred without them.</p>
+
+<h2 id="fundamental">6.6 The four fundamental subspaces come in two ambient spaces <a class="timestamp" href="https://www.youtube.com/watch?v=32Zd4ciUfmw&amp;t=1667s">[lecture]</a></h2>
+<p>Let $A\in\mathbb R^{m\times n}$ and use ordinary Euclidean products. Its kernel $\ker A$ and row space $\operatorname{range}(A^\top)$ lie in $\mathbb R^n$. Its column space $\operatorname{range}(A)$ and left kernel $\ker A^\top$ lie in $\mathbb R^m$. Spaces on opposite sides cannot be called orthogonal complements of one another unless a common ambient space has first been identified.</p>
+<p>The key identity is $\langle Ax,y\rangle=\langle x,A^\top y\rangle$. It proves a full equivalence:</p>
+$$x\perp\operatorname{range}(A^\top)
+\iff \langle x,A^\top y\rangle=0\ \forall y\in\mathbb R^m
+\iff \langle Ax,y\rangle=0\ \forall y
+\iff Ax=0.$$
+<p>The final step chooses $y=Ax$. Thus $(\operatorname{range}A^\top)^\perp=\ker A$, with both inclusions proved. Replacing $A$ by $A^\top$ yields $(\operatorname{range}A)^\perp=\ker A^\top$. The complement theorem consequently gives</p>
+$$\mathbb R^n=\operatorname{range}(A^\top)\oplus\ker A,\qquad
+\mathbb R^m=\operatorname{range}(A)\oplus\ker A^\top.$$
+<p>For $A=\left[\begin{smallmatrix}1&amp;1&amp;0\\0&amp;1&amp;1\end{smallmatrix}\right]$, the kernel is the line through $z=(1,-1,1)$. Every row is perpendicular to $z$, and the two independent rows span the plane $z^\perp$. For an arbitrary input $x=(a,b,c)$, its kernel component is $\frac{a-b+c}{3}z$ and its row-space component is the difference. Multiplication by $A$ discards the former. This makes the “unobservable part” of an input an explicit orthogonal component.</p>
+<p>The simple transpose is tied to Euclidean geometry. With domain product $x^\top Gz$ and codomain product $y^\top Hy$, the corresponding adjoint is $A^*=G^{-1}A^\top H$, because $\langle Ax,y\rangle_H=x^\top A^\top Hy=\langle x,A^*y\rangle_G$. Complement formulas use that adjoint under weighted geometry. Applying an unmodified transpose after changing the product can silently mix two geometries.</p>
+
+<h2 id="orthonormal">6.7 Orthonormal coordinates require only inner products <a class="timestamp" href="https://www.youtube.com/watch?v=0DH4xuv9Dso&amp;t=227s">[lecture]</a></h2>
+<p>A family $q_1,\ldots,q_r$ is <em>orthonormal</em> if $\langle q_i,q_j\rangle=\delta_{ij}$, where $\delta_{ij}$ equals one for $i=j$ and zero otherwise. Such vectors are nonzero and independent. They form a basis of their span; they form a basis of the whole $n$-dimensional space only if there are $n$ of them.</p>
+<p>If $q_1,\ldots,q_n$ is an orthonormal basis and $v=\sum_i c_iq_i$, taking the inner product with $q_j$ isolates one coefficient:</p>
+$$\langle q_j,v\rangle=\sum_i c_i\langle q_j,q_i\rangle=c_j,\qquad
+v=\sum_{j=1}^n\langle q_j,v\rangle q_j.$$
+<p>The usual need to solve a coupled linear system disappears. For an orthogonal basis $u_j$ whose lengths are not one, the denominator remains: $c_j=\langle u_j,v\rangle/\|u_j\|^2$. Normalizing $q_j=u_j/\|u_j\|$ removes it.</p>
+<p>For the ordinary product in $\mathbb R^2$, take $q_+=(1,1)/\sqrt2$ and $q_-=(1,-1)/\sqrt2$. The vector $v=(3,1)$ has coordinates $c_+=2\sqrt2$ and $c_-=\sqrt2$. Reconstruction gives $(2,2)+(1,-1)=(3,1)$. Pythagoras gives the finite-dimensional <em>Parseval identity</em>:</p>
+$$\|v\|^2=\sum_{j=1}^n|\langle q_j,v\rangle|^2.$$
+<p>Here the equality reads $10=8+2$. With only an orthonormal subset, the sum of these squared coefficients is at most $\|v\|^2$: subtract their expansion from $v$, verify that the remainder is orthogonal to every selected vector, and apply Pythagoras. This is Bessel's inequality. Equality holds exactly when the vector lies in the selected span.</p>
+
+<h2 id="fourier">6.8 Fourier coefficients use the same orthogonality mechanism <a class="timestamp" href="https://www.youtube.com/watch?v=0DH4xuv9Dso&amp;t=1507s">[lecture]</a></h2>
+<p>For real trigonometric polynomials on $[-\pi,\pi]$, choose $\langle f,g\rangle=\frac1\pi\int_{-\pi}^{\pi}f(t)g(t)\,dt$. Product-to-sum identities show that distinct sine and cosine frequencies are orthogonal: the integral of any nonconstant integer-frequency sine or cosine over a full period is zero. Under this normalization, $\|\cos nt\|=\|\sin nt\|=1$ for $n\geq1$, whereas $\|1\|=\sqrt2$. Thus the orthonormal family begins with $1/\sqrt2$, followed by $\cos t,\sin t,\cos2t,\sin2t,\ldots$.</p>
+<p>For $f(t)=2+3\cos t-\sin2t$, its coordinates in that family are $2\sqrt2$, $3$, and $-1$ in the indicated directions. Its squared norm is therefore $8+9+1=18$. Equivalently, in the usual notation $f=a_0/2+\sum_{n\geq1}(a_n\cos nt+b_n\sin nt)$, one has $a_0=4$, $a_1=3$, and $b_2=-1$. The coefficient formulas are precisely inner products, with the constant normalization accounted for.</p>
+<p>Finite sums require no convergence theorem. For arbitrary square-integrable functions, infinite Fourier expansion and Parseval equality additionally use completeness of the trigonometric system in the $L^2$ norm. Functions equal almost everywhere represent the same $L^2$ vector; a zero integral of $f^2$ means zero almost everywhere, not necessarily at every isolated point. Pointwise convergence is a separate question. The analogy with finite-dimensional coordinates is powerful when its topology and sense of equality are stated.</p>
+<p>Complex vectors require one further adjustment. With the convention $\langle u,v\rangle=\overline u^\top v$, the product is conjugate-linear in the first argument, linear in the second, and conjugate symmetric. Then $\|u\|^2=\sum_i|u_i|^2$. The expression $u^\top u$ would give $1+i^2=0$ for the nonzero vector $(1,i)$, so it cannot define a complex norm. In complex Parseval identities, coefficients are squared in absolute value.</p>
+
+<h2 id="computation">6.9 Check geometry, coordinates, and decomposition</h2>
+<p>The executable example compares two products and reconstructs both orthonormal coordinates and the row/kernel decomposition. Rounding is used only for presentation; the reconstruction checks retain floating-point precision.</p>
+<pre><code class="language-python">import numpy as np
+
+u = np.array([1.0, 1.0])
+v = np.array([1.0, -1.0])
+g = np.diag([4.0, 1.0])
+print("ordinary and weighted products:", u @ v, u @ g @ v)
+q = np.array([[1.0, 1.0], [1.0, -1.0]]) / np.sqrt(2.0)
+target = np.array([3.0, 1.0])
+coordinates = q.T @ target
+print("orthonormal coordinates:", np.round(coordinates, 6))
+print("squared norms:", round(target @ target, 6),
+      round(coordinates @ coordinates, 6))
+assert np.allclose(q @ coordinates, target)
+a = np.array([[1.0, 1.0, 0.0], [0.0, 1.0, 1.0]])
+z = np.array([1.0, -1.0, 1.0])
+x = np.array([1.0, 2.0, 4.0])
+hidden = (x @ z) / (z @ z) * z
+visible = x - hidden
+print("kernel component:", hidden)
+print("row-space component:", visible)
+print("same measurement:", np.allclose(a @ visible, a @ x))
+assert np.allclose(visible @ z, 0.0)
+</code></pre>
+<pre class="output">ordinary and weighted products: 0.0 3.0
+orthonormal coordinates: [2.828427 1.414214]
+squared norms: 10.0 10.0
+kernel component: [ 1. -1.  1.]
+row-space component: [0. 3. 3.]
+same measurement: True</pre>
+
+<h2 id="problems">6.10 Six worked problems</h2>
+<h3 id="problem-1">Problem 1: Test a proposed product</h3>
+<p>On $\mathbb R^2$, decide whether $\langle x,y\rangle=x_1y_1+2x_1y_2+2x_2y_1+5x_2y_2$ is an inner product. Find a nonzero vector orthogonal to $(1,0)$.</p>
+<details><summary>Solution</summary><p>The matrix is $G=\left[\begin{smallmatrix}1&amp;2\\2&amp;5\end{smallmatrix}\right]$, which is symmetric. Its quadratic form is $x_1^2+4x_1x_2+5x_2^2=(x_1+2x_2)^2+x_2^2$, positive unless both coordinates vanish. Thus it is an inner product. Orthogonality to $(1,0)$ requires $\langle(1,0),y\rangle=y_1+2y_2=0$. Taking $y=(-2,1)$ works. This vector has ordinary dot product $-2$ with $(1,0)$, illustrating that the specified product determines the perpendicular directions.</p></details>
+<h3 id="problem-2">Problem 2: Equality in Cauchy–Schwarz</h3>
+<p>For nonzero $v$, set $u=-3v$. Evaluate both sides of Cauchy–Schwarz and the real angle. Then determine whether $\|u+v\|=\|u\|+\|v\|$.</p>
+<details><summary>Solution</summary><p>The inner product is $\langle u,v\rangle=-3\|v\|^2$, so its absolute value is $3\|v\|^2$. Also $\|u\|\|v\|=3\|v\|^2$, giving equality. The cosine is $-1$ and the angle is $\pi$. However $\|u+v\|=\|-2v\|=2\|v\|$, whereas $\|u\|+\|v\|=4\|v\|$. Thus equality in the absolute Cauchy–Schwarz bound does not force equality in the triangle inequality; the latter requires nonnegative alignment for nonzero real vectors.</p></details>
+<h3 id="problem-3">Problem 3: Find an orthogonal complement</h3>
+<p>In ordinary $\mathbb R^3$, let $W=\operatorname{span}\{(1,1,0),(0,1,1)\}$. Find $W^\perp$ and decompose $x=(2,0,1)$ into its components in $W$ and $W^\perp$.</p>
+<details><summary>Solution</summary><p>For $z=(a,b,c)$, the equations are $a+b=0$ and $b+c=0$. Hence $W^\perp=\operatorname{span}\{(1,-1,1)\}$. Write its component as $tz$ with this generator. Orthogonality of $x-tz$ to $z$ requires $t=(x^\top z)/(z^\top z)=3/3=1$. The two components are $(1,-1,1)$ and $(1,1,0)$. Their sum is $(2,0,1)$, and their dot product is zero. Their dimensions are one and two, matching the full dimension three.</p></details>
+<h3 id="problem-4">Problem 4: Orthogonal does not mean normalized</h3>
+<p>Use the orthogonal basis $u_1=(2,2)$ and $u_2=(3,-3)$ to represent $x=(4,2)$. Explain why the two dot products alone are not the coefficients.</p>
+<details><summary>Solution</summary><p>The squared lengths are $8$ and $18$, and their dot product is zero. Thus $c_1=(u_1^\top x)/8=12/8=3/2$ and $c_2=(u_2^\top x)/18=6/18=1/3$. Reconstruction gives $(3,3)+(1,-1)=(4,2)$. The raw products $12$ and $6$ include the lengths of the selected basis vectors. Dividing by their squared lengths compensates for that scale. Pythagoras in this basis reads $\|x\|^2=c_1^2\|u_1\|^2+c_2^2\|u_2\|^2=18+2=20$.</p></details>
+<h3 id="problem-5">Problem 5: Left-kernel consistency</h3>
+<p>For $A=\left[\begin{smallmatrix}1&amp;0\\0&amp;1\\1&amp;1\end{smallmatrix}\right]$, find $\ker A^\top$. Use it to characterize which $b\in\mathbb R^3$ can equal $Ax$.</p>
+<details><summary>Solution</summary><p>The equations $A^\top y=0$ are $y_1+y_3=0$ and $y_2+y_3=0$, so $\ker A^\top=\operatorname{span}\{(-1,-1,1)\}$. Its orthogonal complement is the column space of $A$. Therefore $b$ is attainable exactly when $-b_1-b_2+b_3=0$. Directly, $Ax=(x_1,x_2,x_1+x_2)$ gives the same condition and the unique solution $x=(b_1,b_2)$. The one-dimensional left kernel detects the single compatibility condition in the three output coordinates.</p></details>
+<h3 id="problem-6">Problem 6: A finite Fourier energy calculation</h3>
+<p>With product $\pi^{-1}\int_{-\pi}^{\pi}fg$, take $f(t)=1+2\sin t+3\cos2t$. Find its orthonormal coefficients, total squared norm, and the squared norm omitted by retaining only the constant and first sine.</p>
+<details><summary>Solution</summary><p>The normalized constant is $1/\sqrt2$, so its coefficient is $\sqrt2$. The other nonzero coefficients are $2$ for $\sin t$ and $3$ for $\cos2t$. Orthogonality gives $\|f\|^2=2+4+9=15$. The retained function is $1+2\sin t$ with squared norm $6$, and the residual is $3\cos2t$ with squared norm $9$. The residual is orthogonal to the retained span, so the energies add exactly. This is a finite identity and makes no assertion about convergence of an infinite series.</p></details>
+<p>Inner products turn representations into geometric objects, and orthonormal bases make their coordinates independently measurable. The next chapter uses that geometry to construct the closest point in a subspace and to build orthonormal bases from arbitrary independent inputs.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html">Previous chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-07-projection-orthogonal-bases-and-best-approximation.html">Next chapter</a></nav></main></div>
+<footer class="site-footer">Independent educational edition of the NPTEL IISc Bangalore / NITK Surathkal course by Ashok Rao and Arulalan Rajan. Recordings supply the chronological topic sequence; original exposition, constructions, and external results are separately attributed. Source and validation records state the evidence and its limits.</footer></body></html>

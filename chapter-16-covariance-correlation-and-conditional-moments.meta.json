@@ -1,0 +1,184 @@
+{
+  "chapter": 16,
+  "title": "Covariance, correlation, and conditional moments",
+  "status": "reviewed and locally validated",
+  "author": "probability_editor",
+  "recordings": [
+    {
+      "lecture_number": 43,
+      "video_id": "QfVMepVNkvM",
+      "duration_seconds": 2651,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 2649.76,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "001c1b1b8414bb9b74eda1d35a7dd8dd861ce9ad6eaa1359bd7f75bb5b33a70d",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 44,
+      "video_id": "XrXZo-_gRC4",
+      "duration_seconds": 2814,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.16,
+      "transcript_last_end_seconds": 2813.44,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "66017146f1444758ae1ba00e64031d3ab1e906cbe2085e79593d41de8ad40d35",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "All assigned caption text read sequentially; section-by-section private coverage ledger records topic correspondence.",
+    "teaching_constructions": "Affine-prediction derivation, triangular conditional law, latent-device mixture, total-variance proof, Gaussianity/causality counterexamples and six worked problems.",
+    "reference_orientation": "Only inspected primary-author references cited; proofs and examples independently developed.",
+    "empirical_claims": "No empirical deployment or prediction-performance result asserted."
+  },
+  "section_map": [
+    {
+      "id": "correlation-geometry",
+      "title": "Correlation is the angle between centered fluctuations"
+    },
+    {
+      "id": "affine-prediction",
+      "title": "The exact prediction meaning of a linear association"
+    },
+    {
+      "id": "joint-gaussian",
+      "title": "The Gaussian exception requires a joint Gaussian law"
+    },
+    {
+      "id": "conditional-laws",
+      "title": "A conditional distribution is a normalized slice"
+    },
+    {
+      "id": "mixture-bayes",
+      "title": "A latent choice produces a mixture, and Bayes reverses it"
+    },
+    {
+      "id": "conditional-moments",
+      "title": "Conditional means separate explained and remaining variation"
+    },
+    {
+      "id": "check",
+      "title": "Executable check: conditional independence can disappear in a mixture"
+    },
+    {
+      "id": "problems",
+      "title": "Six worked problems"
+    },
+    {
+      "id": "scope",
+      "title": "Sources and limits"
+    }
+  ],
+  "timestamp_links": [
+    {
+      "video_id": "QfVMepVNkvM",
+      "seconds": 444
+    },
+    {
+      "video_id": "QfVMepVNkvM",
+      "seconds": 582
+    },
+    {
+      "video_id": "QfVMepVNkvM",
+      "seconds": 1334
+    },
+    {
+      "video_id": "QfVMepVNkvM",
+      "seconds": 2175
+    },
+    {
+      "video_id": "XrXZo-_gRC4",
+      "seconds": 1794
+    },
+    {
+      "video_id": "XrXZo-_gRC4",
+      "seconds": 2154
+    },
+    {
+      "video_id": "XrXZo-_gRC4",
+      "seconds": 691
+    },
+    {
+      "video_id": "XrXZo-_gRC4",
+      "seconds": 2384
+    }
+  ],
+  "original_construction_statement": "Affine-prediction derivation, triangular conditional law, latent-device mixture, total-variance proof, Gaussianity/causality counterexamples and six worked problems.",
+  "references_checked": [
+    {
+      "url": "https://mml-book.com/book/mml-book.pdf",
+      "sections": "6.3–6.5.3",
+      "printed_pages": "184–203",
+      "pdf_pages": [
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209
+      ],
+      "claims": [
+        "conditional and Bayes formulas",
+        "correlation geometry",
+        "Gaussian density and conditional Gaussian",
+        "total variance identity"
+      ]
+    }
+  ],
+  "editorial_reviews": [
+    {
+      "role": "science-editor FULL REWRITE",
+      "editor": "probability_editor",
+      "status": "rewritten and author-checked; independent review pending",
+      "reviewed_body_sha256": "11346ec2719bdbfce5d9dd1b811843d0b569b1e0895c1600b7cd503e738daaeb",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before wrapping.",
+      "code_execution": "Passed; displayed stdout matches actual captured execution output after line-ending normalization.",
+      "visual_review": "not performed",
+      "independent_acceptance": false
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "authored_body_sha256": "8615438dbda338ac6b9444fb03bb06174382519b4daa34197ef7c92c2a397b21",
+  "authoring_handoff_body_sha256": "11346ec2719bdbfce5d9dd1b811843d0b569b1e0895c1600b7cd503e738daaeb",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "8615438dbda338ac6b9444fb03bb06174382519b4daa34197ef7c92c2a397b21",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "probability_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read full manuscript, every correlation/affine-prediction/conditional-law derivation, six worked solutions, coverage ledger and exact mixture execution record.",
+      "Independently verified correlation equality cases, nonlinear prediction residual4/45, marginal-normal nonjoint-Gaussian counterexample, Gaussian conditional27/4, device posterior27/32 and mixture variance9/8, triangular total variance.",
+      "Personally inspected MML PDF201–202,204–205,209 for inner-product quotient, Gaussian joint/conditional formulas and total-variance claim.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+      "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

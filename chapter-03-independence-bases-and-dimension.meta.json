@@ -1,0 +1,148 @@
+{
+  "chapter": 3,
+  "title": "Independence, bases, and dimension",
+  "status": "reviewed and locally validated",
+  "authored_body_sha256": "88a774177c19a111ba7c7ca5164445a126d0a47a4cdf6d13e57397d534f567af",
+  "recordings": [
+    {
+      "lecture_number": 5,
+      "video_id": "1e2bk6Q9YwU",
+      "duration_seconds": 2366,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "first_caption_start": 0.48,
+      "last_caption_end": 2365.84,
+      "caption_text_sha256": "399db50d89f654c1576def7d7137cbfe652260463b0b332375fdfebf82fdab92"
+    },
+    {
+      "lecture_number": 6,
+      "video_id": "OUPCBg9f9NM",
+      "duration_seconds": 2523,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "first_caption_start": 0,
+      "last_caption_end": 2522.4,
+      "caption_text_sha256": "b33ec7d97f67b7888e7d88332196994650bdd2ca3c653270e798780d6bf858e1"
+    }
+  ],
+  "sections": [
+    {
+      "id": "combinations",
+      "title": "3.1 Combining observations is a modeling choice Lecture 5 · 01:52",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=1e2bk6Q9YwU&t=112s"
+      ]
+    },
+    {
+      "id": "dependence",
+      "title": "3.2 Zero combinations expose redundancy Lecture 5 · 23:27",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=1e2bk6Q9YwU&t=1407s"
+      ]
+    },
+    {
+      "id": "span",
+      "title": "3.3 Span describes every output a linear model can produce Lecture 6 · 15:16",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=OUPCBg9f9NM&t=916s"
+      ]
+    },
+    {
+      "id": "basis",
+      "title": "3.4 A basis supplies existence and uniqueness Lecture 6 · 25:15",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=OUPCBg9f9NM&t=1515s"
+      ]
+    },
+    {
+      "id": "dimension",
+      "title": "3.5 Why every basis has the same length Lecture 6 · 36:27",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=OUPCBg9f9NM&t=2187s"
+      ]
+    },
+    {
+      "id": "transformations",
+      "title": "3.6 A basis determines a transformation only with linearity Lecture 6 · 27:07",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=OUPCBg9f9NM&t=1627s"
+      ]
+    },
+    {
+      "id": "stability",
+      "title": "3.7 Unique coordinates need not be stable",
+      "timestamps": []
+    },
+    {
+      "id": "code",
+      "title": "3.8 Coordinates, redundancy, and sensitivity in code",
+      "timestamps": []
+    },
+    {
+      "id": "problems",
+      "title": "3.9 Problems and worked solutions",
+      "timestamps": []
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits",
+      "timestamps": []
+    }
+  ],
+  "original_constructions": "Examples, derivations, Python, and worked problems.",
+  "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+  "visual_review": "not performed",
+  "independent_acceptance": true,
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "worked_problem_count": 6,
+  "references_checked": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": [
+        "2.5",
+        "2.6.1"
+      ],
+      "printed_pages": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "pdf_pages": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
+    }
+  ],
+  "authoring_handoff_body_sha256": "ff4d98ff3c10b4a205718d2ad63449f13ea90c25a4ee482e0b637f05c46c5f89",
+  "accepted_body_sha256": "88a774177c19a111ba7c7ca5164445a126d0a47a4cdf6d13e57397d534f567af",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "scientific_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Full original manuscript and six solutions reviewed in round1, with precise reference and execution evidence listed in archived final-ch03-round1.json.",
+      "Rechecked exact replacement Problem6 paragraph: transformed-score difference is w3(x3-x1-x2), universal feature reduction requires identity over deployment domain; fixed predictor w3=0 exception correctly distinguished.",
+      "No code changed; no code rerun needed. New exact body digest binds this acceptance."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

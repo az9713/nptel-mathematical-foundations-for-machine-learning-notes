@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "file": "book-overview.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-01-why-mathematics-determines-what-a-learner-can-identify.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-03-independence-bases-and-dimension.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-04-linear-transformations-and-coordinate-representations.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-10-margins-support-vectors-and-the-linear-algebra-synthesis.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-11-probability-models-events-and-conditioning.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-12-bayes-rules-probability-measures-and-random-variables.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-13-discrete-and-continuous-probability-distributions.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-14-expectation-moments-and-variance.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-15-joint-distributions-marginals-and-independence.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-18-sample-geometry-and-covariance-matrices.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-21-matrix-derivatives-and-the-geometry-of-differentials.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-22-optimization-constraints-and-lagrange-multipliers.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-23-least-squares-pca-and-gradient-algorithms.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-25-data-patterns-classification-and-clustering.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-26-linear-and-logistic-regression-a-mathematical-synthesis.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "index.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "numerical-lab.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "references.html",
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "source-map.html",
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "errors": []
+}

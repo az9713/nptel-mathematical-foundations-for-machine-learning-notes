@@ -1,0 +1,241 @@
+{
+  "scope": "Actual isolated execution of every marked Python listing; displayed stdout comparison.",
+  "binding": "LF-normalized executable-listing hashes bind execution; reader wrapping and prose-only edits do not change the checked programs.",
+  "limitations": "Teaching implementation checks, not formal proof verification or real-world validation.",
+  "records": [
+    {
+      "file": "chapter-01-why-mathematics-determines-what-a-learner-can-identify.html",
+      "listing_count": 1,
+      "checked_file_sha256": "58b211a05d0ea4d71fa1f146b924db285e4eda8c0f88bf81050c1545c7b73814",
+      "listing_sha256": "da563a8ccbb868c95d3245374fbacdadae9072cc6836a40c0fda0e8510dada88",
+      "status": "PASS",
+      "stdout": "identical training scores: [1, 2, 3]\nstable iterate: 1.9921875\nboundary iterate: 0.0",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "listing_count": 1,
+      "checked_file_sha256": "a80051399244bd0aae17085d5f232300e6f92a41777370351168087f5a9d3e96",
+      "listing_sha256": "b74491bf1e7d43c7524ac551526ab44f951686f5b85ab5c983dbd48b423d9654",
+      "status": "PASS",
+      "stdout": "modulo 5 inverses: [None, 1, 3, 2, 4]\nmodulo 6 inverses: [None, 1, None, None, None, 5]\nfields among moduli 2..12: [2, 3, 5, 7, 11]",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-03-independence-bases-and-dimension.html",
+      "listing_count": 1,
+      "checked_file_sha256": "88a774177c19a111ba7c7ca5164445a126d0a47a4cdf6d13e57397d534f567af",
+      "listing_sha256": "5bc1fd0c16a4b6ff7b0b65a87356269f7a003a2da57fbce2e2b7ebd04b7c3e68",
+      "status": "PASS",
+      "stdout": "basis coordinates: [2. 3.]\nredundant minimum-norm weights: [0.333333 1.333333 1.666667]\nepsilon=1e-02, coordinates=[-1.e-04  1.e-04]\nepsilon=1e-04, coordinates=[-0.01  0.01]\nepsilon=1e-06, coordinates=[-1.  1.]",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-04-linear-transformations-and-coordinate-representations.html",
+      "listing_count": 1,
+      "checked_file_sha256": "bb563a0557a65b2e23aceb260131205f7b13ce34056958f2b4b34998f718d24d",
+      "listing_sha256": "375cd88037231042b2d05131b61138bb7bebd0362093e3ac741e9c575a7655a5",
+      "status": "PASS",
+      "stdout": "compressed features: [3. 5.]\nquarter-turn after shear: [-2.  3.]\nshear after quarter-turn: [-1.  1.]\nmatrix in common/difference coordinates:\n[[ 3.  0.]\n [-0.  1.]]",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
+      "listing_count": 1,
+      "checked_file_sha256": "e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909",
+      "listing_sha256": "c472ba2008fd80c4f246e582665968862c05a23c8a5c7541604e54abd24d04c1",
+      "status": "PASS",
+      "stdout": "eigenpair residual: 0\nfifth power:\n[[122 121]\n [121 122]]\nshear after  1 steps: [1 1]\nshear after  5 steps: [5 1]\nshear after 20 steps: [20  1]",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.html",
+      "listing_count": 1,
+      "checked_file_sha256": "47b38fadb40d948ef9f70c7aa35973d31232749ecc0b265e3309b9ef5ac801b6",
+      "listing_sha256": "d8ff3ff69d51295cc36f3ab988ee17d22e42ebda4713d3d267091dc0cc8a9c69",
+      "status": "PASS",
+      "stdout": "ordinary and weighted products: 0.0 3.0\northonormal coordinates: [2.828427 1.414214]\nsquared norms: 10.0 10.0\nkernel component: [ 1. -1.  1.]\nrow-space component: [0. 3. 3.]\nsame measurement: True",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
+      "listing_count": 1,
+      "checked_file_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c",
+      "listing_sha256": "827e9757757cbad9516306c67eabf80b08b80c47a09c0f934b8057b35838d9d7",
+      "status": "PASS",
+      "stdout": "template coefficients: [0. 3.]\nprojection: [0. 3. 3.]\nresidual: [ 1. -1.  1.]\nsquared error: 3.0\nQR reconstructs: True\northonormal columns: True\nprojector idempotent: True\nPythagorean error identity: True",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.html",
+      "listing_count": 1,
+      "checked_file_sha256": "2f864686cffd80379d8857ad03be7b0557cc162e852ab18607d8d278fd0e03a0",
+      "listing_sha256": "7ab8071754c39f745f9fb8115c5f80ecebaff4b1af70803bd5e89ba6582b0cc0",
+      "status": "PASS",
+      "stdout": "intercept and slope: [ 1. -1.]\nfitted targets: [0. 0. 1.]\nsquared residual norm: 2.0\nrank-deficient minimum-norm fit: [1.4 0.7]\npredictions: [3.5 3.5]\nsame predictions: True\nsquared coefficient norms: 2.45 7.45",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
+      "listing_count": 1,
+      "checked_file_sha256": "e8c53831e00abd12e12b44296da9fa35d60cfd8920c34383a55414d9cad413a8",
+      "listing_sha256": "ed673a94c8771be29c0e31ead1110713cd855ea5c49d0e16d54bfa19ba7c9596",
+      "status": "PASS",
+      "stdout": "sample covariance:\n[[10  6  0]\n [ 6  8 -8]\n [ 0 -8 32]]\ntotal variance: 50.0\nPCA/SVD spectrum agrees: True\nPCA error identity: True\nanalytic SVD reconstructs: True\nrank-one squared error: 90.0",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-10-margins-support-vectors-and-the-linear-algebra-synthesis.html",
+      "listing_count": 1,
+      "checked_file_sha256": "0360ab8be9b1c743e72d132d4f6b2945c3e3181bfaafd4bccfb39187e7d2966a",
+      "listing_sha256": "3ab7d51b0c630e382c3744bf1ffd551b3f8b6894e9cc95d17e7ae3dba5755925",
+      "status": "PASS",
+      "stdout": "lifted signed scores: [1.0, 1.0, 1.0, 1.0]\none-sided lifted margin: 4.0\nrank, nullity: 2 1",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-11-probability-models-events-and-conditioning.html",
+      "listing_count": 1,
+      "checked_file_sha256": "ca76705d745a94e5c713fde3959755ad8d85cc3f063e2ba06d793c8b2b8a11e3",
+      "listing_sha256": "bf75a12ea04719109208ba14a0227e650684de85b61b5d3216ce0e7539f91b2b",
+      "status": "PASS",
+      "stdout": "P(A), P(B), P(A and B): 2/5 7/10 7/25\nP(A given agreement): 14/23\nfair-bit triple probability: 1/4",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-12-bayes-rules-probability-measures-and-random-variables.html",
+      "listing_count": 1,
+      "checked_file_sha256": "0e3b90726f5786deb52899db94893d691505378130968da59a902ff14efe5c5b",
+      "listing_sha256": "fe135fc30a7d1876c08682742bfe557c84cbfbefcbb171311081f00272030f8a",
+      "status": "PASS",
+      "stdout": "alarm probability: 67/1000\nfault probability given alarm: 18/67\ncount distribution: 1/8, 3/8, 3/8, 1/8",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-13-discrete-and-continuous-probability-distributions.html",
+      "listing_count": 1,
+      "checked_file_sha256": "c91f8a4e978e0da01922b79703af94045bdde75a3913264818318caa205e4d29",
+      "listing_sha256": "17e695252893830c5057b4f77c0c2c7bb0d8f16dd4ba48cbb17fe3ed9021dce4",
+      "status": "PASS",
+      "stdout": "two successes in four: 0.153600\nfirst success at three: 0.128000\nzero arrivals at parameter two: 0.135335\ntwo marked objects without replacement: 0.1",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-14-expectation-moments-and-variance.html",
+      "listing_count": 1,
+      "checked_file_sha256": "6bade22cab0efbfdf62e74c492c0a662dd1d469d8ca7daa82916580b73bc9be5",
+      "listing_sha256": "9ccdfe1072a8ed760dc0f42de34f78756f0ae7cdb57121b3b7e21b82681a8663",
+      "status": "PASS",
+      "stdout": "A: mean=2, variance=1, P(X>3)=1/8\nB: mean=2, variance=1, P(X>3)=0",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-15-joint-distributions-marginals-and-independence.html",
+      "listing_count": 1,
+      "checked_file_sha256": "a548bd5384c4df209776de9ab93d9a0cc908c432de18a7f5928b495c56424e63",
+      "listing_sha256": "18d508a175ae1839f41d83570f9f71bb5a6d14f0df8221d699957e1d94c059ef",
+      "status": "PASS",
+      "stdout": "q=0: means=(1/2,1/2), covariance=-1/4, variance of sum=0\nq=1/4: means=(1/2,1/2), covariance=0, variance of sum=1/2\nq=1/2: means=(1/2,1/2), covariance=1/4, variance of sum=1",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
+      "listing_count": 1,
+      "checked_file_sha256": "49490b784d0292d0680aab966cc3d5970beff3a97fad8636740becbdf1c5e297",
+      "listing_sha256": "5a2680f172c56b73db6ae11284a9d205a8db87b8139e61daae0f4d3121be08cf",
+      "status": "PASS",
+      "stdout": "conditional tail probabilities: 5/32, 27/32\nposterior high-success device: 27/32\nmixture count mean and variance: 3/2 9/8\nsingle-binomial variance would be: 3/4",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "listing_count": 1,
+      "checked_file_sha256": "47e9295a8ef9a1fbd9b1842f0b600def7dc76e9ee60ae64987260af9c6d93071",
+      "listing_sha256": "f2eccfa2c7c6689e5954078e00d685b225ad5e9f38fde874dffc875fe41e0ef4",
+      "status": "PASS",
+      "stdout": "n= 5: variance of mean=0.042000, grid CDF gap=0.215427\nn=20: variance of mean=0.010500, grid CDF gap=0.108010\nn=80: variance of mean=0.002625, grid CDF gap=0.054864",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-18-sample-geometry-and-covariance-matrices.html",
+      "listing_count": 1,
+      "checked_file_sha256": "be30b95a119eb2857fecbf1cb0a31990fabca6f7e1db53ad8d83f4b93d15e933",
+      "listing_sha256": "b957cfb6727521d337e928febdd5fcf0a668a39bc869c5d31085ff0ad466399d",
+      "status": "PASS",
+      "stdout": "sample mean: [2.5, 2.0, 4.5]\nsample covariance:\n[[1.666667 1.333333 3.      ]\n [1.333333 2.666667 4.      ]\n [3.       4.       7.      ]]\neigenvalues: [0.0, 0.75636, 10.576973]\ncentered rank, whitened dimension: 2 2",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
+      "listing_count": 1,
+      "checked_file_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a",
+      "listing_sha256": "13e1d46b70ce6de8562a6409d3fdbb8ca01f39f7a0c95934ec1cffce1976adaa",
+      "status": "PASS",
+      "stdout": "quadratic=1.62500000 exact=1.64872127\nerror=0.02372127 bound=0.03434836\nh=1e-02 forward=5.017e-03 central=1.667e-05\nh=1e-04 forward=5.000e-05 central=1.667e-09\nh=1e-06 forward=5.000e-07 central=2.676e-11\nh=1e-08 forward=6.077e-09 central=5.264e-10\nh=1e-10 forward=8.274e-08 central=8.274e-08",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
+      "listing_count": 1,
+      "checked_file_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d",
+      "listing_sha256": "635f59e811cef43e8eee60a03c5f5b2165287362e8f368625016c9c3bb8aa031",
+      "status": "PASS",
+      "stdout": "gradient: [ 11. -13.]\ndirectional analytic=-3.800000 finite=-3.800000\ncurvatures: [ 4. 16.]\nminimizer: [0.5 0.5] loss=0.000000",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-21-matrix-derivatives-and-the-geometry-of-differentials.html",
+      "listing_count": 1,
+      "checked_file_sha256": "35b5fc787c05d9144af2f8954e08097efb6df53d206ed118939bd6d1b8d76924",
+      "listing_sha256": "bce4235ea324816f2c230e3335e5cb4734e4e17d8af018f278f3c5d8d4ed6a9a",
+      "status": "PASS",
+      "stdout": "matrix gradient:\n[[-0.5 -5.5]\n [ 0.5 -7.5]]\ndirectional analytic=1.000000 finite=1.000000\nnonsymmetric quadratic gradient: [ 3. -6.]",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-22-optimization-constraints-and-lagrange-multipliers.html",
+      "listing_count": 1,
+      "checked_file_sha256": "c85af7eea86f550e7a7df4e2028d66bd43a8ef9bda90868bac64d0b27adea504",
+      "listing_sha256": "0659ba4aca05aa80648716e7054438c500a4410737b7a6b306027e3d908cf48f",
+      "status": "PASS",
+      "stdout": "constrained minimizer: [2.4 0.6]\nobjective=7.200000 lambda=-4.800000\nfeasible t=0 squared_norm=1\nfeasible t=1 squared_norm=3\nfeasible t=10 squared_norm=201",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-23-least-squares-pca-and-gradient-algorithms.html",
+      "listing_count": 1,
+      "checked_file_sha256": "5e0dea387a74d4eff53483cf0737133332de296dcb7ad8ab6593f6401ad06dd4",
+      "listing_sha256": "3d4605495613e4b205e991fbf86a5918bb09837974046807c80a48d6cf8c89ec",
+      "status": "PASS",
+      "stdout": "least-squares coefficients: [2.333333 1.5     ]\ngradient eigenvalues: [0.666667 1.      ]\nGD error=0.000000\nNewton error=0.000000\none-example mean gradient: [-2.333333 -1.      ]\nPCA sample variances: [0.666667 2.666667]",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+      "listing_count": 1,
+      "checked_file_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462",
+      "listing_sha256": "4bbbf9b358ebecb853a7f84fa379a132c7a26d27449baf04b64c7dd4c5f345e2",
+      "status": "PASS",
+      "stdout": "prediction=0.563928 loss=0.027865\ninput-layer gradient:\n[[-0.037429  0.087334]\n [ 0.015442 -0.036032]]\ndirectional analytic=-0.02599939 finite=-0.02599939\nXOR outputs: [0 1 1 0]",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-25-data-patterns-classification-and-clustering.html",
+      "listing_count": 1,
+      "checked_file_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a",
+      "listing_sha256": "6172f0d5ea0a460b7029026f244f0d5ade2372cb4c3b5500f9c8a7cb36a7888c",
+      "status": "PASS",
+      "stdout": "threshold errors: [(-0.5, 9), (0.5, 5), (1.5, 3), (2.5, 4), (3.5, 6), (4.5, 10)]\noriginal vertical_SSE=4.00 horizontal_SSE=64.00\nrescaled vertical_SSE=4.00 horizontal_SSE=0.64\nLloyd 0: centers=[0.         6.66666667] SSE=34.666667\nLloyd 1: centers=[1. 9.] SSE=4.000000\nLloyd 2: centers=[1. 9.] SSE=4.000000",
+      "displayed_stdout_matches": true
+    },
+    {
+      "file": "chapter-26-linear-and-logistic-regression-a-mathematical-synthesis.html",
+      "listing_count": 1,
+      "checked_file_sha256": "d8e80529fd002a8340a8d5ab0ee974666e6f3479fb5b45b1498e022706280e63",
+      "listing_sha256": "6fca05f7581eefb5852f4b6a5d8e7fb9c27fe9c54be155f8fc2863111325318c",
+      "status": "PASS",
+      "stdout": "OLS intercept, slope: [0.7 1.2]\nrho=0.894427 slope_from_rho=1.200000\nlogistic direction analytic=0.02113132 finite=0.02113132\nregularized Hessian eigenvalues: [0.298033 0.44533 ]\nseparable scale=1 loss=0.3132616875\nseparable scale=5 loss=0.0067153485\nseparable scale=20 loss=0.0000000021\nstable losses at signed margins -1000,1000: [1000.    0.]",
+      "displayed_stdout_matches": true
+    }
+  ]
+}

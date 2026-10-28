@@ -1,0 +1,163 @@
+{
+  "chapter": 12,
+  "title": "Bayes rules, probability measures, and random variables",
+  "status": "reviewed and locally validated",
+  "author": "probability_editor",
+  "recordings": [
+    {
+      "lecture_number": 32,
+      "video_id": "gW9x0tHq-K0",
+      "duration_seconds": 2393,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.16,
+      "transcript_last_end_seconds": 2392.48,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "3176775a03c035a04ee2a87dc973bce3b176165787ca26f5745ef44ad875a145",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 33,
+      "video_id": "mvs77Z-pjOY",
+      "duration_seconds": 2772,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.16,
+      "transcript_last_end_seconds": 2771.6,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "c61ae23ca43839492281612d4eb3f69f7e077176cf729584a2659371521b64a5",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 34,
+      "video_id": "puG77D_1fgs",
+      "duration_seconds": 3052,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 3051.12,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "85155dc57618cdfb01592e037f51d6f3e99ded6e5bb9a8401104d21331fa4ed0",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "All assigned caption text read sequentially; section-by-section private coverage ledger records topic correspondence.",
+    "teaching_constructions": "Rare-fault detector Bayes update, coarse observable-event model, pushforward count enumeration, measure continuity proofs and six worked problems.",
+    "reference_orientation": "Only inspected primary-author references cited; proofs and examples independently developed.",
+    "empirical_claims": "No empirical deployment or prediction-performance result asserted."
+  },
+  "section_map": [
+    {
+      "id": "total-probability",
+      "title": "12.1 A partition accounts for every route to an observation Lecture 32 · 01:51"
+    },
+    {
+      "id": "bayes",
+      "title": "12.2 Reverse the conditional with Bayes' rule Lecture 32 · 22:07"
+    },
+    {
+      "id": "sigma-algebra",
+      "title": "12.3 A sigma algebra specifies which questions are observable Lecture 33 · 15:39"
+    },
+    {
+      "id": "measure",
+      "title": "12.4 Probability is normalized measure Lecture 33 · 28:05"
+    },
+    {
+      "id": "random-variable",
+      "title": "12.5 A random variable transfers the probability model Lecture 34 · 18:43"
+    },
+    {
+      "id": "implementation",
+      "title": "12.6 Verify an update and a transferred distribution"
+    },
+    {
+      "id": "exercises",
+      "title": "12.7 Exercises and worked solutions"
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits"
+    }
+  ],
+  "timestamp_links": [
+    {
+      "video_id": "gW9x0tHq-K0",
+      "seconds": 111
+    },
+    {
+      "video_id": "gW9x0tHq-K0",
+      "seconds": 1327
+    },
+    {
+      "video_id": "mvs77Z-pjOY",
+      "seconds": 939
+    },
+    {
+      "video_id": "mvs77Z-pjOY",
+      "seconds": 1685
+    },
+    {
+      "video_id": "puG77D_1fgs",
+      "seconds": 1123
+    }
+  ],
+  "original_construction_statement": "Rare-fault detector Bayes update, coarse observable-event model, pushforward count enumeration, measure continuity proofs and six worked problems.",
+  "references_checked": [
+    {
+      "url": "https://mml-book.com/book/mml-book.pdf",
+      "sections": "6.1.2; 6.3",
+      "printed_pages": "175–177; 184–186",
+      "pdf_pages": [
+        181,
+        182,
+        183,
+        190,
+        191,
+        192
+      ],
+      "claims": [
+        "probability spaces and random variables",
+        "sum/product rules and Bayes theorem"
+      ]
+    }
+  ],
+  "editorial_reviews": [
+    {
+      "role": "science-editor FULL REWRITE",
+      "editor": "probability_editor",
+      "status": "rewritten and author-checked; independent review pending",
+      "reviewed_body_sha256": "a8fe3540acc71676319070858a4ce95d48cb081c2bb3f3a2e22968ec1403378c",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before wrapping.",
+      "code_execution": "Passed; displayed stdout matches actual captured execution output after line-ending normalization.",
+      "visual_review": "not performed",
+      "independent_acceptance": false
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "authored_body_sha256": "0e3b90726f5786deb52899db94893d691505378130968da59a902ff14efe5c5b",
+  "authoring_handoff_body_sha256": "a8fe3540acc71676319070858a4ce95d48cb081c2bb3f3a2e22968ec1403378c",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "0e3b90726f5786deb52899db94893d691505378130968da59a902ff14efe5c5b",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "probability_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read full manuscript, all Bayes/measure/measurability derivations, finite examples, code and six worked solutions; full coverage ledger and exact rational execution record inspected.",
+      "Independently verified detector posterior/odds, partition qualifications, generated finite sigma algebras, continuity from below, random-variable preimages, same-law/dependent counterexample and finite-total normalization.",
+      "Inspected MML PDF181–183 for mapping and induced-law reference; no claim that this reference alone supplies full measure theory.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

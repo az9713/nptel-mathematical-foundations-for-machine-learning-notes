@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "reviewer": "probability_editor",
+  "author": "root",
+  "verdict": "ACCEPT",
+  "blocking_count": 0,
+  "files": [
+    {
+      "file": "book-overview.html",
+      "reviewed_body_sha256": "2decbd24b0510c4c977de2ffed1e20548e1522376333d536b0f7b73980258ce4",
+      "hash_scope": "Exact BOOK-CONTENT marker interior UTF-8 bytes."
+    },
+    {
+      "file": "references.html",
+      "reviewed_body_sha256": "81cd9871bce9738a67677b20844f18e61443f6e60c26524a52b7e727a765131f",
+      "hash_scope": "Exact BOOK-CONTENT marker interior UTF-8 bytes."
+    },
+    {
+      "file": "numerical-lab.html",
+      "reviewed_body_sha256": "5c880a1c1f5348d9f6d6e7c44bb27abe299e747b25f803535b2b6a8fa9660e42",
+      "hash_scope": "Exact BOOK-CONTENT marker interior UTF-8 bytes."
+    },
+    {
+      "file": "numerical_lab.py",
+      "reviewed_body_sha256": "95042a3a8f3638bd85fb28b2feca5aaeb075eeabd4af5c9a14833228fa1a95a9",
+      "hash_scope": "Exact file UTF-8 bytes."
+    }
+  ],
+  "scope": [
+    "Complete study guide, reference orientation, laboratory exposition and source program read.",
+    "Five mathematical mechanisms independently checked analytically; displayed values compared to actual successful output."
+  ],
+  "limits": [
+    "No browser/rendered-page, offline-bundle, link-availability or public-package validation performed by this reviewer.",
+    "Course administrative metadata and author legal rights were not independently audited.",
+    "No claim of independent reproduction of a deployed learning result."
+  ]
+}

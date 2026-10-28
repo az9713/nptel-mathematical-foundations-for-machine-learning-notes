@@ -1,0 +1,202 @@
+{
+  "order": 22,
+  "chapter": 22,
+  "title": "Optimization, constraints, and Lagrange multipliers",
+  "status": "reviewed and locally validated",
+  "author": "calculus_editor",
+  "source_lectures": [
+    {
+      "lecture_number": 56,
+      "video_id": "zwoFyNde114",
+      "duration_seconds": 2340,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 2338.64,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "07adf833b3bb536ca069462bea043bdf91a310c5d8954c73d4a9bcaf9a8c7aa9"
+    },
+    {
+      "lecture_number": 57,
+      "video_id": "JKFI_tR79Hk",
+      "duration_seconds": 1892,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 1891.12,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified\n",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "0d92555e91aaa258c608b23e6214b81d440a497bfcdd38e7045980479c6a3b70"
+    },
+    {
+      "lecture_number": 58,
+      "video_id": "6g0KBmcAvEU",
+      "duration_seconds": 2301,
+      "read_sequentially": true,
+      "read_start": 0.24,
+      "read_end": 2299.2,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "c196ffde6e150389dffe7cec83823d08eae913d7af2e6d48efb4c93fed190883"
+    }
+  ],
+  "recordings": [
+    {
+      "lecture_number": 56,
+      "video_id": "zwoFyNde114",
+      "duration_seconds": 2340,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 2338.64,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "07adf833b3bb536ca069462bea043bdf91a310c5d8954c73d4a9bcaf9a8c7aa9"
+    },
+    {
+      "lecture_number": 57,
+      "video_id": "JKFI_tR79Hk",
+      "duration_seconds": 1892,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 1891.12,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified\n",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "0d92555e91aaa258c608b23e6214b81d440a497bfcdd38e7045980479c6a3b70"
+    },
+    {
+      "lecture_number": 58,
+      "video_id": "6g0KBmcAvEU",
+      "duration_seconds": 2301,
+      "read_sequentially": true,
+      "read_start": 0.24,
+      "read_end": 2299.2,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "c196ffde6e150389dffe7cec83823d08eae913d7af2e6d48efb4c93fed190883"
+    }
+  ],
+  "section_map": [
+    {
+      "id": "problem",
+      "title": "22.1 State the objective, variables, and feasible set L56 · 02:27",
+      "anchors": [
+        "https://www.youtube.com/watch?v=zwoFyNde114&t=147s"
+      ]
+    },
+    {
+      "id": "stationarity",
+      "title": "22.2 Interior optima require stationarity L56 · 12:40",
+      "anchors": [
+        "https://www.youtube.com/watch?v=zwoFyNde114&t=760s"
+      ]
+    },
+    {
+      "id": "curvature",
+      "title": "22.3 Second-order tests distinguish some candidates L57 · 15:56",
+      "anchors": [
+        "https://www.youtube.com/watch?v=JKFI_tR79Hk&t=956s"
+      ]
+    },
+    {
+      "id": "elimination",
+      "title": "22.4 Eliminating a constraint changes the derivative being tested L56 · 30:51",
+      "anchors": [
+        "https://www.youtube.com/watch?v=zwoFyNde114&t=1851s"
+      ]
+    },
+    {
+      "id": "multiplier",
+      "title": "22.5 A multiplier expresses normality at a regular constraint L58 · 06:17",
+      "anchors": [
+        "https://www.youtube.com/watch?v=6g0KBmcAvEU&t=377s"
+      ]
+    },
+    {
+      "id": "classification",
+      "title": "22.6 A stationary multiplier solution still needs classification L58 · 25:25",
+      "anchors": [
+        "https://www.youtube.com/watch?v=6g0KBmcAvEU&t=1525s"
+      ]
+    },
+    {
+      "id": "several",
+      "title": "22.7 Several constraints produce a span of normals L58 · 29:55",
+      "anchors": [
+        "https://www.youtube.com/watch?v=6g0KBmcAvEU&t=1795s"
+      ]
+    },
+    {
+      "id": "check",
+      "title": "22.8 Execute the stationarity and feasibility checks",
+      "anchors": []
+    },
+    {
+      "id": "problems",
+      "title": "22.9 Exercises and worked solutions",
+      "anchors": []
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits",
+      "anchors": []
+    }
+  ],
+  "reference_inspection": [
+    {
+      "url": "https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
+      "sections": "4.1,5.5.3",
+      "printed_pages": "127–130,241–245",
+      "pdf_pages": [
+        141,
+        142,
+        143,
+        144,
+        255,
+        256,
+        257,
+        258,
+        259
+      ]
+    }
+  ],
+  "original_constructions": "Examples, teaching derivations, executable checks, and worked problems are independently authored; lecture and reference concepts are identified beside their use.",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "independent_acceptance": true,
+  "worked_problem_count": 6,
+  "code_status": "Embedded listing extracted, autopep8 formatted, executed in fresh Python; stdout matches displayed output; pycodestyle passes.",
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
+  "body_sha256": "c85af7eea86f550e7a7df4e2028d66bd43a8ef9bda90868bac64d0b27adea504",
+  "authored_body_sha256": "c85af7eea86f550e7a7df4e2028d66bd43a8ef9bda90868bac64d0b27adea504",
+  "authoring_handoff_body_sha256": "22274067f168e1d5b323200f8fbe6428bcfb3339d90c8e33e071fb16743b609b",
+  "accepted_body_sha256": "c85af7eea86f550e7a7df4e2028d66bd43a8ef9bda90868bac64d0b27adea504",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "calculus_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+      "Checked existence terminology; stationary/Hessian candidate classification; exact elimination arithmetic; regular multiplier geometry and sign convention; unbounded-plane maximum counterexample; circle extrema; failed qualification; multiple equality block system and tangent-space quadratic certificate; KKT scope; every worked solution.",
+      "Targeted reference check: Boyd PDF255–259, particularly printed243–244 KKT assumptions, convex sufficiency and equality-constrained quadratic block equations.",
+      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+    ],
+    "limits": [
+      "No audiovisual or slide/whiteboard review by this independent reviewer.",
+      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+    ]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "chapter": 8,
+  "title": "Symmetric matrices, least squares, and pseudoinverses",
+  "status": "reviewed and locally validated",
+  "authored_body_sha256": "2f864686cffd80379d8857ad03be7b0557cc162e852ab18607d8d278fd0e03a0",
+  "recordings": [
+    {
+      "lecture_number": 21,
+      "video_id": "0eA95omrE5c",
+      "duration_seconds": 2805,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "first_caption_start": 0.16,
+      "last_caption_end": 2804.08,
+      "caption_text_sha256": "fcce62d9a07b15e6b6048ca7e9ad13a653ebdb39a0cded1c00d741d37730f9a3"
+    },
+    {
+      "lecture_number": 22,
+      "video_id": "HbgiWXcnFVY",
+      "duration_seconds": 2316,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "first_caption_start": 0.4,
+      "last_caption_end": 2315.28,
+      "caption_text_sha256": "0ef5c427586a045a2a7312ca9372811b558f515b50e7d41cf4a4bf40949f5719"
+    },
+    {
+      "lecture_number": 23,
+      "video_id": "mIW5anDbM4M",
+      "duration_seconds": 1871,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "first_caption_start": 1.04,
+      "last_caption_end": 1870.24,
+      "caption_text_sha256": "8f2b75bcae8b2785ea2fca08a35e47192dc70938c8835d3ba5f11c39612d4764"
+    }
+  ],
+  "sections": [
+    {
+      "id": "symmetry",
+      "title": "8.1 Symmetry is the coordinate expression of self-adjointness [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=0eA95omrE5c&t=32s"
+      ]
+    },
+    {
+      "id": "spectral",
+      "title": "8.2 Symmetry supplies a complete orthonormal eigenbasis [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=0eA95omrE5c&t=1059s"
+      ]
+    },
+    {
+      "id": "rank-one",
+      "title": "8.3 Spectral components are scaled orthogonal projections [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=0eA95omrE5c&t=2107s"
+      ]
+    },
+    {
+      "id": "least-squares",
+      "title": "8.4 Least squares projects in output space [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=HbgiWXcnFVY&t=171s"
+      ]
+    },
+    {
+      "id": "normal",
+      "title": "8.5 Normal equations characterize every least-squares minimizer [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=HbgiWXcnFVY&t=1499s"
+      ]
+    },
+    {
+      "id": "regression",
+      "title": "8.6 A line fit keeps predictor locations fixed [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=mIW5anDbM4M&t=152s"
+      ]
+    },
+    {
+      "id": "pinverse",
+      "title": "8.7 The pseudoinverse adds a minimum-norm selection [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=mIW5anDbM4M&t=1228s"
+      ]
+    },
+    {
+      "id": "wide",
+      "title": "8.8 Full row rank gives a different formula",
+      "timestamps": []
+    },
+    {
+      "id": "numerics",
+      "title": "8.9 The inverse formula explains the answer, not the best algorithm",
+      "timestamps": []
+    },
+    {
+      "id": "computation",
+      "title": "8.10 Check predictions, residuals, and the selection rule",
+      "timestamps": []
+    },
+    {
+      "id": "problems",
+      "title": "8.11 Six worked problems",
+      "timestamps": []
+    }
+  ],
+  "original_constructions": "Examples, derivations, Python, and worked problems.",
+  "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+  "visual_review": "not performed",
+  "independent_acceptance": true,
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "worked_problem_count": 6,
+  "references_checked": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "4.2–4.4, 9.4",
+      "printed_pages": "108–111, 313–314",
+      "pdf_pages": "114–117, 319–320"
+    }
+  ],
+  "accepted_body_sha256": "2f864686cffd80379d8857ad03be7b0557cc162e852ab18607d8d278fd0e03a0",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "scientific_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
+      "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
+      "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
+      "Checked self-adjoint metric identity and complex-conjugate real-spectrum proof; compact-Rayleigh/induction spectral theorem; fixed spectral projectors versus full symmetric matrix space; Gram PSD/rank equivalence; necessity and sufficiency of normal equations; every fit/residual/norm; geometric Moore–Penrose construction and four identities; full-row/full-column formulas; conditioning and ridge limits; all six worked solutions.",
+      "Targeted reference inspection: MML PDF114–117 for spectrum/Gram/spectral theorem, and319–320 for least-squares projection interpretation."
+    ],
+    "limits": [
+      "No audiovisual or whiteboard/slide inspection by this reviewer.",
+      "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
+      "No browser/MathJax/offline-publication validation performed by this reviewer.",
+      "Acceptance is bound to the exact recorded authored-body hash."
+    ]
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "scope": "Actual offline Chromium reader at desktop/mobile widths; reduced motion.",
+  "limitations": "Not human accessibility certification; clipboard text selection is not an operating-system clipboard guarantee.",
+  "records": [
+    {
+      "file": "book-overview.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-01-why-mathematics-determines-what-a-learner-can-identify.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-03-independence-bases-and-dimension.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-04-linear-transformations-and-coordinate-representations.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-10-margins-support-vectors-and-the-linear-algebra-synthesis.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-11-probability-models-events-and-conditioning.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-12-bayes-rules-probability-measures-and-random-variables.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-13-discrete-and-continuous-probability-distributions.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-14-expectation-moments-and-variance.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-15-joint-distributions-marginals-and-independence.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-18-sample-geometry-and-covariance-matrices.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-21-matrix-derivatives-and-the-geometry-of-differentials.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-22-optimization-constraints-and-lagrange-multipliers.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-23-least-squares-pca-and-gradient-algorithms.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-25-data-patterns-classification-and-clustering.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-26-linear-and-logistic-regression-a-mathematical-synthesis.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "index.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "numerical-lab.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "references.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "source-map.html",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "book-overview.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-01-why-mathematics-determines-what-a-learner-can-identify.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-03-independence-bases-and-dimension.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-04-linear-transformations-and-coordinate-representations.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-10-margins-support-vectors-and-the-linear-algebra-synthesis.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-11-probability-models-events-and-conditioning.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-12-bayes-rules-probability-measures-and-random-variables.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-13-discrete-and-continuous-probability-distributions.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-14-expectation-moments-and-variance.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-15-joint-distributions-marginals-and-independence.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-18-sample-geometry-and-covariance-matrices.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-21-matrix-derivatives-and-the-geometry-of-differentials.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-22-optimization-constraints-and-lagrange-multipliers.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-23-least-squares-pca-and-gradient-algorithms.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-25-data-patterns-classification-and-clustering.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "chapter-26-linear-and-logistic-regression-a-mathematical-synthesis.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "index.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "numerical-lab.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "references.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "file": "source-map.html",
+      "viewport": [
+        390,
+        844
+      ],
+      "status": "PASS",
+      "errors": []
+    }
+  ],
+  "status": "PASS"
+}

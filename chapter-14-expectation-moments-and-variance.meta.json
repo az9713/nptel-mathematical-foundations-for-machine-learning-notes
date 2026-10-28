@@ -1,0 +1,152 @@
+{
+  "chapter": 14,
+  "title": "Expectation, moments, and variance",
+  "status": "reviewed and locally validated",
+  "author": "probability_editor",
+  "recordings": [
+    {
+      "lecture_number": 38,
+      "video_id": "v43BR9zinJc",
+      "duration_seconds": 2768,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0,
+      "transcript_last_end_seconds": 2767.84,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "11d191c5212261d41858fad0f10a40e197abbc3e9094aede0c333d87eb06ee80",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 39,
+      "video_id": "XMtuYux1Doc",
+      "duration_seconds": 2781,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 2780.72,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "f956a764ab9b388ff72d292cb8ec85548b1b895319c8a5008bb52568d40a2de4",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "All assigned caption text read sequentially; section-by-section private coverage ledger records topic correspondence.",
+    "teaching_constructions": "Service latency laws, integrability diagnoses, squared-loss proof, distribution moment derivations, exact moment/tail comparison and six worked problems.",
+    "reference_orientation": "Only inspected primary-author references cited; proofs and examples independently developed.",
+    "empirical_claims": "No empirical deployment or prediction-performance result asserted."
+  },
+  "section_map": [
+    {
+      "id": "expectation",
+      "title": "Expectation is a weighted sum, with an existence condition"
+    },
+    {
+      "id": "linearity",
+      "title": "Linearity does not require independence"
+    },
+    {
+      "id": "squared-loss",
+      "title": "Why the mean is the best constant under squared loss"
+    },
+    {
+      "id": "moments",
+      "title": "Raw and central moments measure different things"
+    },
+    {
+      "id": "variance-identities",
+      "title": "Variance identities, distribution formulas, and numerical limits"
+    },
+    {
+      "id": "check",
+      "title": "Executable check: the same moments can hide a deadline risk"
+    },
+    {
+      "id": "problems",
+      "title": "Six worked problems"
+    },
+    {
+      "id": "scope",
+      "title": "Sources and limits"
+    }
+  ],
+  "timestamp_links": [
+    {
+      "video_id": "v43BR9zinJc",
+      "seconds": 439
+    },
+    {
+      "video_id": "v43BR9zinJc",
+      "seconds": 1780
+    },
+    {
+      "video_id": "v43BR9zinJc",
+      "seconds": 2035
+    },
+    {
+      "video_id": "XMtuYux1Doc",
+      "seconds": 126
+    },
+    {
+      "video_id": "XMtuYux1Doc",
+      "seconds": 1329
+    }
+  ],
+  "original_construction_statement": "Service latency laws, integrability diagnoses, squared-loss proof, distribution moment derivations, exact moment/tail comparison and six worked problems.",
+  "references_checked": [
+    {
+      "url": "https://mml-book.com/book/mml-book.pdf",
+      "sections": "6.4.1; 6.4.3",
+      "printed_pages": "187–190; 192–193",
+      "pdf_pages": [
+        193,
+        194,
+        195,
+        196,
+        198,
+        199
+      ],
+      "claims": [
+        "expected transformations and linearity",
+        "variance and raw-score identity",
+        "floating-point cancellation"
+      ]
+    }
+  ],
+  "editorial_reviews": [
+    {
+      "role": "science-editor FULL REWRITE",
+      "editor": "probability_editor",
+      "status": "rewritten and author-checked; independent review pending",
+      "reviewed_body_sha256": "fd32ef5cd635e7b21b29c0fac4589da26577c7a3b92bfffb2518c17aa46c375c",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before wrapping.",
+      "code_execution": "Passed; displayed stdout matches actual captured execution output after line-ending normalization.",
+      "visual_review": "not performed",
+      "independent_acceptance": false
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "authored_body_sha256": "deb974a957d66851baef45b74f0f25789dee8c20822014d0994e762c8b971257",
+  "authoring_handoff_body_sha256": "fd32ef5cd635e7b21b29c0fac4589da26577c7a3b92bfffb2518c17aa46c375c",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "deb974a957d66851baef45b74f0f25789dee8c20822014d0994e762c8b971257",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "probability_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read full manuscript, all six solutions, coverage ledger and exact rational code execution evidence.",
+      "Independently verified integrability/infinite-mean and principal-value distinctions, squared-loss mean proof, zero-variance almost-sure proof, affine variance and all distribution-moment derivations, equal-two-moments/deadline counterexample.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+      "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

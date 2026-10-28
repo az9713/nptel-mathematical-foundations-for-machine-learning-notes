@@ -1,0 +1,1480 @@
+[
+  {
+    "chapter": 1,
+    "file": "chapter-01-why-mathematics-determines-what-a-learner-can-identify.html",
+    "lectures": [
+      0,
+      1
+    ],
+    "sections": [
+      {
+        "heading": "1.1 Four tasks require different mathematical objects Lecture 1 · 07:29",
+        "anchor": "tasks",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DtH4p331VhU&t=449s"
+        ]
+      },
+      {
+        "heading": "1.2 Rows describe observations; columns describe measured variables Lecture 1 · 10:38",
+        "anchor": "data",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DtH4p331VhU&t=638s"
+        ]
+      },
+      {
+        "heading": "1.3 A similarity score encodes a chosen geometry Lecture 1 · 12:49",
+        "anchor": "similarity",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DtH4p331VhU&t=769s"
+        ]
+      },
+      {
+        "heading": "1.4 Probabilities and decisions answer different questions Lecture 1 · 16:44",
+        "anchor": "uncertainty",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DtH4p331VhU&t=1004s"
+        ]
+      },
+      {
+        "heading": "1.5 Training chooses parameters under a stated objective Lecture 1 · 20:33",
+        "anchor": "optimization",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DtH4p331VhU&t=1233s"
+        ]
+      },
+      {
+        "heading": "1.6 An executable diagnostic Lecture 1 · 24:50",
+        "anchor": "check",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=DtH4p331VhU&t=1490s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+    "lectures": [
+      2,
+      3,
+      4
+    ],
+    "sections": [
+      {
+        "heading": "2.1 A list of measurements needs an interpretation Lecture 2 · 03:24",
+        "anchor": "coordinates",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Ol1yY-6qGdk&t=204s"
+        ]
+      },
+      {
+        "heading": "2.2 Scalar arithmetic is part of the model Lecture 2 · 10:38",
+        "anchor": "fields",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Ol1yY-6qGdk&t=638s"
+        ]
+      },
+      {
+        "heading": "2.3 Why prime modular arithmetic works Lecture 2 · 25:50 Lecture 3 · 02:15",
+        "anchor": "modular",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Ol1yY-6qGdk&t=1550s",
+          "https://www.youtube.com/watch?v=TBQHV6hVwrw&t=135s"
+        ]
+      },
+      {
+        "heading": "2.4 A vector space is a set with specified operations Lecture 3 · 19:05",
+        "anchor": "axioms",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=TBQHV6hVwrw&t=1145s"
+        ]
+      },
+      {
+        "heading": "2.5 Vectors need not be arrows Lecture 4 · 01:53",
+        "anchor": "examples",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=XO2XE8JiAPs&t=113s"
+        ]
+      },
+      {
+        "heading": "2.6 Subspaces retain the same operations Lecture 4 · 10:37",
+        "anchor": "subspaces",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=XO2XE8JiAPs&t=637s"
+        ]
+      },
+      {
+        "heading": "2.7 Affine and convex closure answer different questions Lecture 4 · 25:34",
+        "anchor": "admissibility",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=XO2XE8JiAPs&t=1534s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "file": "chapter-03-independence-bases-and-dimension.html",
+    "lectures": [
+      5,
+      6
+    ],
+    "sections": [
+      {
+        "heading": "3.1 Combining observations is a modeling choice Lecture 5 · 01:52",
+        "anchor": "combinations",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=1e2bk6Q9YwU&t=112s"
+        ]
+      },
+      {
+        "heading": "3.2 Zero combinations expose redundancy Lecture 5 · 23:27",
+        "anchor": "dependence",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=1e2bk6Q9YwU&t=1407s"
+        ]
+      },
+      {
+        "heading": "3.3 Span describes every output a linear model can produce Lecture 6 · 15:16",
+        "anchor": "span",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OUPCBg9f9NM&t=916s"
+        ]
+      },
+      {
+        "heading": "3.4 A basis supplies existence and uniqueness Lecture 6 · 25:15",
+        "anchor": "basis",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OUPCBg9f9NM&t=1515s"
+        ]
+      },
+      {
+        "heading": "3.5 Why every basis has the same length Lecture 6 · 36:27",
+        "anchor": "dimension",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OUPCBg9f9NM&t=2187s"
+        ]
+      },
+      {
+        "heading": "A square-coordinate test Lecture 6 · 13:01",
+        "anchor": "determinant",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OUPCBg9f9NM&t=781s"
+        ]
+      },
+      {
+        "heading": "3.6 A basis determines a transformation only with linearity Lecture 6 · 27:07",
+        "anchor": "transformations",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OUPCBg9f9NM&t=1627s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "file": "chapter-04-linear-transformations-and-coordinate-representations.html",
+    "lectures": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "sections": [
+      {
+        "heading": "4.1 A linear transformation preserves specified combinations Lecture 7 · 06:15 Lecture 8 · 33:37",
+        "anchor": "maps",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=ynA5PC42hCM&t=375s",
+          "https://www.youtube.com/watch?v=EOiZKpHzcd4&t=2017s"
+        ]
+      },
+      {
+        "heading": "4.2 The matrix columns are transformed basis vectors Lecture 9 · 17:11",
+        "anchor": "matrix",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=ewxb6G2yfcw&t=1031s"
+        ]
+      },
+      {
+        "heading": "4.3 Familiar geometric operations expose different mechanisms Lecture 7 · 11:41",
+        "anchor": "geometry",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=ynA5PC42hCM&t=701s"
+        ]
+      },
+      {
+        "heading": "4.4 The range is the set of attainable summaries Lecture 8 · 08:20",
+        "anchor": "image",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=EOiZKpHzcd4&t=500s"
+        ]
+      },
+      {
+        "heading": "4.5 The kernel identifies distinctions that disappear Lecture 8 · 20:55",
+        "anchor": "kernel",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=EOiZKpHzcd4&t=1255s"
+        ]
+      },
+      {
+        "heading": "4.6 Rank and nullity account for every input degree of freedom Lecture 10 · 42:29",
+        "anchor": "rank",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MIPMF4lbraE&t=2549s"
+        ]
+      },
+      {
+        "heading": "4.7 Composition explains the order of matrix products Lecture 10 · 43:11",
+        "anchor": "composition",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MIPMF4lbraE&t=2591s"
+        ]
+      },
+      {
+        "heading": "4.8 Changing coordinates changes the matrix, not the map Lecture 9 · 37:28",
+        "anchor": "coordinates",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=ewxb6G2yfcw&t=2248s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
+    "lectures": [
+      11,
+      12,
+      13,
+      14
+    ],
+    "sections": [
+      {
+        "heading": "5.1 A scalar response identifies an eigenvector [lecture]",
+        "anchor": "eigen",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=cQFqtJoYv2c&t=337s"
+        ]
+      },
+      {
+        "heading": "5.2 From a homogeneous system to the characteristic polynomial [lecture]",
+        "anchor": "characteristic",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=cQFqtJoYv2c&t=918s"
+        ]
+      },
+      {
+        "heading": "5.3 Eigenspaces include zero and can have several dimensions [lecture]",
+        "anchor": "eigenspace",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=E6Lp2lq77lQ&t=1160s"
+        ]
+      },
+      {
+        "heading": "5.4 Distinct eigenvalues force independent directions [lecture]",
+        "anchor": "independence",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MyXQw-ypBLg&t=636s"
+        ]
+      },
+      {
+        "heading": "5.5 Algebraic multiplicity measures a root, not a basis [lecture]",
+        "anchor": "multiplicity",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MyXQw-ypBLg&t=1421s"
+        ]
+      },
+      {
+        "heading": "5.6 Diagonalization is exactly the existence of an eigenbasis [lecture]",
+        "anchor": "diagonal",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OtnSenweGFw&t=379s"
+        ]
+      },
+      {
+        "heading": "5.7 Powers reveal both the benefit and the obstruction [lecture]",
+        "anchor": "powers",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=OtnSenweGFw&t=733s"
+        ]
+      },
+      {
+        "heading": "5.8 A real matrix may require complex coordinates [lecture]",
+        "anchor": "field",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MyXQw-ypBLg&t=1865s"
+        ]
+      },
+      {
+        "heading": "5.9 Invariant subspaces are broader than eigenspaces [lecture]",
+        "anchor": "invariance",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=E6Lp2lq77lQ&t=1384s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "file": "chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.html",
+    "lectures": [
+      15,
+      16,
+      17
+    ],
+    "sections": [
+      {
+        "heading": "6.1 An inner product is a scalar-valued operation [lecture]",
+        "anchor": "inner",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=O-Mvuf_p2b4&t=219s"
+        ]
+      },
+      {
+        "heading": "6.3 Cauchy–Schwarz makes angle definitions possible [lecture]",
+        "anchor": "cauchy",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=32Zd4ciUfmw&t=449s"
+        ]
+      },
+      {
+        "heading": "6.4 Orthogonality separates contributions [lecture]",
+        "anchor": "orthogonal",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=32Zd4ciUfmw&t=60s"
+        ]
+      },
+      {
+        "heading": "6.5 An orthogonal complement uses every vector in a subspace [lecture]",
+        "anchor": "complement",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=32Zd4ciUfmw&t=963s"
+        ]
+      },
+      {
+        "heading": "6.6 The four fundamental subspaces come in two ambient spaces [lecture]",
+        "anchor": "fundamental",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=32Zd4ciUfmw&t=1667s"
+        ]
+      },
+      {
+        "heading": "6.7 Orthonormal coordinates require only inner products [lecture]",
+        "anchor": "orthonormal",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=0DH4xuv9Dso&t=227s"
+        ]
+      },
+      {
+        "heading": "6.8 Fourier coefficients use the same orthogonality mechanism [lecture]",
+        "anchor": "fourier",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=0DH4xuv9Dso&t=1507s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
+    "lectures": [
+      18,
+      19,
+      20
+    ],
+    "sections": [
+      {
+        "heading": "7.1 Projection onto a line determines one coefficient [lecture]",
+        "anchor": "line",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=SC_zfCRO-i8&t=249s"
+        ]
+      },
+      {
+        "heading": "7.2 An outer product packages the linear map [lecture]",
+        "anchor": "outer",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=SC_zfCRO-i8&t=1131s"
+        ]
+      },
+      {
+        "heading": "7.3 An orthonormal basis constructs the subspace projection [lecture]",
+        "anchor": "projection",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=7oRh2SdmsL0&t=1137s"
+        ]
+      },
+      {
+        "heading": "7.4 The orthogonal residual proves best approximation [lecture]",
+        "anchor": "best",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=7oRh2SdmsL0&t=1964s"
+        ]
+      },
+      {
+        "heading": "7.5 Gram–Schmidt builds the basis by removing old components [lecture]",
+        "anchor": "gram-schmidt",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=joUxO822okk&t=256s"
+        ]
+      },
+      {
+        "heading": "7.6 QR records the construction without losing normalization factors [lecture]",
+        "anchor": "qr",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=joUxO822okk&t=1249s"
+        ]
+      },
+      {
+        "heading": "7.8 Orthogonal transformations preserve all Euclidean inner products [lecture]",
+        "anchor": "isometry",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=joUxO822okk&t=2160s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "file": "chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.html",
+    "lectures": [
+      21,
+      22,
+      23
+    ],
+    "sections": [
+      {
+        "heading": "8.1 Symmetry is the coordinate expression of self-adjointness [lecture]",
+        "anchor": "symmetry",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=0eA95omrE5c&t=32s"
+        ]
+      },
+      {
+        "heading": "8.2 Symmetry supplies a complete orthonormal eigenbasis [lecture]",
+        "anchor": "spectral",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=0eA95omrE5c&t=1059s"
+        ]
+      },
+      {
+        "heading": "8.3 Spectral components are scaled orthogonal projections [lecture]",
+        "anchor": "rank-one",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=0eA95omrE5c&t=2107s"
+        ]
+      },
+      {
+        "heading": "8.4 Least squares projects in output space [lecture]",
+        "anchor": "least-squares",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=HbgiWXcnFVY&t=171s"
+        ]
+      },
+      {
+        "heading": "8.5 Normal equations characterize every least-squares minimizer [lecture]",
+        "anchor": "normal",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=HbgiWXcnFVY&t=1499s"
+        ]
+      },
+      {
+        "heading": "8.6 A line fit keeps predictor locations fixed [lecture]",
+        "anchor": "regression",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mIW5anDbM4M&t=152s"
+        ]
+      },
+      {
+        "heading": "8.7 The pseudoinverse adds a minimum-norm selection [lecture]",
+        "anchor": "pinverse",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mIW5anDbM4M&t=1228s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
+    "lectures": [
+      24,
+      25,
+      26
+    ],
+    "sections": [
+      {
+        "heading": "9.1 Separate the mean from variation [lecture]",
+        "anchor": "center",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=agWD_JySWwQ&t=710s"
+        ]
+      },
+      {
+        "heading": "9.2 The variance criterion chooses covariance eigenvectors [lecture]",
+        "anchor": "pca",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=agWD_JySWwQ&t=1538s"
+        ]
+      },
+      {
+        "heading": "9.3 Explained variance is a reconstruction-energy fraction [lecture]",
+        "anchor": "variance",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=agWD_JySWwQ&t=1909s"
+        ]
+      },
+      {
+        "heading": "9.4 A rectangular map has separate input and output axes [lecture]",
+        "anchor": "svd",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=c-17ba9M974&t=468s"
+        ]
+      },
+      {
+        "heading": "9.5 A complete wide-matrix example [lecture]",
+        "anchor": "example",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=c-17ba9M974&t=1665s"
+        ]
+      },
+      {
+        "heading": "9.6 Orthogonal changes can include reflections [lecture]",
+        "anchor": "ellipse",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MO9V1ZPK4Ao&t=913s"
+        ]
+      },
+      {
+        "heading": "9.7 Rank-one terms form a small subspace of matrix space [lecture]",
+        "anchor": "outer",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MO9V1ZPK4Ao&t=1603s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 10,
+    "file": "chapter-10-margins-support-vectors-and-the-linear-algebra-synthesis.html",
+    "lectures": [
+      27,
+      28
+    ],
+    "sections": [
+      {
+        "heading": "10.1 A separating score is not yet a distance Lecture 27 · 01:17",
+        "anchor": "hyperplanes",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MkISGYz2x3A&t=77s"
+        ]
+      },
+      {
+        "heading": "10.2 Maximize the smallest gap Lecture 27 · 04:24",
+        "anchor": "hard-margin",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MkISGYz2x3A&t=264s"
+        ]
+      },
+      {
+        "heading": "10.3 A higher-dimensional representation can change separability Lecture 27 · 07:52",
+        "anchor": "lift",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MkISGYz2x3A&t=472s"
+        ]
+      },
+      {
+        "heading": "10.4 Kernels compute feature inner products indirectly Lecture 27 · 18:55",
+        "anchor": "kernels",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=MkISGYz2x3A&t=1135s"
+        ]
+      },
+      {
+        "heading": "10.5 Rank and nullity separate retained and lost directions Lecture 28 · 08:34",
+        "anchor": "rank",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=GYqPPEQYUkA&t=514s"
+        ]
+      },
+      {
+        "heading": "10.6 Which transformations preserve which quantities? Lecture 28 · 31:47",
+        "anchor": "synthesis",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=GYqPPEQYUkA&t=1907s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 11,
+    "file": "chapter-11-probability-models-events-and-conditioning.html",
+    "lectures": [
+      29,
+      30,
+      31
+    ],
+    "sections": [
+      {
+        "heading": "11.1 Specify the experiment before assigning numbers Lecture 29 · 09:53",
+        "anchor": "experiment",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=RXMMGj7VAdo&t=593s"
+        ]
+      },
+      {
+        "heading": "11.2 Event operations encode questions about the reports Lecture 30 · 00:59",
+        "anchor": "set-language",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=tlQEEZqjd-w&t=59s"
+        ]
+      },
+      {
+        "heading": "11.3 Probability is a consistent measure on events Lecture 30 · 22:19",
+        "anchor": "axioms",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=tlQEEZqjd-w&t=1339s"
+        ]
+      },
+      {
+        "heading": "11.4 Consequences of the axioms Lecture 30 · 33:21",
+        "anchor": "consequences",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=tlQEEZqjd-w&t=2001s"
+        ]
+      },
+      {
+        "heading": "11.5 Conditioning restricts and renormalizes Lecture 31 · 30:23",
+        "anchor": "conditioning",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=n6bbBgw4FDw&t=1823s"
+        ]
+      },
+      {
+        "heading": "11.6 Independence is an exact factorization Lecture 31 · 41:00",
+        "anchor": "independence",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=n6bbBgw4FDw&t=2460s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 12,
+    "file": "chapter-12-bayes-rules-probability-measures-and-random-variables.html",
+    "lectures": [
+      32,
+      33,
+      34
+    ],
+    "sections": [
+      {
+        "heading": "12.1 A partition accounts for every route to an observation Lecture 32 · 01:51",
+        "anchor": "total-probability",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=gW9x0tHq-K0&t=111s"
+        ]
+      },
+      {
+        "heading": "12.2 Reverse the conditional with Bayes' rule Lecture 32 · 22:07",
+        "anchor": "bayes",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=gW9x0tHq-K0&t=1327s"
+        ]
+      },
+      {
+        "heading": "12.3 A sigma algebra specifies which questions are observable Lecture 33 · 15:39",
+        "anchor": "sigma-algebra",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mvs77Z-pjOY&t=939s"
+        ]
+      },
+      {
+        "heading": "12.4 Probability is normalized measure Lecture 33 · 28:05",
+        "anchor": "measure",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mvs77Z-pjOY&t=1685s"
+        ]
+      },
+      {
+        "heading": "12.5 A random variable transfers the probability model Lecture 34 · 18:43",
+        "anchor": "random-variable",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=puG77D_1fgs&t=1123s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 13,
+    "file": "chapter-13-discrete-and-continuous-probability-distributions.html",
+    "lectures": [
+      35,
+      36,
+      37
+    ],
+    "sections": [
+      {
+        "heading": "13.1 A mass function adds all outcomes mapped to the same value Lecture 35 · 02:05",
+        "anchor": "mass",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=uhfv88JcTgw&t=125s"
+        ]
+      },
+      {
+        "heading": "13.2 One trial and a fixed number of trials Lecture 35 · 23:40",
+        "anchor": "bernoulli",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=uhfv88JcTgw&t=1420s"
+        ]
+      },
+      {
+        "heading": "13.3 Replacement changes the law Lecture 36 · 10:51",
+        "anchor": "sampling",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=dByGT1N8JAw&t=651s"
+        ]
+      },
+      {
+        "heading": "13.4 Waiting for the first success Lecture 36 · 26:52",
+        "anchor": "geometric",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=dByGT1N8JAw&t=1612s"
+        ]
+      },
+      {
+        "heading": "13.5 Uniform choices and arrival counts Lecture 36 · 38:12",
+        "anchor": "uniform-poisson",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=dByGT1N8JAw&t=2292s"
+        ]
+      },
+      {
+        "heading": "13.6 A density has units of inverse measurement Lecture 37 · 01:33",
+        "anchor": "density",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=fOE0BoBPpfE&t=93s"
+        ]
+      },
+      {
+        "heading": "13.7 The cumulative distribution describes every real law Lecture 37 · 27:17",
+        "anchor": "cdf",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=fOE0BoBPpfE&t=1637s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 14,
+    "file": "chapter-14-expectation-moments-and-variance.html",
+    "lectures": [
+      38,
+      39
+    ],
+    "sections": [
+      {
+        "heading": "Expectation is a weighted sum, with an existence condition Lecture 38, 07:19",
+        "anchor": "expectation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=v43BR9zinJc&t=439s"
+        ]
+      },
+      {
+        "heading": "Linearity does not require independence Lecture 38, 29:40",
+        "anchor": "linearity",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=v43BR9zinJc&t=1780s"
+        ]
+      },
+      {
+        "heading": "Why the mean is the best constant under squared loss Lecture 38, 33:55",
+        "anchor": "squared-loss",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=v43BR9zinJc&t=2035s"
+        ]
+      },
+      {
+        "heading": "Raw and central moments measure different things Lecture 39, 02:06",
+        "anchor": "moments",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=XMtuYux1Doc&t=126s"
+        ]
+      },
+      {
+        "heading": "Variance identities, distribution formulas, and numerical limits Lecture 39, 22:09",
+        "anchor": "variance-identities",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=XMtuYux1Doc&t=1329s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 15,
+    "file": "chapter-15-joint-distributions-marginals-and-independence.html",
+    "lectures": [
+      40,
+      41,
+      42
+    ],
+    "sections": [
+      {
+        "heading": "A joint mass table contains information absent from its margins Lecture 40, 09:40",
+        "anchor": "joint-mass",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=3CoMjVeKENw&t=580s"
+        ]
+      },
+      {
+        "heading": "A joint density weights area, including its support Lecture 40, 23:59",
+        "anchor": "joint-density",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=3CoMjVeKENw&t=1439s"
+        ]
+      },
+      {
+        "heading": "A joint CDF works for discrete, dense, and singular laws Lecture 40, 33:12",
+        "anchor": "joint-cdf",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=3CoMjVeKENw&t=1992s"
+        ]
+      },
+      {
+        "heading": "Independence is an entire-law factorization Lecture 40, 20:54",
+        "anchor": "independence",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=3CoMjVeKENw&t=1254s"
+        ]
+      },
+      {
+        "heading": "Joint expectations: linearity survives, products need a condition Lecture 41, 03:04",
+        "anchor": "joint-expectation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=x-UDoM5Kvmg&t=184s"
+        ]
+      },
+      {
+        "heading": "Centering isolates joint fluctuations, not every kind of dependence Lecture 41, 23:44",
+        "anchor": "covariance",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=x-UDoM5Kvmg&t=1424s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 16,
+    "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
+    "lectures": [
+      43,
+      44
+    ],
+    "sections": [
+      {
+        "heading": "Correlation is the angle between centered fluctuations Lecture 43, 07:24",
+        "anchor": "correlation-geometry",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=QfVMepVNkvM&t=444s"
+        ]
+      },
+      {
+        "heading": "The Gaussian exception requires a joint Gaussian law Lecture 43, 22:14",
+        "anchor": "joint-gaussian",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=QfVMepVNkvM&t=1334s"
+        ]
+      },
+      {
+        "heading": "A conditional distribution is a normalized slice Lecture 44, 29:54",
+        "anchor": "conditional-laws",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=XrXZo-_gRC4&t=1794s"
+        ]
+      },
+      {
+        "heading": "A latent choice produces a mixture, and Bayes reverses it Lecture 44, 11:31",
+        "anchor": "mixture-bayes",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=XrXZo-_gRC4&t=691s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 17,
+    "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+    "lectures": [
+      45,
+      46,
+      47
+    ],
+    "sections": [
+      {
+        "heading": "Tail events and threshold conventions Lecture 45, 05:23",
+        "anchor": "tails",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=qiWb224McU4&t=323s"
+        ]
+      },
+      {
+        "heading": "Markov's inequality: charge every exceedance a minimum cost Lecture 45, 28:55",
+        "anchor": "markov",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=qiWb224McU4&t=1735s"
+        ]
+      },
+      {
+        "heading": "Chebyshev's inequality is Markov applied to a squared deviation Lecture 46, 07:26",
+        "anchor": "chebyshev",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=wSY8FfR1qwM&t=446s"
+        ]
+      },
+      {
+        "heading": "Sampling distributions are laws of statistics before observing the data Lecture 46, 28:06",
+        "anchor": "sampling",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=wSY8FfR1qwM&t=1686s"
+        ]
+      },
+      {
+        "heading": "The central limit theorem concerns standardized fluctuations Lecture 47, 23:37",
+        "anchor": "clt",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=54iHJ5p35nA&t=1417s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 18,
+    "file": "chapter-18-sample-geometry-and-covariance-matrices.html",
+    "lectures": [
+      48,
+      49
+    ],
+    "sections": [
+      {
+        "heading": "Rows are observations; columns are feature profiles Lecture 48, 05:28",
+        "anchor": "two-geometries",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=7bQCiH5ZH20&t=328s"
+        ]
+      },
+      {
+        "heading": "Centering is an orthogonal projection in observation space Lecture 48, 19:16",
+        "anchor": "centering",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=7bQCiH5ZH20&t=1156s"
+        ]
+      },
+      {
+        "heading": "Sample variance and covariance are scaled inner products Lecture 48, 29:47",
+        "anchor": "sample-covariance",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=7bQCiH5ZH20&t=1787s"
+        ]
+      },
+      {
+        "heading": "A covariance matrix is the variance of every linear combination at once Lecture 49, 01:57",
+        "anchor": "population-covariance",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=HjSBsvMcD14&t=117s"
+        ]
+      },
+      {
+        "heading": "Covariance transforms by congruence Lecture 49, 28:36",
+        "anchor": "transformation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=HjSBsvMcD14&t=1716s"
+        ]
+      },
+      {
+        "heading": "Orthogonal diagonalization decorrelates coordinates Lecture 49, 32:39",
+        "anchor": "spectral",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=HjSBsvMcD14&t=1959s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 19,
+    "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
+    "lectures": [
+      50,
+      51
+    ],
+    "sections": [
+      {
+        "heading": "19.1 A function includes its domain and codomain L50 · 09:40",
+        "anchor": "functions",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=580s"
+        ]
+      },
+      {
+        "heading": "19.2 A derivative defines a local linear approximation L50 · 12:41",
+        "anchor": "derivative",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=761s"
+        ]
+      },
+      {
+        "heading": "19.3 Higher derivatives reveal changing sensitivity L50 · 18:08",
+        "anchor": "higher",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=1088s"
+        ]
+      },
+      {
+        "heading": "19.4 Taylor coefficients need an approximation bound L50 · 21:42",
+        "anchor": "taylor",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=1302s"
+        ]
+      },
+      {
+        "heading": "19.5 An infinite series requires convergence to the function L50 · 29:09",
+        "anchor": "series",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=1749s"
+        ]
+      },
+      {
+        "heading": "19.6 Differentiation preserves sums but not products L51 · 08:48",
+        "anchor": "rules",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=w7NIMfhxWr4&t=528s"
+        ]
+      },
+      {
+        "heading": "19.7 The chain rule follows the order of composition L51 · 19:28",
+        "anchor": "chain",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=w7NIMfhxWr4&t=1168s"
+        ]
+      },
+      {
+        "heading": "19.8 Finite differences balance two errors L51 · 30:20",
+        "anchor": "check",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=w7NIMfhxWr4&t=1820s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 20,
+    "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
+    "lectures": [
+      52,
+      53,
+      54
+    ],
+    "sections": [
+      {
+        "heading": "20.1 Graphs and level sets describe different geometries L52 · 04:16",
+        "anchor": "surfaces",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=GAAMCeofdrU&t=256s"
+        ]
+      },
+      {
+        "heading": "20.2 Partial derivatives examine coordinate slices L52 · 22:34",
+        "anchor": "partials",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=GAAMCeofdrU&t=1354s"
+        ]
+      },
+      {
+        "heading": "20.3 The gradient represents one linear differential L53 · 07:03",
+        "anchor": "gradient",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mG6PmcCqwEI&t=423s"
+        ]
+      },
+      {
+        "heading": "20.4 Steepest change and level-set tangents L53 · 34:58",
+        "anchor": "steepest",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=mG6PmcCqwEI&t=2098s"
+        ]
+      },
+      {
+        "heading": "20.5 A chain rule composes local maps L54 · 05:01",
+        "anchor": "chain",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4YK0LLL6C8c&t=301s"
+        ]
+      },
+      {
+        "heading": "20.6 A Jacobian has one row per output L54 · 14:53",
+        "anchor": "jacobian",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4YK0LLL6C8c&t=893s"
+        ]
+      },
+      {
+        "heading": "20.7 The Hessian describes directional curvature L54 · 31:31",
+        "anchor": "hessian",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4YK0LLL6C8c&t=1891s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 21,
+    "file": "chapter-21-matrix-derivatives-and-the-geometry-of-differentials.html",
+    "lectures": [
+      55
+    ],
+    "sections": [
+      {
+        "heading": "21.1 A linear map is its own local derivative L55 · 04:10",
+        "anchor": "linear-map",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=xIvGdpzj9Rk&t=250s"
+        ]
+      },
+      {
+        "heading": "21.2 Squared length has a gradient, not a matrix Jacobian ambiguity L55 · 14:48",
+        "anchor": "norm",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=xIvGdpzj9Rk&t=888s"
+        ]
+      },
+      {
+        "heading": "21.3 Bilinear forms distinguish the two arguments L55 · 17:13",
+        "anchor": "bilinear",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=xIvGdpzj9Rk&t=1033s"
+        ]
+      },
+      {
+        "heading": "21.4 A quadratic form sees only the symmetric matrix part L55 · 27:07",
+        "anchor": "quadratic",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=xIvGdpzj9Rk&t=1627s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 22,
+    "file": "chapter-22-optimization-constraints-and-lagrange-multipliers.html",
+    "lectures": [
+      56,
+      57,
+      58
+    ],
+    "sections": [
+      {
+        "heading": "22.1 State the objective, variables, and feasible set L56 · 02:27",
+        "anchor": "problem",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=zwoFyNde114&t=147s"
+        ]
+      },
+      {
+        "heading": "22.2 Interior optima require stationarity L56 · 12:40",
+        "anchor": "stationarity",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=zwoFyNde114&t=760s"
+        ]
+      },
+      {
+        "heading": "22.3 Second-order tests distinguish some candidates L57 · 15:56",
+        "anchor": "curvature",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=JKFI_tR79Hk&t=956s"
+        ]
+      },
+      {
+        "heading": "22.4 Eliminating a constraint changes the derivative being tested L56 · 30:51",
+        "anchor": "elimination",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=zwoFyNde114&t=1851s"
+        ]
+      },
+      {
+        "heading": "22.5 A multiplier expresses normality at a regular constraint L58 · 06:17",
+        "anchor": "multiplier",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=6g0KBmcAvEU&t=377s"
+        ]
+      },
+      {
+        "heading": "22.6 A stationary multiplier solution still needs classification L58 · 25:25",
+        "anchor": "classification",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=6g0KBmcAvEU&t=1525s"
+        ]
+      },
+      {
+        "heading": "22.7 Several constraints produce a span of normals L58 · 29:55",
+        "anchor": "several",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=6g0KBmcAvEU&t=1795s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 23,
+    "file": "chapter-23-least-squares-pca-and-gradient-algorithms.html",
+    "lectures": [
+      59,
+      60,
+      61
+    ],
+    "sections": [
+      {
+        "heading": "23.1 Differentiate the residual objective L59 · 05:17",
+        "anchor": "least-squares",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=QvjDBgta3q8&t=317s"
+        ]
+      },
+      {
+        "heading": "23.3 Principal directions require a unit-length constraint L59 · 17:28",
+        "anchor": "pca",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=QvjDBgta3q8&t=1048s"
+        ]
+      },
+      {
+        "heading": "23.4 Gradient descent turns a derivative into an iteration L60 · 11:41",
+        "anchor": "gradient",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=otquSqlAm0g&t=701s"
+        ]
+      },
+      {
+        "heading": "23.5 Small updates do not identify the reason for stopping L61 · 01:34",
+        "anchor": "stopping",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4rtoG_LZVOs&t=94s"
+        ]
+      },
+      {
+        "heading": "23.6 Stochastic gradients change the sampling and cost L61 · 04:47",
+        "anchor": "stochastic",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4rtoG_LZVOs&t=287s"
+        ]
+      },
+      {
+        "heading": "23.7 Newton minimizes a local quadratic model L61 · 16:22",
+        "anchor": "newton",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=4rtoG_LZVOs&t=982s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 24,
+    "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+    "lectures": [
+      62,
+      63,
+      64
+    ],
+    "sections": [
+      {
+        "heading": "24.1 A neuron model becomes an affine decision rule L62 · 02:25",
+        "anchor": "threshold",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=LcXiDQcSElc&t=145s"
+        ]
+      },
+      {
+        "heading": "24.2 Why one separator fails, and composition succeeds L62 · 12:25",
+        "anchor": "xor",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=LcXiDQcSElc&t=745s"
+        ]
+      },
+      {
+        "heading": "24.3 What the perceptron convergence statement assumes L62 · 25:57",
+        "anchor": "perceptron",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=LcXiDQcSElc&t=1557s"
+        ]
+      },
+      {
+        "heading": "24.4 Activation, memory, and causality are different notions L62 · 14:04",
+        "anchor": "activation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=LcXiDQcSElc&t=844s"
+        ]
+      },
+      {
+        "heading": "24.5 Count the actual maps and parameters L63 · 15:18",
+        "anchor": "shapes",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=gOIPudXtH6o&t=918s"
+        ]
+      },
+      {
+        "heading": "24.6 Differentiate a specified loss before updating L64 · 13:38",
+        "anchor": "loss",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=5XZoF5h1KOw&t=818s"
+        ]
+      },
+      {
+        "heading": "24.7 Backpropagation is the chain rule with reuse L64 · 20:39",
+        "anchor": "reverse",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=5XZoF5h1KOw&t=1239s"
+        ]
+      },
+      {
+        "heading": "24.8 Derivatives, training schedules, and limitations L64 · 28:39",
+        "anchor": "training",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=5XZoF5h1KOw&t=1719s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 25,
+    "file": "chapter-25-data-patterns-classification-and-clustering.html",
+    "lectures": [
+      65,
+      66,
+      67
+    ],
+    "sections": [
+      {
+        "heading": "25.1 From a real problem to a learning problem L65 · 02:46",
+        "anchor": "problem",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=vJFf6HmyDy8&t=166s"
+        ]
+      },
+      {
+        "heading": "25.2 Feature maps can simplify geometry L66 · 01:21",
+        "anchor": "features",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=B3GqDkT_gyM&t=81s"
+        ]
+      },
+      {
+        "heading": "25.3 Solve a complete one-feature classification problem L66 · 18:33",
+        "anchor": "threshold",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=B3GqDkT_gyM&t=1113s"
+        ]
+      },
+      {
+        "heading": "25.4 Separate fitting, selection, and final evaluation L67 · 02:37",
+        "anchor": "evaluation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=dvSnuCPrFGE&t=157s"
+        ]
+      },
+      {
+        "heading": "25.5 Multiple classes and classifier fusion L66 · 07:28",
+        "anchor": "fusion",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=B3GqDkT_gyM&t=448s"
+        ]
+      },
+      {
+        "heading": "25.6 Clustering starts with geometry, not recovered truth L67 · 10:51",
+        "anchor": "geometry",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=dvSnuCPrFGE&t=651s"
+        ]
+      },
+      {
+        "heading": "25.7 Make the centroid method into a precise optimization problem L67 · 18:18",
+        "anchor": "kmeans",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=dvSnuCPrFGE&t=1098s"
+        ]
+      },
+      {
+        "heading": "25.8 Hierarchies, mixtures, and what “between” means L67 · 20:40",
+        "anchor": "alternatives",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=dvSnuCPrFGE&t=1240s"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": 26,
+    "file": "chapter-26-linear-and-logistic-regression-a-mathematical-synthesis.html",
+    "lectures": [
+      68,
+      69,
+      70
+    ],
+    "sections": [
+      {
+        "heading": "26.1 What a polynomial design matrix actually does L68 · 02:28",
+        "anchor": "interpolation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=xlmIa0p1Nwg&t=148s"
+        ]
+      },
+      {
+        "heading": "26.2 The response is random even when the input is fixed L68 · 16:51",
+        "anchor": "conditional",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=xlmIa0p1Nwg&t=1011s"
+        ]
+      },
+      {
+        "heading": "26.3 Derive the slope and intercept by centering L68 · 37:09",
+        "anchor": "slope",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=xlmIa0p1Nwg&t=2229s"
+        ]
+      },
+      {
+        "heading": "26.4 The Gram matrix is the same calculation in another form L68 · 39:44",
+        "anchor": "gram",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=xlmIa0p1Nwg&t=2384s"
+        ]
+      },
+      {
+        "heading": "26.6 Binary outcomes require a probability model L69 · 07:13",
+        "anchor": "odds",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=qAktDUz9sFU&t=433s"
+        ]
+      },
+      {
+        "heading": "26.7 Interpret coefficients and decision boundaries L69 · 29:26",
+        "anchor": "interpretation",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=qAktDUz9sFU&t=1766s"
+        ]
+      },
+      {
+        "heading": "26.12 Read the course backward through the regression models L70 · 00:19",
+        "anchor": "course-map",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Cvb-52mIoBU&t=19s"
+        ]
+      },
+      {
+        "heading": "26.13 Credits and source boundaries L70 · 33:01",
+        "anchor": "credits",
+        "recording_urls": [
+          "https://www.youtube.com/watch?v=Cvb-52mIoBU&t=1981s"
+        ]
+      }
+    ]
+  }
+]

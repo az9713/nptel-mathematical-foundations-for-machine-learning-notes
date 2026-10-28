@@ -1,0 +1,170 @@
+{
+  "chapter": 11,
+  "title": "Probability models, events, and conditioning",
+  "status": "reviewed and locally validated",
+  "author": "probability_editor",
+  "recordings": [
+    {
+      "lecture_number": 29,
+      "video_id": "RXMMGj7VAdo",
+      "duration_seconds": 2621,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 2620.56,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "04f3e12a84760b3b8e33404cfdf47d49a4beca2ddbb9f58faef25c012de20c56",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 30,
+      "video_id": "tlQEEZqjd-w",
+      "duration_seconds": 2701,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 2700.72,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "0c7a58e95309b2179f2822082d661d934b5f3403c10b5565ceb85697350512cb",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 31,
+      "video_id": "n6bbBgw4FDw",
+      "duration_seconds": 2883,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified\n",
+      "transcript_first_start_seconds": 0.4,
+      "transcript_last_end_seconds": 2882.08,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "519f789c0133df277ddc00cf959c755ca3f0db39f0603a8855e430c6d16a18b1",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "All assigned caption text read sequentially; section-by-section private coverage ledger records topic correspondence.",
+    "teaching_constructions": "Two-checker four-outcome model, exact conditioning and parity enumeration, event-proof developments, reporting-mechanism counterexamples and six worked problems.",
+    "reference_orientation": "Only inspected primary-author references cited; proofs and examples independently developed.",
+    "empirical_claims": "No empirical deployment or prediction-performance result asserted."
+  },
+  "section_map": [
+    {
+      "id": "experiment",
+      "title": "11.1 Specify the experiment before assigning numbers Lecture 29 · 09:53"
+    },
+    {
+      "id": "set-language",
+      "title": "11.2 Event operations encode questions about the reports Lecture 30 · 00:59"
+    },
+    {
+      "id": "axioms",
+      "title": "11.3 Probability is a consistent measure on events Lecture 30 · 22:19"
+    },
+    {
+      "id": "consequences",
+      "title": "11.4 Consequences of the axioms Lecture 30 · 33:21"
+    },
+    {
+      "id": "conditioning",
+      "title": "11.5 Conditioning restricts and renormalizes Lecture 31 · 30:23"
+    },
+    {
+      "id": "independence",
+      "title": "11.6 Independence is an exact factorization Lecture 31 · 41:00"
+    },
+    {
+      "id": "implementation",
+      "title": "11.7 Enumerate the finite model exactly"
+    },
+    {
+      "id": "exercises",
+      "title": "11.8 Exercises and worked solutions"
+    },
+    {
+      "id": "sources",
+      "title": "Sources and scope"
+    }
+  ],
+  "timestamp_links": [
+    {
+      "video_id": "RXMMGj7VAdo",
+      "seconds": 593
+    },
+    {
+      "video_id": "tlQEEZqjd-w",
+      "seconds": 59
+    },
+    {
+      "video_id": "tlQEEZqjd-w",
+      "seconds": 1339
+    },
+    {
+      "video_id": "tlQEEZqjd-w",
+      "seconds": 2001
+    },
+    {
+      "video_id": "n6bbBgw4FDw",
+      "seconds": 1823
+    },
+    {
+      "video_id": "n6bbBgw4FDw",
+      "seconds": 2460
+    }
+  ],
+  "original_construction_statement": "Two-checker four-outcome model, exact conditioning and parity enumeration, event-proof developments, reporting-mechanism counterexamples and six worked problems.",
+  "references_checked": [
+    {
+      "url": "https://mml-book.com/book/mml-book.pdf",
+      "sections": "6.1.2",
+      "printed_pages": "173–177",
+      "pdf_pages": [
+        179,
+        180,
+        181,
+        182,
+        183
+      ],
+      "claims": [
+        "probability spaces",
+        "axioms and event probabilities"
+      ]
+    }
+  ],
+  "editorial_reviews": [
+    {
+      "role": "science-editor FULL REWRITE",
+      "editor": "probability_editor",
+      "status": "rewritten and author-checked; independent review pending",
+      "reviewed_body_sha256": "8e6b9637bbd23e1cc63c59a9a3f9923c6139849cf89f7e3349de4d1ab4187257",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before wrapping.",
+      "code_execution": "Passed; displayed stdout matches actual captured execution output after line-ending normalization.",
+      "visual_review": "not performed",
+      "independent_acceptance": false
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "authored_body_sha256": "ca76705d745a94e5c713fde3959755ad8d85cc3f063e2ba06d793c8b2b8a11e3",
+  "authoring_handoff_body_sha256": "8e6b9637bbd23e1cc63c59a9a3f9923c6139849cf89f7e3349de4d1ab4187257",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "ca76705d745a94e5c713fde3959755ad8d85cc3f063e2ba06d793c8b2b8a11e3",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "probability_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read full manuscript, every finite probability calculation, all six worked solutions, full coverage ledger and existing exact rational execution evidence.",
+      "Independently verified checker atom table, union/conditional identities, event-vs-outcome and countability distinctions, pairwise-not-mutual counterexample, attainable-overlap interval and report-selection example.",
+      "Inspected MML PDF181(printed175) probability-space definitions. Scope and original toy constructions are clearly separated from deployed measurement claims.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

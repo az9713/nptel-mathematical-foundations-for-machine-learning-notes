@@ -1,0 +1,176 @@
+{
+  "order": 19,
+  "chapter": 19,
+  "title": "Functions, series, and one-variable differentiation",
+  "status": "reviewed and locally validated",
+  "author": "calculus_editor",
+  "source_lectures": [
+    {
+      "lecture_number": 50,
+      "video_id": "WUHIpvXgA8Y",
+      "duration_seconds": 1990,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 1988.88,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "1714332377db1960bc0e4ac94c4af91cbfedc8f1f728839c3f816b9a8a3a3231"
+    },
+    {
+      "lecture_number": 51,
+      "video_id": "w7NIMfhxWr4",
+      "duration_seconds": 1867,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 1866.4,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "1acb9dc61d920b540ecd96401646dbe3eda5abf4d1cae548b28c35bb424e888d"
+    }
+  ],
+  "recordings": [
+    {
+      "lecture_number": 50,
+      "video_id": "WUHIpvXgA8Y",
+      "duration_seconds": 1990,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 1988.88,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "1714332377db1960bc0e4ac94c4af91cbfedc8f1f728839c3f816b9a8a3a3231"
+    },
+    {
+      "lecture_number": 51,
+      "video_id": "w7NIMfhxWr4",
+      "duration_seconds": 1867,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 1866.4,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "1acb9dc61d920b540ecd96401646dbe3eda5abf4d1cae548b28c35bb424e888d"
+    }
+  ],
+  "section_map": [
+    {
+      "id": "functions",
+      "title": "19.1 A function includes its domain and codomain L50 · 09:40",
+      "anchors": [
+        "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=580s"
+      ]
+    },
+    {
+      "id": "derivative",
+      "title": "19.2 A derivative defines a local linear approximation L50 · 12:41",
+      "anchors": [
+        "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=761s"
+      ]
+    },
+    {
+      "id": "higher",
+      "title": "19.3 Higher derivatives reveal changing sensitivity L50 · 18:08",
+      "anchors": [
+        "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=1088s"
+      ]
+    },
+    {
+      "id": "taylor",
+      "title": "19.4 Taylor coefficients need an approximation bound L50 · 21:42",
+      "anchors": [
+        "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=1302s"
+      ]
+    },
+    {
+      "id": "series",
+      "title": "19.5 An infinite series requires convergence to the function L50 · 29:09",
+      "anchors": [
+        "https://www.youtube.com/watch?v=WUHIpvXgA8Y&t=1749s"
+      ]
+    },
+    {
+      "id": "rules",
+      "title": "19.6 Differentiation preserves sums but not products L51 · 08:48",
+      "anchors": [
+        "https://www.youtube.com/watch?v=w7NIMfhxWr4&t=528s"
+      ]
+    },
+    {
+      "id": "chain",
+      "title": "19.7 The chain rule follows the order of composition L51 · 19:28",
+      "anchors": [
+        "https://www.youtube.com/watch?v=w7NIMfhxWr4&t=1168s"
+      ]
+    },
+    {
+      "id": "check",
+      "title": "19.8 Finite differences balance two errors L51 · 30:20",
+      "anchors": [
+        "https://www.youtube.com/watch?v=w7NIMfhxWr4&t=1820s"
+      ]
+    },
+    {
+      "id": "problems",
+      "title": "19.9 Exercises and worked solutions",
+      "anchors": []
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits",
+      "anchors": []
+    }
+  ],
+  "reference_inspection": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "5.1",
+      "printed_pages": "141–145",
+      "pdf_pages": [
+        147,
+        148,
+        149,
+        150,
+        151
+      ]
+    }
+  ],
+  "original_constructions": "Examples, teaching derivations, executable checks, and worked problems are independently authored; lecture and reference concepts are identified beside their use.",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "independent_acceptance": true,
+  "worked_problem_count": 6,
+  "code_status": "Embedded listing extracted, autopep8 formatted, executed in fresh Python; stdout matches displayed output; pycodestyle passes.",
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
+  "body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a",
+  "authored_body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a",
+  "authoring_handoff_body_sha256": "bf0152404a67717ff10d87019b5099c1bbd59eceef547dbfcd99c29f04d940cc",
+  "accepted_body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "calculus_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+      "Checked scalar derivative as local linear model, constrained stationarity example, Taylor remainder arithmetic, convergence domains, smooth nonanalytic counterexample, complex exponential decomposition, product/quotient/chain derivations, finite-difference error bounds, and every worked solution.",
+      "Targeted reference check: MML PDF147–153, including printed141–147 derivative, series, differentiation and layout conventions.",
+      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+    ],
+    "limits": [
+      "No audiovisual or slide/whiteboard review by this independent reviewer.",
+      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+    ]
+  }
+}

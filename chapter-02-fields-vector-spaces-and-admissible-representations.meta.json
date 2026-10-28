@@ -1,0 +1,153 @@
+{
+  "chapter": 2,
+  "title": "Fields, vector spaces, and admissible representations",
+  "status": "reviewed and locally validated",
+  "authored_body_sha256": "a80051399244bd0aae17085d5f232300e6f92a41777370351168087f5a9d3e96",
+  "recordings": [
+    {
+      "lecture_number": 2,
+      "video_id": "Ol1yY-6qGdk",
+      "duration_seconds": 2747,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified\n",
+      "first_caption_start": 0.08,
+      "last_caption_end": 2746.4,
+      "caption_text_sha256": "695fcff6580255410edf8c806875df40098f81213e9167f0b0c8b6f4a06d6b8b"
+    },
+    {
+      "lecture_number": 3,
+      "video_id": "TBQHV6hVwrw",
+      "duration_seconds": 2434,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified\n",
+      "first_caption_start": 0.16,
+      "last_caption_end": 2433.28,
+      "caption_text_sha256": "4dabd90d15c202db8820093214a2192e9c3cb22e9c2c52fbed86b335fa2baa21"
+    },
+    {
+      "lecture_number": 4,
+      "video_id": "XO2XE8JiAPs",
+      "duration_seconds": 1877,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified\n",
+      "first_caption_start": 0.08,
+      "last_caption_end": 1876,
+      "caption_text_sha256": "ba6b413c82310ea48c434394b9a1a902e64f5ee8e1a200bd089a2de4c58ad5f6"
+    }
+  ],
+  "sections": [
+    {
+      "id": "coordinates",
+      "title": "2.1 A list of measurements needs an interpretation Lecture 2 · 03:24",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=Ol1yY-6qGdk&t=204s"
+      ]
+    },
+    {
+      "id": "fields",
+      "title": "2.2 Scalar arithmetic is part of the model Lecture 2 · 10:38",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=Ol1yY-6qGdk&t=638s"
+      ]
+    },
+    {
+      "id": "modular",
+      "title": "2.3 Why prime modular arithmetic works Lecture 2 · 25:50 Lecture 3 · 02:15",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=Ol1yY-6qGdk&t=1550s",
+        "https://www.youtube.com/watch?v=TBQHV6hVwrw&t=135s"
+      ]
+    },
+    {
+      "id": "axioms",
+      "title": "2.4 A vector space is a set with specified operations Lecture 3 · 19:05",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=TBQHV6hVwrw&t=1145s"
+      ]
+    },
+    {
+      "id": "examples",
+      "title": "2.5 Vectors need not be arrows Lecture 4 · 01:53",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=XO2XE8JiAPs&t=113s"
+      ]
+    },
+    {
+      "id": "subspaces",
+      "title": "2.6 Subspaces retain the same operations Lecture 4 · 10:37",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=XO2XE8JiAPs&t=637s"
+      ]
+    },
+    {
+      "id": "admissibility",
+      "title": "2.7 Affine and convex closure answer different questions Lecture 4 · 25:34",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=XO2XE8JiAPs&t=1534s"
+      ]
+    },
+    {
+      "id": "code",
+      "title": "2.8 Exhaustive finite checks",
+      "timestamps": []
+    },
+    {
+      "id": "problems",
+      "title": "2.9 Problems and worked solutions",
+      "timestamps": []
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits",
+      "timestamps": []
+    }
+  ],
+  "original_constructions": "Examples, derivations, Python, and worked problems.",
+  "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+  "visual_review": "not performed",
+  "independent_acceptance": true,
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "worked_problem_count": 6,
+  "references_checked": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": [
+        "2.4.2",
+        "2.4.3"
+      ],
+      "printed_pages": [
+        37,
+        38,
+        39
+      ],
+      "pdf_pages": [
+        43,
+        44,
+        45
+      ]
+    }
+  ],
+  "accepted_body_sha256": "a80051399244bd0aae17085d5f232300e6f92a41777370351168087f5a9d3e96",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "scientific_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read every paragraph, equation, example, code listing, and all six solutions of the full manuscript and detailed caption coverage ledger.",
+      "Independently checked field axioms, representative-independent modular operations, prime criterion proof, finite inverse tables, scalar/vector laws, subspace sufficiency, affine/simplex/coset statements.",
+      "Checked original category and matrix counterexamples, novel positive-real operations via log isomorphism, and exact code-output evidence; no rerun needed.",
+      "Inspected MML PDF43–45; real vector/subspace references are correctly separated from independently derived finite-field extensions."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

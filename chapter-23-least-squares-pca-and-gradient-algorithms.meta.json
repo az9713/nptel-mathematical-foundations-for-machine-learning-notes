@@ -1,0 +1,221 @@
+{
+  "order": 23,
+  "chapter": 23,
+  "title": "Least squares, PCA, and gradient algorithms",
+  "status": "reviewed and locally validated",
+  "author": "calculus_editor",
+  "source_lectures": [
+    {
+      "lecture_number": 59,
+      "video_id": "QvjDBgta3q8",
+      "duration_seconds": 2678,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 2677.76,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "554cf217821c9cb0790611f3877d39ca9b8f054da4cad38979c85ad7731bc7ee"
+    },
+    {
+      "lecture_number": 60,
+      "video_id": "otquSqlAm0g",
+      "duration_seconds": 1698,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 1697.92,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "b14a9a2dfc6acb3b91f9cd964af1bd12ea10de5fbf356ff6b94521c7cb573960"
+    },
+    {
+      "lecture_number": 61,
+      "video_id": "4rtoG_LZVOs",
+      "duration_seconds": 1806,
+      "read_sequentially": true,
+      "read_start": 0.32,
+      "read_end": 1804.96,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "f110095e23a9bbcd0c9b9a9a778f0bbe5c35947bb685493c61c36ca5eef44b24"
+    }
+  ],
+  "recordings": [
+    {
+      "lecture_number": 59,
+      "video_id": "QvjDBgta3q8",
+      "duration_seconds": 2678,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 2677.76,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "554cf217821c9cb0790611f3877d39ca9b8f054da4cad38979c85ad7731bc7ee"
+    },
+    {
+      "lecture_number": 60,
+      "video_id": "otquSqlAm0g",
+      "duration_seconds": 1698,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 1697.92,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "b14a9a2dfc6acb3b91f9cd964af1bd12ea10de5fbf356ff6b94521c7cb573960"
+    },
+    {
+      "lecture_number": 61,
+      "video_id": "4rtoG_LZVOs",
+      "duration_seconds": 1806,
+      "read_sequentially": true,
+      "read_start": 0.32,
+      "read_end": 1804.96,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "f110095e23a9bbcd0c9b9a9a778f0bbe5c35947bb685493c61c36ca5eef44b24"
+    }
+  ],
+  "section_map": [
+    {
+      "id": "least-squares",
+      "title": "23.1 Differentiate the residual objective L59 · 05:17",
+      "anchors": [
+        "https://www.youtube.com/watch?v=QvjDBgta3q8&t=317s"
+      ]
+    },
+    {
+      "id": "case",
+      "title": "23.2 A centered design separates the coefficient directions",
+      "anchors": []
+    },
+    {
+      "id": "pca",
+      "title": "23.3 Principal directions require a unit-length constraint L59 · 17:28",
+      "anchors": [
+        "https://www.youtube.com/watch?v=QvjDBgta3q8&t=1048s"
+      ]
+    },
+    {
+      "id": "gradient",
+      "title": "23.4 Gradient descent turns a derivative into an iteration L60 · 11:41",
+      "anchors": [
+        "https://www.youtube.com/watch?v=otquSqlAm0g&t=701s"
+      ]
+    },
+    {
+      "id": "stopping",
+      "title": "23.5 Small updates do not identify the reason for stopping L61 · 01:34",
+      "anchors": [
+        "https://www.youtube.com/watch?v=4rtoG_LZVOs&t=94s"
+      ]
+    },
+    {
+      "id": "stochastic",
+      "title": "23.6 Stochastic gradients change the sampling and cost L61 · 04:47",
+      "anchors": [
+        "https://www.youtube.com/watch?v=4rtoG_LZVOs&t=287s"
+      ]
+    },
+    {
+      "id": "newton",
+      "title": "23.7 Newton minimizes a local quadratic model L61 · 16:22",
+      "anchors": [
+        "https://www.youtube.com/watch?v=4rtoG_LZVOs&t=982s"
+      ]
+    },
+    {
+      "id": "check",
+      "title": "23.8 Compare the algorithms on constructed data",
+      "anchors": []
+    },
+    {
+      "id": "problems",
+      "title": "23.9 Exercises and worked solutions",
+      "anchors": []
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits",
+      "anchors": []
+    }
+  ],
+  "reference_inspection": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "7.1,9.2,10.2",
+      "printed_pages": "227–232,292–294,320–322",
+      "pdf_pages": [
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        298,
+        299,
+        300,
+        326,
+        327,
+        328
+      ]
+    },
+    {
+      "url": "https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
+      "sections": "9.5.1",
+      "printed_pages": "484–486",
+      "pdf_pages": [
+        498,
+        499,
+        500
+      ]
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.BFGS.html",
+      "sections": "BFGS curvature-condition safeguards"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/optimize.minimize-lbfgsb.html",
+      "sections": "limited-memory options"
+    }
+  ],
+  "original_constructions": "Examples, teaching derivations, executable checks, and worked problems are independently authored; lecture and reference concepts are identified beside their use.",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "independent_acceptance": true,
+  "worked_problem_count": 6,
+  "code_status": "Embedded listing extracted, autopep8 formatted, executed in fresh Python; stdout matches displayed output; pycodestyle passes.",
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
+  "body_sha256": "5e0dea387a74d4eff53483cf0737133332de296dcb7ad8ab6593f6401ad06dd4",
+  "authored_body_sha256": "5e0dea387a74d4eff53483cf0737133332de296dcb7ad8ab6593f6401ad06dd4",
+  "authoring_handoff_body_sha256": "e44be49f1d8cf73d3855bb9f3cfa3afe8ec88701908e45e55574d098010d3eb5",
+  "accepted_body_sha256": "5e0dea387a74d4eff53483cf0737133332de296dcb7ad8ab6593f6401ad06dd4",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "calculus_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+      "Checked residual perturbation and normal-equation sufficiency; all running-example coefficients/predictions/residuals/objective; PCA Rayleigh argument; quadratic spectral step interval and null-space persistence; Lipschitz decrease scope; stochastic gradient scaling/conditional sampling and batch covariance; Newton normalization and quasi-Newton boundaries; every worked solution.",
+      "Targeted reference check: MML PDF298–301 least-squares assumptions and feature interpretation; Boyd PDF498–500 Newton local quadratic step; official SciPy BFGS curvature safeguards and L-BFGS-B limited-memory descriptions.",
+      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+    ],
+    "limits": [
+      "No audiovisual or slide/whiteboard review by this independent reviewer.",
+      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+    ]
+  }
+}

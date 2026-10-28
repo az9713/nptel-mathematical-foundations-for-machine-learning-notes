@@ -1,0 +1,214 @@
+{
+  "order": 24,
+  "chapter": 24,
+  "title": "Perceptrons, multilayer networks, and backpropagation",
+  "status": "reviewed and locally validated",
+  "author": "calculus_editor",
+  "source_lectures": [
+    {
+      "lecture_number": 62,
+      "video_id": "LcXiDQcSElc",
+      "duration_seconds": 1724,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 1720.24,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "27b15d3070851a3cf3a75611b2a1b860e24c60b1f142a59d1ce34a7aa435d240"
+    },
+    {
+      "lecture_number": 63,
+      "video_id": "gOIPudXtH6o",
+      "duration_seconds": 1494,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 1491.68,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "0ca331e6bdc83099d886dcf3e9d8d8bd2a0108961ffad49d94de91bdace6c85f"
+    },
+    {
+      "lecture_number": 64,
+      "video_id": "5XZoF5h1KOw",
+      "duration_seconds": 2142,
+      "read_sequentially": true,
+      "read_start": 0.56,
+      "read_end": 2141.2,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "cd377f450a90035f1d1c6b8c9eb6d224854e4be42ae1fa91078fe4e6d6392b8e"
+    }
+  ],
+  "recordings": [
+    {
+      "lecture_number": 62,
+      "video_id": "LcXiDQcSElc",
+      "duration_seconds": 1724,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 1720.24,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "27b15d3070851a3cf3a75611b2a1b860e24c60b1f142a59d1ce34a7aa435d240"
+    },
+    {
+      "lecture_number": 63,
+      "video_id": "gOIPudXtH6o",
+      "duration_seconds": 1494,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 1491.68,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "0ca331e6bdc83099d886dcf3e9d8d8bd2a0108961ffad49d94de91bdace6c85f"
+    },
+    {
+      "lecture_number": 64,
+      "video_id": "5XZoF5h1KOw",
+      "duration_seconds": 2142,
+      "read_sequentially": true,
+      "read_start": 0.56,
+      "read_end": 2141.2,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "cd377f450a90035f1d1c6b8c9eb6d224854e4be42ae1fa91078fe4e6d6392b8e"
+    }
+  ],
+  "section_map": [
+    {
+      "id": "threshold",
+      "title": "24.1 A neuron model becomes an affine decision rule L62 · 02:25",
+      "anchors": [
+        "https://www.youtube.com/watch?v=LcXiDQcSElc&t=145s"
+      ]
+    },
+    {
+      "id": "xor",
+      "title": "24.2 Why one separator fails, and composition succeeds L62 · 12:25",
+      "anchors": [
+        "https://www.youtube.com/watch?v=LcXiDQcSElc&t=745s"
+      ]
+    },
+    {
+      "id": "perceptron",
+      "title": "24.3 What the perceptron convergence statement assumes L62 · 25:57",
+      "anchors": [
+        "https://www.youtube.com/watch?v=LcXiDQcSElc&t=1557s"
+      ]
+    },
+    {
+      "id": "activation",
+      "title": "24.4 Activation, memory, and causality are different notions L62 · 14:04",
+      "anchors": [
+        "https://www.youtube.com/watch?v=LcXiDQcSElc&t=844s"
+      ]
+    },
+    {
+      "id": "shapes",
+      "title": "24.5 Count the actual maps and parameters L63 · 15:18",
+      "anchors": [
+        "https://www.youtube.com/watch?v=gOIPudXtH6o&t=918s"
+      ]
+    },
+    {
+      "id": "loss",
+      "title": "24.6 Differentiate a specified loss before updating L64 · 13:38",
+      "anchors": [
+        "https://www.youtube.com/watch?v=5XZoF5h1KOw&t=818s"
+      ]
+    },
+    {
+      "id": "reverse",
+      "title": "24.7 Backpropagation is the chain rule with reuse L64 · 20:39",
+      "anchors": [
+        "https://www.youtube.com/watch?v=5XZoF5h1KOw&t=1239s"
+      ]
+    },
+    {
+      "id": "training",
+      "title": "24.8 Derivatives, training schedules, and limitations L64 · 28:39",
+      "anchors": [
+        "https://www.youtube.com/watch?v=5XZoF5h1KOw&t=1719s"
+      ]
+    },
+    {
+      "id": "check",
+      "title": "24.9 Executable check: an entire input-layer gradient",
+      "anchors": []
+    },
+    {
+      "id": "problems",
+      "title": "24.10 Six worked problems",
+      "anchors": []
+    },
+    {
+      "id": "takeaways",
+      "title": "24.11 Connections to the rest of the course",
+      "anchors": []
+    }
+  ],
+  "reference_inspection": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "5.6",
+      "printed_pages": "159–164",
+      "pdf_pages": [
+        165,
+        166,
+        167,
+        168,
+        169,
+        170
+      ]
+    },
+    {
+      "url": "https://docs.cloud.google.com/tpu/docs/intro-to-tpu",
+      "sections": "Introduction to TPU; matrix units"
+    },
+    {
+      "url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-matrix-multiplication/index.html",
+      "sections": "Matrix multiplication and Tensor Cores"
+    }
+  ],
+  "original_constructions": "Examples, teaching derivations, executable checks, and worked problems are independently authored; lecture and reference concepts are identified beside their use.",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "independent_acceptance": true,
+  "worked_problem_count": 6,
+  "code_status": "Embedded listing extracted, autopep8 formatted, executed in fresh Python; stdout matches displayed output; pycodestyle passes.",
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
+  "body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462",
+  "authored_body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462",
+  "authoring_handoff_body_sha256": "d5629cf8a07f3d6ba3a95f48ab1ed538d6e8b5ffa7370188aaf2fc3b1cc69697",
+  "accepted_body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "calculus_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+      "Checked threshold gates, XOR impossibility and ReLU construction, full perceptron mistake-bound proof and rescaling, activation/state/causality distinctions, parameter shapes/counts, scalar loss update arithmetic, all backpropagation adjoints/outer products/branch sums, nonconvexity and smoothness cautions, every worked solution.",
+      "Targeted current primary-document check: Google TPU introduction and NVIDIA matrix-multiplication guide support the limited hardware descriptions.",
+      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+    ],
+    "limits": [
+      "No audiovisual or slide/whiteboard review by this independent reviewer.",
+      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+    ]
+  }
+}

@@ -1,4 +1,12 @@
-<h1>1. Why mathematics determines what a learner can identify</h1>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="58b211a05d0ea4d71fa1f146b924db285e4eda8c0f88bf81050c1545c7b73814">
+<title>1. Why mathematics determines what a learner can identify · Mathematical Foundations for Machine Learning</title><link rel="stylesheet" href="assets/book.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Mathematical Foundations for Machine Learning · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>1. Why mathematics determines what a learner can identify</h1>
 <p class="lead">A document assistant retrieves a page because its numerical representation resembles a query. It then estimates whether the page answers the question and decides whether another search is worth its cost. Three different errors can occur: the representation can discard the relevant distinction, the probability estimate can be wrong, or the decision rule can optimize the wrong consequence. A program can execute perfectly while making any of these errors. Mathematics makes their causes distinguishable.</p>
 <p class="source-note">Recording spine: the introduction video and Lecture 1. Timestamp links locate related lecture topics. The document-assistant case, calculations, code, and exercises are original teaching constructions. This chapter develops the motivation mathematically; later chapters establish the underlying theory in detail.</p>
 <h2 id="tasks">1.1 Four tasks require different mathematical objects <a class="timestamp" href="https://www.youtube.com/watch?v=DtH4p331VhU&amp;t=449s">Lecture 1 · 07:29</a></h2>
@@ -59,7 +67,8 @@ assert isclose(iterate(0.25, 8), 2 - 2 / 256)
 assert iterate(1.0, 8) == 0.0
 print("identical training scores:", scores[0])
 print("stable iterate:", iterate(0.25, 8))
-print("boundary iterate:", iterate(1.0, 8))</code></pre>
+print("boundary iterate:", iterate(1.0, 8))
+</code></pre>
 <pre class="output">identical training scores: [1, 2, 3]
 stable iterate: 1.9921875
 boundary iterate: 0.0</pre>
@@ -79,3 +88,5 @@ boundary iterate: 0.0</pre>
 <details><summary>Solution</summary><p>The first unconstrained step gives $0-(1/4)(-4)=1$, which is feasible. The next unconstrained proposal is $1-(1/4)(-2)=1.5$ and is replaced by $1$. The third iteration repeats the same operation, so the iterates are $1,1,1$. At this point the derivative is $-2$. It points toward a decrease outside the permitted interval, but every feasible displacement from the upper endpoint goes left and increases the objective. The boundary constrains improvement even though the unconstrained derivative is nonzero.</p></details>
 <h2 id="sources">Sources and scope</h2>
 <ul><li><a href="https://www.youtube.com/watch?v=6QfLOGfqOas">Introduction video</a>: course motivation and three mathematical strands.</li><li><a href="https://www.youtube.com/watch?v=DtH4p331VhU">Lecture 1</a>: data matrices, similarity, uncertainty, optimization, and the course route.</li><li><a href="https://archive.nptel.ac.in/content/syllabus_pdf/106108702.pdf">Official NPTEL syllabus</a>: instructor names, institutions, and scope.</li><li>Deisenroth, Faisal, and Ong, <a href="https://mml-book.github.io/book/mml-book.pdf#page=17">Mathematics for Machine Learning, Chapter 1</a>: reference orientation. All cases and derivations on this page are independently authored.</li></ul>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><span>First chapter</span><a href="index.html">Lecture index</a><a rel="next" href="chapter-02-fields-vector-spaces-and-admissible-representations.html">Next chapter</a></nav></main></div>
+<footer class="site-footer">Independent educational edition of the NPTEL IISc Bangalore / NITK Surathkal course by Ashok Rao and Arulalan Rajan. Recordings supply the chronological topic sequence; original exposition, constructions, and external results are separately attributed. Source and validation records state the evidence and its limits.</footer></body></html>

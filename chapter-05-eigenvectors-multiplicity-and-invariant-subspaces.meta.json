@@ -1,0 +1,160 @@
+{
+  "chapter": 5,
+  "title": "Eigenvectors, multiplicity, and invariant subspaces",
+  "status": "reviewed and locally validated",
+  "authored_body_sha256": "e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909",
+  "recordings": [
+    {
+      "lecture_number": 11,
+      "video_id": "cQFqtJoYv2c",
+      "duration_seconds": 2775,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "first_caption_start": 0.08,
+      "last_caption_end": 2774.64,
+      "caption_text_sha256": "4e3cc75eb7ddf088e169b76c6cd120689defbc4e9804bb1742ddf44dfa603339"
+    },
+    {
+      "lecture_number": 12,
+      "video_id": "MyXQw-ypBLg",
+      "duration_seconds": 2122,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "first_caption_start": 0.24,
+      "last_caption_end": 2121.76,
+      "caption_text_sha256": "085729be9476a7059ece545ae365e9da55cfe4fa5d3eaa777ba49ee327b57ac4"
+    },
+    {
+      "lecture_number": 13,
+      "video_id": "OtnSenweGFw",
+      "duration_seconds": 1747,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "first_caption_start": 0.16,
+      "last_caption_end": 1746.4,
+      "caption_text_sha256": "728a6fb951a8a13254ca2013cca200c96088fe3ea08896be4ac7f2c16c1c6c23"
+    },
+    {
+      "lecture_number": 14,
+      "video_id": "E6Lp2lq77lQ",
+      "duration_seconds": 1820,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "first_caption_start": 0.24,
+      "last_caption_end": 1819.28,
+      "caption_text_sha256": "c25a52982502944ad4902cb2e0cc52ab6fa30ea68fe71edd31f58f4bb1aee6ba"
+    }
+  ],
+  "sections": [
+    {
+      "id": "eigen",
+      "title": "5.1 A scalar response identifies an eigenvector [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=cQFqtJoYv2c&t=337s"
+      ]
+    },
+    {
+      "id": "characteristic",
+      "title": "5.2 From a homogeneous system to the characteristic polynomial [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=cQFqtJoYv2c&t=918s"
+      ]
+    },
+    {
+      "id": "eigenspace",
+      "title": "5.3 Eigenspaces include zero and can have several dimensions [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=E6Lp2lq77lQ&t=1160s"
+      ]
+    },
+    {
+      "id": "independence",
+      "title": "5.4 Distinct eigenvalues force independent directions [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=MyXQw-ypBLg&t=636s"
+      ]
+    },
+    {
+      "id": "multiplicity",
+      "title": "5.5 Algebraic multiplicity measures a root, not a basis [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=MyXQw-ypBLg&t=1421s"
+      ]
+    },
+    {
+      "id": "diagonal",
+      "title": "5.6 Diagonalization is exactly the existence of an eigenbasis [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=OtnSenweGFw&t=379s"
+      ]
+    },
+    {
+      "id": "powers",
+      "title": "5.7 Powers reveal both the benefit and the obstruction [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=OtnSenweGFw&t=733s"
+      ]
+    },
+    {
+      "id": "field",
+      "title": "5.8 A real matrix may require complex coordinates [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=MyXQw-ypBLg&t=1865s"
+      ]
+    },
+    {
+      "id": "invariance",
+      "title": "5.9 Invariant subspaces are broader than eigenspaces [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=E6Lp2lq77lQ&t=1384s"
+      ]
+    },
+    {
+      "id": "computation",
+      "title": "5.10 Check the modes and the missing direction",
+      "timestamps": []
+    },
+    {
+      "id": "problems",
+      "title": "5.11 Six worked problems",
+      "timestamps": []
+    }
+  ],
+  "original_constructions": "Examples, derivations, Python, and worked problems.",
+  "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+  "visual_review": "not performed",
+  "independent_acceptance": true,
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "worked_problem_count": 6,
+  "references_checked": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "4.1–4.2, 4.4",
+      "printed_pages": "103–107, 115–118",
+      "pdf_pages": "109–113, 121–124"
+    }
+  ],
+  "authoring_handoff_body_sha256": "ed2ec7bd21efe2e09c81d451c55b6226dc8fd0dc78db008f12e1c378eaaf3832",
+  "accepted_body_sha256": "e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "scientific_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Full manuscript, six solutions and exact mathematical/reference checks documented in archived final-ch05-round1.json.",
+      "Rechecked new C∞(R) paragraph: differentiation is an endomorphism because smooth functions have smooth derivatives, and exponentials are nonzero eigenfunctions; finite/infinite-dimensional boundary explicit.",
+      "No code or other argument changed; acceptance binds new exact body digest."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 import argparse
+import contextlib
 import hashlib
+import io
 import json
 import os
 import re
@@ -15,18 +17,22 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def static_checks():
+    from checklt import main as check_lt
+    from checktex import main as check_tex
+
     manifest = json.loads((ROOT / 'source-manifest.json').read_text(encoding='utf-8'))
     videos = {v['video_id']: v for v in manifest['lectures']}
     errors = []
     if len(videos) != 71 or sorted(v['lecture_number'] for v in videos.values()) != list(range(71)):
         errors.append('Source coverage must include introduction and lectures 1–70 exactly once.')
     chapters = manifest['chapters']
+    accepted_bodies = {c['file']: c.get('accepted_body_sha256') for c in chapters}
     assigned = [number for c in chapters for number in c['lecture_numbers']]
     if sorted(assigned) != list(range(71)):
         errors.append('Chapter assignments overlap or omit recordings.')
     records = []
     for path in sorted(ROOT.glob('*.html')):
-        text = path.read_text(encoding='utf-8')
+        text = path.read_bytes().decode('utf-8-sig')
         soup = BeautifulSoup(text, 'html.parser')
         ids = [tag['id'] for tag in soup.select('[id]')]
         local_errors = []
@@ -39,6 +45,8 @@ def static_checks():
             expected = soup.find('meta', attrs={'name': 'book-content-sha256'})
             if not expected or expected.get('content') != hashlib.sha256(content.encode()).hexdigest():
                 local_errors.append('Authored-body digest mismatch.')
+            if path.name in accepted_bodies and accepted_bodies[path.name] != hashlib.sha256(content.encode()).hexdigest():
+                local_errors.append('Body differs from independent scientific acceptance.')
         for tag in soup.select('[href], script[src], img[src]'):
             url = tag.get('href') or tag.get('src')
             parsed = urlparse(url)
@@ -75,6 +83,12 @@ def static_checks():
                 local_errors.append('Executable Python listing missing.')
             if not article.select('h2 .timestamp'):
                 local_errors.append('Major-section timestamps missing.')
+        checks_output = io.StringIO()
+        with contextlib.redirect_stdout(checks_output):
+            tex_status = check_tex(str(path))
+            comparison_status = check_lt(str(path))
+        if tex_status or comparison_status:
+            local_errors.append(checks_output.getvalue())
         if re.search(r'[A-Za-z]:[\\/](?:Users|Temp)[\\/]|sk-[A-Za-z0-9]{20,}|AIza[A-Za-z0-9_-]{20,}', text):
             local_errors.append('Private path or secret-shaped value.')
         records.append({'file': path.name, 'status': 'PASS' if not local_errors else 'FAIL',
@@ -87,6 +101,9 @@ def browser_checks():
     from playwright.sync_api import sync_playwright
 
     records = []
+    browser_tmp = ROOT / '.private' / 'browser-tmp'
+    browser_tmp.mkdir(parents=True, exist_ok=True)
+    os.environ.update(TEMP=str(browser_tmp), TMP=str(browser_tmp))
     with sync_playwright() as playwright:
         try:
             browser = playwright.chromium.launch(headless=True)

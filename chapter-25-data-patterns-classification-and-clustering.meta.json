@@ -1,0 +1,214 @@
+{
+  "order": 25,
+  "chapter": 25,
+  "title": "Data, patterns, classification, and clustering",
+  "status": "reviewed and locally validated",
+  "author": "calculus_editor",
+  "source_lectures": [
+    {
+      "lecture_number": 65,
+      "video_id": "vJFf6HmyDy8",
+      "duration_seconds": 2275,
+      "read_sequentially": true,
+      "read_start": 0.32,
+      "read_end": 2274.16,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "9ff3a90ec6c41e8ecfe570086f85125a6af7597e3c6a290a59ac948ff0ce550c"
+    },
+    {
+      "lecture_number": 66,
+      "video_id": "B3GqDkT_gyM",
+      "duration_seconds": 1928,
+      "read_sequentially": true,
+      "read_start": 0,
+      "read_end": 1927.76,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "b602e9bf68d1d9401888bbc619f236c83f3e365b0b01ca52c087829c58a57b41"
+    },
+    {
+      "lecture_number": 67,
+      "video_id": "dvSnuCPrFGE",
+      "duration_seconds": 1363,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 1362.32,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "4a058f8c8ab0634eaa21a1eb8d38eea7e053a6355f3d11a5dbb3f19b3f8ce34d"
+    }
+  ],
+  "recordings": [
+    {
+      "lecture_number": 65,
+      "video_id": "vJFf6HmyDy8",
+      "duration_seconds": 2275,
+      "read_sequentially": true,
+      "read_start": 0.32,
+      "read_end": 2274.16,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "9ff3a90ec6c41e8ecfe570086f85125a6af7597e3c6a290a59ac948ff0ce550c"
+    },
+    {
+      "lecture_number": 66,
+      "video_id": "B3GqDkT_gyM",
+      "duration_seconds": 1928,
+      "read_sequentially": true,
+      "read_start": 0,
+      "read_end": 1927.76,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "b602e9bf68d1d9401888bbc619f236c83f3e365b0b01ca52c087829c58a57b41"
+    },
+    {
+      "lecture_number": 67,
+      "video_id": "dvSnuCPrFGE",
+      "duration_seconds": 1363,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 1362.32,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "4a058f8c8ab0634eaa21a1eb8d38eea7e053a6355f3d11a5dbb3f19b3f8ce34d"
+    }
+  ],
+  "section_map": [
+    {
+      "id": "problem",
+      "title": "25.1 From a real problem to a learning problem L65 · 02:46",
+      "anchors": [
+        "https://www.youtube.com/watch?v=vJFf6HmyDy8&t=166s"
+      ]
+    },
+    {
+      "id": "features",
+      "title": "25.2 Feature maps can simplify geometry L66 · 01:21",
+      "anchors": [
+        "https://www.youtube.com/watch?v=B3GqDkT_gyM&t=81s"
+      ]
+    },
+    {
+      "id": "threshold",
+      "title": "25.3 Solve a complete one-feature classification problem L66 · 18:33",
+      "anchors": [
+        "https://www.youtube.com/watch?v=B3GqDkT_gyM&t=1113s"
+      ]
+    },
+    {
+      "id": "evaluation",
+      "title": "25.4 Separate fitting, selection, and final evaluation L67 · 02:37",
+      "anchors": [
+        "https://www.youtube.com/watch?v=dvSnuCPrFGE&t=157s"
+      ]
+    },
+    {
+      "id": "fusion",
+      "title": "25.5 Multiple classes and classifier fusion L66 · 07:28",
+      "anchors": [
+        "https://www.youtube.com/watch?v=B3GqDkT_gyM&t=448s"
+      ]
+    },
+    {
+      "id": "geometry",
+      "title": "25.6 Clustering starts with geometry, not recovered truth L67 · 10:51",
+      "anchors": [
+        "https://www.youtube.com/watch?v=dvSnuCPrFGE&t=651s"
+      ]
+    },
+    {
+      "id": "kmeans",
+      "title": "25.7 Make the centroid method into a precise optimization problem L67 · 18:18",
+      "anchors": [
+        "https://www.youtube.com/watch?v=dvSnuCPrFGE&t=1098s"
+      ]
+    },
+    {
+      "id": "alternatives",
+      "title": "25.8 Hierarchies, mixtures, and what “between” means L67 · 20:40",
+      "anchors": [
+        "https://www.youtube.com/watch?v=dvSnuCPrFGE&t=1240s"
+      ]
+    },
+    {
+      "id": "check",
+      "title": "25.9 Executable check: thresholds and rescaling",
+      "anchors": []
+    },
+    {
+      "id": "problems",
+      "title": "25.10 Six worked problems",
+      "anchors": []
+    },
+    {
+      "id": "takeaways",
+      "title": "25.11 What a reported result must mean",
+      "anchors": []
+    }
+  ],
+  "reference_inspection": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "8.1.4–8.2.4,11.1",
+      "printed_pages": "257–264,349–350",
+      "pdf_pages": [
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        355,
+        356
+      ]
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+      "sections": "K-means objective and Lloyd updates"
+    }
+  ],
+  "original_constructions": "Examples, teaching derivations, executable checks, and worked problems are independently authored; lecture and reference concepts are identified beside their use.",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "independent_acceptance": true,
+  "worked_problem_count": 6,
+  "code_status": "Embedded listing extracted, autopep8 formatted, executed in fresh Python; stdout matches displayed output; pycodestyle passes.",
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
+  "body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a",
+  "authored_body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a",
+  "authoring_handoff_body_sha256": "2a6bb071f2e2378a45a8564f8a9b2da75aff4c60af2b705ca11f5dde576607a7",
+  "accepted_body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "calculus_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+      "Checked label/feature/risk distinctions, biased-sensor mean-squared errors, feature information loss, every threshold count/confusion proportion/cost formula, cross-validation information roles, independent-vote formula, metric/cosine cautions, scale reversal, centroid proof/Lloyd iterates, scatter decomposition and mixture normalization, every worked solution.",
+      "Targeted reference check: MML PDF269–270 cross-validation construction and355–356 mixture normalization; official scikit-learn K-means objective, Lloyd updates and initialization sensitivity.",
+      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+    ],
+    "limits": [
+      "No audiovisual or slide/whiteboard review by this independent reviewer.",
+      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+    ]
+  }
+}

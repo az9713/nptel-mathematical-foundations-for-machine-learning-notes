@@ -1,0 +1,199 @@
+{
+  "chapter": 15,
+  "title": "Joint distributions, marginals, and independence",
+  "status": "reviewed and locally validated",
+  "author": "probability_editor",
+  "recordings": [
+    {
+      "lecture_number": 40,
+      "video_id": "3CoMjVeKENw",
+      "duration_seconds": 2639,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 2638.08,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "23f8ee7a50adb8d5a0244d5a3aa390b93d879d790e6011b13ebb87c0bdd91842",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 41,
+      "video_id": "x-UDoM5Kvmg",
+      "duration_seconds": 2636,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 2634.56,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "c6d0d7cc3d50e57764998123d526d1b073fec65b381b961ea1ced3e0d9962711",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 42,
+      "video_id": "nPCs0VSd08c",
+      "duration_seconds": 2076,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.16,
+      "transcript_last_end_seconds": 2074.72,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "78523e13ccfe1830ce2ef79380aedae9ed8c7e6cda42dca0a5118f4960036ddf",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "All assigned caption text read sequentially; section-by-section private coverage ledger records topic correspondence.",
+    "teaching_constructions": "Binary monitor coupling family, triangular density, transformed-feature dependence counterexample, joint-CDF checks, exact coupling code and six worked problems.",
+    "reference_orientation": "Only inspected primary-author references cited; proofs and examples independently developed.",
+    "empirical_claims": "No empirical deployment or prediction-performance result asserted."
+  },
+  "section_map": [
+    {
+      "id": "joint-mass",
+      "title": "A joint mass table contains information absent from its margins"
+    },
+    {
+      "id": "joint-density",
+      "title": "A joint density weights area, including its support"
+    },
+    {
+      "id": "joint-cdf",
+      "title": "A joint CDF works for discrete, dense, and singular laws"
+    },
+    {
+      "id": "independence",
+      "title": "Independence is an entire-law factorization"
+    },
+    {
+      "id": "joint-expectation",
+      "title": "Joint expectations: linearity survives, products need a condition"
+    },
+    {
+      "id": "covariance",
+      "title": "Centering isolates joint fluctuations, not every kind of dependence"
+    },
+    {
+      "id": "check",
+      "title": "Executable check: coupling changes an aggregate while preserving marginals"
+    },
+    {
+      "id": "problems",
+      "title": "Six worked problems"
+    },
+    {
+      "id": "scope",
+      "title": "Sources and limits"
+    }
+  ],
+  "timestamp_links": [
+    {
+      "video_id": "3CoMjVeKENw",
+      "seconds": 580
+    },
+    {
+      "video_id": "3CoMjVeKENw",
+      "seconds": 983
+    },
+    {
+      "video_id": "3CoMjVeKENw",
+      "seconds": 1439
+    },
+    {
+      "video_id": "3CoMjVeKENw",
+      "seconds": 1992
+    },
+    {
+      "video_id": "3CoMjVeKENw",
+      "seconds": 1254
+    },
+    {
+      "video_id": "x-UDoM5Kvmg",
+      "seconds": 184
+    },
+    {
+      "video_id": "x-UDoM5Kvmg",
+      "seconds": 732
+    },
+    {
+      "video_id": "x-UDoM5Kvmg",
+      "seconds": 1424
+    },
+    {
+      "video_id": "nPCs0VSd08c",
+      "seconds": 297
+    }
+  ],
+  "original_construction_statement": "Binary monitor coupling family, triangular density, transformed-feature dependence counterexample, joint-CDF checks, exact coupling code and six worked problems.",
+  "references_checked": [
+    {
+      "url": "https://mml-book.com/book/mml-book.pdf",
+      "sections": "6.2–6.4.6",
+      "printed_pages": "178–196",
+      "pdf_pages": [
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "claims": [
+        "joint and marginal laws",
+        "sum rule",
+        "joint expectations and independence",
+        "centered covariance"
+      ]
+    }
+  ],
+  "editorial_reviews": [
+    {
+      "role": "science-editor FULL REWRITE",
+      "editor": "probability_editor",
+      "status": "rewritten and author-checked; independent review pending",
+      "reviewed_body_sha256": "9a066b3d8d574ac545fffe1836a07bfb6b355e59d021f2af94a735bdf5146718",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before wrapping.",
+      "code_execution": "Passed; displayed stdout matches actual captured execution output after line-ending normalization.",
+      "visual_review": "not performed",
+      "independent_acceptance": false
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "authored_body_sha256": "9f0c89bed23369bba09852ea7795ceb70622a533e4b540e3c89c3f107da7470c",
+  "authoring_handoff_body_sha256": "9a066b3d8d574ac545fffe1836a07bfb6b355e59d021f2af94a735bdf5146718",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "9f0c89bed23369bba09852ea7795ceb70622a533e4b540e3c89c3f107da7470c",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "probability_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read full manuscript including all joint-mass/density/CDF identities, six complete solutions, code, coverage ledger and existing rational execution evidence.",
+      "Independently checked binary coupling family, triangular marginals and rectangle probability, singular diagonal CDF, entire-law independence, product integrability, covariance and transformed-feature counterexamples.",
+      "Inspected MML PDF190–191,197 for sum/product and covariance references; general CDF/singular-law qualifications are independently justified in text.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+      "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

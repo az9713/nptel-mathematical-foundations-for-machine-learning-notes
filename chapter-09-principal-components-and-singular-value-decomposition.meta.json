@@ -1,0 +1,150 @@
+{
+  "chapter": 9,
+  "title": "Principal components and singular value decomposition",
+  "status": "reviewed and locally validated",
+  "authored_body_sha256": "8d057111c36f52ac7360323e9000d722a327d6adaff9d3e9dc4106b06c261631",
+  "recordings": [
+    {
+      "lecture_number": 24,
+      "video_id": "agWD_JySWwQ",
+      "duration_seconds": 2326,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified\n",
+      "first_caption_start": 0.48,
+      "last_caption_end": 2325.12,
+      "caption_text_sha256": "d3688e14812030368e95f774743e0c0998475f341c2704038beb78ad0277f5c0"
+    },
+    {
+      "lecture_number": 25,
+      "video_id": "c-17ba9M974",
+      "duration_seconds": 2661,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "first_caption_start": 0.72,
+      "last_caption_end": 2660.48,
+      "caption_text_sha256": "24646623389858e51c1155a40c6140965d9528cc0eab946076cf878fc87495d9"
+    },
+    {
+      "lecture_number": 26,
+      "video_id": "MO9V1ZPK4Ao",
+      "duration_seconds": 2542,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "first_caption_start": 0.56,
+      "last_caption_end": 2540.8,
+      "caption_text_sha256": "d72e0264c47a50d5073dadd4ad81db3a4662505ec92109cdabd5b848325eb6f6"
+    }
+  ],
+  "sections": [
+    {
+      "id": "center",
+      "title": "9.1 Separate the mean from variation [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=agWD_JySWwQ&t=710s"
+      ]
+    },
+    {
+      "id": "pca",
+      "title": "9.2 The variance criterion chooses covariance eigenvectors [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=agWD_JySWwQ&t=1538s"
+      ]
+    },
+    {
+      "id": "variance",
+      "title": "9.3 Explained variance is a reconstruction-energy fraction [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=agWD_JySWwQ&t=1909s"
+      ]
+    },
+    {
+      "id": "svd",
+      "title": "9.4 A rectangular map has separate input and output axes [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=c-17ba9M974&t=468s"
+      ]
+    },
+    {
+      "id": "example",
+      "title": "9.5 A complete wide-matrix example [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=c-17ba9M974&t=1665s"
+      ]
+    },
+    {
+      "id": "ellipse",
+      "title": "9.6 Orthogonal changes can include reflections [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=MO9V1ZPK4Ao&t=913s"
+      ]
+    },
+    {
+      "id": "outer",
+      "title": "9.7 Rank-one terms form a small subspace of matrix space [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=MO9V1ZPK4Ao&t=1603s"
+      ]
+    },
+    {
+      "id": "low-rank",
+      "title": "9.8 Truncation is optimal under squared Frobenius error",
+      "timestamps": []
+    },
+    {
+      "id": "links",
+      "title": "9.9 SVD unifies PCA and the pseudoinverse",
+      "timestamps": []
+    },
+    {
+      "id": "computation",
+      "title": "9.10 Reproduce the covariance and the rectangular decomposition",
+      "timestamps": []
+    },
+    {
+      "id": "problems",
+      "title": "9.11 Six worked problems",
+      "timestamps": []
+    }
+  ],
+  "original_constructions": "Examples, derivations, Python, and worked problems.",
+  "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+  "visual_review": "not performed",
+  "independent_acceptance": true,
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "worked_problem_count": 6,
+  "references_checked": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "4.5–4.6, 10.2–10.3",
+      "printed_pages": "119–125, 130–132, 321–323, 329–331",
+      "pdf_pages": "125–131, 136–138, 327–329, 335–337"
+    }
+  ],
+  "authoring_handoff_body_sha256": "e8c53831e00abd12e12b44296da9fa35d60cfd8920c34383a55414d9cad413a8",
+  "accepted_body_sha256": "8d057111c36f52ac7360323e9000d722a327d6adaff9d3e9dc4106b06c261631",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "scientific_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
+      "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
+      "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
+      "Checked centered covariance arithmetic, sample denominator and rank, Rayleigh/PCA argument, score/reconstruction shapes and energy identity; constructive SVD including null completions; exact wide/tall singular vectors and ellipse; matrix-space outer-product dimension; Frobenius low-rank proof and tied-cutoff cases; pseudoinverse/sensitivity and label-information counterexample; all six worked solutions.",
+      "Targeted reference inspection: MML PDF136–138 for low-rank truncation/Eckart–Young scope. The manuscript independently proves the stated Frobenius result rather than attributing a different norm formula to the reference.",
+      "Round 2: read the complete repaired #low-rank section, rechecked rank-zero and tall-output indexing, and reversed the exact opening-paragraph replacement to reproduce the previously reviewed full-body hash. No other authored content changed."
+    ],
+    "limits": [
+      "No audiovisual or whiteboard/slide inspection by this reviewer.",
+      "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
+      "No browser/MathJax/offline-publication validation performed by this reviewer.",
+      "Acceptance is bound to the exact recorded authored-body hash."
+    ]
+  }
+}

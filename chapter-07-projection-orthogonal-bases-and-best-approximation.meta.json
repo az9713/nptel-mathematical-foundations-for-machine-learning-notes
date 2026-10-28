@@ -1,0 +1,143 @@
+{
+  "chapter": 7,
+  "title": "Projection, orthogonal bases, and best approximation",
+  "status": "reviewed and locally validated",
+  "authored_body_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c",
+  "recordings": [
+    {
+      "lecture_number": 18,
+      "video_id": "SC_zfCRO-i8",
+      "duration_seconds": 2848,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "first_caption_start": 0.08,
+      "last_caption_end": 2847.52,
+      "caption_text_sha256": "f20f0de8ebbb33d314b22e519052124bbe8e80dd1f1652916f11caf8963da72c"
+    },
+    {
+      "lecture_number": 19,
+      "video_id": "joUxO822okk",
+      "duration_seconds": 3204,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "first_caption_start": 0.08,
+      "last_caption_end": 3203.44,
+      "caption_text_sha256": "1f3eb8912b0b13fabf54db05f3b06a6a7ca3a6879ce6f490ea58241a836ec92b"
+    },
+    {
+      "lecture_number": 20,
+      "video_id": "7oRh2SdmsL0",
+      "duration_seconds": 2955,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified\n",
+      "first_caption_start": 0.16,
+      "last_caption_end": 2955.12,
+      "caption_text_sha256": "347d0d03f1164ad19a0413a8266bf87edc9fe04b620249cfd0a09a9ef55ad88a"
+    }
+  ],
+  "sections": [
+    {
+      "id": "line",
+      "title": "7.1 Projection onto a line determines one coefficient [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=SC_zfCRO-i8&t=249s"
+      ]
+    },
+    {
+      "id": "outer",
+      "title": "7.2 An outer product packages the linear map [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=SC_zfCRO-i8&t=1131s"
+      ]
+    },
+    {
+      "id": "projection",
+      "title": "7.3 An orthonormal basis constructs the subspace projection [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=7oRh2SdmsL0&t=1137s"
+      ]
+    },
+    {
+      "id": "best",
+      "title": "7.4 The orthogonal residual proves best approximation [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=7oRh2SdmsL0&t=1964s"
+      ]
+    },
+    {
+      "id": "gram-schmidt",
+      "title": "7.5 Gram–Schmidt builds the basis by removing old components [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=joUxO822okk&t=256s"
+      ]
+    },
+    {
+      "id": "qr",
+      "title": "7.6 QR records the construction without losing normalization factors [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=joUxO822okk&t=1249s"
+      ]
+    },
+    {
+      "id": "coordinates",
+      "title": "7.7 An oblique basis leads to the Gram system",
+      "timestamps": []
+    },
+    {
+      "id": "isometry",
+      "title": "7.8 Orthogonal transformations preserve all Euclidean inner products [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=joUxO822okk&t=2160s"
+      ]
+    },
+    {
+      "id": "computation",
+      "title": "7.9 Verify reconstruction and orthogonality separately",
+      "timestamps": []
+    },
+    {
+      "id": "problems",
+      "title": "7.10 Six worked problems",
+      "timestamps": []
+    }
+  ],
+  "original_constructions": "Examples, derivations, Python, and worked problems.",
+  "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+  "visual_review": "not performed",
+  "independent_acceptance": true,
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "worked_problem_count": 6,
+  "references_checked": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "3.6–3.8",
+      "printed_pages": "80–88",
+      "pdf_pages": "86–94"
+    }
+  ],
+  "accepted_body_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "scientific_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
+      "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
+      "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
+      "Checked line projection coordinates versus lengths, normalized outer product and eigenvalues, unique subspace decomposition, Pythagorean best-approximation proof, complete Gram–Schmidt span/nonzero-residual argument, QR off-diagonal normalizations and running reconstruction, Gram and weighted/affine projection formulas, orthogonal/oblique/isometry distinctions, and all six worked solutions.",
+      "Targeted reference inspection: MML PDF86–88 and91–94, printed80–82 and85–88, for orthogonal complements and projection/Gram formulas."
+    ],
+    "limits": [
+      "No audiovisual or whiteboard/slide inspection by this reviewer.",
+      "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
+      "No browser/MathJax/offline-publication validation performed by this reviewer.",
+      "Acceptance is bound to the exact recorded authored-body hash."
+    ]
+  }
+}

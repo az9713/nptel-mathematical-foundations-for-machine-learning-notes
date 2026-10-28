@@ -1,0 +1,142 @@
+{
+  "chapter": 6,
+  "title": "Inner products, orthogonality, and orthonormal coordinates",
+  "status": "reviewed and locally validated",
+  "authored_body_sha256": "47b38fadb40d948ef9f70c7aa35973d31232749ecc0b265e3309b9ef5ac801b6",
+  "recordings": [
+    {
+      "lecture_number": 15,
+      "video_id": "O-Mvuf_p2b4",
+      "duration_seconds": 2464,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "first_caption_start": 0.08,
+      "last_caption_end": 2463.2,
+      "caption_text_sha256": "cf78fbf3fb370dca6c1f62fb5b74565b3170ea5c9130e6b4174cdd0899b73429"
+    },
+    {
+      "lecture_number": 16,
+      "video_id": "32Zd4ciUfmw",
+      "duration_seconds": 2553,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified\n",
+      "first_caption_start": 0,
+      "last_caption_end": 2552.08,
+      "caption_text_sha256": "0ee7b6fa73c4154ed81c861e2d0b734d9d95b85459b3bad1db6b461064f61ee7"
+    },
+    {
+      "lecture_number": 17,
+      "video_id": "0DH4xuv9Dso",
+      "duration_seconds": 1914,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "first_caption_start": 0.32,
+      "last_caption_end": 1913.44,
+      "caption_text_sha256": "3a3ca0f900b5776b54fc6f55cb79e72fe5c1811946cd9d3312965eb41b84d742"
+    }
+  ],
+  "sections": [
+    {
+      "id": "inner",
+      "title": "6.1 An inner product is a scalar-valued operation [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=O-Mvuf_p2b4&t=219s"
+      ]
+    },
+    {
+      "id": "weighted",
+      "title": "6.2 A coordinate basis carries a Gram matrix",
+      "timestamps": []
+    },
+    {
+      "id": "cauchy",
+      "title": "6.3 Cauchy–Schwarz makes angle definitions possible [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=32Zd4ciUfmw&t=449s"
+      ]
+    },
+    {
+      "id": "orthogonal",
+      "title": "6.4 Orthogonality separates contributions [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=32Zd4ciUfmw&t=60s"
+      ]
+    },
+    {
+      "id": "complement",
+      "title": "6.5 An orthogonal complement uses every vector in a subspace [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=32Zd4ciUfmw&t=963s"
+      ]
+    },
+    {
+      "id": "fundamental",
+      "title": "6.6 The four fundamental subspaces come in two ambient spaces [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=32Zd4ciUfmw&t=1667s"
+      ]
+    },
+    {
+      "id": "orthonormal",
+      "title": "6.7 Orthonormal coordinates require only inner products [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=0DH4xuv9Dso&t=227s"
+      ]
+    },
+    {
+      "id": "fourier",
+      "title": "6.8 Fourier coefficients use the same orthogonality mechanism [lecture]",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=0DH4xuv9Dso&t=1507s"
+      ]
+    },
+    {
+      "id": "computation",
+      "title": "6.9 Check geometry, coordinates, and decomposition",
+      "timestamps": []
+    },
+    {
+      "id": "problems",
+      "title": "6.10 Six worked problems",
+      "timestamps": []
+    }
+  ],
+  "original_constructions": "Examples, derivations, Python, and worked problems.",
+  "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+  "visual_review": "not performed",
+  "independent_acceptance": true,
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "worked_problem_count": 6,
+  "references_checked": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "3.2–3.6",
+      "printed_pages": "72–79",
+      "pdf_pages": "78–85"
+    }
+  ],
+  "authoring_handoff_body_sha256": "002653886d8564efcf82ef64319df34ed94b78a8482919e3f9392688da4425c7",
+  "accepted_body_sha256": "47b38fadb40d948ef9f70c7aa35973d31232749ecc0b265e3309b9ef5ac801b6",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "scientific_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Full manuscript, six solutions and mathematical/reference verification recorded in archived final-ch06-round1.json.",
+      "Rechecked corrected weighted form requires all diagonal entries nonnegative and at least one zero for a degenerate seminorm.",
+      "Rechecked Problem4 correctly calls the vanishing operation a dot product; coefficients and Pythagorean reconstruction unchanged and correct.",
+      "No code changed; acceptance binds new exact digest."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

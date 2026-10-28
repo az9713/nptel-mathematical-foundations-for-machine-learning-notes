@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="2f864686cffd80379d8857ad03be7b0557cc162e852ab18607d8d278fd0e03a0">
+<title>8. Symmetric matrices, least squares, and pseudoinverses · Mathematical Foundations for Machine Learning</title><link rel="stylesheet" href="assets/book.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Mathematical Foundations for Machine Learning · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>8. Symmetric matrices, least squares, and pseudoinverses</h1>
+<p>A least-squares fit can determine one best prediction while leaving many equally good coefficient vectors. Symmetric matrices expose this difference: their orthogonal eigendirections separate the combinations identified by the observations from those the observations cannot distinguish.</p>
+<p>Consider the inconsistent system $Ax=b$ with</p>
+$$A=\begin{bmatrix}2&amp;1\\2&amp;1\end{bmatrix},
+\qquad b=\begin{bmatrix}4\\3\end{bmatrix}.$$
+<p>Every possible output has the form $(s,s)$ with $s=2x_1+x_2$, so none equals $(4,3)$. The closest output is $(7/2,7/2)$. Infinitely many coefficients produce it. We will derive the approximation, characterize the ambiguity, and select a unique coefficient vector only after stating an additional minimum-norm criterion.</p>
+<p>Lectures 21–23 develop symmetry, fitting, and the two full-rank pseudoinverse formulas. Definitions and projection connections can be checked in <a href="https://mml-book.github.io/book/mml-book.pdf">Mathematics for Machine Learning, §§4.2, 4.4, and 9.4</a>. The results below concern finite real matrices with Euclidean inner products unless specified otherwise.</p>
+
+<h2 id="symmetry">8.1 Symmetry is the coordinate expression of self-adjointness <a class="timestamp" href="https://www.youtube.com/watch?v=0eA95omrE5c&amp;t=32s">[lecture]</a></h2>
+<p>A real square matrix $S$ is <em>symmetric</em> if $S^\top=S$. Equivalently, its linear map satisfies</p>
+$$\langle Su,v\rangle=\langle u,Sv\rangle
+\qquad\text{for all }u,v\in\mathbb R^n.$$
+<p>The forward implication follows from $(Su)^\top v=u^\top S^\top v=u^\top Sv$. Conversely, applying the identity to coordinate basis vectors shows every entry of $S^\top-S$ is zero. An operator obeying this identity is called <em>self-adjoint</em>. The identity, rather than an array's appearance alone, expresses the geometric property.</p>
+<p>In an arbitrary basis with Gram matrix $G$, self-adjointness becomes $S^\top G=GS$, because the two products are $u^\top S^\top Gv$ and $u^\top GSv$. Ordinary symmetry is therefore the representation in an orthonormal coordinate system. An oblique change of basis can hide the visible symmetry while preserving the underlying self-adjoint operator.</p>
+<p>Unlike a general real matrix, a real symmetric matrix has only real eigenvalues. To prove this without presuming that an eigenvector is real, let $Sz=\lambda z$ for nonzero $z\in\mathbb C^n$, and write $z^*=\overline z^\top$. Then $z^*Sz=\lambda z^*z$. Its complex conjugate is $z^*S^*z=z^*Sz$, because $S^*=S$. Thus $z^*Sz$ is real; $z^*z=\sum_i|z_i|^2&gt;0$ is real, so $\lambda$ is real as well. Using $z^\top z$ in place of $z^*z$ would fail, since a nonzero complex vector can have $z^\top z=0$.</p>
+
+<h2 id="spectral">8.2 Symmetry supplies a complete orthonormal eigenbasis <a class="timestamp" href="https://www.youtube.com/watch?v=0eA95omrE5c&amp;t=1059s">[lecture]</a></h2>
+<p>For real eigenvectors $Su=\lambda u$ and $Sv=\mu v$, self-adjointness gives</p>
+$$\lambda u^\top v=(Su)^\top v=u^\top Sv=\mu u^\top v.$$
+<p>If $\lambda\ne\mu$, their product is zero. Within a repeated eigenspace, vectors need not already be orthogonal, but Gram–Schmidt can orthonormalize any basis while keeping it in that eigenspace. Neither observation alone proves that there are enough eigenvectors to span the whole space; that existence requires the spectral theorem.</p>
+<p>Here is a finite-dimensional proof. The continuous function $f(x)=x^\top Sx$ attains a maximum $\lambda$ on the compact unit sphere. Choose a maximizing unit vector $u$. For any $z\perp u$ and real $t$, the normalized vector $(u+tz)/\sqrt{1+t^2\|z\|^2}$ has unit length, so maximality implies</p>
+$$2t\,z^\top Su+t^2(z^\top Sz-\lambda\|z\|^2)\leq0.$$
+<p>If the coefficient $z^\top Su$ were nonzero, a sufficiently small $t$ of the same sign would violate the inequality. It must vanish for every $z\perp u$. Thus $Su$ is parallel to $u$, and its coefficient is $u^\top Su=\lambda$. We have found a real unit eigenvector.</p>
+<p>The orthogonal complement of $u$ is invariant: if $z\perp u$, then $u^\top Sz=(Su)^\top z=\lambda u^\top z=0$. The restriction of $S$ to that $(n-1)$-dimensional complement is again self-adjoint. Induction, starting from dimension one, produces an orthonormal eigenbasis there; adjoining $u$ completes the basis. This proves</p>
+$$S=Q\Lambda Q^\top,\qquad Q^\top Q=QQ^\top=I,$$
+<p>where the diagonal entries of $\Lambda$ are real eigenvalues. Repeated eigenvalues cause no defect for a symmetric matrix. Conversely every real matrix with such an orthogonal diagonalization is symmetric, as transposing the displayed product verifies.</p>
+
+<h2 id="rank-one">8.3 Spectral components are scaled orthogonal projections <a class="timestamp" href="https://www.youtube.com/watch?v=0eA95omrE5c&amp;t=2107s">[lecture]</a></h2>
+<p>If $q_i$ are the unit columns of $Q$, matrix multiplication expands the decomposition into</p>
+$$S=\sum_{i=1}^n\lambda_iq_iq_i^\top,\qquad
+Sx=\sum_i\lambda_i(q_i^\top x)q_i.$$
+<p>Each $q_iq_i^\top$ is a rank-one orthogonal projector. The map extracts the input component along an eigenvector, scales it by its eigenvalue, and sums the responses. For the familiar $M=\left[\begin{smallmatrix}2&amp;1\\1&amp;2\end{smallmatrix}\right]$, use $q_\pm=(1,\pm1)/\sqrt2$ to obtain $M=3q_+q_+^\top+q_-q_-^\top$. The common mode is tripled while the difference mode is unchanged.</p>
+<p>For a fixed eigenbasis, these $n$ projectors are independent as matrices: applying $\sum_i a_iq_iq_i^\top=0$ to $q_j$ gives $a_jq_j=0$. They span the $n$-dimensional space of matrices diagonal in that basis. They do not span all symmetric matrices, whose dimension is $n(n+1)/2$. In two dimensions, the symmetric cross term $q_1q_2^\top+q_2q_1^\top$ supplies a third independent direction. Changing the eigenvalues while fixing the eigenvectors explores only a subset of symmetric operators.</p>
+<p>A symmetric $S$ is <em>positive semidefinite</em> if $x^\top Sx\geq0$ for every $x$, and <em>positive definite</em> if this quantity is positive whenever $x\ne0$. In spectral coordinates,</p>
+$$x^\top Sx=\sum_i\lambda_i(q_i^\top x)^2.$$
+<p>Thus semidefiniteness is equivalent to all $\lambda_i\geq0$, and definiteness to all $\lambda_i&gt;0$. Necessity follows by testing $x=q_i$; sufficiency follows from the displayed sum and the fact that a nonzero vector has at least one nonzero coordinate. Mixed positive and negative eigenvalues give an indefinite quadratic form. These classifications concern eigenvalue signs, not whether all matrix entries are positive.</p>
+<p>For every rectangular $A$, $A^\top A$ is symmetric positive semidefinite, since $x^\top A^\top Ax=\|Ax\|^2$. Moreover $\ker(A^\top A)=\ker A$: one inclusion is immediate; the other follows because $A^\top Ax=0$ implies $\|Ax\|^2=0$. Hence the Gram matrix is positive definite exactly when $A$ has full column rank. This is the spectral bridge to fitting.</p>
+
+<h2 id="least-squares">8.4 Least squares projects in output space <a class="timestamp" href="https://www.youtube.com/watch?v=HbgiWXcnFVY&amp;t=171s">[lecture]</a></h2>
+<p>Let $A\in\mathbb R^{m\times n}$ describe known features, let $b\in\mathbb R^m$ be observed targets, and let $x\in\mathbb R^n$ be coefficients. Least squares minimizes $L(x)=\|b-Ax\|^2$. The set of attainable outputs is $\operatorname{range}A$. The preceding chapter proves there is one closest attainable vector $\widehat b=P_{\operatorname{range}A}b$.</p>
+<p>Any coefficient vector satisfying $A\widehat x=\widehat b$ minimizes $L$. Such coefficients exist by the definition of the range. If $\widehat x$ is one of them, every minimizer has the form</p>
+$$x=\widehat x+z,\qquad z\in\ker A.$$
+<p>The forward statement follows because $Az=0$ leaves the prediction unchanged. Conversely, two minimizing predictions must both equal the unique projection, so their coefficient difference belongs to the kernel. Consequently all least-squares coefficients are unique exactly when $\ker A=\{0\}$, or equivalently when the columns are independent.</p>
+<p>For the running inconsistent example, minimize $(4-s)^2+(3-s)^2$ over the attainable scalar $s$. Completing the square yields $2(s-7/2)^2+1/2$, so $\widehat b=(7/2,7/2)$ and minimum squared error $1/2$. The residual $(1/2,-1/2)$ is perpendicular to both feature columns. Every pair satisfying $2x_1+x_2=7/2$ is a minimizer. In the equation view, the original constraints are parallel lines; in the column view, the target lies outside a one-dimensional output space. Both pictures describe the same inconsistency.</p>
+
+<h2 id="normal">8.5 Normal equations characterize every least-squares minimizer <a class="timestamp" href="https://www.youtube.com/watch?v=HbgiWXcnFVY&amp;t=1499s">[lecture]</a></h2>
+<p>The residual is orthogonal to the column space exactly when $A^\top(b-Ax)=0$. Thus the <em>normal equations</em> are</p>
+$$A^\top A\widehat x=A^\top b.$$
+<p>They are valid whether or not $A$ has full rank. Their equivalence with minimization can also be proved directly. For any perturbation $h\in\mathbb R^n$,</p>
+$$L(x+h)-L(x)
+=-2h^\top A^\top(b-Ax)+\|Ah\|^2.$$
+<p>If the normal equations hold, the linear term vanishes and the difference is nonnegative. If they fail, put $g=A^\top(b-Ax)\ne0$ and choose $h=tg$ with small positive $t$. The change is $-2t\|g\|^2+t^2\|Ag\|^2&lt;0$ for sufficiently small $t$, contradicting optimality. This proves both directions without treating a stationary condition as automatically sufficient.</p>
+<p>When $\operatorname{rank}A=n$, $A^\top A$ is positive definite and invertible, giving</p>
+$$\widehat x=(A^\top A)^{-1}A^\top b.$$
+<p>Full column rank requires $m\geq n$, but being tall does not guarantee that rank. In the running example $A^\top A=\left[\begin{smallmatrix}8&amp;4\\4&amp;2\end{smallmatrix}\right]$ is singular, so this inverse formula cannot be used. Its normal equations nevertheless have the entire family $2x_1+x_2=7/2$ as solutions.</p>
+
+<h2 id="regression">8.6 A line fit keeps predictor locations fixed <a class="timestamp" href="https://www.youtube.com/watch?v=mIW5anDbM4M&amp;t=152s">[lecture]</a></h2>
+<p>For the three observed pairs $(t_i,y_i)=(1,1),(1,-1),(0,1)$, fit the line $\widehat y=c+mt$. The coefficient vector is $\theta=(c,m)$ and the design matrix and target are</p>
+$$X=\begin{bmatrix}1&amp;1\\1&amp;1\\1&amp;0\end{bmatrix},
+\qquad y=\begin{bmatrix}1\\-1\\1\end{bmatrix}.$$
+<p>The first column is the intercept feature and the second holds the fixed predictor values. They are independent, so $X^\top X=\left[\begin{smallmatrix}3&amp;2\\2&amp;2\end{smallmatrix}\right]$ is invertible. The normal equations become</p>
+$$\begin{bmatrix}3&amp;2\\2&amp;2\end{bmatrix}
+\begin{bmatrix}c\\m\end{bmatrix}
+=\begin{bmatrix}1\\0\end{bmatrix},
+\qquad c=1,\quad m=-1.$$
+<p>The fitted values are $(0,0,1)$, residuals $(1,-1,0)$, squared residual norm $2$, and residual norm $\sqrt2$. The residual sums to zero and its product with the predictor column is zero, checking both normal equations. Neither line interpolation nor zero error was possible because the two observations at $t=1$ have different targets.</p>
+<p>The orthogonal projection occurs in the three-dimensional space of target vectors, onto $\operatorname{range}X$. In the two-dimensional scatter plot, these residuals are vertical because the $t_i$ remain fixed. Minimizing perpendicular distances from points to a geometric line would be a different optimization problem. Likewise a polynomial $c_0+c_1t+\cdots+c_dt^d$ remains linear in its unknown coefficients, so the same method applies after constructing columns of powers of the fixed inputs. More samples do not guarantee independent feature columns; repeated or otherwise degenerate input locations can leave a polynomial design rank deficient.</p>
+
+<h2 id="pinverse">8.7 The pseudoinverse adds a minimum-norm selection <a class="timestamp" href="https://www.youtube.com/watch?v=mIW5anDbM4M&amp;t=1228s">[lecture]</a></h2>
+<p>Decompose coefficient space as $\mathbb R^n=(\ker A)^\perp\oplus\ker A$. Every least-squares minimizer has the same component $x_{\rm row}\in(\ker A)^\perp$ and an arbitrary kernel component $z$. Orthogonality gives</p>
+$$\|x_{\rm row}+z\|^2=\|x_{\rm row}\|^2+\|z\|^2.$$
+<p>The unique minimizer of coefficient norm therefore has $z=0$. This additional selection does not improve the fitted outputs; they were already identical. It chooses the smallest Euclidean parameter vector among all best fits.</p>
+<p>Define the <em>Moore–Penrose pseudoinverse</em> $A^+:\mathbb R^m\to\mathbb R^n$ as follows: first project $b$ onto $\operatorname{range}A$, then invert the restriction of $A$ from $(\ker A)^\perp$ to its range. That restriction is injective because the two domain subspaces intersect only at zero. It is surjective onto the range because any preimage can have its kernel component removed without changing its output. Both operations are linear, so this defines a matrix, and $A^+b$ is exactly the unique minimum-norm least-squares solution.</p>
+<p>This construction yields two orthogonal projectors:</p>
+$$AA^+=P_{\operatorname{range}A},\qquad
+A^+A=P_{(\ker A)^\perp}.$$
+<p>Consequently it satisfies the four Moore–Penrose identities</p>
+$$AA^+A=A,\qquad A^+AA^+=A^+,\qquad
+(AA^+)^\top=AA^+,\qquad(A^+A)^\top=A^+A.$$
+<p>They characterize the same canonical inverse for arbitrary matrix shape and rank. When $A$ is square and invertible, both projectors are identities and $A^+=A^{-1}$. At the opposite boundary $A=0$, its range is zero and $A^+=0$; all coefficients fit equally badly, and zero is the minimum-norm choice.</p>
+<p>For the running example, the row space is the line through $v=(2,1)$. The selected coefficient must be $tv$ and satisfy $2x_1+x_2=5t=7/2$. Thus</p>
+$$A^+b=(7/5,7/10),\qquad
+x=(7/5,7/10)+s(1,-2)\quad(s\in\mathbb R).$$
+<p>The two directions are perpendicular, making the minimum-norm claim immediate. More generally, writing $A=uv^\top$ with $u=(1,1)$ gives $A^+=vu^\top/(\|u\|^2\|v\|^2)=\tfrac1{10}\left[\begin{smallmatrix}2&amp;2\\1&amp;1\end{smallmatrix}\right]$; multiplication confirms the selected pair.</p>
+
+<h2 id="wide">8.8 Full row rank gives a different formula</h2>
+<p>When $A$ has full row rank $m\leq n$, every output is attainable. Now $AA^\top$ is positive definite and the vector</p>
+$$x_*=A^\top(AA^\top)^{-1}b$$
+<p>satisfies $Ax_*=b$. It also lies in $\operatorname{range}A^\top=(\ker A)^\perp$, so it is the minimum-norm exact solution. Hence $A^+=A^\top(AA^\top)^{-1}$. By contrast, the full-column-rank formula is $(A^\top A)^{-1}A^\top$. Neither formula applies to every rectangular matrix, and a matrix can be deficient relative to both its row and column counts.</p>
+<p>For $A=\left[\begin{smallmatrix}1&amp;1&amp;0\\0&amp;1&amp;1\end{smallmatrix}\right]$ and $b=(3,5)$,</p>
+$$AA^\top=\begin{bmatrix}2&amp;1\\1&amp;2\end{bmatrix},
+\quad (AA^\top)^{-1}b=(1/3,7/3),\quad
+x_*=(1/3,8/3,7/3).$$
+<p>The sums of adjacent components are $3$ and $5$, and the product with the kernel vector $(1,-1,1)$ is zero. All exact solutions are $x_*+s(1,-1,1)$, whose squared norms are $38/3+3s^2$. A wide matrix therefore need not require approximation in output space; it may instead require a principled selection in parameter space.</p>
+<p>Minimum norm depends on parameter scaling. Replacing a feature by a multiple changes the coordinate norm being minimized even if the prediction space stays the same. If physically meaningful coefficient sizes are unequal, a weighted parameter norm is a different, legitimate selection rule, but it is not the ordinary Euclidean Moore–Penrose choice.</p>
+
+<h2 id="numerics">8.9 The inverse formula explains the answer, not the best algorithm</h2>
+<p>For full column rank, define $\sigma_{\max}=\max_{\|x\|=1}\|Ax\|$ and $\sigma_{\min}=\min_{\|x\|=1}\|Ax\|&gt;0$. Their ratio is the spectral condition number $\kappa_2(A)$. The largest and smallest eigenvalues of $A^\top A$ are $\sigma_{\max}^2$ and $\sigma_{\min}^2$, since its Rayleigh quotient is $\|Ax\|^2/\|x\|^2$. Therefore</p>
+$$\kappa_2(A^\top A)=\kappa_2(A)^2.$$
+<p>Forming normal equations can worsen numerical sensitivity, especially for nearly redundant features. QR solves the full-column-rank fitting problem without explicitly squaring the matrix, while SVD handles arbitrary rank and exposes small response directions. The next chapter constructs that decomposition and a general computational expression for $A^+$.</p>
+<p>Adding a positive penalty $\alpha\|x\|^2$ gives ridge regression, with equations $(A^\top A+\alpha I)x=A^\top b$. This guarantees a unique solution, since the new quadratic form is $\|Ax\|^2+\alpha\|x\|^2&gt;0$ for nonzero $x$. It changes the objective and generally shrinks fitted components; it is not merely an algebraic repair preserving the original least-squares result.</p>
+
+<h2 id="computation">8.10 Check predictions, residuals, and the selection rule</h2>
+<pre><code class="language-python">import numpy as np
+
+design = np.array([[1.0, 1.0], [1.0, 1.0], [1.0, 0.0]])
+target = np.array([1.0, -1.0, 1.0])
+theta, _, _, _ = np.linalg.lstsq(design, target, rcond=None)
+fitted = design @ theta
+residual = target - fitted
+print("intercept and slope:", np.round(theta, 6))
+print("fitted targets:", np.round(fitted, 6))
+print("squared residual norm:", round(residual @ residual, 6))
+assert np.allclose(design.T @ residual, 0.0)
+a = np.array([[2.0, 1.0], [2.0, 1.0]])
+b = np.array([4.0, 3.0])
+minimum = np.linalg.pinv(a) @ b
+print("rank-deficient minimum-norm fit:", np.round(minimum, 6))
+print("predictions:", np.round(a @ minimum, 6))
+alternative = minimum + np.array([1.0, -2.0])
+print("same predictions:", np.allclose(a @ alternative, a @ minimum))
+print("squared coefficient norms:", round(minimum @ minimum, 6),
+      round(alternative @ alternative, 6))
+assert np.allclose(minimum @ np.array([1.0, -2.0]), 0.0)
+</code></pre>
+<pre class="output">intercept and slope: [ 1. -1.]
+fitted targets: [0. 0. 1.]
+squared residual norm: 2.0
+rank-deficient minimum-norm fit: [1.4 0.7]
+predictions: [3.5 3.5]
+same predictions: True
+squared coefficient norms: 2.45 7.45</pre>
+
+<h2 id="problems">8.11 Six worked problems</h2>
+<h3 id="problem-1">Problem 1: Symmetry with a repeated eigenvalue</h3>
+<p>Let $S=I_3+\mathbf1\mathbf1^\top$, where $\mathbf1=(1,1,1)^\top$. Find its eigenvalues, multiplicities, and a complete orthonormal eigenbasis.</p>
+<details><summary>Solution</summary><p>Since $\mathbf1^\top\mathbf1=3$, $S\mathbf1=4\mathbf1$. Every $z$ with $z_1+z_2+z_3=0$ satisfies $Sz=z$, so the remaining eigenspace is the two-dimensional plane $\mathbf1^\perp$. An orthonormal eigenbasis is $q_1=(1,1,1)/\sqrt3$, $q_2=(1,-1,0)/\sqrt2$, and $q_3=(1,1,-2)/\sqrt6$. The first value is $4$ of multiplicity one; $1$ has algebraic and geometric multiplicity two. The spectral representation $S=4q_1q_1^\top+q_2q_2^\top+q_3q_3^\top$ also equals $I+3q_1q_1^\top$. The trace check gives $4+1+1=6$, matching three diagonal entries of two.</p></details>
+<h3 id="problem-2">Problem 2: Positive entries need not mean positive definiteness</h3>
+<p>Classify $S=\left[\begin{smallmatrix}1&amp;2\\2&amp;1\end{smallmatrix}\right]$. Then compare it with $A^\top A$ for any real $A$.</p>
+<details><summary>Solution</summary><p>The vectors $(1,1)$ and $(1,-1)$ have eigenvalues $3$ and $-1$, so $S$ is indefinite despite all entries being positive. Directly, $(1,-1)S(1,-1)^\top=-2&lt;0$, while the common direction gives a positive quadratic value. In contrast, $x^\top A^\top Ax=\|Ax\|^2\geq0$ always, so a Gram matrix cannot have a negative eigenvalue in exact arithmetic. It is strictly positive definite exactly when no nonzero $x$ is annihilated by $A$.</p></details>
+<h3 id="problem-3">Problem 3: A fit with an intercept only</h3>
+<p>Fit a constant $c$ to targets $1,2,6$. Find the minimizer, residual, and minimum squared error using projection.</p>
+<details><summary>Solution</summary><p>The design has one column $u=(1,1,1)$, so the coefficient is $c=(u^\top y)/(u^\top u)=9/3=3$. The fitted vector is $(3,3,3)$ and residual $(-2,-1,3)$, whose entries sum to zero and are therefore perpendicular to $u$. The minimum squared error is $4+1+9=14$. For any other constant $d$, Pythagoras gives $\|y-du\|^2=14+3(d-3)^2$, proving the minimum and its uniqueness without differentiation.</p></details>
+<h3 id="problem-4">Problem 4: A wide minimum-norm inverse</h3>
+<p>Solve $Ax=b$ with $A=\left[\begin{smallmatrix}1&amp;1&amp;0\\0&amp;1&amp;1\end{smallmatrix}\right]$ and $b=(1,1)$. Select the minimum-norm solution and compare it with $(1,0,1)$.</p>
+<details><summary>Solution</summary><p>Writing $x_2=t$ gives $x=(1-t,t,1-t)$. Its squared norm is $2(1-t)^2+t^2=3(t-2/3)^2+2/3$, minimized at $t=2/3$. Thus $x_*=(1/3,2/3,1/3)$ with squared norm $2/3$. It is perpendicular to the kernel generator $(1,-1,1)$ and satisfies both equations. The alternative $(1,0,1)$ also solves the system but has squared norm $2$, exceeding the minimum by $4/3$. Output error alone cannot distinguish these exact solutions.</p></details>
+<h3 id="problem-5">Problem 5: A pseudoinverse of a rank-one matrix</h3>
+<p>Let nonzero $u\in\mathbb R^m$ and $v\in\mathbb R^n$ define $A=uv^\top$. Derive $A^+$ and identify its two projection products.</p>
+<details><summary>Solution</summary><p>The output projection is $\widehat b=u(u^\top b)/\|u\|^2$. A minimum-norm preimage must lie in the row space, the line through $v$, so write $x=cv$. Then $Ax=c\|v\|^2u=\widehat b$, giving $c=(u^\top b)/(\|u\|^2\|v\|^2)$. Thus $A^+=vu^\top/(\|u\|^2\|v\|^2)$. Multiplication gives $AA^+=uu^\top/\|u\|^2$ and $A^+A=vv^\top/\|v\|^2$, the orthogonal projectors onto the column and row lines. These identities verify the Moore–Penrose conditions directly and cover matrices deficient in both shape dimensions.</p></details>
+<h3 id="problem-6">Problem 6: What changes under regularization?</h3>
+<p>For $A=\operatorname{diag}(2,0)$ and $b=(2,3)$, compute the pseudoinverse fit and the ridge solution with penalty $\alpha&gt;0$. Compare predictions.</p>
+<details><summary>Solution</summary><p>The loss is $(2-2x_1)^2+9$, independent of $x_2$. Its minimum-norm minimizer is $(1,0)$, producing $(2,0)$ and squared output error $9$. Ridge adds $\alpha(x_1^2+x_2^2)$, yielding $(4+\alpha)x_1=4$ and $\alpha x_2=0$. Hence $x_\alpha=(4/(4+\alpha),0)$ and $Ax_\alpha=(8/(4+\alpha),0)$. The retained output is shrunk for every positive $\alpha$; its unpenalized squared error is $9+(2\alpha/(4+\alpha))^2&gt;9$. As $\alpha\downarrow0$, it approaches the minimum-norm least-squares solution, but for positive penalty it solves a different problem.</p></details>
+<p>Symmetry gives orthogonal scalar modes, projection gives the unique fitted output, and the pseudoinverse selects its minimum-norm preimage. Singular value decomposition will combine these ideas for a general rectangular map and connect them to principal component analysis.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-07-projection-orthogonal-bases-and-best-approximation.html">Previous chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-09-principal-components-and-singular-value-decomposition.html">Next chapter</a></nav></main></div>
+<footer class="site-footer">Independent educational edition of the NPTEL IISc Bangalore / NITK Surathkal course by Ashok Rao and Arulalan Rajan. Recordings supply the chronological topic sequence; original exposition, constructions, and external results are separately attributed. Source and validation records state the evidence and its limits.</footer></body></html>

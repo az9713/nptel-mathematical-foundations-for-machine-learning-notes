@@ -1,0 +1,170 @@
+{
+  "chapter": 17,
+  "title": "Concentration inequalities and the central limit theorem",
+  "status": "reviewed and locally validated",
+  "author": "probability_editor",
+  "recordings": [
+    {
+      "lecture_number": 45,
+      "video_id": "qiWb224McU4",
+      "duration_seconds": 2835,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified\n",
+      "transcript_first_start_seconds": 0.4,
+      "transcript_last_end_seconds": 2834.16,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "1ba80f8dcd027867296244966b1c7f4a262b8cab44207ad8ab77ffb18d838e2c",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 46,
+      "video_id": "wSY8FfR1qwM",
+      "duration_seconds": 3082,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 3081.12,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "3cde9e8dd83331dc391dacc441694603e88d32084a7ec2001f498c1507d72c9a",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 47,
+      "video_id": "54iHJ5p35nA",
+      "duration_seconds": 1994,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.08,
+      "transcript_last_end_seconds": 1994.24,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "2480e6ea18c5cfb01bed45b32cf4d20bfdeae536482d4aacb02c62b382b782e6",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "All assigned caption text read sequentially; section-by-section private coverage ledger records topic correspondence.",
+    "teaching_constructions": "Budget proofs of inequalities, sharpness laws, finite-variance weak law, distinction of sampling designs, exact binomial comparison and six worked problems.",
+    "reference_orientation": "Only inspected primary-author references cited; proofs and examples independently developed.",
+    "empirical_claims": "No empirical deployment or prediction-performance result asserted."
+  },
+  "section_map": [
+    {
+      "id": "tails",
+      "title": "Tail events and threshold conventions"
+    },
+    {
+      "id": "markov",
+      "title": "Markov's inequality: charge every exceedance a minimum cost"
+    },
+    {
+      "id": "chebyshev",
+      "title": "Chebyshev's inequality is Markov applied to a squared deviation"
+    },
+    {
+      "id": "sampling",
+      "title": "Sampling distributions are laws of statistics before observing the data"
+    },
+    {
+      "id": "weak-law",
+      "title": "A finite-sample bound proves a weak law of large numbers"
+    },
+    {
+      "id": "clt",
+      "title": "The central limit theorem concerns standardized fluctuations"
+    },
+    {
+      "id": "approximation-limits",
+      "title": "There is no universal sample-size cutoff"
+    },
+    {
+      "id": "check",
+      "title": "Executable check: exact binomial CDFs against a normal approximation"
+    },
+    {
+      "id": "problems",
+      "title": "Six worked problems"
+    },
+    {
+      "id": "scope",
+      "title": "Sources and limits"
+    }
+  ],
+  "timestamp_links": [
+    {
+      "video_id": "qiWb224McU4",
+      "seconds": 323
+    },
+    {
+      "video_id": "qiWb224McU4",
+      "seconds": 1735
+    },
+    {
+      "video_id": "wSY8FfR1qwM",
+      "seconds": 446
+    },
+    {
+      "video_id": "wSY8FfR1qwM",
+      "seconds": 1686
+    },
+    {
+      "video_id": "54iHJ5p35nA",
+      "seconds": 1417
+    }
+  ],
+  "original_construction_statement": "Budget proofs of inequalities, sharpness laws, finite-variance weak law, distinction of sampling designs, exact binomial comparison and six worked problems.",
+  "references_checked": [
+    {
+      "url": "https://www.ocw.mit.edu/courses/18-175-theory-of-probability-spring-2014/20b9ab92704112083d78d0af846ac13f_MIT18_175S14_Lecture15.pdf",
+      "author": "Scott Sheffield",
+      "sections": "MIT 18.175 Lecture 15 slides 10–11",
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "claims": [
+        "Levy continuity theorem",
+        "classical iid finite-positive-variance CLT",
+        "characteristic-function expansion"
+      ],
+      "inspection": "Official PDF extracted text inspected; no visual PDF check claimed."
+    }
+  ],
+  "editorial_reviews": [
+    {
+      "role": "science-editor FULL REWRITE",
+      "editor": "probability_editor",
+      "status": "rewritten and author-checked; independent review pending",
+      "reviewed_body_sha256": "4f631052152d15f123c5a4df7357198220d9e976cf6f06540636cb73881a150a",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before wrapping.",
+      "code_execution": "Passed; displayed stdout matches actual captured execution output after line-ending normalization.",
+      "visual_review": "not performed",
+      "independent_acceptance": false
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "authored_body_sha256": "e34f5a9e3376fd6b3b60efa9950049429c16abe845140d6c784340282013d6d5",
+  "authoring_handoff_body_sha256": "4f631052152d15f123c5a4df7357198220d9e976cf6f06540636cb73881a150a",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "e34f5a9e3376fd6b3b60efa9950049429c16abe845140d6c784340282013d6d5",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "probability_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read all prose, inequalities/proof sketch, numerical interpretation, listing and six worked solutions, plus complete coverage ledger and existing deterministic execution evidence.",
+      "Independently checked threshold endpoints, Markov/Chebyshev sharpness and vacuity, exact iid mean variance, weak law/sample-size guarantee, characteristic-function expansion and CLT normalization, finite-population correction and optimized Cantelli bound.",
+      "Opened the cited official MIT18.175 Lecture15 PDF and personally inspected slides10–11 supporting Levy continuity and finite-positive-variance iid CLT.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+      "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

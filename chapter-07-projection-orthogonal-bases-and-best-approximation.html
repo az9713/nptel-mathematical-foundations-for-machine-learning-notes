@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c">
+<title>7. Projection, orthogonal bases, and best approximation · Mathematical Foundations for Machine Learning</title><link rel="stylesheet" href="assets/book.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Mathematical Foundations for Machine Learning · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>7. Projection, orthogonal bases, and best approximation</h1>
+<p>A restricted representation rarely reproduces every possible input. The useful question is then which representable vector lies closest to the desired one and how much error the restriction necessarily leaves. Orthogonal projection answers that question exactly for a fixed linear subspace and a squared inner-product norm.</p>
+<p>For a running example, suppose a three-coordinate measurement must be represented using the two templates $b_1=(1,1,0)$ and $b_2=(0,1,1)$. Their span is the plane $W=\{(s,s+t,t):s,t\in\mathbb R\}$. The vector $y=(1,2,4)$ does not lie in it, because its middle coordinate is not the sum of its outer coordinates. We seek a vector in $W$ with minimum Euclidean distance from $y$. The coefficient pair and the approximating three-coordinate vector are different objects; keeping both visible will clarify the calculation.</p>
+<p>This chapter develops Lectures 18–20. Definitions and general subspace projection formulas can be checked in <a href="https://mml-book.github.io/book/mml-book.pdf">Mathematics for Machine Learning, §3.8</a>. All finite-dimensional statements below use a specified real inner product, and unqualified matrix transposes refer to the ordinary Euclidean product.</p>
+
+<h2 id="line">7.1 Projection onto a line determines one coefficient <a class="timestamp" href="https://www.youtube.com/watch?v=SC_zfCRO-i8&amp;t=249s">[lecture]</a></h2>
+<p>Let $u\ne0$ belong to a real inner product space and let $y$ be any vector in that space. We want $y=cu+r$, where $r$ is orthogonal to the line through $u$. Taking the inner product with $u$ gives</p>
+$$0=\langle u,y-cu\rangle=\langle u,y\rangle-c\|u\|^2,
+\qquad c=\frac{\langle u,y\rangle}{\|u\|^2}.$$
+<p>The <em>orthogonal projection</em> onto that line is the vector $cu$, and its residual is $r=y-cu$. The scalar $c$ is its coordinate in the basis $\{u\}$. Its signed length along the unit direction $u/\|u\|$ is $\langle u,y\rangle/\|u\|$, while its ordinary nonnegative length is the absolute value of that number. These quantities coincide numerically only under particular normalizations.</p>
+<p>For the Euclidean direction $u=(2,1)$ and $y=(1,3)$, the coefficient is $(2+3)/(4+1)=1$. Thus the projection is $(2,1)$ and the residual is $(-1,2)$, whose dot product with $u$ is zero. The squared lengths satisfy $10=5+5$. Changing the generator from $u$ to $-3u$ changes the coefficient to $-1/3$ but leaves the projected vector unchanged. A subspace has no preferred choice of generator.</p>
+<p>The projected vector can also be zero. If $y\perp u$, its coefficient vanishes. If $y$ lies in the line, the residual vanishes. A formula dividing by $\|u\|^2$ cannot be used for $u=0$; projection onto the zero subspace is instead the zero map by definition.</p>
+
+<h2 id="outer">7.2 An outer product packages the linear map <a class="timestamp" href="https://www.youtube.com/watch?v=SC_zfCRO-i8&amp;t=1131s">[lecture]</a></h2>
+<p>For a nonzero column $u\in\mathbb R^n$, rearrange the scalar-vector product to obtain</p>
+$$\operatorname{proj}_{\operatorname{span}\{u\}}y
+=\frac{u^\top y}{u^\top u}u
+=Py,\qquad P=\frac{uu^\top}{u^\top u}.$$
+<p>The inner product $u^\top u$ is a scalar; the <em>outer product</em> $uu^\top$ is an $n\times n$ matrix, with entry $u_iu_j$. They cannot cancel as though they were the same object. The $j$th column of $uu^\top$ is $u_ju$, so the range is contained in the line through $u$. At least one coordinate of $u$ is nonzero, making at least one such column nonzero and the rank exactly one. If the original vector were zero, the outer product would have rank zero.</p>
+<p>The projector is symmetric, and associativity proves idempotence:</p>
+$$P^\top=P,\qquad
+P^2=\frac{u(u^\top u)u^\top}{(u^\top u)^2}
+=P.$$
+<p><em>Idempotence</em> means that applying the same projection again makes no further change. It is not the inverse relation $P^2=I$. For $n&gt;1$, a line projection loses every component in its $(n-1)$-dimensional orthogonal complement and is singular. In the one-dimensional ambient space, projection onto its nonzero line is the identity and has full rank; rank deficiency is therefore relative to the target and ambient dimensions.</p>
+<p>For $u=(2,1)$, $P=\tfrac15\left[\begin{smallmatrix}4&amp;2\\2&amp;1\end{smallmatrix}\right]$. Multiplication gives $Pu=u$, and $P(-1,2)=0$. The eigenvalues are $1$ on the retained line and $0$ on the discarded line. This links the algebra of projections to the eigenvector analysis of the preceding chapters.</p>
+
+<h2 id="projection">7.3 An orthonormal basis constructs the subspace projection <a class="timestamp" href="https://www.youtube.com/watch?v=7oRh2SdmsL0&amp;t=1137s">[lecture]</a></h2>
+<p>Let $W\subseteq\mathbb R^n$ have dimension $r$, and collect an orthonormal basis as the columns of $Q\in\mathbb R^{n\times r}$. Then $Q^\top Q=I_r$. For any $y$, define</p>
+$$\widehat y=QQ^\top y,\qquad e=(I_n-QQ^\top)y.$$
+<p>The first vector lies in $W$. The second is orthogonal to every column, because $Q^\top e=Q^\top y-Q^\top QQ^\top y=0$. Orthogonality to a basis implies orthogonality to its entire span. We have therefore constructed the unique decomposition $y=\widehat y+e$ with $\widehat y\in W$ and $e\in W^\perp$.</p>
+<p>The uniqueness proof is independent of coordinates: two such decompositions would give a common vector $\widehat y-\widehat y'=e'-e$ in both $W$ and $W^\perp$, so it must be zero. Consequently the result does not depend on which orthonormal basis of $W$ we selected. Indeed, replacing $Q$ by $QS$ for any $r\times r$ orthogonal matrix $S$ leaves $QS(QS)^\top=QQ^\top$.</p>
+<p>The projection matrix $P=QQ^\top$ is symmetric and satisfies $P^2=Q(Q^\top Q)Q^\top=P$. Its range is $W$ because it maps into $W$ and fixes every $Qc\in W$. Its kernel is $W^\perp$. The complementary projector $I-P$ retains exactly the residual component. Pythagoras yields $\|y\|^2=\|Py\|^2+\|(I-P)y\|^2$, so $\|Py\|\leq\|y\|$. More generally, linearity gives $\|Py-Pz\|\leq\|y-z\|$: orthogonal projection cannot increase distances.</p>
+<p>For a rectangular $Q$, $Q^\top Q=I_r$ does not imply $QQ^\top=I_n$. The latter is the projector onto its column space and equals the full identity only when $r=n$. Keeping the identity sizes explicit avoids treating a compression map as an invertible change of basis.</p>
+
+<h2 id="best">7.4 The orthogonal residual proves best approximation <a class="timestamp" href="https://www.youtube.com/watch?v=7oRh2SdmsL0&amp;t=1964s">[lecture]</a></h2>
+<p>For any candidate $w\in W$, split the error as</p>
+$$y-w=(y-\widehat y)+(\widehat y-w).$$
+<p>The two terms lie in $W^\perp$ and $W$, so their cross product vanishes. Therefore</p>
+$$\boxed{\|y-w\|^2=\|y-\widehat y\|^2+\|\widehat y-w\|^2.}$$
+<p>The first term is unavoidable for the chosen subspace. The second is nonnegative and vanishes exactly when $w=\widehat y$. Hence the orthogonal projection is the unique closest vector in $W$. The minimum squared error need not be zero: only the excess error above that minimum vanishes at the optimum. Exact reconstruction occurs precisely when $y\in W$.</p>
+<p>In orthonormal coordinates $w=Qc$, the same identity becomes</p>
+$$\|y-Qc\|^2=\|(I-QQ^\top)y\|^2+\|Q^\top y-c\|^2,$$
+<p>because $Q$ preserves the length of its coefficient vectors. Thus the unique minimizing coefficients are $c=Q^\top y$. This is a completed-square argument and a geometric proof at once; no differential calculus or matrix inverse is required.</p>
+<p>Projection retains components measured by the selected geometry. An orthogonal residual is not, by itself, a proof of statistical independence or absence of useful predictive information. For centered random variables, zero expected product means uncorrelatedness; independence is stronger. Similarly, a small geometric residual does not guarantee that a discarded direction is irrelevant to a downstream label. These distinctions separate a precise approximation theorem from a broader modeling claim.</p>
+
+<h2 id="gram-schmidt">7.5 Gram–Schmidt builds the basis by removing old components <a class="timestamp" href="https://www.youtube.com/watch?v=joUxO822okk&amp;t=256s">[lecture]</a></h2>
+<p>Suppose $b_1,\ldots,b_r$ are independent vectors. Define $v_1=b_1$ and recursively</p>
+$$v_j=b_j-\sum_{i=1}^{j-1}
+\frac{\langle v_i,b_j\rangle}{\|v_i\|^2}v_i,\qquad
+q_j=\frac{v_j}{\|v_j\|}.$$
+<p>The procedure subtracts the projection onto the span already constructed. To verify it, assume $v_1,\ldots,v_{j-1}$ are nonzero and mutually orthogonal. Taking the inner product with $v_\ell$ for $\ell&lt;j$ leaves only one term of the sum:</p>
+$$\langle v_\ell,v_j\rangle
+=\langle v_\ell,b_j\rangle
+-\frac{\langle v_\ell,b_j\rangle}{\|v_\ell\|^2}\|v_\ell\|^2=0.$$
+<p>The proof uses cancellation, not an assumption that the original inputs were already orthogonal. Moreover $v_j$ belongs to $\operatorname{span}\{b_1,\ldots,b_j\}$, and rearranging the defining equation shows $b_j\in\operatorname{span}\{v_1,\ldots,v_j\}$. Induction proves equality of these spans after every step.</p>
+<p>If $v_j=0$, then $b_j$ lies in the span of its predecessors, contradicting independence. Thus no division by zero occurs for independent inputs in exact arithmetic. For a general spanning list, a zero residual instead identifies a redundant input; skip that vector and continue. A zero first vector must likewise be skipped.</p>
+<p>In the running example, $v_1=(1,1,0)$ and</p>
+$$v_2=(0,1,1)-\frac12(1,1,0)
+=(-1/2,1/2,1).$$
+<p>Their norms are $\sqrt2$ and $\sqrt{3/2}$, giving</p>
+$$q_1=\frac{(1,1,0)}{\sqrt2},\qquad
+q_2=\frac{(-1,1,2)}{\sqrt6}.$$
+<p>The cross product is zero and both squared lengths are one. For $y=(1,2,4)$, the orthonormal coordinates are $3/\sqrt2$ and $9/\sqrt6$. Hence</p>
+$$\widehat y=\frac32(1,1,0)+\frac32(-1,1,2)
+=(0,3,3),\qquad e=(1,-1,1).$$
+<p>Checking $e^\top b_1=e^\top b_2=0$ proves this is the desired projection. The squared error is $3$, and the energy decomposition reads $21=18+3$.</p>
+
+<h2 id="qr">7.6 QR records the construction without losing normalization factors <a class="timestamp" href="https://www.youtube.com/watch?v=joUxO822okk&amp;t=1249s">[lecture]</a></h2>
+<p>Put the independent input columns into $B\in\mathbb R^{n\times r}$. In normalized form Gram–Schmidt writes each input as</p>
+$$b_j=\sum_{i=1}^{j-1}r_{ij}q_i+r_{jj}q_j,
+\qquad r_{ij}=q_i^\top b_j,\quad r_{jj}=\|v_j\|&gt;0.$$
+<p>Set $r_{ij}=0$ when $i&gt;j$. The resulting $r\times r$ matrix $R$ is upper triangular, and collecting the columns gives the <em>reduced QR factorization</em> $B=QR$. Its diagonal entries record the lengths of the newly discovered components. When replacing an unnormalized $v_i$ by $q_i$, all coefficients multiplying it must be multiplied by $\|v_i\|$; changing only diagonal entries would not preserve the original matrix.</p>
+<p>For the running templates,</p>
+$$B=\begin{bmatrix}1&amp;0\\1&amp;1\\0&amp;1\end{bmatrix}
+=QR,\qquad
+R=\begin{bmatrix}\sqrt2&amp;1/\sqrt2\\0&amp;\sqrt{3/2}\end{bmatrix}.$$
+<p>Column two reconstructs as $(1/\sqrt2)q_1+\sqrt{3/2}\,q_2=(0,1,1)$. This explicitly checks the off-diagonal scale. Because $R$ is triangular with nonzero diagonal, it is invertible, and $B$ and $Q$ span the same column space.</p>
+<p>The projected coefficients in the original template basis solve $Rc=Q^\top y$, a triangular system. With the current $y$, its second row gives $c_2=3$, and its first row then gives $c_1=0$. Thus $\widehat y=B(0,3)=(0,3,3)$ as before. The orthonormal coordinates and original coefficients differ, while the represented vector agrees.</p>
+<p>In floating-point arithmetic, a tiny residual need not reliably distinguish exact dependence from a nearly dependent input. Subtracting nearly equal quantities may destroy significant digits. Modified Gram–Schmidt updates the current residual after each projection; reorthogonalization subtracts remaining components again. Householder QR is another standard construction. The exact proof establishes what these algorithms aim to compute; it does not by itself bound roundoff. Code should inspect orthogonality and reconstruction residuals instead of assuming that a symbolic identity holds exactly on a machine.</p>
+
+<h2 id="coordinates">7.7 An oblique basis leads to the Gram system</h2>
+<p>For any independent column matrix $B$, orthogonality of the residual is equivalent to</p>
+$$B^\top(y-Bc)=0,\qquad B^\top Bc=B^\top y.$$
+<p>The Gram matrix $B^\top B$ is positive definite: for $z\ne0$, $z^\top B^\top Bz=\|Bz\|^2&gt;0$ because the columns are independent. Therefore the coefficients are uniquely defined and the projector can be written</p>
+$$c=(B^\top B)^{-1}B^\top y,\qquad
+P_W=B(B^\top B)^{-1}B^\top.$$
+<p>This formula describes the operator; it does not require explicitly forming an inverse in a numerical implementation. QR instead solves $Rc=Q^\top y$. In the running example, the Gram matrix is $\left[\begin{smallmatrix}2&amp;1\\1&amp;2\end{smallmatrix}\right]$ and $B^\top y=(3,6)$, whose solution is $(0,3)$. Using $BB^\top y$ without the inverse Gram factor would double-count overlapping basis directions.</p>
+<p>The same derivation under a positive definite product $x^\top Gz$ gives $B^\top GBc=B^\top Gy$ and $P_G=B(B^\top GB)^{-1}B^\top G$. It satisfies $P_G^2=P_G$ and $P_G^\top G=GP_G$. It need not satisfy ordinary symmetry, because its orthogonality is measured using $G$. For an affine space $a+W$, subtract the anchor first: the closest vector is $a+P_W(y-a)$. This affine projection is generally not a linear map of $y$.</p>
+
+<h2 id="isometry">7.8 Orthogonal transformations preserve all Euclidean inner products <a class="timestamp" href="https://www.youtube.com/watch?v=joUxO822okk&amp;t=2160s">[lecture]</a></h2>
+<p>A square real matrix $U$ is <em>orthogonal</em> when $U^\top U=I$. Its columns form an orthonormal basis, so it is invertible and $U^{-1}=U^\top$, which also gives $UU^\top=I$. For all $x,z$ we obtain $(Ux)^\top(Uz)=x^\top z$. Thus lengths, distances, and nonzero-vector angles are preserved. Such a linear transformation is an <em>isometry</em>.</p>
+<p>The usual counterclockwise rotation $\left[\begin{smallmatrix}\cos\theta&amp;-\sin\theta\\\sin\theta&amp;\cos\theta\end{smallmatrix}\right]$ has orthonormal columns by $\cos^2\theta+\sin^2\theta=1$ and cancellation of the cross product. Reflections also preserve lengths, although they reverse orientation. Taking determinants in $U^\top U=I$ gives $(\det U)^2=1$, allowing either sign.</p>
+<p>A reduced QR factor $Q$ with fewer columns is an isometric embedding from $\mathbb R^r$ into $\mathbb R^n$, since $\|Qc\|^2=c^\top Q^\top Qc=\|c\|^2$. It has no square inverse when $r&lt;n$. Its transpose compresses an arbitrary ambient vector and loses the orthogonal component. A general change of basis also need not be orthogonal: it preserves the underlying vector, but Euclidean lengths of its raw coordinate arrays change unless the corresponding Gram matrix is carried along.</p>
+<p>Finally, idempotence alone describes a possibly oblique projection. For $K=\left[\begin{smallmatrix}1&amp;1\\0&amp;0\end{smallmatrix}\right]$, $K^2=K$, but $K$ is not symmetric. It sends $(0,1)$ to $(1,0)$ rather than the closest point $(0,0)$ on its range. Conversely, if $P^2=P=P^\top$, then for $w=Pa$ in its range and $z$ in its kernel, $w^\top z=a^\top P^\top z=0$. Hence its kernel is the orthogonal complement of its range, proving that symmetry plus idempotence characterizes Euclidean orthogonal projection.</p>
+
+<h2 id="computation">7.9 Verify reconstruction and orthogonality separately</h2>
+<pre><code class="language-python">import numpy as np
+
+b = np.array([[1.0, 0.0], [1.0, 1.0], [0.0, 1.0]])
+q = np.column_stack((np.array([1.0, 1.0, 0.0]) / np.sqrt(2.0),
+                     np.array([-1.0, 1.0, 2.0]) / np.sqrt(6.0)))
+r = q.T @ b
+y = np.array([1.0, 2.0, 4.0])
+coefficients = np.linalg.solve(r, q.T @ y)
+projection = b @ coefficients
+residual = y - projection
+print("template coefficients:", np.round(coefficients, 6))
+print("projection:", np.round(projection, 6))
+print("residual:", np.round(residual, 6))
+print("squared error:", round(residual @ residual, 6))
+print("QR reconstructs:", np.allclose(q @ r, b))
+print("orthonormal columns:", np.allclose(q.T @ q, np.eye(2)))
+p = q @ q.T
+print("projector idempotent:", np.allclose(p @ p, p))
+assert np.allclose(b.T @ residual, 0.0)
+alternative = b @ np.array([1.0, 3.0])
+left = np.linalg.norm(y - alternative)**2
+right = residual @ residual + np.linalg.norm(projection - alternative)**2
+print("Pythagorean error identity:", np.allclose(left, right))
+</code></pre>
+<pre class="output">template coefficients: [0. 3.]
+projection: [0. 3. 3.]
+residual: [ 1. -1.  1.]
+squared error: 3.0
+QR reconstructs: True
+orthonormal columns: True
+projector idempotent: True
+Pythagorean error identity: True</pre>
+
+<h2 id="problems">7.10 Six worked problems</h2>
+<h3 id="problem-1">Problem 1: A normalized outer product</h3>
+<p>Find the Euclidean projection matrix onto the line through $u=(1,2,-1)$. Project $y=(2,0,1)$ and compute the squared error.</p>
+<details><summary>Solution</summary><p>The squared length is $u^\top u=6$, so $P=\tfrac16\left[\begin{smallmatrix}1&amp;2&amp;-1\\2&amp;4&amp;-2\\-1&amp;-2&amp;1\end{smallmatrix}\right]$. Since $u^\top y=1$, $\widehat y=u/6=(1/6,1/3,-1/6)$. The residual is $(11/6,-1/3,7/6)$ and its dot product with $u$ is $11/6-2/3-7/6=0$. Rather than expand all residual squares, use orthogonality: $\|y-\widehat y\|^2=\|y\|^2-\|\widehat y\|^2=5-1/6=29/6$. The projection has one coordinate $1/6$ in the chosen line basis but remains a vector with three ambient coordinates.</p></details>
+<h3 id="problem-2">Problem 2: Why the denominator matters</h3>
+<p>For the same nonzero $u$, determine when $uu^\top$ itself is an orthogonal projector.</p>
+<details><summary>Solution</summary><p>Put $K=uu^\top$. Then $K^2=u(u^\top u)u^\top=\|u\|^2K$. Since $K\ne0$, the condition $K^2=K$ holds exactly when $\|u\|^2=1$. Symmetry always holds, but idempotence requires normalization. For the vector in Problem 1, $K^2=6K$ and $Ku=6u$, so it scales the retained line rather than fixing it. Dividing by $6$ produces the correct projector. The zero vector yields the separate zero-projector case, but cannot be used in the normalized formula.</p></details>
+<h3 id="problem-3">Problem 3: Finish Gram–Schmidt and its complement</h3>
+<p>Starting with $b_1=(1,1,0)$ and $b_2=(0,1,1)$, construct an orthonormal basis for their span and extend it to an orthonormal basis of $\mathbb R^3$.</p>
+<details><summary>Solution</summary><p>The first two vectors are $q_1=(1,1,0)/\sqrt2$ and $q_2=(-1,1,2)/\sqrt6$, derived above by subtracting the first projection. A vector perpendicular to both original columns solves $z_1+z_2=0$ and $z_2+z_3=0$, giving the line through $(1,-1,1)$. Normalize it to $q_3=(1,-1,1)/\sqrt3$. Its dot products with $q_1$ and $q_2$ vanish, and its squared length is one. The three orthonormal vectors are independent, so in dimension three they form a basis. Choosing $-q_3$ gives another valid extension.</p></details>
+<h3 id="problem-4">Problem 4: Read the unavoidable error</h3>
+<p>For the running $y=(1,2,4)$, compare the optimal vector $\widehat y=(0,3,3)$ with the candidate $w=(1,4,3)$ in $W$. Compute its excess squared error.</p>
+<details><summary>Solution</summary><p>The candidate is $b_1+3b_2$, so it belongs to $W$. Its residual is $y-w=(0,-2,1)$, with squared norm $5$. The optimal residual has squared norm $3$. The excess is $\|\widehat y-w\|^2=\|(-1,-1,0)\|^2=2$, and the identity reads $5=3+2$. Minimization sets the discrepancy inside $W$ to zero. It does not set the total error to zero, because $y$ lies outside $W$.</p></details>
+<h3 id="problem-5">Problem 5: The metric changes the closest point</h3>
+<p>Project $y=(1,0)$ onto the line through $u=(1,1)$ using $G=\operatorname{diag}(4,1)$. Compare with the ordinary Euclidean result and check the correct orthogonality.</p>
+<details><summary>Solution</summary><p>The weighted coefficient is $c=(u^\top Gy)/(u^\top Gu)=4/5$, giving $\widehat y=(4/5,4/5)$ and residual $(1/5,-4/5)$. Its weighted product with $u$ is $4/5-4/5=0$, whereas its ordinary product is $-3/5$. The ordinary Euclidean projection is $(1/2,1/2)$, a different point. The weighted projector is $\tfrac15\left[\begin{smallmatrix}4&amp;1\\4&amp;1\end{smallmatrix}\right]$. It is idempotent and satisfies $P^\top G=GP$, even though it is not ordinarily symmetric. Weighted orthogonality is the relevant condition for the weighted minimization problem.</p></details>
+<h3 id="problem-6">Problem 6: Projection versus isometry</h3>
+<p>Let $P$ be an orthogonal projection onto a proper nonzero subspace of $\mathbb R^n$. Show that $U=2P-I$ is an orthogonal transformation, even though $P$ itself loses information.</p>
+<details><summary>Solution</summary><p>Since $P^\top=P$, $U^\top=U$. Idempotence gives $U^2=(2P-I)^2=4P^2-4P+I=I$. Hence $U^\top U=I$ and $U$ is orthogonal. On the range of $P$, $Uw=w$; on its orthogonal complement, $Uz=-z$. Thus $U$ reflects the perpendicular component instead of discarding it. Every vector $x=w+z$ retains squared length $\|w\|^2+\|z\|^2$, while $Px=w$ loses $\|z\|^2$. The same subspace decomposition supports both an information-losing projection and an invertible reflection.</p></details>
+<p>The approximation theorem identifies the fitted vector before any choice of coefficients. The next chapter combines this geometry with symmetric matrices to handle least squares, rank deficiency, and the minimum-norm representative among multiple coefficient solutions.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.html">Previous chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.html">Next chapter</a></nav></main></div>
+<footer class="site-footer">Independent educational edition of the NPTEL IISc Bangalore / NITK Surathkal course by Ashok Rao and Arulalan Rajan. Recordings supply the chronological topic sequence; original exposition, constructions, and external results are separately attributed. Source and validation records state the evidence and its limits.</footer></body></html>

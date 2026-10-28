@@ -1,0 +1,223 @@
+{
+  "order": 26,
+  "chapter": 26,
+  "title": "Linear and logistic regression: a mathematical synthesis",
+  "status": "reviewed and locally validated",
+  "author": "calculus_editor",
+  "source_lectures": [
+    {
+      "lecture_number": 68,
+      "video_id": "xlmIa0p1Nwg",
+      "duration_seconds": 3338,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 3336.72,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "5a9d9e2ba1fc5c5db1ba6da7a011f692df83708b49525a310bf82d63bb55b6ad"
+    },
+    {
+      "lecture_number": 69,
+      "video_id": "qAktDUz9sFU",
+      "duration_seconds": 2808,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 2807.6,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "e5487fea43cccbbb9e6abcc0d6db828c0c2044c8d14136d323400b529762f8d4"
+    },
+    {
+      "lecture_number": 70,
+      "video_id": "Cvb-52mIoBU",
+      "duration_seconds": 2353,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 2352.72,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "089be76814df5376cde1462283a46daa921f8d75b0023e1f735163a6ef9329d3"
+    }
+  ],
+  "recordings": [
+    {
+      "lecture_number": 68,
+      "video_id": "xlmIa0p1Nwg",
+      "duration_seconds": 3338,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 3336.72,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "5a9d9e2ba1fc5c5db1ba6da7a011f692df83708b49525a310bf82d63bb55b6ad"
+    },
+    {
+      "lecture_number": 69,
+      "video_id": "qAktDUz9sFU",
+      "duration_seconds": 2808,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 2807.6,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "e5487fea43cccbbb9e6abcc0d6db828c0c2044c8d14136d323400b529762f8d4"
+    },
+    {
+      "lecture_number": 70,
+      "video_id": "Cvb-52mIoBU",
+      "duration_seconds": 2353,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 2352.72,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "089be76814df5376cde1462283a46daa921f8d75b0023e1f735163a6ef9329d3"
+    }
+  ],
+  "section_map": [
+    {
+      "id": "interpolation",
+      "title": "26.1 What a polynomial design matrix actually does L68 · 02:28",
+      "anchors": [
+        "https://www.youtube.com/watch?v=xlmIa0p1Nwg&t=148s"
+      ]
+    },
+    {
+      "id": "conditional",
+      "title": "26.2 The response is random even when the input is fixed L68 · 16:51",
+      "anchors": [
+        "https://www.youtube.com/watch?v=xlmIa0p1Nwg&t=1011s"
+      ]
+    },
+    {
+      "id": "slope",
+      "title": "26.3 Derive the slope and intercept by centering L68 · 37:09",
+      "anchors": [
+        "https://www.youtube.com/watch?v=xlmIa0p1Nwg&t=2229s"
+      ]
+    },
+    {
+      "id": "gram",
+      "title": "26.4 The Gram matrix is the same calculation in another form L68 · 39:44",
+      "anchors": [
+        "https://www.youtube.com/watch?v=xlmIa0p1Nwg&t=2384s"
+      ]
+    },
+    {
+      "id": "likelihood",
+      "title": "26.5 When least squares is also maximum likelihood",
+      "anchors": []
+    },
+    {
+      "id": "odds",
+      "title": "26.6 Binary outcomes require a probability model L69 · 07:13",
+      "anchors": [
+        "https://www.youtube.com/watch?v=qAktDUz9sFU&t=433s"
+      ]
+    },
+    {
+      "id": "interpretation",
+      "title": "26.7 Interpret coefficients and decision boundaries L69 · 29:26",
+      "anchors": [
+        "https://www.youtube.com/watch?v=qAktDUz9sFU&t=1766s"
+      ]
+    },
+    {
+      "id": "fit-logistic",
+      "title": "26.8 Fit logistic parameters with the Bernoulli likelihood",
+      "anchors": []
+    },
+    {
+      "id": "existence",
+      "title": "26.9 Convexity does not guarantee a finite fitted parameter",
+      "anchors": []
+    },
+    {
+      "id": "check",
+      "title": "26.10 Executable synthesis: algebra, derivatives, and nonattainment",
+      "anchors": []
+    },
+    {
+      "id": "problems",
+      "title": "26.11 Six worked problems",
+      "anchors": []
+    },
+    {
+      "id": "course-map",
+      "title": "26.12 Read the course backward through the regression models L70 · 00:19",
+      "anchors": [
+        "https://www.youtube.com/watch?v=Cvb-52mIoBU&t=19s"
+      ]
+    },
+    {
+      "id": "credits",
+      "title": "26.13 Credits and source boundaries L70 · 33:01",
+      "anchors": [
+        "https://www.youtube.com/watch?v=Cvb-52mIoBU&t=1981s"
+      ]
+    }
+  ],
+  "reference_inspection": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "9.2",
+      "printed_pages": "292–295",
+      "pdf_pages": [
+        298,
+        299,
+        300,
+        301
+      ]
+    },
+    {
+      "url": "https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
+      "sections": "7.1.1",
+      "printed_pages": "354–355",
+      "pdf_pages": [
+        368,
+        369
+      ]
+    }
+  ],
+  "original_constructions": "Examples, teaching derivations, executable checks, and worked problems are independently authored; lecture and reference concepts are identified beside their use.",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "independent_acceptance": true,
+  "worked_problem_count": 6,
+  "code_status": "Embedded listing extracted, autopep8 formatted, executed in fresh Python; stdout matches displayed output; pycodestyle passes.",
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
+  "body_sha256": "d8e80529fd002a8340a8d5ab0ee974666e6f3479fb5b45b1498e022706280e63",
+  "authored_body_sha256": "d8e80529fd002a8340a8d5ab0ee974666e6f3479fb5b45b1498e022706280e63",
+  "authoring_handoff_body_sha256": "93e790b59f88ef4687af74b65fa7883f3245c6f05fedc5b987650f6132f0a247",
+  "accepted_body_sha256": "d8e80529fd002a8340a8d5ab0ee974666e6f3479fb5b45b1498e022706280e63",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "calculus_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+      "Checked Vandermonde determinant/interpolants; conditional-noise assumption; centered slope and Gram rank identities; exact fitted residuals/SSE/correlation/R²; Gaussian likelihood/covariance; logit/odds transformations and thresholds; Bernoulli objective derivatives/convexity; finite-rank curvature versus nonattainment; coercive full-parameter penalty; every worked solution and all eight course-recap paragraphs.",
+      "Targeted reference check: MML PDF298–301 for Gaussian linear regression/feature interpretation; Boyd PDF368–369 for logistic likelihood and convexity.",
+      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+    ],
+    "limits": [
+      "No audiovisual or slide/whiteboard review by this independent reviewer.",
+      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+    ]
+  }
+}

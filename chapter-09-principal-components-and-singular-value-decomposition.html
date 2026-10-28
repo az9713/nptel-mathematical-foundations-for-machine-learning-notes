@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="8d057111c36f52ac7360323e9000d722a327d6adaff9d3e9dc4106b06c261631">
+<title>9. Principal components and singular value decomposition · Mathematical Foundations for Machine Learning</title><link rel="stylesheet" href="assets/book.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Mathematical Foundations for Machine Learning · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>9. Principal components and singular value decomposition</h1>
+<p>A compact representation should say exactly what it preserves. Principal component analysis preserves as much centered squared variation as possible in a chosen number of linear coordinates. Singular value decomposition reveals the same geometry for any rectangular linear map and supplies its best low-rank approximation. Neither theorem says that high variance automatically identifies the features most useful for a prediction task.</p>
+<p>The motivating examples in Lectures 24–26 involve correlated measurements and redundant image features. Nearby pixel values may vary together, or height and weight may share a dominant trend. That structure can allow compression, but it is a property to check in the data rather than a universal law about useful measurements. We will derive the variance criterion, connect it to reconstruction error, and then construct the rectangular decomposition that makes the connection precise. Reference definitions and derivations appear in <a href="https://mml-book.github.io/book/mml-book.pdf">Mathematics for Machine Learning, §§4.5–4.6 and 10.2–10.3</a>.</p>
+
+<h2 id="center">9.1 Separate the mean from variation <a class="timestamp" href="https://www.youtube.com/watch?v=agWD_JySWwQ&amp;t=710s">[lecture]</a></h2>
+<p>Use the lecture's column-data convention: $N$ observations $x_j\in\mathbb R^p$ form $X=[x_1\ \cdots\ x_N]\in\mathbb R^{p\times N}$, where $p$ is the number of features. Define</p>
+$$\mu=\frac1N\sum_{j=1}^N x_j,\qquad
+b_j=x_j-\mu,\qquad B=X-\mu\mathbf1^\top.$$
+<p>Here $\mathbf1\in\mathbb R^N$ contains ones, so $B\mathbf1=0$. Subtracting the mean translates the data cloud without changing pairwise differences. The translation is reversible when $\mu$ is retained. It removes the offset from a method intended to describe variation around a center; forgetting to restore it would reconstruct the wrong observations.</p>
+<p>For $N&gt;1$, the sample covariance matrix is</p>
+$$S=\frac1{N-1}BB^\top\in\mathbb R^{p\times p}.$$
+<p>Its $(a,b)$ entry averages the products of centered feature coordinates using the denominator $N-1$. The empirical-population convention uses $N$ instead; that rescales all eigenvalues together and leaves principal directions and explained-variance ratios unchanged. Symmetry follows by transposition, and for every $v\in\mathbb R^p$,</p>
+$$v^\top Sv=\frac1{N-1}\|B^\top v\|^2\geq0.$$
+<p>Thus $S$ is positive semidefinite. Its trace is the sum of individual feature variances and also $\|B\|_F^2/(N-1)$, where $\|B\|_F^2=\sum_{a,j}b_{aj}^2$. Because the centered columns sum to zero, $\operatorname{rank}B\leq\min(p,N-1)$. Some covariance eigenvalues are necessarily zero when there are fewer independent centered observations than features.</p>
+<p>For a concrete centered example, use the four columns</p>
+$$B=\begin{bmatrix}-4&amp;-1&amp;2&amp;3\\-2&amp;-2&amp;4&amp;0\\-4&amp;8&amp;-4&amp;0\end{bmatrix},
+\qquad
+S=\begin{bmatrix}10&amp;6&amp;0\\6&amp;8&amp;-8\\0&amp;-8&amp;32\end{bmatrix}.$$
+<p>Each row sums to zero. For example, the first variance is $(16+1+4+9)/3=10$, and the second–third covariance is $(8-16-16+0)/3=-8$. The total variance is $50$. These centered columns make the arithmetic reproducible without relying on ambiguous raw-coordinate tokens in the captions.</p>
+
+<h2 id="pca">9.2 The variance criterion chooses covariance eigenvectors <a class="timestamp" href="https://www.youtube.com/watch?v=agWD_JySWwQ&amp;t=1538s">[lecture]</a></h2>
+<p>For a unit direction $q\in\mathbb R^p$, the centered scalar scores are $z_j=q^\top b_j$. Their sample variance is</p>
+$$\frac1{N-1}\sum_j z_j^2=q^\top Sq.$$
+<p>Without the unit constraint, multiplying $q$ by a large number would inflate this quantity arbitrarily. Let $q_1,\ldots,q_p$ be an orthonormal eigenbasis of $S$, ordered by $\lambda_1\geq\cdots\geq\lambda_p\geq0$. Expand any unit vector as $q=\sum_i a_iq_i$, with $\sum_i a_i^2=1$. Then</p>
+$$q^\top Sq=\sum_i\lambda_i a_i^2\leq\lambda_1.$$
+<p>The bound is attained by $q_1$. If we require the next direction to be perpendicular to $q_1$, its first coefficient vanishes and the maximum becomes $\lambda_2$. Continuing gives the successive principal directions. A <em>principal component score</em> is the coordinate $q_i^\top b_j$; terminology sometimes also calls the direction $q_i$ itself a principal component, so the distinction should be explicit.</p>
+<p>With $Q_k=[q_1\ \cdots\ q_k]$, the compressed data are $Z=Q_k^\top B\in\mathbb R^{k\times N}$. Reconstruction is</p>
+$$\widehat X=\mu\mathbf1^\top+Q_kZ
+=\mu\mathbf1^\top+Q_kQ_k^\top B.$$
+<p>For each observation, the centered approximation is an orthogonal projection onto the selected subspace. The score covariance is $Q_k^\top SQ_k=\operatorname{diag}(\lambda_1,\ldots,\lambda_k)$, so the score coordinates are uncorrelated in this sample. They need not be statistically independent, and their variances are not all one unless an additional whitening rescaling is applied.</p>
+<p>A repeated eigenvalue permits many orthonormal choices inside its eigenspace. If a cutoff splits a tied eigenspace, the optimal retained subspace can also be nonunique. Even for a distinct value, changing the sign of $q_i$ changes the signs of its scores but leaves every reconstruction unchanged. A sign difference between two software outputs need not indicate a substantive disagreement.</p>
+
+<h2 id="variance">9.3 Explained variance is a reconstruction-energy fraction <a class="timestamp" href="https://www.youtube.com/watch?v=agWD_JySWwQ&amp;t=1909s">[lecture]</a></h2>
+<p>When $\operatorname{tr}S&gt;0$, the fraction of total variance retained by the first $k$ directions is</p>
+$$R_k=\frac{\sum_{i=1}^k\lambda_i}{\sum_{i=1}^p\lambda_i}.$$
+<p>Since discarded principal directions are orthogonal to retained ones, summing Pythagorean residuals over observations gives</p>
+$$\|B-Q_kQ_k^\top B\|_F^2=(N-1)\sum_{i&gt;k}\lambda_i.$$
+<p>Thus $1-R_k$ is the fraction of centered squared reconstruction energy discarded. It is not a percentage of samples classified incorrectly or a bound on error in a downstream task. If all observations coincide, $S=0$ and reconstruction by the mean is already exact; the ratio is then $0/0$ and should be treated as undefined rather than computed mechanically.</p>
+<p>The lecture's illustrative covariance spectrum is approximately $7614.23$, $427.63$, and $98.10$. These displayed values sum to $8139.96$. The first accounts for about $93.5\%$ of variance, and the first two together for about $98.8\%$. Retaining one direction therefore discards roughly $6.5\%$ of centered squared energy. It does not establish “93.5% predictive accuracy.” Likewise, choosing 15 components from 224 possible feature directions requires examining the eigenvalue tail and the task; the component count alone states no preservation guarantee.</p>
+<p>Coordinate units matter. Rescaling one feature changes the covariance and can rotate its dominant eigenvectors. Standardizing features before PCA is therefore a different geometric choice, corresponding to comparing variation after scale normalization. It may be useful when units differ, but it is not equivalent to PCA on the original covariance. Centering and all learned transformations for a predictive pipeline should be fitted on training data and then applied using those same parameters to new observations.</p>
+
+<h2 id="svd">9.4 A rectangular map has separate input and output axes <a class="timestamp" href="https://www.youtube.com/watch?v=c-17ba9M974&amp;t=468s">[lecture]</a></h2>
+<p>Let $A\in\mathbb R^{m\times n}$ have rank $r$. A full <em>singular value decomposition</em> is</p>
+$$A=U\Sigma V^\top,$$
+<p>where $U\in\mathbb R^{m\times m}$ and $V\in\mathbb R^{n\times n}$ are orthogonal, and $\Sigma\in\mathbb R^{m\times n}$ is zero off its main diagonal. Its positive diagonal entries are the singular values $\sigma_1\geq\cdots\geq\sigma_r&gt;0$; the remaining diagonal entries, when present, are zero. The columns $u_i$ and $v_i$ are the left and right singular vectors.</p>
+<p>Unlike similarity diagonalization $P^{-1}AP=D$, the SVD uses two generally different coordinate bases, giving $U^\top AV=\Sigma$. It applies to every real matrix, including square matrices that have no eigenbasis. A singular value is nonnegative and measures a length response; an eigenvalue can have a sign or be complex. For symmetric $A$, the singular values are the absolute values of its eigenvalues. In that case $A^\top A=A^2$; for an arbitrary square matrix, that equality is false.</p>
+<p>One way to prove existence is to begin with the symmetric positive semidefinite matrix $A^\top A$. Choose an orthonormal eigenbasis $v_i$, with positive eigenvalues $\lambda_i=\sigma_i^2$ first. For $i\leq r$, define</p>
+$$u_i=\frac{Av_i}{\sigma_i}.$$
+<p>Their products satisfy</p>
+$$u_i^\top u_j
+=\frac{v_i^\top A^\top Av_j}{\sigma_i\sigma_j}
+=\frac{\sigma_j^2}{\sigma_i\sigma_j}v_i^\top v_j
+=\delta_{ij}.$$
+<p>The images $Av_i$ are orthogonal, but they are not unit length until divided by $\sigma_i$. Zero-eigenvalue vectors satisfy $\|Av_i\|^2=0$, so they lie in $\ker A$ and must not be divided by a zero singular value. Complete $u_1,\ldots,u_r$ to an orthonormal basis of $\mathbb R^m$ using vectors in their orthogonal complement. Because the first $r$ images span $\operatorname{range}A$, the added vectors lie in $\ker A^\top$.</p>
+<p>Column by column, $Av_i=\sigma_i u_i$ for positive values and $Av_i=0$ for the remaining input vectors. Hence $AV=U\Sigma$, and multiplication by $V^\top$ proves the decomposition. It also gives $AA^\top u_i=\sigma_i^2u_i$. The two Gram matrices share the positive eigenvalues, with zero multiplicities determined by their respective sizes.</p>
+
+<h2 id="example">9.5 A complete wide-matrix example <a class="timestamp" href="https://www.youtube.com/watch?v=c-17ba9M974&amp;t=1665s">[lecture]</a></h2>
+<p>Take the lecture matrix</p>
+$$A=\begin{bmatrix}4&amp;11&amp;14\\8&amp;7&amp;-2\end{bmatrix},
+\qquad
+A^\top A=\begin{bmatrix}80&amp;100&amp;40\\100&amp;170&amp;140\\40&amp;140&amp;200\end{bmatrix}.$$
+<p>Its right singular directions can be chosen as</p>
+$$v_1=\tfrac13(1,2,2),\qquad
+v_2=\tfrac13(-2,-1,2),\qquad
+v_3=\tfrac13(2,-2,1).$$
+<p>They are orthonormal, and direct multiplication gives $Av_1=(18,6)$, $Av_2=(3,-9)$, and $Av_3=0$. Thus $\sigma_1=6\sqrt{10}$, $\sigma_2=3\sqrt{10}$, with left vectors $u_1=(3,1)/\sqrt{10}$ and $u_2=(1,-3)/\sqrt{10}$. The full shapes are</p>
+$$U=\frac1{\sqrt{10}}\begin{bmatrix}3&amp;1\\1&amp;-3\end{bmatrix}
+\in\mathbb R^{2\times2},\qquad
+\Sigma=\begin{bmatrix}6\sqrt{10}&amp;0&amp;0\\0&amp;3\sqrt{10}&amp;0\end{bmatrix}
+\in\mathbb R^{2\times3},\quad
+V\in\mathbb R^{3\times3}.$$
+<p>The eigenvalues of $A^\top A$ are $360,90,0$, while the two usual singular values of this $2\times3$ matrix are $\sqrt{360}$ and $\sqrt{90}$. The extra null input direction is a third column of $V$, not an extra position on the two-entry rectangular diagonal. This makes the distinction between a Gram spectrum and the singular-value list precise.</p>
+<p>The four fundamental subspaces are visible at once: $v_1,v_2$ span the row space, $v_3$ spans the kernel, and $u_1,u_2$ span the entire output plane. The left kernel is zero because the map has full row rank. For any input $x$,</p>
+$$Ax=\sigma_1(v_1^\top x)u_1+\sigma_2(v_2^\top x)u_2.$$
+<p>The coefficient along $v_3$ disappears. This formula states what the map does geometrically without confusing input vectors in $\mathbb R^3$ with output vectors in $\mathbb R^2$.</p>
+
+<h2 id="ellipse">9.6 Orthogonal changes can include reflections <a class="timestamp" href="https://www.youtube.com/watch?v=MO9V1ZPK4Ao&amp;t=913s">[lecture]</a></h2>
+<p>The factors act in order from right to left. First $V^\top$ expresses an input in an orthonormal input basis and preserves its length. Next $\Sigma$ scales the active coordinates, deletes null coordinates, and pads any additional output coordinates with zero. Finally $U$ places the result in the output space's orthonormal basis. Orthogonal matrices have determinant $+1$ or $-1$, so these operations can include reflections as well as rotations. Unit column lengths alone do not establish determinant $+1$.</p>
+<p>For the tall example $C=\left[\begin{smallmatrix}2&amp;1\\1&amp;2\\1&amp;1\end{smallmatrix}\right]$, $C^\top C=\left[\begin{smallmatrix}6&amp;5\\5&amp;6\end{smallmatrix}\right]$. Its right directions are $v_\pm=(1,\pm1)/\sqrt2$, with singular values $\sqrt{11}$ and $1$. The corresponding output directions are $u_+=(3,3,2)/\sqrt{22}$ and $u_-=(1,-1,0)/\sqrt2$.</p>
+<p>A unit input $x=\cos t\,v_++\sin t\,v_-$ maps to</p>
+$$Cx=\sqrt{11}\cos t\,u_++\sin t\,u_-.$$
+<p>It traces an ellipse in the output plane, with semiaxis lengths $\sqrt{11}$ and $1$. Those axes are output vectors $\sigma_i u_i$, not input vectors $\sigma_i v_i$. The perpendicular direction $(1,1,-3)/\sqrt{11}$ belongs to $\ker C^\top$ and completes $U$. If one singular value were zero, the ellipse would collapse to a segment; if both positive values were equal, the image would be a circle in that plane.</p>
+
+<h2 id="outer">9.7 Rank-one terms form a small subspace of matrix space <a class="timestamp" href="https://www.youtube.com/watch?v=MO9V1ZPK4Ao&amp;t=1603s">[lecture]</a></h2>
+<p>Expanding the product gives the compact SVD</p>
+$$A=\sum_{i=1}^r\sigma_i u_iv_i^\top.$$
+<p>Each outer product is an $m\times n$ rank-one matrix: its columns are multiples of the nonzero $u_i$, with at least one nonzero multiplier from $v_i$. Under the Frobenius product $\langle M,N\rangle_F=\operatorname{tr}(M^\top N)$,</p>
+$$\langle u_iv_i^\top,u_jv_j^\top\rangle_F
+=(u_i^\top u_j)(v_i^\top v_j)=\delta_{ij}.$$
+<p>Thus the paired terms are orthonormal as matrices, and $\|A\|_F^2=\sum_i\sigma_i^2$. They form a basis of their $r$-dimensional span. They do not form a basis of all $m\times n$ matrices, whose dimension is $mn$. Using all cross products $u_av_b^\top$, for $1\leq a\leq m$ and $1\leq b\leq n$, produces such a complete orthonormal matrix basis. SVD chooses input and output bases for which this particular matrix has nonzero coefficients only in paired diagonal positions.</p>
+<p>Flipping both $u_i$ and $v_i$ leaves their outer product unchanged. Equal positive singular values allow matching rotations of both corresponding vector blocks. Independent choices of signs or bases on the two sides, without preserving their coupling through $Av_i=\sigma_i u_i$, need not reconstruct the original matrix.</p>
+
+<h2 id="low-rank">9.8 Truncation is optimal under squared Frobenius error</h2>
+<p>For $0\leq k&lt;r$, define $A_k=\sum_{i=1}^k\sigma_i u_iv_i^\top$. At $k=0$, the empty sum is the zero matrix, the only matrix of rank zero, so optimality is immediate. For the remaining proof assume $1\leq k&lt;r$. When summing over the full $m$-vector output basis below, set $\sigma_i=0$ for $r&lt;i\leq m$; these are the zero eigenvalue modes of $AA^\top$, including any beyond the usual rectangular singular-value list. Orthogonality of the omitted terms gives</p>
+$$\|A-A_k\|_F^2=\sum_{i&gt;k}\sigma_i^2.$$
+<p>To prove optimality among all matrices of rank at most $k$, let $D$ be any such candidate and let $P$ project onto its column space. For each column of $A$, its closest vector in that space is its projection, so</p>
+$$\|A-D\|_F^2\geq\|(I-P)A\|_F^2
+=\|A\|_F^2-\operatorname{tr}(PAA^\top).$$
+<p>Expand $AA^\top$ in its orthonormal eigenbasis. Write $\alpha_i=u_i^\top Pu_i=\|Pu_i\|^2$. Each $\alpha_i$ lies in $[0,1]$, and summing over a full output basis gives $\sum_i\alpha_i=\operatorname{rank}P\leq k$. Therefore</p>
+$$\operatorname{tr}(PAA^\top)=\sum_i\sigma_i^2\alpha_i
+\leq\sum_{i=1}^k\sigma_i^2.$$
+<p>The last bound follows by assigning at most one unit of weight to each decreasing coefficient: transferring weight from a smaller coefficient to an unfilled larger one cannot reduce the sum. More formally, use $\sigma_i^2\leq\sigma_k^2$ for $i&gt;k$ and $\sum_{i&gt;k}\alpha_i\leq\sum_{i\leq k}(1-\alpha_i)$. Substitution gives the displayed inequality. Combining the two bounds proves that every rank-at-most-$k$ candidate incurs at least the discarded tail, and $A_k$ attains it.</p>
+<p>If $\sigma_k&gt;\sigma_{k+1}$, the optimal nontrivial retained subspace and the reconstructed matrix are unique. A tie across the cutoff permits different choices within the tied singular subspace with the same error. For $k\geq r$, the unique zero-error approximating matrix is $A$ itself. In the wide numerical example, rank one retains energy $360$ out of $450$ and leaves squared Frobenius error $90$, or $20\%$ of the original matrix energy.</p>
+
+<h2 id="links">9.9 SVD unifies PCA and the pseudoinverse</h2>
+<p>For the centered column-data matrix $B=U\Sigma V^\top$,</p>
+$$S=\frac1{N-1}BB^\top
+=U\frac{\Sigma\Sigma^\top}{N-1}U^\top.$$
+<p>The feature-space principal directions are the <em>left</em> singular vectors of $B$, with covariance eigenvalues $\sigma_i^2/(N-1)$. Their scores form $U_k^\top B=\Sigma_kV_k^\top$. If observations instead occupy the rows of a matrix $Y=B^\top$, feature-space directions are its right singular vectors. Both conventions are valid; transposing the data without changing the interpretation exchanges the roles.</p>
+<p>For any $A$, define $\Sigma^+$ by transposing its rectangular shape and replacing each positive diagonal value with its reciprocal, leaving zeros unchanged. Then</p>
+$$A^+=V\Sigma^+U^\top
+=\sum_{i=1}^r\frac1{\sigma_i}v_iu_i^\top.$$
+<p>Given $b$, this extracts its attainable output components, reverses their positive scalings, and sets all free kernel coordinates to zero. Hence it is the minimum-norm least-squares inverse constructed geometrically in Chapter 8. Small positive singular values amplify perturbations through $1/\sigma_i$. Thresholding them produces a regularized or numerically rank-truncated solution; it changes the exact inverse problem rather than proving that those directions were mathematically zero.</p>
+<p>PCA itself uses no target labels. For a counterexample, let independent balanced signs $s,t\in\{-1,1\}$ define features $x=(10s,0.01t)$ and label $y=t$. The covariance is $\operatorname{diag}(100,0.0001)$, so one-component PCA keeps only the first feature, which is independent of the label, and discards the feature that determines it exactly. Almost all variance can be retained while all information about a particular label is lost. Choosing a representation for supervised learning therefore requires a task criterion beyond explained variance.</p>
+
+<h2 id="computation">9.10 Reproduce the covariance and the rectangular decomposition</h2>
+<pre><code class="language-python">import numpy as np
+
+b = np.array([[-4.0, -1.0, 2.0, 3.0],
+              [-2.0, -2.0, 4.0, 0.0],
+              [-4.0, 8.0, -4.0, 0.0]])
+covariance = b @ b.T / (b.shape[1] - 1)
+print("sample covariance:")
+print(covariance.astype(int))
+print("total variance:", np.trace(covariance))
+left, singular, right_t = np.linalg.svd(b, full_matrices=False)
+eigenvalues = np.linalg.eigvalsh(covariance)[::-1]
+print("PCA/SVD spectrum agrees:",
+      np.allclose(eigenvalues, singular**2 / 3.0))
+reduced_b = singular[0] * np.outer(left[:, 0], right_t[0])
+print("PCA error identity:",
+      np.allclose(np.linalg.norm(b - reduced_b)**2,
+                  3.0 * eigenvalues[1:].sum()))
+a = np.array([[4.0, 11.0, 14.0], [8.0, 7.0, -2.0]])
+u = np.array([[3.0, 1.0], [1.0, -3.0]]) / np.sqrt(10.0)
+v = np.array([[1.0, -2.0, 2.0],
+              [2.0, -1.0, -2.0],
+              [2.0, 2.0, 1.0]]) / 3.0
+sigma = np.array([[6.0 * np.sqrt(10.0), 0.0, 0.0],
+                  [0.0, 3.0 * np.sqrt(10.0), 0.0]])
+print("analytic SVD reconstructs:", np.allclose(u @ sigma @ v.T, a))
+rank_one = sigma[0, 0] * np.outer(u[:, 0], v[:, 0])
+print("rank-one squared error:",
+      round(np.linalg.norm(a - rank_one)**2, 6))
+assert np.allclose(a @ v[:, 2], 0.0)
+</code></pre>
+<pre class="output">sample covariance:
+[[10  6  0]
+ [ 6  8 -8]
+ [ 0 -8 32]]
+total variance: 50.0
+PCA/SVD spectrum agrees: True
+PCA error identity: True
+analytic SVD reconstructs: True
+rank-one squared error: 90.0</pre>
+
+<h2 id="problems">9.11 Six worked problems</h2>
+<h3 id="problem-1">Problem 1: Centering reveals the relevant line</h3>
+<p>Find the first principal direction of the observations $(9,0),(10,0),(11,0)$ and their centered rank-one reconstruction.</p>
+<details><summary>Solution</summary><p>The mean is $(10,0)$ and the centered columns are $(-1,0),(0,0),(1,0)$. With denominator $N-1=2$, the covariance is $\operatorname{diag}(1,0)$. Its first unit direction is $(1,0)$ up to sign, with scores $-1,0,1$. The centered rank-one reconstruction is exact, and adding the mean restores all three observations. Only one centered direction varies. The zero second eigenvalue describes no observed variation, not an absent ambient coordinate.</p></details>
+<h3 id="problem-2">Problem 2: A covariance spectrum and its error</h3>
+<p>A centered data matrix has $N=6$ observations and covariance eigenvalues $9,4,1$. What variance fraction and squared reconstruction error result from retaining two components?</p>
+<details><summary>Solution</summary><p>The total variance is $14$, and the retained fraction is $(9+4)/14=13/14$. The discarded variance is $1$. Since the covariance uses denominator $N-1=5$, the total squared Frobenius reconstruction error is $5$, not $1$. The mean squared error per observation, summing feature-coordinate errors within each observation, is $5/6$. None of these numbers states a classification accuracy or a relative error in each individual feature.</p></details>
+<h3 id="problem-3">Problem 3: A negative eigenvalue and a positive singular value</h3>
+<p>Find an SVD of $A=\operatorname{diag}(-3,1)$ and compare it with its eigenvalue decomposition.</p>
+<details><summary>Solution</summary><p>Take $V=I$, $\Sigma=\operatorname{diag}(3,1)$, and $U=\operatorname{diag}(-1,1)$. Both outer matrices are orthogonal and $U\Sigma V^\top=A$. The eigenvalues are $-3$ and $1$, while singular values are $3$ and $1$, the square roots of the eigenvalues $9,1$ of $A^\top A$. The sign of the first response is absorbed into a reflection in $U$. Thus a real symmetric indefinite matrix does not generally have identical eigenvalue and singular-value diagonals.</p></details>
+<h3 id="problem-4">Problem 4: A rank-one approximation with a tied boundary</h3>
+<p>For $A=\operatorname{diag}(2,2)$, give two different optimal rank-one approximations and compute their error.</p>
+<details><summary>Solution</summary><p>Both $D_1=\operatorname{diag}(2,0)$ and $D_2=\operatorname{diag}(0,2)$ have rank one and squared Frobenius error $4$. The singular values are tied at $2$, so the tail bound is $\sigma_2^2=4$ and both attain it. More generally $D=2qq^\top$ works for any real unit $q$, because it retains one direction of the isotropic scaling. The approximating matrix is therefore not unique when the cutoff splits this tied singular subspace.</p></details>
+<h3 id="problem-5">Problem 5: Recover the minimum-norm inverse mode by mode</h3>
+<p>Let $A=\left[\begin{smallmatrix}2&amp;0&amp;0\\0&amp;1&amp;0\end{smallmatrix}\right]$ and $b=(4,3)$. Find all exact solutions and the Moore–Penrose solution. What happens to a perturbation in the first output if the first diagonal entry becomes $\varepsilon&gt;0$?</p>
+<details><summary>Solution</summary><p>The equations give $x_1=2$, $x_2=3$, and unrestricted $x_3$. Thus solutions are $(2,3,t)$, with minimum-norm representative $(2,3,0)$ and $A^+=\left[\begin{smallmatrix}1/2&amp;0\\0&amp;1\\0&amp;0\end{smallmatrix}\right]$. Replacing $2$ by $\varepsilon$ changes the corresponding reciprocal to $1/\varepsilon$. A first-output perturbation $\delta$ causes a first-coordinate change $\delta/\varepsilon$. Even though every output remains attainable for positive $\varepsilon$, inversion becomes sensitive as that response factor approaches zero.</p></details>
+<h3 id="problem-6">Problem 6: Distinguish the four subspaces in a tall map</h3>
+<p>For $C=\left[\begin{smallmatrix}2&amp;1\\1&amp;2\\1&amp;1\end{smallmatrix}\right]$, identify its row space, kernel, column space, and left kernel using the singular directions above.</p>
+<details><summary>Solution</summary><p>Both singular values $\sqrt{11}$ and $1$ are positive, so $C$ has rank two. Its two right vectors span all $\mathbb R^2$, making the row space $\mathbb R^2$ and $\ker C=\{0\}$. Its column space is the plane spanned by $(3,3,2)$ and $(1,-1,0)$. The perpendicular vector $(1,1,-3)$ satisfies $C^\top(1,1,-3)=0$, so the left kernel is its span. The two output dimensions retained by the ellipse lie in that plane; the remaining output direction is an unattainable component, not a lost input direction. This contrasts with a wide full-row-rank map, whose kernel can be nonzero while its left kernel is zero.</p></details>
+<p>The shared structure is now explicit: covariance eigenvectors describe variation, singular vectors describe a map's input/output coupling, and truncation minimizes a stated squared reconstruction error. Subsequent probabilistic modeling adds assumptions about how observations arise and what kinds of uncertainty those representations should retain.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.html">Previous chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-10-margins-support-vectors-and-the-linear-algebra-synthesis.html">Next chapter</a></nav></main></div>
+<footer class="site-footer">Independent educational edition of the NPTEL IISc Bangalore / NITK Surathkal course by Ashok Rao and Arulalan Rajan. Recordings supply the chronological topic sequence; original exposition, constructions, and external results are separately attributed. Source and validation records state the evidence and its limits.</footer></body></html>

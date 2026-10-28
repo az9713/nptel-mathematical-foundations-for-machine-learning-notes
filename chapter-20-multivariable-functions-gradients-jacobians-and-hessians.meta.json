@@ -1,0 +1,203 @@
+{
+  "order": 20,
+  "chapter": 20,
+  "title": "Multivariable functions, gradients, Jacobians, and Hessians",
+  "status": "reviewed and locally validated",
+  "author": "calculus_editor",
+  "source_lectures": [
+    {
+      "lecture_number": 52,
+      "video_id": "GAAMCeofdrU",
+      "duration_seconds": 1950,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 1950,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified\n",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "5e1d46e301aeab808bf87d93f9fb4ef6a89d42471e237706d23633010a353dc1"
+    },
+    {
+      "lecture_number": 53,
+      "video_id": "mG6PmcCqwEI",
+      "duration_seconds": 2794,
+      "read_sequentially": true,
+      "read_start": 0.24,
+      "read_end": 2793.12,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL  Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "572b9637c960f1fd2e62e0db87427c206548f1647a66349178ca3d587602051f"
+    },
+    {
+      "lecture_number": 54,
+      "video_id": "4YK0LLL6C8c",
+      "duration_seconds": 2998,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 2997.52,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "772f306a433cbea2cd39c601363f70475e32c6465144ccb5242cfa35d19c4bcf"
+    }
+  ],
+  "recordings": [
+    {
+      "lecture_number": 52,
+      "video_id": "GAAMCeofdrU",
+      "duration_seconds": 1950,
+      "read_sequentially": true,
+      "read_start": 0.08,
+      "read_end": 1950,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified\n",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "5e1d46e301aeab808bf87d93f9fb4ef6a89d42471e237706d23633010a353dc1"
+    },
+    {
+      "lecture_number": 53,
+      "video_id": "mG6PmcCqwEI",
+      "duration_seconds": 2794,
+      "read_sequentially": true,
+      "read_start": 0.24,
+      "read_end": 2793.12,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL  Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "572b9637c960f1fd2e62e0db87427c206548f1647a66349178ca3d587602051f"
+    },
+    {
+      "lecture_number": 54,
+      "video_id": "4YK0LLL6C8c",
+      "duration_seconds": 2998,
+      "read_sequentially": true,
+      "read_start": 0.16,
+      "read_end": 2997.52,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+      "caption_text_sha256": "772f306a433cbea2cd39c601363f70475e32c6465144ccb5242cfa35d19c4bcf"
+    }
+  ],
+  "section_map": [
+    {
+      "id": "surfaces",
+      "title": "20.1 Graphs and level sets describe different geometries L52 · 04:16",
+      "anchors": [
+        "https://www.youtube.com/watch?v=GAAMCeofdrU&t=256s"
+      ]
+    },
+    {
+      "id": "partials",
+      "title": "20.2 Partial derivatives examine coordinate slices L52 · 22:34",
+      "anchors": [
+        "https://www.youtube.com/watch?v=GAAMCeofdrU&t=1354s"
+      ]
+    },
+    {
+      "id": "gradient",
+      "title": "20.3 The gradient represents one linear differential L53 · 07:03",
+      "anchors": [
+        "https://www.youtube.com/watch?v=mG6PmcCqwEI&t=423s"
+      ]
+    },
+    {
+      "id": "steepest",
+      "title": "20.4 Steepest change and level-set tangents L53 · 34:58",
+      "anchors": [
+        "https://www.youtube.com/watch?v=mG6PmcCqwEI&t=2098s"
+      ]
+    },
+    {
+      "id": "chain",
+      "title": "20.5 A chain rule composes local maps L54 · 05:01",
+      "anchors": [
+        "https://www.youtube.com/watch?v=4YK0LLL6C8c&t=301s"
+      ]
+    },
+    {
+      "id": "jacobian",
+      "title": "20.6 A Jacobian has one row per output L54 · 14:53",
+      "anchors": [
+        "https://www.youtube.com/watch?v=4YK0LLL6C8c&t=893s"
+      ]
+    },
+    {
+      "id": "hessian",
+      "title": "20.7 The Hessian describes directional curvature L54 · 31:31",
+      "anchors": [
+        "https://www.youtube.com/watch?v=4YK0LLL6C8c&t=1891s"
+      ]
+    },
+    {
+      "id": "check",
+      "title": "20.8 Check a derivative along a direction",
+      "anchors": []
+    },
+    {
+      "id": "problems",
+      "title": "20.9 Exercises and worked solutions",
+      "anchors": []
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits",
+      "anchors": []
+    }
+  ],
+  "reference_inspection": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "5.2–5.3, 5.7–5.8",
+      "printed_pages": "146–150, 153, 164–167",
+      "pdf_pages": [
+        152,
+        153,
+        155,
+        156,
+        157,
+        159,
+        170,
+        171,
+        172,
+        173
+      ]
+    }
+  ],
+  "original_constructions": "Examples, teaching derivations, executable checks, and worked problems are independently authored; lecture and reference concepts are identified beside their use.",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "independent_acceptance": true,
+  "worked_problem_count": 6,
+  "code_status": "Embedded listing extracted, autopep8 formatted, executed in fresh Python; stdout matches displayed output; pycodestyle passes.",
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
+  "body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d",
+  "authored_body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d",
+  "authoring_handoff_body_sha256": "5dea4b01cf28b6d299ba9f1e4df605cc3acbd35261b4a2b599b34df9c023bdb8",
+  "accepted_body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "calculus_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+      "Checked coupled quadratic gradient/Hessian/eigenvalues/minimizer; all-direction differentiability counterexample; gradient as Euclidean differential representative; tangent orthogonality and metric-dependent steepest direction; rectangular Jacobian chain rule; C² symmetry and second-order sufficiency boundaries; every worked solution.",
+      "Targeted reference check: MML PDF152–153 and171–173 for layout conventions, C² Hessian symmetry and quadratic Taylor form.",
+      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+    ],
+    "limits": [
+      "No audiovisual or slide/whiteboard review by this independent reviewer.",
+      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+    ]
+  }
+}

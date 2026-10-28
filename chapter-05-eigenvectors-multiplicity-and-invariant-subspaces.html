@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909">
+<title>5. Eigenvectors, multiplicity, and invariant subspaces · Mathematical Foundations for Machine Learning</title><link rel="stylesheet" href="assets/book.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Mathematical Foundations for Machine Learning · NPTEL</a><nav class="course-nav" aria-label="Book"><a href="index.html">Lectures</a><a href="book-overview.html">Study guide</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>5. Eigenvectors, multiplicity, and invariant subspaces</h1>
+<p>A linear transformation can mix its input coordinates at every application while possessing special combinations that evolve independently. Finding those combinations changes repeated matrix multiplication into scalar evolution. The central question is whether there are enough such combinations to describe every possible input.</p>
+<p>Consider two coupled measurements updated by $x_{k+1}=Mx_k$, where $x_k\in\mathbb R^2$, the integer $k\geq0$ counts updates, and</p>
+$$M=\begin{bmatrix}2&amp;1\\1&amp;2\end{bmatrix}.$$
+<p>Starting from two equal measurements preserves equality. Starting from opposite measurements preserves opposition. These observations suggest common and difference coordinates, but they do not establish a general theorem for other matrices. We will derive the criterion, examine its failures, and distinguish an invariant direction from an invariant subspace. The discussion develops Lectures 11–14; standard definitions and diagonalization criteria can also be checked in <a href="https://mml-book.github.io/book/mml-book.pdf">Mathematics for Machine Learning, §§4.2 and 4.4</a>.</p>
+
+<h2 id="eigen">5.1 A scalar response identifies an eigenvector <a class="timestamp" href="https://www.youtube.com/watch?v=cQFqtJoYv2c&amp;t=337s">[lecture]</a></h2>
+<p>Let $V$ be an $n$-dimensional vector space over a field $\mathbb F$, here $\mathbb R$ or $\mathbb C$, and let $T:V\to V$ be linear. A nonzero vector $v$ is an <em>eigenvector</em> with <em>eigenvalue</em> $\lambda\in\mathbb F$ if $T(v)=\lambda v$. The same vector space occurs on both sides: otherwise comparing the output with a scalar multiple of the input need not make sense. In coordinates, an endomorphism therefore has a square matrix $A\in\mathbb F^{n\times n}$.</p>
+<p>The equation describes a line, not a uniquely normalized vector. For every nonzero scalar $c$,</p>
+$$A(cv)=cAv=c\lambda v=\lambda(cv).$$
+<p>Thus all nonzero vectors on $\operatorname{span}\{v\}$ share the same eigenvalue. The zero vector satisfies $A0=\lambda0$ for every scalar, which is why the definition excludes it: it cannot identify a particular response factor.</p>
+<p>For real eigenvalues, $\lambda&gt;0$ preserves a ray, $\lambda&lt;0$ reverses it, and $\lambda=0$ collapses the vector to zero. Only $\lambda=1$ fixes the vector itself. Calling all eigenvectors “unchanged directions” requires these qualifications. For example, reflection across the horizontal axis fixes $(1,0)$ but sends $(0,1)$ to its negative. Both axes are invariant lines; only the horizontal axis consists of fixed vectors.</p>
+<p>Eigenvectors are not restricted to coordinate arrays. Let $C^\infty(\mathbb R)$ be the real vector space of functions on $\mathbb R$ with derivatives of every order. Differentiation is a linear map $D:C^\infty(\mathbb R)\to C^\infty(\mathbb R)$, since the derivative of a smooth function is again smooth. For every real constant $a$, the nonzero function $f_a(t)=e^{at}$ satisfies $Df_a=af_a$, so it is an eigenfunction with eigenvalue $a$. Merely choosing all once-differentiable functions would not make differentiation an endomorphism: their derivatives need not themselves be differentiable. Finite-dimensional matrix conclusions do not automatically extend to this infinite-dimensional function space.</p>
+
+<h2 id="characteristic">5.2 From a homogeneous system to the characteristic polynomial <a class="timestamp" href="https://www.youtube.com/watch?v=cQFqtJoYv2c&amp;t=918s">[lecture]</a></h2>
+<p>For a square matrix $A$, rearranging $Av=\lambda v$ gives $(A-\lambda I)v=0$, where $I$ is the identity of the same size. The sought vector is nonzero, so the homogeneous system must have a nontrivial kernel. Rank–nullity and the determinant criterion from the preceding chapters give the equivalences</p>
+$$\lambda\text{ is an eigenvalue}
+\iff\ker(A-\lambda I)\ne\{0\}
+\iff\operatorname{rank}(A-\lambda I)&lt;n
+\iff\det(A-\lambda I)=0.$$
+<p>The <em>characteristic polynomial</em> is $p_A(t)=\det(tI-A)$. Using $\det(A-tI)$ instead multiplies the polynomial by $(-1)^n$ and leaves its roots unchanged. The monic convention used here makes coefficient comparisons convenient. Over $\mathbb C$ it has $n$ roots counted with algebraic multiplicity. A real matrix need not have $n$ real roots.</p>
+<p>For the coupled-measurement matrix,</p>
+$$p_M(t)=\det\begin{bmatrix}t-2&amp;-1\\-1&amp;t-2\end{bmatrix}
+=(t-2)^2-1=(t-3)(t-1).$$
+<p>At $\lambda=3$, the equations reduce to $v_2=v_1$; at $\lambda=1$, they reduce to $v_2=-v_1$. Thus</p>
+$$E_3=\operatorname{span}\{(1,1)\},\qquad
+E_1=\operatorname{span}\{(1,-1)\}.$$
+<p>Substitution checks both answers directly: $M(1,1)=(3,3)$ and $M(1,-1)=(1,-1)$. Solving the characteristic equation finds candidate scalars; solving a separate homogeneous system for each scalar finds its vectors. The roots alone do not determine the number of independent eigenvectors.</p>
+<p>The determinant formulation is a theoretical characterization, not a prescription to expand a large polynomial numerically. Near repeated roots, polynomial coefficients and roots can be sensitive to perturbations. Numerical algorithms usually work directly with matrix factorizations. Small exact examples remain valuable because their kernels and multiplicities can be inspected without numerical tolerances.</p>
+
+<h2 id="eigenspace">5.3 Eigenspaces include zero and can have several dimensions <a class="timestamp" href="https://www.youtube.com/watch?v=E6Lp2lq77lQ&amp;t=1160s">[lecture]</a></h2>
+<p>For an eigenvalue $\lambda$, define its <em>eigenspace</em> by $E_\lambda=\ker(A-\lambda I)$. If $u,v\in E_\lambda$ and $\alpha,\beta\in\mathbb F$, linearity gives</p>
+$$A(\alpha u+\beta v)=\alpha\lambda u+\beta\lambda v
+=\lambda(\alpha u+\beta v).$$
+<p>The kernel contains zero and is closed under both operations, so it is a subspace. Its nonzero elements are precisely the eigenvectors associated with $\lambda$. A combination that cancels to zero remains in the eigenspace but is no longer an eigenvector.</p>
+<p>The <em>geometric multiplicity</em> $g_\lambda=\dim E_\lambda$ counts independent directions, not the number of vectors. A one-dimensional real eigenspace already contains infinitely many vectors. For $A=I_n$, every nonzero vector has eigenvalue $1$ and $E_1=\mathbb R^n$, so $g_1=n$. Repetition of a response factor can therefore coexist with a complete collection of independent directions.</p>
+<p>Rank–nullity provides a practical exact test:</p>
+$$g_\lambda=n-\operatorname{rank}(A-\lambda I).$$
+<p>Row reduction counts pivot columns and free variables. For an $m\times n$ matrix, nullity is $n-r$, where $r$ is its rank. Counting zero rows gives $m-r$, which equals nullity only when $m=n$. Here $A-\lambda I$ is square, but the distinction matters when these techniques are reused for rectangular data matrices.</p>
+
+<h2 id="independence">5.4 Distinct eigenvalues force independent directions <a class="timestamp" href="https://www.youtube.com/watch?v=MyXQw-ypBLg&amp;t=636s">[lecture]</a></h2>
+<p>Suppose $v_1,\ldots,v_r$ are nonzero eigenvectors with pairwise distinct eigenvalues $\lambda_1,\ldots,\lambda_r$. They are linearly independent. For two vectors the proof exposes the mechanism. If $a_1v_1+a_2v_2=0$, apply $A$ and subtract $\lambda_1$ times the original equation:</p>
+$$a_2(\lambda_2-\lambda_1)v_2=0.$$
+<p>The scalar difference and vector are nonzero, so $a_2=0$; then $a_1=0$. The argument depends on distinct values rather than a diagram suggesting different directions.</p>
+<p>For any number of vectors, proceed by induction. Assume the statement for $r-1$ values. A relation $\sum_{i=1}^r a_iv_i=0$ becomes, after applying $A-\lambda_rI$,</p>
+$$\sum_{i=1}^{r-1}a_i(\lambda_i-\lambda_r)v_i=0.$$
+<p>The first $r-1$ vectors are independent by the induction hypothesis, so every coefficient vanishes. Each difference is nonzero, yielding $a_1=\cdots=a_{r-1}=0$; the original relation then gives $a_r=0$. This proves the claim for all finite $r$.</p>
+<p>A stronger version will be useful: bases selected from different eigenspaces can be combined without introducing dependencies. Group a proposed relation by eigenvalue, writing $\sum_j w_j=0$ with $w_j\in E_{\lambda_j}$. Repeating the preceding induction forces every $w_j=0$, and independence inside each chosen basis then forces all original coefficients to vanish. Thus the sum of distinct eigenspaces is a <em>direct sum</em>: each vector in the sum has a unique decomposition into its eigenspace components.</p>
+<p>Independence does not imply perpendicularity. The upper-triangular matrix $\left[\begin{smallmatrix}1&amp;1\\0&amp;2\end{smallmatrix}\right]$ has eigenvectors $(1,0)$ and $(1,1)$ for values $1$ and $2$. They are independent, but their Euclidean dot product is $1$. Orthogonality will require additional structure, notably symmetry.</p>
+
+<h2 id="multiplicity">5.5 Algebraic multiplicity measures a root, not a basis <a class="timestamp" href="https://www.youtube.com/watch?v=MyXQw-ypBLg&amp;t=1421s">[lecture]</a></h2>
+<p>The <em>algebraic multiplicity</em> $a_\lambda$ is the exponent of $(t-\lambda)$ in $p_A(t)$. For every eigenvalue,</p>
+$$1\leq g_\lambda\leq a_\lambda.$$
+<p>The lower bound follows from the existence of a nonzero eigenvector. To prove the upper bound, take a basis of $E_\lambda$ with $g_\lambda$ vectors and extend it to a basis of the full space. In that basis the first $g_\lambda$ columns of the operator have $\lambda$ in their own diagonal positions and zero elsewhere. Its matrix has the block form</p>
+$$\begin{bmatrix}\lambda I_{g_\lambda}&amp;B\\0&amp;C\end{bmatrix}.$$
+<p>The characteristic polynomial of this block-triangular matrix is $(t-\lambda)^{g_\lambda}\det(tI-C)$. Similarity preserves the characteristic polynomial because $\det(tI-P^{-1}AP)=\det(P^{-1}(tI-A)P)=\det(tI-A)$. Hence the factor occurs at least $g_\lambda$ times in the original polynomial, proving the inequality.</p>
+<p>Compare two matrices with exactly the same characteristic polynomial:</p>
+$$I_2=\begin{bmatrix}1&amp;0\\0&amp;1\end{bmatrix},
+\qquad J=\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix},
+\qquad p(t)=(t-1)^2.$$
+<p>For $I_2$, the entire plane is $E_1$, giving $g_1=2$. For $J$,</p>
+$$J-I=\begin{bmatrix}0&amp;1\\0&amp;0\end{bmatrix},\qquad
+(J-I)(x,y)=(y,0),$$
+<p>so $E_1=\operatorname{span}\{(1,0)\}$ and $g_1=1$. The shear has infinitely many eigenvectors but only one independent eigendirection. An eigenvalue with $g_\lambda&lt;a_\lambda$ is called <em>defective</em> or deficient. Repeated roots make this failure possible; they do not force it.</p>
+
+<h2 id="diagonal">5.6 Diagonalization is exactly the existence of an eigenbasis <a class="timestamp" href="https://www.youtube.com/watch?v=OtnSenweGFw&amp;t=379s">[lecture]</a></h2>
+<p>Collect $n$ independent eigenvectors as columns of an invertible matrix $P=[v_1\ \cdots\ v_n]$, and let $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_n)$, preserving the same order. Columnwise multiplication gives</p>
+$$AP=[Av_1\ \cdots\ Av_n]=[\lambda_1v_1\ \cdots\ \lambda_nv_n]=PD.$$
+<p>Multiplying by $P^{-1}$ yields the equivalent identities</p>
+$$P^{-1}AP=D,\qquad A=PDP^{-1}.$$
+<p>Both copies of $P$ matter in the first formula. Multiplying $A$ on only one side generally changes the coordinate system on only one side of the map and does not produce the operator in a new common basis. The factor $P^{-1}$ converts ordinary coordinates to eigenbasis coefficients, $D$ scales those coefficients, and $P$ converts back.</p>
+<p>Conversely, if $A=PDP^{-1}$ with $P$ invertible and $D$ diagonal, then $AP=PD$ proves that every column of $P$ is an eigenvector, and invertibility makes those columns a basis. Consequently diagonalization is possible over $\mathbb F$ precisely when the eigenvectors span $\mathbb F^n$.</p>
+<p>Equivalently, the characteristic polynomial must split into linear factors over the chosen field, and $g_\lambda=a_\lambda$ must hold for every distinct eigenvalue. Sufficiency follows because the direct sum of eigenspaces then has dimension $\sum_\lambda g_\lambda=\sum_\lambda a_\lambda=n$. Necessity follows because an eigenbasis makes the matrix diagonal, and the multiplicity of each diagonal value equals its eigenspace dimension. In particular, $n$ distinct eigenvalues in the field suffice.</p>
+<p>In three dimensions, the pattern of algebraic multiplicities $(2,1)$ still allows either outcome. The matrix $\operatorname{diag}(1,1,2)$ is diagonal. By contrast,</p>
+$$B=\begin{bmatrix}1&amp;1&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;2\end{bmatrix}$$
+<p>has the same characteristic polynomial but $E_1=\operatorname{span}\{(1,0,0)\}$, so its two eigenspaces together have dimension only two. A triple root is equally inconclusive: $I_3$ is diagonalizable, whereas $\left[\begin{smallmatrix}1&amp;1&amp;1\\0&amp;1&amp;1\\0&amp;0&amp;1\end{smallmatrix}\right]$ has $E_1=\operatorname{span}\{(1,0,0)\}$. In fact, if a diagonalizable matrix has only the eigenvalue $\lambda$, then $D=\lambda I$ and $A=P(\lambda I)P^{-1}=\lambda I$. Thus a nonscalar matrix with a single eigenvalue cannot be diagonalizable.</p>
+
+<h2 id="powers">5.7 Powers reveal both the benefit and the obstruction <a class="timestamp" href="https://www.youtube.com/watch?v=OtnSenweGFw&amp;t=733s">[lecture]</a></h2>
+<p>For $M$, take $P=\left[\begin{smallmatrix}1&amp;1\\1&amp;-1\end{smallmatrix}\right]$, $P^{-1}=\tfrac12P$, and $D=\operatorname{diag}(3,1)$. Adjacent factors $P^{-1}P$ cancel in repeated products, so for every integer $k\geq0$,</p>
+$$M^k=PD^kP^{-1}
+=\frac12\begin{bmatrix}3^k+1&amp;3^k-1\\3^k-1&amp;3^k+1\end{bmatrix}.$$
+<p>At $k=0$ the formula gives $I$, and at $k=1$ it gives $M$. Writing $x_0=c_+(1,1)+c_-(1,-1)$ gives $x_k=3^kc_+(1,1)+c_-(1,-1)$. The common component grows while the difference component stays constant. After dividing by $3^k$, the common component dominates if $c_+\ne0$; an initial vector with $c_+=0$ is an essential exception.</p>
+<p>Diagonalization incurs an initial decomposition cost and still requires coordinate conversions. Once those are available, computing repeated powers or applying them to many vectors becomes simpler. It is not correct to count only the $n$ scalar powers and ignore the matrix products, nor to assume every numerical eigenbasis is well conditioned.</p>
+<p>The shear $J=I+N$, with $N=\left[\begin{smallmatrix}0&amp;1\\0&amp;0\end{smallmatrix}\right]$, illustrates what a missing eigenvector hides. Since $N^2=0$, induction or the binomial expansion gives</p>
+$$J^k=I+kN=\begin{bmatrix}1&amp;k\\0&amp;1\end{bmatrix}.$$
+<p>Both eigenvalues equal $1$, yet $J^k(0,1)=(k,1)$ grows without bound. Eigenvalues describe scalar modes; a defective matrix can additionally couple generalized directions and generate polynomial factors. No general Jordan-form theorem is needed to verify this example.</p>
+<p>Trace and determinant provide useful checks without distinguishing these two behaviors. Expanding $\det(tI-A)$ gives a leading coefficient $1$, the coefficient $-\operatorname{tr}(A)$ at $t^{n-1}$, and constant term $(-1)^n\det A$. Comparing with $\prod_i(t-\lambda_i)$ over $\mathbb C$ yields</p>
+$$\sum_{i=1}^n\lambda_i=\operatorname{tr}(A),\qquad
+\prod_{i=1}^n\lambda_i=\det A,$$
+<p>counting multiplicities. To obtain the trace coefficient, choose one diagonal entry $-a_{ii}$ and $t$ from all other diagonal entries; a nonidentity permutation cannot contribute a term of degree $n-1$. An upper-triangular matrix has characteristic polynomial $\prod_i(t-a_{ii})$, so its eigenvalues are its diagonal entries. Knowing only their sum and product does not identify three or more individual eigenvalues.</p>
+
+<h2 id="field">5.8 A real matrix may require complex coordinates <a class="timestamp" href="https://www.youtube.com/watch?v=MyXQw-ypBLg&amp;t=1865s">[lecture]</a></h2>
+<p>The counterclockwise quarter-turn $R=\left[\begin{smallmatrix}0&amp;-1\\1&amp;0\end{smallmatrix}\right]$ has $p_R(t)=t^2+1$. It has no real eigenvalue and no invariant real line: a nonzero planar vector is rotated to a perpendicular direction. Over $\mathbb C$, however, its eigenvalues are $i$ and $-i$, with eigenvectors $(1,-i)$ and $(1,i)$. Direct multiplication verifies $R(1,-i)=i(1,-i)$.</p>
+<p>These complex vectors are independent, so the real matrix is diagonalizable over $\mathbb C$ but not over $\mathbb R$. Its action on real vectors remains a real rotation. Complex coordinates are an algebraic representation of that action, not an assertion that the measured input has become complex. More generally a real planar rotation through $\theta$ has roots $\cos\theta\pm i\sin\theta$; real eigendirections occur precisely when $\sin\theta=0$, including half-turns, which reverse every ray.</p>
+
+<h2 id="invariance">5.9 Invariant subspaces are broader than eigenspaces <a class="timestamp" href="https://www.youtube.com/watch?v=E6Lp2lq77lQ&amp;t=1384s">[lecture]</a></h2>
+<p>A subspace $U\subseteq\mathbb F^n$ is <em>invariant under $A$</em> if $A(U)\subseteq U$. Every eigenspace is invariant, because $Au=\lambda u$ stays in the same subspace. The converse fails. For $M$, the whole plane is invariant, but $(1,0)$ is not an eigenvector because $M(1,0)=(2,1)$ is not its scalar multiple. A sum of eigenspaces is invariant even when its vectors combine different response factors.</p>
+<p>On a one-dimensional invariant subspace, selecting any nonzero generator $v$ forces $Av=\lambda v$ for some scalar. Thus invariant lines and eigendirections coincide. In larger dimensions, invariance only promises that evolution remains within the subspace; its internal coordinates may still mix. The entire real plane is invariant under $R$ even though it contains no real eigendirection.</p>
+<p>An eigenbasis spans the domain, not automatically the range. If $\lambda\ne0$, then $v=A(v/\lambda)$, so every $\lambda$-eigenvector lies in the range. Zero-eigenvalue vectors need not: for $\operatorname{diag}(1,0)$, $(0,1)$ belongs to the kernel but not the range. For a diagonalizable matrix, the eigenspaces with nonzero eigenvalues span its range, while the zero eigenspace is its kernel. This distinction will matter when a covariance matrix has a zero-variance direction: that direction belongs to a full eigenbasis but contributes no observed variation.</p>
+
+<h2 id="computation">5.10 Check the modes and the missing direction</h2>
+<p>The following executable NumPy example verifies the chosen eigenbasis through the residual $MP-PD$, compares a spectral power with repeated multiplication, and contrasts it with the shear. Fixed analytic vectors avoid arbitrary signs and orderings returned by a numerical eigensolver.</p>
+<pre><code class="language-python">import numpy as np
+
+m = np.array([[2, 1], [1, 2]], dtype=np.int64)
+p = np.array([[1, 1], [1, -1]], dtype=np.int64)
+d = np.diag([3, 1])
+print("eigenpair residual:", np.max(np.abs(m @ p - p @ d)))
+spectral = p @ np.diag([3**5, 1]) @ (p / 2)
+print("fifth power:")
+print(spectral.astype(np.int64))
+assert np.allclose(spectral, np.linalg.matrix_power(m, 5))
+j = np.array([[1, 1], [0, 1]], dtype=np.int64)
+start = np.array([0, 1], dtype=np.int64)
+for steps in [1, 5, 20]:
+    print(f"shear after {steps:2d} steps:",
+          np.linalg.matrix_power(j, steps) @ start)
+</code></pre>
+<pre class="output">eigenpair residual: 0
+fifth power:
+[[122 121]
+ [121 122]]
+shear after  1 steps: [1 1]
+shear after  5 steps: [5 1]
+shear after 20 steps: [20  1]</pre>
+<p>The residual check tests the eigenpair equations before using the decomposition. The power comparison checks the complete reconstruction. The shear output demonstrates the boundary of an eigenvalue-only interpretation: a unit eigenvalue does not imply bounded iteration for a defective matrix.</p>
+
+<h2 id="problems">5.11 Six worked problems</h2>
+<h3 id="problem-1">Problem 1: A reflection and a collapse</h3>
+<p>Find all eigenspaces of $A=\operatorname{diag}(-2,0,3)$. Which eigenvectors reverse direction, disappear, or preserve their ray? Is $A$ diagonalizable despite being singular?</p>
+<details><summary>Solution</summary><p>The equations $(A-\lambda I)x=0$ decouple by coordinate. The three distinct roots are $-2,0,3$, with eigenspaces $\operatorname{span}\{e_1\}$, $\operatorname{span}\{e_2\}$, and $\operatorname{span}\{e_3\}$, respectively. Nonzero vectors along $e_1$ reverse direction and double in length; those along $e_2$ map to zero, whose direction is undefined; those along $e_3$ preserve their ray and triple in length. The standard basis is already an eigenbasis, so $A$ is diagonalizable. Singularity means one eigenvalue is zero, not that an eigenbasis fails to exist. Its range is $\operatorname{span}\{e_1,e_3\}$, which also shows why all eigenvectors cannot be called a basis of the range.</p></details>
+<h3 id="problem-2">Problem 2: The same multiplicities, two outcomes</h3>
+<p>Compare $C=\operatorname{diag}(4,4,7)$ with $D=\left[\begin{smallmatrix}4&amp;1&amp;0\\0&amp;4&amp;0\\0&amp;0&amp;7\end{smallmatrix}\right]$. Compute geometric multiplicities and decide diagonalizability.</p>
+<details><summary>Solution</summary><p>Both triangular matrices have characteristic polynomial $(t-4)^2(t-7)$. For $C$, $(C-4I)x=0$ imposes $x_3=0$, so $g_4=2$; $(C-7I)x=0$ imposes $x_1=x_2=0$, so $g_7=1$. It is diagonal. For $D$, the first system imposes $x_2=0$ and $x_3=0$, leaving only $x_1$ free, so $g_4=1$. The second system gives $x_2=0$, then $x_1=0$, leaving $x_3$ free, so $g_7=1$. The combined dimension is $2&lt;3$; $D$ is not diagonalizable. The algebraic pattern alone did not decide the question.</p></details>
+<h3 id="problem-3">Problem 3: Recover a trajectory from scalar modes</h3>
+<p>For $x_{k+1}=Mx_k$ and $x_0=(2,0)$, find $x_k$ and its limit after normalization by $3^k$.</p>
+<details><summary>Solution</summary><p>Solve $(2,0)=c_+(1,1)+c_-(1,-1)$, obtaining $c_+=c_-=1$. Hence $x_k=3^k(1,1)+(1,-1)=(3^k+1,3^k-1)$. At $k=0$ this is $(2,0)$, and at $k=1$ it is $(4,2)=Mx_0$. Dividing by $3^k$ gives $(1+3^{-k},1-3^{-k})\to(1,1)$. The same limit with coefficient $c_+$ holds for a general initial vector; if $c_+=0$, the normalized trajectory tends to zero instead.</p></details>
+<h3 id="problem-4">Problem 4: A defective triple root</h3>
+<p>Let $H=\left[\begin{smallmatrix}1&amp;1&amp;1\\0&amp;1&amp;1\\0&amp;0&amp;1\end{smallmatrix}\right]$. Find its eigenspace and $H^ke_3$ for integers $k\geq0$.</p>
+<details><summary>Solution</summary><p>Triangularity gives only $\lambda=1$, of algebraic multiplicity three. Solving $(H-I)x=0$ gives $x_3=0$ from row two, then $x_2=0$ from row one; $x_1$ is free. Thus $g_1=1$ and $H$ is not diagonalizable. Put $N=H-I$. Direct multiplication gives $N^2=\left[\begin{smallmatrix}0&amp;0&amp;1\\0&amp;0&amp;0\\0&amp;0&amp;0\end{smallmatrix}\right]$ and $N^3=0$. The binomial expansion, valid because $I$ and $N$ commute, terminates: $H^k=I+kN+\binom{k}{2}N^2$. Since $Ne_3=e_1+e_2$ and $N^2e_3=e_1$, we obtain $H^ke_3=(k(k+1)/2,k,1)$. Unit eigenvalues coexist with quadratic growth in this example.</p></details>
+<h3 id="problem-5">Problem 5: An invariant plane without real eigenvectors</h3>
+<p>Explain why the quarter-turn $R$ is diagonalizable over $\mathbb C$ but has no real invariant line. Construct a complex diagonalization.</p>
+<details><summary>Solution</summary><p>A real invariant line would contain a nonzero real vector $v$ with $Rv=\lambda v$ for a real scalar. Its value would solve $\lambda^2+1=0$, impossible over $\mathbb R$. The plane itself remains invariant. Over $\mathbb C$, take $P=\left[\begin{smallmatrix}1&amp;1\\-i&amp;i\end{smallmatrix}\right]$ and $D=\operatorname{diag}(i,-i)$. Its determinant is $2i\ne0$, so $P$ is invertible. Multiplying each column by $R$ gives its stated eigenvalue times that column, establishing $RP=PD$ and $R=PDP^{-1}$. No contradiction arises because the two diagonalizations are being asked for over different fields.</p></details>
+<h3 id="problem-6">Problem 6: When is every vector an eigenvector?</h3>
+<p>Suppose a linear map on a real vector space of dimension at least two sends every nonzero vector to a scalar multiple of itself, allowing the scalar initially to depend on the vector. Prove that the map is a scalar multiple of the identity.</p>
+<details><summary>Solution</summary><p>Choose a basis $v_1,\ldots,v_n$. Write $Tv_i=\lambda_iv_i$. For $i\ne j$, the nonzero vector $v_i+v_j$ is also an eigenvector, say with value $\mu$. Linearity gives $\lambda_iv_i+\lambda_jv_j=\mu(v_i+v_j)$. Independence of the two basis vectors yields $\lambda_i=\mu=\lambda_j$. Thus all basis values equal a common scalar $\lambda$. For any $x=\sum_i c_iv_i$, linearity now gives $Tx=\sum_i c_i\lambda v_i=\lambda x$. Therefore $T=\lambda I$. Preserving every line is far stronger than merely leaving a larger subspace invariant.</p></details>
+<p>The next step is to measure lengths and angles between these directions. A general eigenbasis can be oblique and numerically unstable. Inner products supply the additional geometry needed to understand when eigenvectors can serve as orthonormal coordinates.</p>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-04-linear-transformations-and-coordinate-representations.html">Previous chapter</a><a href="index.html">Lecture index</a><a rel="next" href="chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.html">Next chapter</a></nav></main></div>
+<footer class="site-footer">Independent educational edition of the NPTEL IISc Bangalore / NITK Surathkal course by Ashok Rao and Arulalan Rajan. Recordings supply the chronological topic sequence; original exposition, constructions, and external results are separately attributed. Source and validation records state the evidence and its limits.</footer></body></html>

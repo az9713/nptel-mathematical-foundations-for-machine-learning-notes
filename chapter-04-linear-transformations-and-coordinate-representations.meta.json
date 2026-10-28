@@ -1,0 +1,181 @@
+{
+  "chapter": 4,
+  "title": "Linear transformations and coordinate representations",
+  "status": "reviewed and locally validated",
+  "authored_body_sha256": "bb563a0557a65b2e23aceb260131205f7b13ce34056958f2b4b34998f718d24d",
+  "recordings": [
+    {
+      "lecture_number": 7,
+      "video_id": "ynA5PC42hCM",
+      "duration_seconds": 2105,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "first_caption_start": 0.16,
+      "last_caption_end": 2104.32,
+      "caption_text_sha256": "a7f2508031ce1d5eaa98f0c1f7be61254ba229f3e808ed14816fbef904027db8"
+    },
+    {
+      "lecture_number": 8,
+      "video_id": "EOiZKpHzcd4",
+      "duration_seconds": 2610,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "first_caption_start": 0.08,
+      "last_caption_end": 2609.84,
+      "caption_text_sha256": "1260e7d5ded437de42e09a030bf336b387d95dd60da7d0d3b6285bb5b53f72f4"
+    },
+    {
+      "lecture_number": 9,
+      "video_id": "ewxb6G2yfcw",
+      "duration_seconds": 2691,
+      "caption_automatic": false,
+      "caption_label": "English (India)",
+      "first_caption_start": 0.08,
+      "last_caption_end": 2690.72,
+      "caption_text_sha256": "59f38f54caeee1b7e5250912b462abb4fe944726571856a7cc8a98d2e244c789"
+    },
+    {
+      "lecture_number": 10,
+      "video_id": "MIPMF4lbraE",
+      "duration_seconds": 3817,
+      "caption_automatic": false,
+      "caption_label": "English (India) - NPTEL Verified",
+      "first_caption_start": 0,
+      "last_caption_end": 3816.88,
+      "caption_text_sha256": "6e77d2ad9ad1f9e50621e5dbd0024ab916ef04fc0edd9faaa45b49763ac58b74"
+    }
+  ],
+  "sections": [
+    {
+      "id": "maps",
+      "title": "4.1 A linear transformation preserves specified combinations Lecture 7 · 06:15 Lecture 8 · 33:37",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=ynA5PC42hCM&t=375s",
+        "https://www.youtube.com/watch?v=EOiZKpHzcd4&t=2017s"
+      ]
+    },
+    {
+      "id": "matrix",
+      "title": "4.2 The matrix columns are transformed basis vectors Lecture 9 · 17:11",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=ewxb6G2yfcw&t=1031s"
+      ]
+    },
+    {
+      "id": "geometry",
+      "title": "4.3 Familiar geometric operations expose different mechanisms Lecture 7 · 11:41",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=ynA5PC42hCM&t=701s"
+      ]
+    },
+    {
+      "id": "image",
+      "title": "4.4 The range is the set of attainable summaries Lecture 8 · 08:20",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=EOiZKpHzcd4&t=500s"
+      ]
+    },
+    {
+      "id": "kernel",
+      "title": "4.5 The kernel identifies distinctions that disappear Lecture 8 · 20:55",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=EOiZKpHzcd4&t=1255s"
+      ]
+    },
+    {
+      "id": "rank",
+      "title": "4.6 Rank and nullity account for every input degree of freedom Lecture 10 · 42:29",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=MIPMF4lbraE&t=2549s"
+      ]
+    },
+    {
+      "id": "composition",
+      "title": "4.7 Composition explains the order of matrix products Lecture 10 · 43:11",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=MIPMF4lbraE&t=2591s"
+      ]
+    },
+    {
+      "id": "coordinates",
+      "title": "4.8 Changing coordinates changes the matrix, not the map Lecture 9 · 37:28",
+      "timestamps": [
+        "https://www.youtube.com/watch?v=ewxb6G2yfcw&t=2248s"
+      ]
+    },
+    {
+      "id": "code",
+      "title": "4.9 An executable coordinate audit",
+      "timestamps": []
+    },
+    {
+      "id": "problems",
+      "title": "4.10 Problems and worked solutions",
+      "timestamps": []
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits",
+      "timestamps": []
+    }
+  ],
+  "original_constructions": "Examples, derivations, Python, and worked problems.",
+  "caption_authorship_limit": "Publisher labels do not establish human authorship.",
+  "visual_review": "not performed",
+  "independent_acceptance": true,
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "worked_problem_count": 6,
+  "references_checked": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": [
+        "2.7",
+        "2.7.1",
+        "2.7.2"
+      ],
+      "printed_pages": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "pdf_pages": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    }
+  ],
+  "accepted_body_sha256": "bb563a0557a65b2e23aceb260131205f7b13ce34056958f2b4b34998f718d24d",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "scientific_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read all manuscript paragraphs, matrix tables, proofs, code and six worked solutions, plus full coverage ledger and isolated execution record.",
+      "Independently verified compression kernel/range and full affine solution family, nonnegative feasibility interval, rank–nullity proof, derivative-operator examples, rotation/shear and noncommutativity calculations.",
+      "Verified basis-image columns and two-sided coordinate conversion Aprime=Qinverse A P; personally inspected MML PDF54–55,57,59–61.",
+      "Confirmed applied dimensions and distinctions among actual information loss, invertible coordinate changes, and semantic relevance; no scientific blocker found."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

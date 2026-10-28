@@ -1,0 +1,181 @@
+{
+  "chapter": 13,
+  "title": "Discrete and continuous probability distributions",
+  "status": "reviewed and locally validated",
+  "author": "probability_editor",
+  "recordings": [
+    {
+      "lecture_number": 35,
+      "video_id": "uhfv88JcTgw",
+      "duration_seconds": 2006,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0,
+      "transcript_last_end_seconds": 2005.44,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "ad971759d6950d130d70424a789ab79cbef0be4a5be1ed1bf12ccbc3eb13cafc",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 36,
+      "video_id": "dByGT1N8JAw",
+      "duration_seconds": 2887,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.32,
+      "transcript_last_end_seconds": 2886.08,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "c85f6c581925d00aeaebe9e7f9239db1124314eece449be3628ed9e8e3ffec9f",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    },
+    {
+      "lecture_number": 37,
+      "video_id": "fOE0BoBPpfE",
+      "duration_seconds": 2874,
+      "caption_automatic": false,
+      "caption_label": "English - NPTEL Verified",
+      "transcript_first_start_seconds": 0.16,
+      "transcript_last_end_seconds": 2872.96,
+      "sequential_caption_read": "complete",
+      "transcript_sha256": "d03c5646a9a051ab965d665e34090371c622077f40deb5d9f80204adcb89b1e9",
+      "source_limit": "Caption text inspected throughout; publisher label is not proof of human authorship. Audio, video, slides and whiteboards not reviewed."
+    }
+  ],
+  "evidence_classes": {
+    "lecture_spine": "All assigned caption text read sequentially; section-by-section private coverage ledger records topic correspondence.",
+    "teaching_constructions": "Service count/wait models, without-replacement comparison, normalization and CDF proofs, mixed distribution, executable formula comparison and six worked problems.",
+    "reference_orientation": "Only inspected primary-author references cited; proofs and examples independently developed.",
+    "empirical_claims": "No empirical deployment or prediction-performance result asserted."
+  },
+  "section_map": [
+    {
+      "id": "mass",
+      "title": "13.1 A mass function adds all outcomes mapped to the same value Lecture 35 · 02:05"
+    },
+    {
+      "id": "bernoulli",
+      "title": "13.2 One trial and a fixed number of trials Lecture 35 · 23:40"
+    },
+    {
+      "id": "sampling",
+      "title": "13.3 Replacement changes the law Lecture 36 · 10:51"
+    },
+    {
+      "id": "geometric",
+      "title": "13.4 Waiting for the first success Lecture 36 · 26:52"
+    },
+    {
+      "id": "uniform-poisson",
+      "title": "13.5 Uniform choices and arrival counts Lecture 36 · 38:12"
+    },
+    {
+      "id": "density",
+      "title": "13.6 A density has units of inverse measurement Lecture 37 · 01:33"
+    },
+    {
+      "id": "cdf",
+      "title": "13.7 The cumulative distribution describes every real law Lecture 37 · 27:17"
+    },
+    {
+      "id": "implementation",
+      "title": "13.8 Compare model mechanisms in code"
+    },
+    {
+      "id": "exercises",
+      "title": "13.9 Exercises and worked solutions"
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits"
+    }
+  ],
+  "timestamp_links": [
+    {
+      "video_id": "uhfv88JcTgw",
+      "seconds": 125
+    },
+    {
+      "video_id": "uhfv88JcTgw",
+      "seconds": 1420
+    },
+    {
+      "video_id": "dByGT1N8JAw",
+      "seconds": 651
+    },
+    {
+      "video_id": "dByGT1N8JAw",
+      "seconds": 1612
+    },
+    {
+      "video_id": "dByGT1N8JAw",
+      "seconds": 2292
+    },
+    {
+      "video_id": "fOE0BoBPpfE",
+      "seconds": 93
+    },
+    {
+      "video_id": "fOE0BoBPpfE",
+      "seconds": 1637
+    }
+  ],
+  "original_construction_statement": "Service count/wait models, without-replacement comparison, normalization and CDF proofs, mixed distribution, executable formula comparison and six worked problems.",
+  "references_checked": [
+    {
+      "url": "https://mml-book.com/book/mml-book.pdf",
+      "sections": "6.2.1–6.2.3",
+      "printed_pages": "178–183",
+      "pdf_pages": [
+        184,
+        185,
+        186,
+        187,
+        188,
+        189
+      ],
+      "claims": [
+        "mass and density laws",
+        "marginal and conditional notation",
+        "CDFs"
+      ]
+    }
+  ],
+  "editorial_reviews": [
+    {
+      "role": "science-editor FULL REWRITE",
+      "editor": "probability_editor",
+      "status": "rewritten and author-checked; independent review pending",
+      "reviewed_body_sha256": "7884b96f24f453a102e27490e93660eb7b171d8d07d8b0e9c348040ac9f9669c",
+      "hash_scope": "Exact UTF-8 authored HTML fragment bytes before wrapping.",
+      "code_execution": "Passed; displayed stdout matches actual captured execution output after line-ending normalization.",
+      "visual_review": "not performed",
+      "independent_acceptance": false
+    }
+  ],
+  "worked_problem_count": 6,
+  "python_listing_count": 1,
+  "authored_body_sha256": "c91f8a4e978e0da01922b79703af94045bdde75a3913264818318caa205e4d29",
+  "authoring_handoff_body_sha256": "7884b96f24f453a102e27490e93660eb7b171d8d07d8b0e9c348040ac9f9669c",
+  "independent_acceptance": true,
+  "accepted_body_sha256": "c91f8a4e978e0da01922b79703af94045bdde75a3913264818318caa205e4d29",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "calculus_editor",
+    "author": "probability_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read every manuscript paragraph, distribution derivation, code and six worked solutions, full coverage ledger and execution evidence.",
+      "Independently checked iid binomial versus hypergeometric mechanisms, geometric support/memoryless boundary, rare-event limit, density units, Gaussian normalization and general CDF jumps/right continuity/mixed-law calculations.",
+      "Inspected MML PDF184,187–189 for mass/density/CDF distinctions. Identified missing Poisson-process assumption, not an arithmetic defect; no code change needed.",
+      "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+      "Rechecked main paragraph and Problem3 now explicitly assume homogeneous Poisson arrivals, making Poisson count parameter rate×exposure justified under the specified model."
+    ],
+    "limits": [
+      "No audiovisual or slide review performed.",
+      "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+      "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+    ]
+  }
+}

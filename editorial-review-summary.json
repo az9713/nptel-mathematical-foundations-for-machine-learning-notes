@@ -1,0 +1,590 @@
+{
+  "status": "PASS",
+  "chapter_count": 26,
+  "method": "Independent AI scientific editing and cross-review; repairing authors do not accept their own rewritten bodies.",
+  "blocking_findings": 0,
+  "reviews": [
+    {
+      "chapter": 1,
+      "file": "chapter-01-why-mathematics-determines-what-a-learner-can-identify.html",
+      "author": "root",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "58b211a05d0ea4d71fa1f146b924db285e4eda8c0f88bf81050c1545c7b73814",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read every paragraph, equation, numerical example, and all six worked solutions of the full manuscript.",
+        "Independently verified null-direction scores, full coefficient family/minimum norm, similarity scaling, decision cost threshold, gradient recurrence and constrained boundary example.",
+        "Personally inspected MML PDF19–22 and official syllabus text; source claims and original-example boundaries supported.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 2,
+      "file": "chapter-02-fields-vector-spaces-and-admissible-representations.html",
+      "author": "scientific_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "a80051399244bd0aae17085d5f232300e6f92a41777370351168087f5a9d3e96",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read every paragraph, equation, example, code listing, and all six solutions of the full manuscript and detailed caption coverage ledger.",
+        "Independently checked field axioms, representative-independent modular operations, prime criterion proof, finite inverse tables, scalar/vector laws, subspace sufficiency, affine/simplex/coset statements.",
+        "Checked original category and matrix counterexamples, novel positive-real operations via log isomorphism, and exact code-output evidence; no rerun needed.",
+        "Inspected MML PDF43–45; real vector/subspace references are correctly separated from independently derived finite-field extensions."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 3,
+      "file": "chapter-03-independence-bases-and-dimension.html",
+      "author": "scientific_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "88a774177c19a111ba7c7ca5164445a126d0a47a4cdf6d13e57397d534f567af",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Full original manuscript and six solutions reviewed in round1, with precise reference and execution evidence listed in archived final-ch03-round1.json.",
+        "Rechecked exact replacement Problem6 paragraph: transformed-score difference is w3(x3-x1-x2), universal feature reduction requires identity over deployment domain; fixed predictor w3=0 exception correctly distinguished.",
+        "No code changed; no code rerun needed. New exact body digest binds this acceptance."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 4,
+      "file": "chapter-04-linear-transformations-and-coordinate-representations.html",
+      "author": "scientific_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "bb563a0557a65b2e23aceb260131205f7b13ce34056958f2b4b34998f718d24d",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read all manuscript paragraphs, matrix tables, proofs, code and six worked solutions, plus full coverage ledger and isolated execution record.",
+        "Independently verified compression kernel/range and full affine solution family, nonnegative feasibility interval, rank–nullity proof, derivative-operator examples, rotation/shear and noncommutativity calculations.",
+        "Verified basis-image columns and two-sided coordinate conversion Aprime=Qinverse A P; personally inspected MML PDF54–55,57,59–61.",
+        "Confirmed applied dimensions and distinctions among actual information loss, invertible coordinate changes, and semantic relevance; no scientific blocker found."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 5,
+      "file": "chapter-05-eigenvectors-multiplicity-and-invariant-subspaces.html",
+      "author": "scientific_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Full manuscript, six solutions and exact mathematical/reference checks documented in archived final-ch05-round1.json.",
+        "Rechecked new C∞(R) paragraph: differentiation is an endomorphism because smooth functions have smooth derivatives, and exponentials are nonzero eigenfunctions; finite/infinite-dimensional boundary explicit.",
+        "No code or other argument changed; acceptance binds new exact body digest."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 6,
+      "file": "chapter-06-inner-products-orthogonality-and-orthonormal-coordinates.html",
+      "author": "scientific_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "47b38fadb40d948ef9f70c7aa35973d31232749ecc0b265e3309b9ef5ac801b6",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Full manuscript, six solutions and mathematical/reference verification recorded in archived final-ch06-round1.json.",
+        "Rechecked corrected weighted form requires all diagonal entries nonnegative and at least one zero for a degenerate seminorm.",
+        "Rechecked Problem4 correctly calls the vanishing operation a dot product; coefficients and Pythagorean reconstruction unchanged and correct.",
+        "No code changed; acceptance binds new exact digest."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 7,
+      "file": "chapter-07-projection-orthogonal-bases-and-best-approximation.html",
+      "author": "scientific_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
+        "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
+        "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
+        "Checked line projection coordinates versus lengths, normalized outer product and eigenvalues, unique subspace decomposition, Pythagorean best-approximation proof, complete Gram–Schmidt span/nonzero-residual argument, QR off-diagonal normalizations and running reconstruction, Gram and weighted/affine projection formulas, orthogonal/oblique/isometry distinctions, and all six worked solutions.",
+        "Targeted reference inspection: MML PDF86–88 and91–94, printed80–82 and85–88, for orthogonal complements and projection/Gram formulas."
+      ],
+      "limits": [
+        "No audiovisual or whiteboard/slide inspection by this reviewer.",
+        "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
+        "No browser/MathJax/offline-publication validation performed by this reviewer.",
+        "Acceptance is bound to the exact recorded authored-body hash."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 8,
+      "file": "chapter-08-symmetric-matrices-least-squares-and-pseudoinverses.html",
+      "author": "scientific_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "2f864686cffd80379d8857ad03be7b0557cc162e852ab18607d8d278fd0e03a0",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
+        "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
+        "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
+        "Checked self-adjoint metric identity and complex-conjugate real-spectrum proof; compact-Rayleigh/induction spectral theorem; fixed spectral projectors versus full symmetric matrix space; Gram PSD/rank equivalence; necessity and sufficiency of normal equations; every fit/residual/norm; geometric Moore–Penrose construction and four identities; full-row/full-column formulas; conditioning and ridge limits; all six worked solutions.",
+        "Targeted reference inspection: MML PDF114–117 for spectrum/Gram/spectral theorem, and319–320 for least-squares projection interpretation."
+      ],
+      "limits": [
+        "No audiovisual or whiteboard/slide inspection by this reviewer.",
+        "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
+        "No browser/MathJax/offline-publication validation performed by this reviewer.",
+        "Acceptance is bound to the exact recorded authored-body hash."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 9,
+      "file": "chapter-09-principal-components-and-singular-value-decomposition.html",
+      "author": "scientific_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "8d057111c36f52ac7360323e9000d722a327d6adaff9d3e9dc4106b06c261631",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all equations, numerical examples, executable listing and all six worked solutions.",
+        "Read complete author rewrite ledger and checked topic continuity and distinction between lecture content and original extensions.",
+        "Read existing execution record; verified its body digest and captured stdout match the reviewed manuscript. No redundant successful code execution repeated.",
+        "Checked centered covariance arithmetic, sample denominator and rank, Rayleigh/PCA argument, score/reconstruction shapes and energy identity; constructive SVD including null completions; exact wide/tall singular vectors and ellipse; matrix-space outer-product dimension; Frobenius low-rank proof and tied-cutoff cases; pseudoinverse/sensitivity and label-information counterexample; all six worked solutions.",
+        "Targeted reference inspection: MML PDF136–138 for low-rank truncation/Eckart–Young scope. The manuscript independently proves the stated Frobenius result rather than attributing a different norm formula to the reference.",
+        "Round 2: read the complete repaired #low-rank section, rechecked rank-zero and tall-output indexing, and reversed the exact opening-paragraph replacement to reproduce the previously reviewed full-body hash. No other authored content changed."
+      ],
+      "limits": [
+        "No audiovisual or whiteboard/slide inspection by this reviewer.",
+        "No redundant complete-caption reread; topic fidelity assessed through full-read author ledgers and manuscript/source-reference checks.",
+        "No browser/MathJax/offline-publication validation performed by this reviewer.",
+        "Acceptance is bound to the exact recorded authored-body hash."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 10,
+      "file": "chapter-10-margins-support-vectors-and-the-linear-algebra-synthesis.html",
+      "author": "probability_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "0360ab8be9b1c743e72d132d4f6b2945c3e3181bfaafd4bccfb39187e7d2966a",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, all six solutions, coverage ledger and isolated-code execution record.",
+        "Independently checked hyperplane projection, normalization and perturbation radius, nonlinear scalar lift global optimum, polynomial-kernel Gram PSD, rank-nullity and PCA label-erasure example.",
+        "Personally inspected MML PDF378–383 for margin/hard-constraint derivation; kernel PSD is independently proved in manuscript, with no need to infer it from those margin pages.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Rechecked added assumption that both labels occur: w=0 cannot satisfy opposite-class constraints, so nonzero-normal reciprocal-margin interpretation applies. No other scientific change."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 11,
+      "file": "chapter-11-probability-models-events-and-conditioning.html",
+      "author": "probability_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "ca76705d745a94e5c713fde3959755ad8d85cc3f063e2ba06d793c8b2b8a11e3",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, every finite probability calculation, all six worked solutions, full coverage ledger and existing exact rational execution evidence.",
+        "Independently verified checker atom table, union/conditional identities, event-vs-outcome and countability distinctions, pairwise-not-mutual counterexample, attainable-overlap interval and report-selection example.",
+        "Inspected MML PDF181(printed175) probability-space definitions. Scope and original toy constructions are clearly separated from deployed measurement claims.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 12,
+      "file": "chapter-12-bayes-rules-probability-measures-and-random-variables.html",
+      "author": "probability_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "0e3b90726f5786deb52899db94893d691505378130968da59a902ff14efe5c5b",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, all Bayes/measure/measurability derivations, finite examples, code and six worked solutions; full coverage ledger and exact rational execution record inspected.",
+        "Independently verified detector posterior/odds, partition qualifications, generated finite sigma algebras, continuity from below, random-variable preimages, same-law/dependent counterexample and finite-total normalization.",
+        "Inspected MML PDF181–183 for mapping and induced-law reference; no claim that this reference alone supplies full measure theory.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 13,
+      "file": "chapter-13-discrete-and-continuous-probability-distributions.html",
+      "author": "probability_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "c91f8a4e978e0da01922b79703af94045bdde75a3913264818318caa205e4d29",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read every manuscript paragraph, distribution derivation, code and six worked solutions, full coverage ledger and execution evidence.",
+        "Independently checked iid binomial versus hypergeometric mechanisms, geometric support/memoryless boundary, rare-event limit, density units, Gaussian normalization and general CDF jumps/right continuity/mixed-law calculations.",
+        "Inspected MML PDF184,187–189 for mass/density/CDF distinctions. Identified missing Poisson-process assumption, not an arithmetic defect; no code change needed.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Rechecked main paragraph and Problem3 now explicitly assume homogeneous Poisson arrivals, making Poisson count parameter rate×exposure justified under the specified model."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 14,
+      "file": "chapter-14-expectation-moments-and-variance.html",
+      "author": "probability_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "deb974a957d66851baef45b74f0f25789dee8c20822014d0994e762c8b971257",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, all six solutions, coverage ledger and exact rational code execution evidence.",
+        "Independently verified integrability/infinite-mean and principal-value distinctions, squared-loss mean proof, zero-variance almost-sure proof, affine variance and all distribution-moment derivations, equal-two-moments/deadline counterexample.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 15,
+      "file": "chapter-15-joint-distributions-marginals-and-independence.html",
+      "author": "probability_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "9f0c89bed23369bba09852ea7795ceb70622a533e4b540e3c89c3f107da7470c",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript including all joint-mass/density/CDF identities, six complete solutions, code, coverage ledger and existing rational execution evidence.",
+        "Independently checked binary coupling family, triangular marginals and rectangle probability, singular diagonal CDF, entire-law independence, product integrability, covariance and transformed-feature counterexamples.",
+        "Inspected MML PDF190–191,197 for sum/product and covariance references; general CDF/singular-law qualifications are independently justified in text.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 16,
+      "file": "chapter-16-covariance-correlation-and-conditional-moments.html",
+      "author": "probability_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "8615438dbda338ac6b9444fb03bb06174382519b4daa34197ef7c92c2a397b21",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, every correlation/affine-prediction/conditional-law derivation, six worked solutions, coverage ledger and exact mixture execution record.",
+        "Independently verified correlation equality cases, nonlinear prediction residual4/45, marginal-normal nonjoint-Gaussian counterexample, Gaussian conditional27/4, device posterior27/32 and mixture variance9/8, triangular total variance.",
+        "Personally inspected MML PDF201–202,204–205,209 for inner-product quotient, Gaussian joint/conditional formulas and total-variance claim.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 17,
+      "file": "chapter-17-concentration-inequalities-and-the-central-limit-theorem.html",
+      "author": "probability_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "e34f5a9e3376fd6b3b60efa9950049429c16abe845140d6c784340282013d6d5",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read all prose, inequalities/proof sketch, numerical interpretation, listing and six worked solutions, plus complete coverage ledger and existing deterministic execution evidence.",
+        "Independently checked threshold endpoints, Markov/Chebyshev sharpness and vacuity, exact iid mean variance, weak law/sample-size guarantee, characteristic-function expansion and CLT normalization, finite-population correction and optimized Cantelli bound.",
+        "Opened the cited official MIT18.175 Lecture15 PDF and personally inspected slides10–11 supporting Levy continuity and finite-positive-variance iid CLT.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 18,
+      "file": "chapter-18-sample-geometry-and-covariance-matrices.html",
+      "author": "probability_editor",
+      "reviewer": "calculus_editor",
+      "accepted_body_sha256": "6f62b2884219ebb129354e7aa473d4d053ac2990e73b8f017218397c01b30547",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read full manuscript, every matrix identity and numerical example, all six worked solutions, coverage ledger and existing execution record.",
+        "Independently verified running centered table and covariance entries, all-ones projection geometry, n−1 unbiasedness proof and sample rank bound, PSD/null-affine-constraint equivalence, row-oriented covariance congruence and eigen/SVD/whitening formulas.",
+        "Checked invalid-correlation eigenvector, transformed sample covariance, isotropic-covariance nonrotational law and ridge-vs-subspace whitening examples.",
+        "Independently parsed archived executed listing and current extracted listing: Python ASTs identical; verified current raw body hash against root formatting record. See calculus-format-rebind-check.json. Root reports PEP8 PASS and will run reformatted listings in isolation.",
+        "Independently reversed every timestamp relocation against archived wrapped file; reproduced exact previously accepted authored body byte-for-byte. Only existing anchors moved to h2, class=timestamp added and separating period removed. No mathematical/prose/code change; no reread or execution needed. Evidence: timestamp-relocation-rebind-check.json."
+      ],
+      "limits": [
+        "No audiovisual or slide review performed.",
+        "Existing isolated-code execution records inspected; no redundant code rerun without a mathematical concern.",
+        "Acceptance binds only the exact reviewed authored body; package/browser/publication checks remain root responsibilities."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 19,
+      "file": "chapter-19-functions-series-and-one-variable-differentiation.html",
+      "author": "calculus_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked scalar derivative as local linear model, constrained stationarity example, Taylor remainder arithmetic, convergence domains, smooth nonanalytic counterexample, complex exponential decomposition, product/quotient/chain derivations, finite-difference error bounds, and every worked solution.",
+        "Targeted reference check: MML PDF147–153, including printed141–147 derivative, series, differentiation and layout conventions.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 20,
+      "file": "chapter-20-multivariable-functions-gradients-jacobians-and-hessians.html",
+      "author": "calculus_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked coupled quadratic gradient/Hessian/eigenvalues/minimizer; all-direction differentiability counterexample; gradient as Euclidean differential representative; tangent orthogonality and metric-dependent steepest direction; rectangular Jacobian chain rule; C² symmetry and second-order sufficiency boundaries; every worked solution.",
+        "Targeted reference check: MML PDF152–153 and171–173 for layout conventions, C² Hessian symmetry and quadratic Taylor form.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 21,
+      "file": "chapter-21-matrix-derivatives-and-the-geometry-of-differentials.html",
+      "author": "calculus_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "35b5fc787c05d9144af2f8954e08097efb6df53d206ed118939bd6d1b8d76924",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked exact perturbations of linear/bilinear/quadratic forms, nonsymmetric quadratic example, Frobenius trace contractions and dimensions, tensor derivative distinction, multioutput and weighted least-squares gradients, ridge uniqueness, broadcasting diagnosis, and every worked solution.",
+        "Targeted reference check: MML PDF161–164 for matrix-valued derivative indices and general quadratic identity.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 22,
+      "file": "chapter-22-optimization-constraints-and-lagrange-multipliers.html",
+      "author": "calculus_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "c85af7eea86f550e7a7df4e2028d66bd43a8ef9bda90868bac64d0b27adea504",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked existence terminology; stationary/Hessian candidate classification; exact elimination arithmetic; regular multiplier geometry and sign convention; unbounded-plane maximum counterexample; circle extrema; failed qualification; multiple equality block system and tangent-space quadratic certificate; KKT scope; every worked solution.",
+        "Targeted reference check: Boyd PDF255–259, particularly printed243–244 KKT assumptions, convex sufficiency and equality-constrained quadratic block equations.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 23,
+      "file": "chapter-23-least-squares-pca-and-gradient-algorithms.html",
+      "author": "calculus_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "5e0dea387a74d4eff53483cf0737133332de296dcb7ad8ab6593f6401ad06dd4",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked residual perturbation and normal-equation sufficiency; all running-example coefficients/predictions/residuals/objective; PCA Rayleigh argument; quadratic spectral step interval and null-space persistence; Lipschitz decrease scope; stochastic gradient scaling/conditional sampling and batch covariance; Newton normalization and quasi-Newton boundaries; every worked solution.",
+        "Targeted reference check: MML PDF298–301 least-squares assumptions and feature interpretation; Boyd PDF498–500 Newton local quadratic step; official SciPy BFGS curvature safeguards and L-BFGS-B limited-memory descriptions.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 24,
+      "file": "chapter-24-perceptrons-multilayer-networks-and-backpropagation.html",
+      "author": "calculus_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked threshold gates, XOR impossibility and ReLU construction, full perceptron mistake-bound proof and rescaling, activation/state/causality distinctions, parameter shapes/counts, scalar loss update arithmetic, all backpropagation adjoints/outer products/branch sums, nonconvexity and smoothness cautions, every worked solution.",
+        "Targeted current primary-document check: Google TPU introduction and NVIDIA matrix-multiplication guide support the limited hardware descriptions.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 25,
+      "file": "chapter-25-data-patterns-classification-and-clustering.html",
+      "author": "calculus_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked label/feature/risk distinctions, biased-sensor mean-squared errors, feature information loss, every threshold count/confusion proportion/cost formula, cross-validation information roles, independent-vote formula, metric/cosine cautions, scale reversal, centroid proof/Lloyd iterates, scatter decomposition and mixture normalization, every worked solution.",
+        "Targeted reference check: MML PDF269–270 cross-validation construction and355–356 mixture normalization; official scikit-learn K-means objective, Lloyd updates and initialization sensitivity.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "nonblocking_findings": []
+    },
+    {
+      "chapter": 26,
+      "file": "chapter-26-linear-and-logistic-regression-a-mathematical-synthesis.html",
+      "author": "calculus_editor",
+      "reviewer": "probability_editor",
+      "accepted_body_sha256": "d8e80529fd002a8340a8d5ab0ee974666e6f3479fb5b45b1498e022706280e63",
+      "verdict": "ACCEPT",
+      "blocking_count": 0,
+      "scope": [
+        "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+        "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+        "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+        "Checked Vandermonde determinant/interpolants; conditional-noise assumption; centered slope and Gram rank identities; exact fitted residuals/SSE/correlation/R²; Gaussian likelihood/covariance; logit/odds transformations and thresholds; Bernoulli objective derivatives/convexity; finite-rank curvature versus nonattainment; coercive full-parameter penalty; every worked solution and all eight course-recap paragraphs.",
+        "Targeted reference check: MML PDF298–301 for Gaussian linear regression/feature interpretation; Boyd PDF368–369 for logistic likelihood and convexity.",
+        "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+      ],
+      "limits": [
+        "No audiovisual or slide/whiteboard review by this independent reviewer.",
+        "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+        "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+        "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+      ],
+      "nonblocking_findings": []
+    }
+  ],
+  "limits": "Not human expert certification, formal verification, or comprehensive audiovisual review. Mechanical and publication checks are separate."
+}

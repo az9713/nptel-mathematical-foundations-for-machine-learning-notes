@@ -1,0 +1,139 @@
+{
+  "order": 21,
+  "chapter": 21,
+  "title": "Matrix derivatives and the geometry of differentials",
+  "status": "reviewed and locally validated",
+  "author": "calculus_editor",
+  "source_lectures": [
+    {
+      "lecture_number": 55,
+      "video_id": "xIvGdpzj9Rk",
+      "duration_seconds": 2377,
+      "read_sequentially": true,
+      "read_start": 0,
+      "read_end": 2375.54,
+      "caption_automatic": true,
+      "caption_label": "Local OpenAI Whisper small.en speech recognition",
+      "caption_authorship_limit": "Machine transcription; mathematical tokens require verification.",
+      "caption_text_sha256": "5632dd3665eaf46a7a474200eeb8cef844bf127cf10c39d89fbb4167aba98452"
+    }
+  ],
+  "recordings": [
+    {
+      "lecture_number": 55,
+      "video_id": "xIvGdpzj9Rk",
+      "duration_seconds": 2377,
+      "read_sequentially": true,
+      "read_start": 0,
+      "read_end": 2375.54,
+      "caption_automatic": true,
+      "caption_label": "Local OpenAI Whisper small.en speech recognition",
+      "caption_authorship_limit": "Machine transcription; mathematical tokens require verification.",
+      "caption_text_sha256": "5632dd3665eaf46a7a474200eeb8cef844bf127cf10c39d89fbb4167aba98452"
+    }
+  ],
+  "section_map": [
+    {
+      "id": "linear-map",
+      "title": "21.1 A linear map is its own local derivative L55 · 04:10",
+      "anchors": [
+        "https://www.youtube.com/watch?v=xIvGdpzj9Rk&t=250s"
+      ]
+    },
+    {
+      "id": "norm",
+      "title": "21.2 Squared length has a gradient, not a matrix Jacobian ambiguity L55 · 14:48",
+      "anchors": [
+        "https://www.youtube.com/watch?v=xIvGdpzj9Rk&t=888s"
+      ]
+    },
+    {
+      "id": "bilinear",
+      "title": "21.3 Bilinear forms distinguish the two arguments L55 · 17:13",
+      "anchors": [
+        "https://www.youtube.com/watch?v=xIvGdpzj9Rk&t=1033s"
+      ]
+    },
+    {
+      "id": "quadratic",
+      "title": "21.4 A quadratic form sees only the symmetric matrix part L55 · 27:07",
+      "anchors": [
+        "https://www.youtube.com/watch?v=xIvGdpzj9Rk&t=1627s"
+      ]
+    },
+    {
+      "id": "frobenius",
+      "title": "21.5 A scalar function of a matrix has a same-shaped gradient",
+      "anchors": []
+    },
+    {
+      "id": "regression",
+      "title": "21.6 Multioutput least squares follows the same perturbation argument",
+      "anchors": []
+    },
+    {
+      "id": "check",
+      "title": "21.7 Test a matrix gradient with a directional perturbation",
+      "anchors": []
+    },
+    {
+      "id": "problems",
+      "title": "21.8 Exercises and worked solutions",
+      "anchors": []
+    },
+    {
+      "id": "sources",
+      "title": "Sources and limits",
+      "anchors": []
+    }
+  ],
+  "reference_inspection": [
+    {
+      "url": "https://mml-book.github.io/book/mml-book.pdf",
+      "sections": "5.3–5.5",
+      "printed_pages": "153,155–158",
+      "pdf_pages": [
+        159,
+        161,
+        162,
+        163,
+        164
+      ]
+    }
+  ],
+  "original_constructions": "Examples, teaching derivations, executable checks, and worked problems are independently authored; lecture and reference concepts are identified beside their use.",
+  "editorial_status": "Independent final review ACCEPT; zero blocking findings on this exact body.",
+  "independent_acceptance": true,
+  "worked_problem_count": 6,
+  "code_status": "Embedded listing extracted, autopep8 formatted, executed in fresh Python; stdout matches displayed output; pycodestyle passes.",
+  "python_validation": {
+    "passed": true,
+    "listing_count": 1
+  },
+  "visual_review": "No comprehensive slide or audiovisual review performed. L62/L65 caption gaps received only targeted local recognition/amplitude checks by root.",
+  "body_sha256": "35b5fc787c05d9144af2f8954e08097efb6df53d206ed118939bd6d1b8d76924",
+  "authored_body_sha256": "35b5fc787c05d9144af2f8954e08097efb6df53d206ed118939bd6d1b8d76924",
+  "authoring_handoff_body_sha256": "2f870b7ccd991bbecb833cad7eb87fbda86086edabf72391495741b818f94f83",
+  "accepted_body_sha256": "35b5fc787c05d9144af2f8954e08097efb6df53d206ed118939bd6d1b8d76924",
+  "final_code_validation": "chapter-code-validation.json",
+  "independent_review": {
+    "reviewer": "probability_editor",
+    "author": "calculus_editor",
+    "verdict": "ACCEPT",
+    "blocking_count": 0,
+    "scope": [
+      "Read the entire stable manuscript, all displayed equations, numerical examples, executable listing and all six fully worked solutions.",
+      "Read the complete chapter rewrite ledger and compared its section map with the manuscript; reviewed caption interpretation repairs and extension attribution.",
+      "Initial scientific review read execution evidence and verified captured output against the prior accepted body; this formatting follow-up relies on verified code-only scope and recorded AST identity.",
+      "Checked exact perturbations of linear/bilinear/quadratic forms, nonsymmetric quadratic example, Frobenius trace contractions and dimensions, tensor derivative distinction, multioutput and weighted least-squares gradients, ridge uniqueness, broadcasting diagnosis, and every worked solution.",
+      "Targeted reference check: MML PDF161–164 for matrix-valued derivative indices and general quadratic identity.",
+      "Formatting follow-up: checked every current body hash against root repair evidence, validated the retained old listing hash with LF normalization, and reconstructed the exact previously accepted body by restoring only its old code interior."
+    ],
+    "limits": [
+      "No audiovisual or slide/whiteboard review by this independent reviewer.",
+      "No redundant full-caption rereading; lecture-topic continuity assessed through the author full-read coverage ledger, manuscript sequence, and targeted mathematical reference checks.",
+      "No rendered MathJax/browser/offline-publication validation by this reviewer; root owns those checks.",
+      "Acceptance applies only to the exact recorded authored-body hash, not subsequent substantive edits."
+    ]
+  }
+}

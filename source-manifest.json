@@ -28,7 +28,7 @@
       "first_segment_seconds": 0.719,
       "last_segment_end_seconds": 439.61,
       "largest_intersegment_gap_seconds": 0,
-      "endpoint_fraction_of_duration": 1.0
+      "endpoint_fraction_of_duration": 1
     },
     {
       "lecture_number": 1,
@@ -102,7 +102,7 @@
       "transcript_sha256": "a9951add8a39dc1f93ac015bae15dd1610a62d7cf9ba571f8084a0a007a36d8b",
       "segment_count": 250,
       "first_segment_seconds": 0.08,
-      "last_segment_end_seconds": 1876.0,
+      "last_segment_end_seconds": 1876,
       "largest_intersegment_gap_seconds": 9.279999999999973,
       "endpoint_fraction_of_duration": 0.9994672349493873
     },
@@ -139,7 +139,7 @@
       "caption_provenance_limit": "Publisher labels do not establish human authorship.",
       "transcript_sha256": "2ff46855454ea60e5fd6dbf2786fb778b0a81a1e39295fc08c6e3ad9df7f1656",
       "segment_count": 325,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2522.4,
       "largest_intersegment_gap_seconds": 11.279999999999973,
       "endpoint_fraction_of_duration": 0.9997621878715814
@@ -215,7 +215,7 @@
       "caption_provenance_limit": "Publisher labels do not establish human authorship.",
       "transcript_sha256": "aaeda660cd7db974d77c341310a30168877c01172c58183a67f8a9edaac29272",
       "segment_count": 465,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 3816.88,
       "largest_intersegment_gap_seconds": 18.400000000000006,
       "endpoint_fraction_of_duration": 0.9999685616976683
@@ -329,7 +329,7 @@
       "caption_provenance_limit": "Publisher labels do not establish human authorship.",
       "transcript_sha256": "add9e7e08c3ef2398d6b9f19a5a73defc24e9509d2e597810153138080a662f1",
       "segment_count": 326,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2552.08,
       "largest_intersegment_gap_seconds": 24.799999999999955,
       "endpoint_fraction_of_duration": 0.9996396396396396
@@ -408,7 +408,7 @@
       "first_segment_seconds": 0.16,
       "last_segment_end_seconds": 2955.12,
       "largest_intersegment_gap_seconds": 17.120000000000005,
-      "endpoint_fraction_of_duration": 1.0
+      "endpoint_fraction_of_duration": 1
     },
     {
       "lecture_number": 21,
@@ -558,7 +558,7 @@
       "transcript_sha256": "91c6d425aa0771ac2cea5e18052d99692768ef42cc51a4dcb9f103d375c3197c",
       "segment_count": 394,
       "first_segment_seconds": 0.32,
-      "last_segment_end_seconds": 2856.0,
+      "last_segment_end_seconds": 2856,
       "largest_intersegment_gap_seconds": 7.679999999999836,
       "endpoint_fraction_of_duration": 0.999649982499125
     },
@@ -690,7 +690,7 @@
       "caption_provenance_limit": "Publisher labels do not establish human authorship.",
       "transcript_sha256": "44f42d1f95be8e7e92e35b3756c8a166e7bd8cd0145d0d4bdce322fa50a99e84",
       "segment_count": 265,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2005.44,
       "largest_intersegment_gap_seconds": 11.759999999999991,
       "endpoint_fraction_of_duration": 0.9997208374875374
@@ -747,7 +747,7 @@
       "caption_provenance_limit": "Publisher labels do not establish human authorship.",
       "transcript_sha256": "1f596a99d391aa259ec4dadfb581bd3b095a22b95ce6c76d7d1adb60c672e623",
       "segment_count": 371,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2767.84,
       "largest_intersegment_gap_seconds": 12.480000000000018,
       "endpoint_fraction_of_duration": 0.999942196531792
@@ -806,7 +806,7 @@
       "segment_count": 334,
       "first_segment_seconds": 0.08,
       "last_segment_end_seconds": 2634.56,
-      "largest_intersegment_gap_seconds": 10.0,
+      "largest_intersegment_gap_seconds": 10,
       "endpoint_fraction_of_duration": 0.999453717754173
     },
     {
@@ -921,7 +921,7 @@
       "first_segment_seconds": 0.08,
       "last_segment_end_seconds": 1994.24,
       "largest_intersegment_gap_seconds": 10.560000000000173,
-      "endpoint_fraction_of_duration": 1.0
+      "endpoint_fraction_of_duration": 1
     },
     {
       "lecture_number": 48,
@@ -1014,9 +1014,9 @@
       "transcript_sha256": "017de9bb9363174fca552d2dffbe8bc132d4c6ab6f018f9b1c84c13b6fca72cd",
       "segment_count": 251,
       "first_segment_seconds": 0.08,
-      "last_segment_end_seconds": 1950.0,
+      "last_segment_end_seconds": 1950,
       "largest_intersegment_gap_seconds": 16.079999999999927,
-      "endpoint_fraction_of_duration": 1.0
+      "endpoint_fraction_of_duration": 1
     },
     {
       "lecture_number": 53,
@@ -1070,7 +1070,7 @@
       "caption_provenance_limit": "Machine transcription; mathematical tokens require verification.",
       "transcript_sha256": "fbf92da3b2a02a91fca43a3b89433ab3a7dddc095a98a55ac6e724d13b97c8ec",
       "segment_count": 250,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 2375.54,
       "largest_intersegment_gap_seconds": 6.8799999999999955,
       "endpoint_fraction_of_duration": 0.9993857803954564
@@ -1129,7 +1129,7 @@
       "segment_count": 266,
       "first_segment_seconds": 0.24,
       "last_segment_end_seconds": 2299.2,
-      "largest_intersegment_gap_seconds": 8.0,
+      "largest_intersegment_gap_seconds": 8,
       "endpoint_fraction_of_duration": 0.9992177314211211
     },
     {
@@ -1224,7 +1224,7 @@
       "segment_count": 158,
       "first_segment_seconds": 0.16,
       "last_segment_end_seconds": 1491.68,
-      "largest_intersegment_gap_seconds": 12.0,
+      "largest_intersegment_gap_seconds": 12,
       "endpoint_fraction_of_duration": 0.9984471218206158
     },
     {
@@ -1279,7 +1279,7 @@
       "caption_provenance_limit": "Publisher labels do not establish human authorship.",
       "transcript_sha256": "e896ccf720ffe5decdc8dd00a31e92c972e3ed2279c6a7da26c79056d57428e1",
       "segment_count": 166,
-      "first_segment_seconds": 0.0,
+      "first_segment_seconds": 0,
       "last_segment_end_seconds": 1927.76,
       "largest_intersegment_gap_seconds": 13.680000000000064,
       "endpoint_fraction_of_duration": 0.9998755186721991
@@ -1338,7 +1338,7 @@
       "segment_count": 361,
       "first_segment_seconds": 0.16,
       "last_segment_end_seconds": 2807.6,
-      "largest_intersegment_gap_seconds": 8.0,
+      "largest_intersegment_gap_seconds": 8,
       "endpoint_fraction_of_duration": 0.9998575498575498
     },
     {
@@ -1370,7 +1370,8 @@
         0,
         1
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "58b211a05d0ea4d71fa1f146b924db285e4eda8c0f88bf81050c1545c7b73814"
     },
     {
       "order": 2,
@@ -1381,7 +1382,8 @@
         3,
         4
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "a80051399244bd0aae17085d5f232300e6f92a41777370351168087f5a9d3e96"
     },
     {
       "order": 3,
@@ -1391,7 +1393,8 @@
         5,
         6
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "88a774177c19a111ba7c7ca5164445a126d0a47a4cdf6d13e57397d534f567af"
     },
     {
       "order": 4,
@@ -1403,7 +1406,8 @@
         9,
         10
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "bb563a0557a65b2e23aceb260131205f7b13ce34056958f2b4b34998f718d24d"
     },
     {
       "order": 5,
@@ -1415,7 +1419,8 @@
         13,
         14
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "e61953513654b31386b052bec2d9ad3386154ba1db7e42f9b0a33ef9497c9909"
     },
     {
       "order": 6,
@@ -1426,7 +1431,8 @@
         16,
         17
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "47b38fadb40d948ef9f70c7aa35973d31232749ecc0b265e3309b9ef5ac801b6"
     },
     {
       "order": 7,
@@ -1437,7 +1443,8 @@
         19,
         20
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "951d98dc1b7b3569e27fe270727693568e91ade679e2e70b3264d4e820199e2c"
     },
     {
       "order": 8,
@@ -1448,7 +1455,8 @@
         22,
         23
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "2f864686cffd80379d8857ad03be7b0557cc162e852ab18607d8d278fd0e03a0"
     },
     {
       "order": 9,
@@ -1459,7 +1467,8 @@
         25,
         26
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "8d057111c36f52ac7360323e9000d722a327d6adaff9d3e9dc4106b06c261631"
     },
     {
       "order": 10,
@@ -1469,7 +1478,8 @@
         27,
         28
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "0360ab8be9b1c743e72d132d4f6b2945c3e3181bfaafd4bccfb39187e7d2966a"
     },
     {
       "order": 11,
@@ -1480,7 +1490,8 @@
         30,
         31
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "ca76705d745a94e5c713fde3959755ad8d85cc3f063e2ba06d793c8b2b8a11e3"
     },
     {
       "order": 12,
@@ -1491,7 +1502,8 @@
         33,
         34
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "0e3b90726f5786deb52899db94893d691505378130968da59a902ff14efe5c5b"
     },
     {
       "order": 13,
@@ -1502,7 +1514,8 @@
         36,
         37
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "c91f8a4e978e0da01922b79703af94045bdde75a3913264818318caa205e4d29"
     },
     {
       "order": 14,
@@ -1512,7 +1525,8 @@
         38,
         39
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "deb974a957d66851baef45b74f0f25789dee8c20822014d0994e762c8b971257"
     },
     {
       "order": 15,
@@ -1523,7 +1537,8 @@
         41,
         42
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "9f0c89bed23369bba09852ea7795ceb70622a533e4b540e3c89c3f107da7470c"
     },
     {
       "order": 16,
@@ -1533,7 +1548,8 @@
         43,
         44
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "8615438dbda338ac6b9444fb03bb06174382519b4daa34197ef7c92c2a397b21"
     },
     {
       "order": 17,
@@ -1544,7 +1560,8 @@
         46,
         47
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "e34f5a9e3376fd6b3b60efa9950049429c16abe845140d6c784340282013d6d5"
     },
     {
       "order": 18,
@@ -1554,7 +1571,8 @@
         48,
         49
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "6f62b2884219ebb129354e7aa473d4d053ac2990e73b8f017218397c01b30547"
     },
     {
       "order": 19,
@@ -1564,7 +1582,8 @@
         50,
         51
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "8209c72827a957f17a4b5435dee574cc0ad4f15929f99af34c2a7b9dbc947a5a"
     },
     {
       "order": 20,
@@ -1575,7 +1594,8 @@
         53,
         54
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "069e3dcd938383cd657ae8091c66aac016bf3d82436d383f2eb6f959afe9698d"
     },
     {
       "order": 21,
@@ -1584,7 +1604,8 @@
       "lecture_numbers": [
         55
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "35b5fc787c05d9144af2f8954e08097efb6df53d206ed118939bd6d1b8d76924"
     },
     {
       "order": 22,
@@ -1595,7 +1616,8 @@
         57,
         58
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "c85af7eea86f550e7a7df4e2028d66bd43a8ef9bda90868bac64d0b27adea504"
     },
     {
       "order": 23,
@@ -1606,7 +1628,8 @@
         60,
         61
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "5e0dea387a74d4eff53483cf0737133332de296dcb7ad8ab6593f6401ad06dd4"
     },
     {
       "order": 24,
@@ -1617,7 +1640,8 @@
         63,
         64
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "b9d5027378e620df3224a3ff4d729fc81c6b7053d7e8cd3dde93935adf8bd462"
     },
     {
       "order": 25,
@@ -1628,7 +1652,8 @@
         66,
         67
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "93f42710a2e72f4189f35026510136e4cc03193aeac6b1596fc61c7cbb05883a"
     },
     {
       "order": 26,
@@ -1639,8 +1664,9 @@
         69,
         70
       ],
-      "chapter_status": "not drafted"
+      "chapter_status": "reviewed and locally validated",
+      "accepted_body_sha256": "d8e80529fd002a8340a8d5ab0ee974666e6f3479fb5b45b1498e022706280e63"
     }
   ],
-  "source_boundary": "All 71 full available English transcript tracks acquired. Lecture 55 has no YouTube English captions and uses local Whisper small.en. Publisher-provided caption labels do not establish human authorship. Endpoint timing is an acquisition check, not a proof of every spoken word. Sequential reading and reference inspection are recorded per chapter. Comprehensive audiovisual review is not claimed."
+  "source_boundary": "Source text is retained for all 71 recordings: 70 English caption tracks and one full-audio local transcription. Lecture 55 has no YouTube English captions and uses local Whisper small.en. Publisher-provided caption labels do not establish human authorship. Endpoint timing is an acquisition check, not a proof of every spoken word. Sequential reading and reference inspection are recorded per chapter. Comprehensive audiovisual review is not claimed."
 }
